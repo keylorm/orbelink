@@ -8,16 +8,66 @@
  * can be found in the html.tpl.php template in this directory.
  *
  */
+
+global $base_url;
+
 ?>
 <header class="header" role="banner">
-  <?php if ($messages): ?>
-  <div class="messages-wrapper">
-    <div class="messages-content">
-      <?php print $messages; ?>
+
+  <!-- Div para mostrar menu desplegable -->
+  <div class="menu-desplegable">
+    <div class="container-nivel1">
+      <div class="container-nivel2">
+            <div class="box-logo-cerrar">
+              <div class="box-logo-menu">
+                <?php if ($logo): ?>
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+                    <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+                  </a>
+                <?php endif; ?>
+              </div>
+              <div class="box-boton-cerrar">
+                <a href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/close_menu.png" /></a>
+              </div>
+              <?php if ($site_name || $site_slogan): ?>
+
+                  <?php if ($site_name): ?>
+                    <?php if ($title): ?>
+
+                      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+
+                    <?php else: /* Use h1 when the content title is empty */ ?>
+                      <h1 id="site-name">
+                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+                      </h1>
+                    <?php endif; ?>
+                  <?php endif; ?>
+
+                  <?php if ($site_slogan): ?>
+                    <?php print $site_slogan; ?>
+                  <?php endif; ?>
+
+              <?php endif; ?>
+            </div>
+            <?php print render($page['header']); ?>
+
+      </div>
     </div>
-    <a href="#" id="messages-toggle"><?php print t('Close');?></a>
   </div>
-  <?php endif; ?>
+  <div class="header-estatico">
+    <div class="container-nivel1">
+      <div class="container-nivel2">
+        <div class="box-logo-estatico">
+          <a href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/logo_p.png" /></a>
+        </div>
+        
+        <div class="menu-toggle">
+          <a onclick="javascript: mostrar_menu();"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/icon_menu.png" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="grid">
   <?php if ($page['utility_bar']): ?>
     <div class="utility-bar">
@@ -26,33 +76,7 @@
   <?php endif; ?>
 
 
-  <?php if ($logo): ?>
-    <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-    </a>
-  <?php endif; ?>
-
-  <?php if ($site_name || $site_slogan): ?>
-
-      <?php if ($site_name): ?>
-        <?php if ($title): ?>
-
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-
-        <?php else: /* Use h1 when the content title is empty */ ?>
-          <h1 id="site-name">
-            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-          </h1>
-        <?php endif; ?>
-      <?php endif; ?>
-
-      <?php if ($site_slogan): ?>
-        <?php print $site_slogan; ?>
-      <?php endif; ?>
-
-  <?php endif; ?>
-
-  <?php print render($page['header']); ?>
+  
 </div>
 </header>
 
@@ -71,6 +95,14 @@
     <?php print render($page['highlighted']); ?>
   <?php endif; ?>
 
+  <?php if ($messages): ?>
+  <div class="messages-wrapper">
+    <div class="messages-content">
+      <?php print $messages; ?>
+    </div>
+    <a href="#" id="messages-toggle"><?php print t('Close');?></a>
+  </div>
+  <?php endif; ?>
     <a id="main-content"></a>
     <div class="main" role="main">
       <?php print render($title_prefix); ?>
