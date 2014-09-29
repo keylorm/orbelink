@@ -51,6 +51,7 @@ stylesheets[all][] = css/responsive.css
 
 ;-------------- JS -------------
 
+script[] = js/global.js
 
 
 ; Information added by drupal.org packaging script on 2013-10-01

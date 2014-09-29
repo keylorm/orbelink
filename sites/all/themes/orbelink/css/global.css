@@ -1,3 +1,30 @@
+@font-face {
+    font-family: ProximaNova;
+    src: url(../fonts/ProximaNova-Regular.woff), 
+    url(../fonts/ProximaNova-Regular.eot), 
+    url(../fonts/ProximaNova-Regular.ttf), 
+    url(../fonts/ProximaNova-Regular.otf),
+    url(../fonts/ProximaNova-Regular.svg);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Baskerville;
+    src: url(../fonts/Baskerville-Italic.woff), 
+    url(../fonts/Baskerville-Italic.eot), 
+    url(../fonts/Baskerville-Italic.ttf), 
+    url(../fonts/Baskerville-Italic.otf),
+    url(../fonts/Baskerville-Italic.svg);
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+html {
+	border-top: none !important; 
+}
+
 body{
 	margin: 0 !important;
 
@@ -19,11 +46,13 @@ a:hover{
 
 
 .menu-desplegable{
-	width: 100%;
-	background-color: #E8442E;
-	height: 240px;
-	padding-top: 22px;
-	display: none;
+	background-color: #e8442e;
+    display: none;
+    height: 240px;
+    padding-top: 22px;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
 
 	
 }
@@ -52,7 +81,8 @@ a:hover{
 #block-system-main-menu ul.menu li a{
 	font-size: 20px;
 	color: #fff;
-	font-weight: 400	
+	font-weight: 400;
+	font-family: "ProximaNova";	
 }
 
 .box-logo-menu{
