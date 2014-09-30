@@ -285,3 +285,56 @@ a:hover{
 .footer .region-footer #block-block-1{
 	width: 180px;
 }
+
+
+
+
+/* Andrey 30-09-2014 */
+
+h1#page-title{
+  font-family: Proximanova, sans-serif;
+  color: #1a1a1a;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  text-align:center;
+}
+.h1_subtitle {
+  font-family: Baskerville, sans-serif;
+  color: #00a69c;
+  font-size: 70px;
+}
+
+.page-blog .main h2 a{
+  font-family: Proximanova, sans-serif;
+  color: #4d4d4d;
+  font-size: 22px;
+  text-decoration: none;	
+}
+.page-blog .main .field-name-field-tags-blog .field-items a{
+  height: 23px;
+  margin-right: 10px;
+  padding-right: 15px;
+  padding-left: 10px;
+  float: left;
+  background-color: #a7a9ac;
+  background-image: url('../images/tag-arrow.jpg');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 23px;	
+}
+
+.page-blog .main .views-row{
+  width: 48.5%;
+  margin-bottom: 50px;
+  clear: right;
+  position:relative;	
+}
+
+.page-blog .main .views-row .field field-name-field-imagenes{
+  height: 500px;
+  background-size: 125px;
+}
