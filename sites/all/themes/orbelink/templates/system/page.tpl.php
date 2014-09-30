@@ -27,7 +27,7 @@ global $base_url;
                 <?php endif; ?>
               </div>
               <div class="box-boton-cerrar">
-                <a href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/close_menu.png" /></a>
+                <a id="boton-cerrar-menu" href="javascript:void(0);"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/close_menu.png" /></a>
               </div>
               <?php if ($site_name || $site_slogan): ?>
 
@@ -58,11 +58,11 @@ global $base_url;
     <div class="container-nivel1">
       <div class="container-nivel2">
         <div class="box-logo-estatico">
-          <a id="boton-menu" href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/logo_p.png" /></a>
+          <a  href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/logo_p.png" /></a>
         </div>
         
         <div class="menu-toggle">
-          <a href="javascript:void(0);"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/icon_menu.png" /></a>
+          <a id="boton-menu" href="javascript:void(0);"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/icon_menu.png" /></a>
         </div>
       </div>
     </div>
@@ -146,16 +146,22 @@ global $base_url;
 <?php endif; // end Below Content ?>
 
 <footer class="footer" role="contentinfo">
-  <div class="">
-    <?php print render($page['footer']); ?>
+  <div class="container-nivel1">
+      <div class="container-nivel2">
+        <div class="footer-box">
+          <?php print render($page['footer']); ?>
+        </div>
+      </div>
   </div>
 </footer>
 
-<?php if ($page['closure']): ?>
+
 <aside class="closure">
-  <?php print render($page['closure']); ?>
+  <?php if ($page['closure']): ?>
+    <?php print render($page['closure']); ?>
+  <?php endif; // end closure ?>
+  
 </aside>
-<?php endif; // end closure ?>
 
 
 

@@ -1,7 +1,12 @@
-$(document).ready(function(){
-	$('#boton-menu').click(function(){
-		$('.menu-desplegable').show('fast');
+jQuery(document).ready(function(){
+	jQuery('#boton-menu').click(function(){
+		jQuery('.menu-desplegable').slideDown();
 
-	})
+	});
+
+	jQuery('#boton-cerrar-menu').click(function(){
+		jQuery('.menu-desplegable').slideUp();
+
+	});
 
 });
