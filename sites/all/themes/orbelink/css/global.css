@@ -419,6 +419,9 @@ h1#page-title{
   font-size: 70px;
 }
 
+.page-blog .main h2{
+	  line-height: 22px;
+}
 .page-blog .main h2 a{
   font-family: Proximanova, sans-serif;
   color: #4d4d4d;
