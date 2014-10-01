@@ -28,6 +28,28 @@ function taxonomy_node_get_terms($node, $key = 'tid') {
     }
 }
 
+
+function replace_specials_characters($s) {
+    //$s = mb_convert_encoding($s, 'UTF-8','');
+    $s = preg_replace("/á|à|â|ã|ª/","a",$s);
+    $s = preg_replace("/Á|À|Â|Ã/","A",$s);
+    $s = preg_replace("/é|è|ê/","e",$s);
+    $s = preg_replace("/É|È|Ê/","E",$s);
+    $s = preg_replace("/í|ì|î/","i",$s);
+    $s = preg_replace("/Í|Ì|Î/","I",$s);
+    $s = preg_replace("/ó|ò|ô|õ|º/","o",$s);
+    $s = preg_replace("/Ó|Ò|Ô|Õ/","O",$s);
+    $s = preg_replace("/ú|ù|û/","u",$s);
+    $s = preg_replace("/Ú|Ù|Û/","U",$s);
+    $s = str_replace(" ","_",$s);
+    $s = str_replace("ñ","n",$s);
+    $s = str_replace("Ñ","N",$s);
+
+    $s = preg_replace('/[^a-zA-Z0-9_\.-]/', '', $s);
+    return $s;
+  }
+
+
 function orbelink_preprocess_html(&$variables) {
   $meta_charset = array(
     '#tag' => 'meta',
@@ -115,7 +137,7 @@ function orbelink_preprocess_html(&$variables) {
     $results = taxonomy_node_get_terms($node);
     if(is_array($results)) {
         foreach ($results as $item) {
-           $variables['classes_array'][] = "taxonomy-".strtolower(drupal_clean_css_identifier($item->name));
+           $variables['classes_array'][] = "taxonomy-".replace_specials_characters(strtolower(drupal_clean_css_identifier($item->name)));
         }
     }
 }
