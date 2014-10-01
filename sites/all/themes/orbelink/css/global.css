@@ -422,6 +422,21 @@ a:hover{
   font-size: 70px;
 }
 
+h1.page-title{
+  font-family: Proximanova, sans-serif;
+  color: #1a1a1a;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  text-align:center;
+  margin: 8px 0 50px;
+}
+.h1_subtitle {
+  font-family: Baskerville, sans-serif;
+  color: #00a69c;
+  font-size: 70px;
+}
+
 .page-blog .main h2{
 	  line-height: 22px;
 }
@@ -529,22 +544,27 @@ a:hover{
 	background-color: #00a69c;
 }
 .taxonomy-casos-de-exito-orbelink #comments #edit-submit,
-.btn_compartir{
+.taxonomy-casos-de-exito-orbelink .btn_compartir{
 	background-color: #FBB03B;
 }
-.taxonomy-editorial #comments #edit-submit{
+.taxonomy-editorial #comments #edit-submit,
+.taxonomy-editorial .btn_compartir{
 	background-color: #AF4CA0;
 }
-.taxonomy-casos-de-exito-en-el-mundo #comments #edit-submit{
+.taxonomy-casos-de-exito-en-el-mundo #comments #edit-submit,
+.taxonomy-casos-de-exito-en-el-mundo .btn_compartir{
 	background-color: #E8442E;
 }
-.taxonomy-tendencias #comments #edit-submit{
+.taxonomy-tendencias #comments #edit-submit,
+.taxonomy-tendencias .btn_compartir{
 	background-color: #B5D563;
 }
-.taxonomy-investigaciones #comments #edit-submit{
+.taxonomy-investigaciones #comments #edit-submit,
+.taxonomy-investigaciones .btn_compartir{
 	background-color: #29ABE2;
 }
-.taxonomy-noticias-del-mundo #comments #edit-submit{
+.taxonomy-noticias-del-mundo #comments #edit-submit,
+.taxonomy-noticias-del-mundo .btn_compartir{
 	background-color: #F033A3;
 }
 
@@ -577,6 +597,9 @@ Noticias: F033A3
 }
 */
 
+.field field-name-field-departamento{
+	float:left;
+}
 
 /* BOTONES COMPARTIR */
 
@@ -610,46 +633,25 @@ Noticias: F033A3
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.btn_compartir.bg_fb.bgc_1 {
-  background-color: #00a69c;
-}
-.btn_compartir.bg_fb.bgc_6 {
-  background-color: #29abe2;
-}
-.btn_compartir.bg_fb.bgc_7 {
-  background-color: #f033a3;
-}
 .btn_compartir.bg_tw {
   background-image: url('../images/red_tw.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-.btn_compartir.bg_tw.bgc_2 {
-  background-color: #fbb03b;
 }
 .btn_compartir.bg_in {
   background-image: url('../images/red_in.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.btn_compartir.bg_in.bgc_3 {
-  background-color: #af4ca0;
-}
 .btn_compartir.bg_pi {
   background-image: url('../images/red_pi.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-.btn_compartir.bg_pi.bgc_4 {
-  background-color: #e8442e;
-}
 .btn_compartir.bg_ins {
   background-image: url('../images/red_ins.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-.btn_compartir.bg_ins.bgc_5 {
-  background-color: #b5d563;
 }
 
 
