@@ -422,7 +422,7 @@ a:hover{
   font-size: 70px;
 }
 
-h1.page-title{
+h1#page-title{
   font-family: Proximanova, sans-serif;
   color: #1a1a1a;
   font-size: 60px;
