@@ -8,6 +8,26 @@
  * Implements hook_preprocess_html().
  * Meta tags https://drupal.org/node/1468582#comment-5698732
  */
+
+function taxonomy_node_get_terms($node, $key = 'tid') {
+    if(arg(0)=='node' && is_numeric(arg(1))) {
+        static $terms;
+        if (!isset($terms[$node->vid][$key])) {
+            $query = db_select('taxonomy_index', 'r');
+            $t_alias = $query->join('taxonomy_term_data', 't', 'r.tid = t.tid');
+            $v_alias = $query->join('taxonomy_vocabulary', 'v', 't.vid = v.vid');
+            $query->fields( $t_alias );
+            $query->condition("r.nid", $node->nid);
+            $result = $query->execute();
+            $terms[$node->vid][$key] = array();
+            foreach ($result as $term) {
+                $terms[$node->vid][$key][$term->$key] = $term;
+            }
+        }
+        return $terms[$node->vid][$key];
+    }
+}
+
 function orbelink_preprocess_html(&$variables) {
   $meta_charset = array(
     '#tag' => 'meta',
@@ -90,6 +110,14 @@ function orbelink_preprocess_html(&$variables) {
   if (theme_get_setting('normalize_css')) {
     drupal_add_css(drupal_get_path('theme', 'sonambulo') . '/css/normalize.css', array('group' => CSS_SYSTEM, 'weight' => -100));
   }
+
+    $node = node_load(arg(1));
+    $results = taxonomy_node_get_terms($node);
+    if(is_array($results)) {
+        foreach ($results as $item) {
+           $variables['classes_array'][] = "taxonomy-".strtolower(drupal_clean_css_identifier($item->name));
+        }
+    }
 }
 
 /**
@@ -140,3 +168,6 @@ function orbelink_menu_link(array $variables) {
 //dvm($variables['element']);
   return theme_menu_link($variables);
 }
+
+
+
