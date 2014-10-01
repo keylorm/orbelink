@@ -11,7 +11,7 @@
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <?php print $ds_content; ?>
+  <?php   print $ds_content; ?>
 </<?php print $ds_content_wrapper ?>>
 
 <?php if (!empty($drupal_render_children)): ?>
