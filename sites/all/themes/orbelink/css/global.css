@@ -291,14 +291,16 @@ a:hover{
 
 /*Listado Blog*/
 
-.page-blog .main-content .main {
+.page-blog .main-content .main,
+.node-type-blog .main-content .main {
 	width: 630px;
 	float: left;
 	padding: 0;
 }
 
 
-.page-blog #sidebar-second{
+.page-blog #sidebar-second,
+.node-type-blog #sidebar-second{
 	width: 295px;
 	float: right;
 }
