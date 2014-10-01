@@ -14,6 +14,10 @@ jQuery(document).ready(function(){
 		itemSelector: '.views-row'
 	});	
 	
+	jQuery(".views-row").attr('data-ix','box-post');
+
+
+	
 /*var container = document.querySelector('.view-id-view_blog .view-content');
 var msnry = new Masonry( container, {
   // options
@@ -21,4 +25,4 @@ var msnry = new Masonry( container, {
   itemSelector: '.views-row'
 });	*/
 
-});	
+});

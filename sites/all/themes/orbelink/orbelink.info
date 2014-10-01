@@ -51,9 +51,9 @@ stylesheets[all][] = css/responsive.css
 
 ;-------------- JS -------------
 
-
+scripts[] = js/webflow.js
 scripts[] = js/global.js
-scripts[] = js/masonry.pkgd.min.js
+
 
 
 
