@@ -462,3 +462,57 @@ h1#page-title{
   height: 500px;
   background-size: 125px;
 }*/
+
+#comments label, #comments .grippie{
+	display: none;
+}
+
+#comments input[type='text']{
+  width: 31.3%;
+  height: 55px;
+  padding-left: 10px;
+  margin-right: 2%;
+  float: left;
+  border: 1px solid gray;
+  color: #808285;
+}
+
+#comments .edit-field-comment-website-und-0-value {
+  margin-right: 0%;
+  float:right;
+}
+.textarea_comentario {
+  height: 130px;
+  float: left;
+  border: 1px solid #808285;
+}
+#comments textarea{
+  width: 98%;
+  height: 130px;
+  padding: 10px;
+  float: left;
+  border: 1px solid #808285;
+  margin-top: 15px;
+}
+
+#comments #edit-submit{
+  padding: 13px 20px;
+  float: left;
+  border-radius: 5px;
+  background-color: #00a69c;
+  font-family:'Open Sans', sans-serif;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#edit-comment-body-und-0-format{
+	display:none;
+}
+
+
+
+/* Colores y background detalle blog por categorías */
