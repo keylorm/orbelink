@@ -8,7 +8,7 @@
  * Implements hook_preprocess_html().
  * Meta tags https://drupal.org/node/1468582#comment-5698732
  */
-function sonambulo_preprocess_html(&$variables) {
+function orbelink_preprocess_html(&$variables) {
   $meta_charset = array(
     '#tag' => 'meta',
     '#attributes' => array(
@@ -95,7 +95,7 @@ function sonambulo_preprocess_html(&$variables) {
 /**
  * Implements hook_html_head_alter().
  */
-function sonambulo_html_head_alter(&$head_elements) {
+function orbelink_html_head_alter(&$head_elements) {
 
   // Remove system content type meta tag.
   unset($head_elements['system_meta_content_type']);
@@ -105,7 +105,7 @@ function sonambulo_html_head_alter(&$head_elements) {
  * Implements hook_page_alter().
  * https://gist.github.com/jacine/1378246
  */
-function sonambulo_page_alter(&$page) {
+function orbelink_page_alter(&$page) {
   // Remove all the region wrappers.
   foreach (element_children($page) as $key => $region) {
     if (!empty($page[$region]['#theme_wrappers'])) {
@@ -118,12 +118,25 @@ function sonambulo_page_alter(&$page) {
   }
 }
 
-function sonambulo_preprocess_node(&$vars) {
+function orbelink_preprocess_node(&$vars) {
   // Add a striping class.
   $vars['classes_array'][] = 'node-' . $vars['zebra'];
 }
 
-function sonambulo_preprocess_block(&$vars, $hook) {
+function orbelink_preprocess_block(&$vars, $hook) {
   // Add a striping class.
   $vars['classes_array'][] = 'block-' . $vars['zebra'];
+}
+
+
+/**
+* theme_menu_link()
+*/
+function orbelink_menu_link(array $variables) {
+//add class for li
+   $variables['element']['#attributes']['class'][] = 'menu-' . $variables['element']['#original_link']['mlid'];
+//add class for a
+   $variables['element']['#localized_options']['attributes']['class'][] = 'menu-' . $variables['element']['#original_link']['mlid'];
+//dvm($variables['element']);
+  return theme_menu_link($variables);
 }

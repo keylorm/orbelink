@@ -63,6 +63,8 @@ a:hover{
 
 #block-system-main-menu ul.menu{
 	text-align: center;
+	clear: both;
+    margin-top: 85px;
 	
 }
 
@@ -173,7 +175,8 @@ a:hover{
 }
 
 .main-content {
-    padding-top: 90px;
+    padding: 90px 5px 20px;
+    width: 980px;
 }
 
 .footer{
@@ -191,7 +194,7 @@ a:hover{
 	min-height: 80px;
 }
 
-.footer .region-footer h2 a{
+.footer .footer-box h2 a{
 	font-size: 20px;
 	color: #fff;
 	font-weight: 400;
@@ -201,14 +204,14 @@ a:hover{
 
 
 
-.footer .region-footer .block-menu-block ul li{
+.footer .footer-box .block-menu-block ul li{
 	list-style: none;
 	margin:0;
 	line-height: 18px;
 	padding-bottom: 10px;
 }
 
-.footer .region-footer .block-menu-block ul li a{
+.footer .footer-box .block-menu-block ul li a{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 400;
@@ -220,73 +223,183 @@ a:hover{
     -webkit-transition-delay: 0s;
 }
 
-.footer .region-footer .block-block p, 
-.footer .region-footer .block-block p a{
+.footer .footer-box .block-block p, 
+.footer .footer-box .block-block p a{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 400;
 	font-family: "ProximaNova";	
 } 
-.footer .region-footer .block-block p{
+.footer .footer-box .block-block p{
 	margin-bottom: 10px;
     margin-top: 5px;
 }
 
-.footer .region-footer .block-block p span.tabulador{
+.footer .footer-box .block-block p span.tabulador{
 	padding-left: 26px;
 }
 
-.footer .region-footer .block-menu-block ul li a:hover{
+.footer .footer-box .block-menu-block ul li a:hover{
 	transform: translate(2px, 0px);
 }
 
-.footer .region-footer .block-block p.linea30{
+.footer .footer-box .block-block p.linea30{
 	 float: left;
     line-height: 30px;
     margin-top: 0;
     width: 65px;
 }
 
-.footer .region-footer #block-menu-block-1,
-.footer .region-footer #block-menu-block-2,
-.footer .region-footer #block-menu-block-4,
-.footer .region-footer #block-block-2{
+.footer .footer-box #block-menu-block-1,
+.footer .footer-box #block-menu-block-2,
+.footer .footer-box #block-menu-block-4,
+.footer .footer-box #block-block-2{
 	float: left;
 	margin-right: 22px;
 }
 
-.footer .region-footer #block-menu-block-3{
+.footer .footer-box #block-menu-block-3{
 	float: left;
 	margin-right: 24px;
 }
 
-.footer .region-footer #block-block-1{
+.footer .footer-box #block-block-1{
 	float: left;
 }
 
-.footer .region-footer #block-menu-block-1{
+.footer .footer-box #block-menu-block-1{
 	width: 150px;
 }
-.footer .region-footer #block-menu-block-2{
+.footer .footer-box #block-menu-block-2{
 	width: 153px;
 }
-.footer .region-footer #block-menu-block-3{
+.footer .footer-box #block-menu-block-3{
 	width: 206px;
 }
 
-.footer .region-footer #block-menu-block-4{
+.footer .footer-box #block-menu-block-4{
 	width: 118px;
 }
 
-.footer .region-footer #block-block-2{
+.footer .footer-box #block-block-2{
 	width: 58px;
 }
 
-.footer .region-footer #block-block-1{
+.footer .footer-box #block-block-1{
 	width: 180px;
 }
 
+/*Listado Blog*/
 
+.page-blog .main-content .main {
+	width: 630px;
+	float: left;
+}
+
+
+.page-blog #sidebar-second{
+	width: 295px;
+	float: right;
+}
+
+
+#block-menu-menu-categorias-blog {
+    border-left: 1px solid #808080;
+    border-top: 1px solid #808080;
+    padding-bottom: 15px;
+}
+
+#block-menu-menu-categorias-blog h3 {
+    border-bottom: 1px solid #808080;
+    color: #1a1a1a;
+    font-family: "ProximaNova";
+    font-size: 28px;
+    font-style: normal;
+    margin: 0;
+    padding: 44px 0 38px 32px;
+    text-transform: uppercase;
+}
+
+#block-menu-menu-categorias-blog ul.menu{
+	list-style: none outside none;
+    padding-left: 0;
+    margin: 30px 0 0 30px;
+}
+
+#block-menu-menu-categorias-blog ul.menu li{
+	margin-bottom: 15px;
+	list-style: none outside none;
+}
+
+#block-menu-menu-categorias-blog ul.menu li a{
+	display: block;
+  width: 86%;
+  height: 45px;
+  padding-left: 60px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  font-family: Proximanova, sans-serif;
+  color: #1a1a1a;
+  font-size: 16px;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+#block-menu-menu-categorias-blog ul.menu li a:hover {
+  padding-left: 50px;
+  -webkit-transform: translate(15px, 0px);
+  -ms-transform: translate(15px, 0px);
+  -o-transform: translate(15px, 0px);
+  transform: translate(15px, 0px);
+
+}
+
+#block-menu-menu-categorias-blog ul.menu li a.menu-547 {
+	background-image: url("../images/gente-orbelink.png");
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+#block-menu-menu-categorias-blog ul.menu li a.menu-545  {
+  background-image: url('../images/casodexitos-orbelink.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  line-height: 23px;
+}
+#block-menu-menu-categorias-blog ul.menu li a.menu-546 {
+  background-image: url('../images/editorial.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
+#block-menu-menu-categorias-blog ul.menu li a.menu-544  {
+  background-image: url('../images/casodexitos-mundo.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+  line-height: 23px;
+}
+#block-menu-menu-categorias-blog ul.menu li a.menu-550 {
+  background-image: url('../images/tendencias.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
+#block-menu-menu-categorias-blog ul.menu li a.menu-548{
+  background-image: url('../images/investigaciones.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
+#block-menu-menu-categorias-blog ul.menu li a.menu-549 {
+  background-image: url('../images/noticias.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat;
+}
 
 
 /* Andrey 30-09-2014 */
@@ -298,6 +411,7 @@ h1#page-title{
   font-weight: 400;
   font-style: normal;
   text-align:center;
+  margin: 8px 0 50px;
 }
 .h1_subtitle {
   font-family: Baskerville, sans-serif;
