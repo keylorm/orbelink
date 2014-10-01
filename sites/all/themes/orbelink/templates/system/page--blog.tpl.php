@@ -106,7 +106,7 @@ global $base_url;
     <a id="main-content"></a>
     <div class="title-box">
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+      <?php if ($title): ?><p class="page-title-blog" >Nuestro <em class="subtitle">blog</em></p><?php endif; ?>
       <?php print render($title_suffix); ?>
     </div>
     <div class="main" role="main">
