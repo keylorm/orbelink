@@ -431,7 +431,8 @@ h1#page-title{
   font-size: 22px;
   text-decoration: none;	
 }
-.page-blog .main .field-name-field-tags-blog .field-items a{
+/*.page-blog .main .field-name-field-tags-blog .field-items a,*/
+.field-name-field-tags-blog .field-items a{
   height: 23px;
   margin-right: 10px;
   padding-right: 15px;
@@ -462,7 +463,12 @@ h1#page-title{
   height: 500px;
   background-size: 125px;
 }*/
-
+.main-content .main .content p{
+  margin-bottom: 20px;
+  font-family:'Open Sans', sans-serif;
+  color: #58595b;
+  font-size: 15px;
+}
 #comments label, #comments .grippie{
 	display: none;
 }
@@ -519,3 +525,6 @@ h1#page-title{
 
 
 /* Colores y background detalle blog por categorías */
+
+.taxonomy-casos-de-exito-en-el-mundo{
+}
