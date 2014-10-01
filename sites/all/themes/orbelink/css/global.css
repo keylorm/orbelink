@@ -407,7 +407,7 @@ a:hover{
 
 /* Andrey 30-09-2014 */
 
-h1#page-title{
+.page-title-blog{
   font-family: Proximanova, sans-serif;
   color: #1a1a1a;
   font-size: 60px;
@@ -416,7 +416,7 @@ h1#page-title{
   text-align:center;
   margin: 8px 0 50px;
 }
-.h1_subtitle {
+.subtitle {
   font-family: Baskerville, sans-serif;
   color: #00a69c;
   font-size: 70px;
@@ -505,7 +505,6 @@ h1#page-title{
   padding: 13px 20px;
   float: left;
   border-radius: 5px;
-  background-color: #00a69c;
   font-family:'Open Sans', sans-serif;
   color: white;
   font-size: 17px;
@@ -523,8 +522,135 @@ h1#page-title{
 }
 
 
-
 /* Colores y background detalle blog por categorías */
 
+.taxonomy-gente-orbelink #comments #edit-submit,
+.taxonomy-gente-orbelink .btn_compartir{
+	background-color: #00a69c;
+}
+.taxonomy-casos-de-exito-orbelink #comments #edit-submit,
+.btn_compartir{
+	background-color: #FBB03B;
+}
+.taxonomy-editorial #comments #edit-submit{
+	background-color: #AF4CA0;
+}
+.taxonomy-casos-de-exito-en-el-mundo #comments #edit-submit{
+	background-color: #E8442E;
+}
+.taxonomy-tendencias #comments #edit-submit{
+	background-color: #B5D563;
+}
+.taxonomy-investigaciones #comments #edit-submit{
+	background-color: #29ABE2;
+}
+.taxonomy-noticias-del-mundo #comments #edit-submit{
+	background-color: #F033A3;
+}
+
+/*
+Gente Orbelink: 00A69C
+Caso de exito: FBB03B
+Editorial: AF4CA0
+Caso exito mundo: E8442E
+Tendencias: B5D563
+Investigacion: 29ABE2
+Noticias: F033A3
+*/
+
+
+
+/*
+.taxonomy-gente-orbelink{
+}
+.taxonomy-casos-de-exito-orbelink{
+}
+.taxonomy-editorial{
+}
 .taxonomy-casos-de-exito-en-el-mundo{
 }
+.taxonomy-tendencias{
+}
+.taxonomy-investigaciones{
+}
+.taxonomy-noticias-del-mundo{
+}
+*/
+
+
+/* BOTONES COMPARTIR */
+
+
+.compartir {
+  height: 57px;
+  margin-bottom: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.btn_compartir {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  float: left;
+  border-radius: 150px;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.btn_compartir:hover {
+  box-shadow: #737373 1px 1px 3px 0px;
+  -webkit-transform: translate(0px, -5px) rotate(10deg);
+  -ms-transform: translate(0px, -5px) rotate(10deg);
+  -o-transform: translate(0px, -5px) rotate(10deg);
+  transform: translate(0px, -5px) rotate(10deg);
+}
+.btn_compartir.bg_fb {
+  background-image: url('../images/red_fb.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.btn_compartir.bg_fb.bgc_1 {
+  background-color: #00a69c;
+}
+.btn_compartir.bg_fb.bgc_6 {
+  background-color: #29abe2;
+}
+.btn_compartir.bg_fb.bgc_7 {
+  background-color: #f033a3;
+}
+.btn_compartir.bg_tw {
+  background-image: url('../images/red_tw.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.btn_compartir.bg_tw.bgc_2 {
+  background-color: #fbb03b;
+}
+.btn_compartir.bg_in {
+  background-image: url('../images/red_in.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.btn_compartir.bg_in.bgc_3 {
+  background-color: #af4ca0;
+}
+.btn_compartir.bg_pi {
+  background-image: url('../images/red_pi.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.btn_compartir.bg_pi.bgc_4 {
+  background-color: #e8442e;
+}
+.btn_compartir.bg_ins {
+  background-image: url('../images/red_ins.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.btn_compartir.bg_ins.bgc_5 {
+  background-color: #b5d563;
+}
+
+
+
