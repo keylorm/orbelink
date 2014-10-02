@@ -421,7 +421,7 @@ a:hover{
   margin: 8px 0 50px;
 }
 .subtitle {
-  font-family: Baskerville, sans-serif;
+  font-family: "Baskerville", sans-serif;
   color: #00a69c;
   font-size: 70px;
 }
@@ -436,7 +436,7 @@ h1#page-title{
   margin: 8px 0 50px;
 }
 .h1_subtitle {
-  font-family: Baskerville, sans-serif;
+  font-family: "Baskerville", sans-serif;
   color: #00a69c;
   font-size: 70px;
 }
@@ -463,7 +463,9 @@ h1#page-title{
 }
 
 .field-name-field-tags-blog{
-	margin-bottom: 20px;
+	float: left;
+    margin-top: 18px;
+    width: 100%;
 }
 
 .field-name-field-tags-blog .field-items a,
@@ -609,10 +611,10 @@ h1#page-title{
 
 
 #comments input[type='text']{
-  width: 31.3%;
+  width: 204px;
   height: 55px;
   padding-left: 10px;
-  margin-right: 2%;
+  margin-right: 10px;
   float: left;
   border: 1px solid gray;
   color: #808285;
@@ -628,7 +630,7 @@ h1#page-title{
   border: 1px solid #808285;
 }
 #comments textarea{
-  width: 98%;
+  width: 100%;
   height: 130px;
   padding: 10px;
   float: left;
@@ -871,7 +873,7 @@ Noticias: F033A3
   line-height: 21px;
 }
 .field-name-field-departamento .ds-2col > .group-right .link_autor {
-  font-family: Baskerville, sans-serif;
+  font-family: "Baskerville", sans-serif;
   font-style: italic;
   font-weight: 400;
   text-decoration:underline;
@@ -899,8 +901,11 @@ Noticias: F033A3
 
 /* BOTONES COMPARTIR */
 
-.field-name-share-block-deta-blog{
-	clear:both;
+.field-name-share-block-deta-blog {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 100%;
 }
 
 .compartir {
@@ -963,7 +968,7 @@ Noticias: F033A3
 .titulo_compartir {
   margin-right: 15px;
   float: left;
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #58595b;
   font-size: 15px;
   line-height: 32px;
@@ -1109,4 +1114,56 @@ Noticias: F033A3
     font-size: 15px;
     font-style: normal;
     line-height: 23px;
+}
+
+#block-views-view-blog-block-2 h2{
+	color: #6d6e71;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+
+#block-views-view-blog-block-2 h2 em.subtitle-naranja{
+	font-family: "Baskerville", sans-serif;
+	font-size: 42px;
+	font-style: italic;
+	color: #E8442E;
+	font-weight: 400
+}
+
+.view-display-id-block_2 .field-content {
+    position: relative;
+}
+
+#block-views-view-blog-block-2 {
+    border-top: 1px solid #808080;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+.view-display-id-block_2 .views-row.views-row-odd {
+    margin-right: 45px;
+}
+.view-display-id-block_2 .views-row {
+    float: left;
+    width: 290px;
+}
+
+
+#comments #edit-field-comment-website input[type="text"]{
+	margin-right: 0;
+}
+
+
+#block-views-view-blog-block-2 .view-content .views-field-title a,
+#block-views-view-blog-block-2 .view-content .views-field-title a:visited{
+	 color: #4d4d4d;
+    display: block;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
 }
