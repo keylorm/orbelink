@@ -342,7 +342,7 @@ a:hover{
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
   font-size: 16px;
   line-height: 45px;
@@ -409,7 +409,7 @@ a:hover{
 /* Andrey 30-09-2014 */
 
 .page-title-blog{
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
   font-size: 60px;
   font-weight: 400;
@@ -424,7 +424,7 @@ a:hover{
 }
 
 h1#page-title{
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
   font-size: 60px;
   font-weight: 400;
@@ -442,7 +442,7 @@ h1#page-title{
 	  line-height: 22px;
 }
 .page-blog .main .views-field-title a{
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #4d4d4d;
   font-size: 22px;
   text-decoration: none;	
@@ -562,7 +562,7 @@ h1#page-title{
 }
 
 #comments .view-mode-full .username{
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #58595b;
   font-size: 17px;
   text-decoration: underline;
@@ -764,7 +764,7 @@ Noticias: F033A3
   margin-bottom: 25px;
 }
 .titulo_detalle_blog h1{
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   font-size: 24px;
   line-height: 29px;
   font-weight: 600;
@@ -846,7 +846,7 @@ Noticias: F033A3
 .sobre_autor {
   margin-top: 9px;
   margin-bottom: 10px;
-  font-family: Proximanova, sans-serif;
+  font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
   font-size: 35px;
   line-height: 21px;
@@ -977,7 +977,7 @@ Noticias: F033A3
 	margin: 0px 0px 32px;
 } 
 .page-blog .flexslider{
-	bottom: 30px;
+	
 }
 .page-blog .flex-control-nav,
 .node-blog .flex-control-nav{
@@ -1019,4 +1019,28 @@ Noticias: F033A3
 
 #block-views-blog-slider-block h2{
 	display: none;
+}
+
+
+/*Post populares*/
+
+.view-display-id-block_1 .views-row{
+	width: 235px;
+}	
+
+#block-views-view-blog-block-1{
+	border-top: 1px solid #808080;
+	border-left: 1px solid #808080;
+}
+
+#block-views-view-blog-block-1 h2{
+	border-bottom: 1px solid #808080;
+    color: #1a1a1a;
+    display: block;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    margin: 0;
+    padding: 35px 0 24px 32px;
+    text-transform: uppercase;
 }
