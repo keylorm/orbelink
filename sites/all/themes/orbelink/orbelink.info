@@ -48,9 +48,11 @@ stylesheets[all][] = css/theme.css
 stylesheets[all][] = css/sonambulo.css
 stylesheets[all][] = css/global.css
 stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/animate.css
 
 ;-------------- JS -------------
 
+scripts[] = js/viewportchecker.js
 scripts[] = js/masonry.pkgd.min.js
 scripts[] = js/global.js
 

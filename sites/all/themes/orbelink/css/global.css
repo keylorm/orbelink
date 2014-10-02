@@ -481,6 +481,15 @@ h1#page-title{
   position:relative;
   /*min-height: 350px;*/
 }
+.hidden{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1;
+}
+
+
 
 /* PESTAÑA DE LOS POST */
 
@@ -690,6 +699,7 @@ Noticias: F033A3
 	clear:both;
 }
 
+field-name-field-imagen-departamento
 /* BOTONES COMPARTIR */
 
 
@@ -757,8 +767,8 @@ Noticias: F033A3
     margin-left: 10px;
     padding: 38px 32px 15px;
     position: absolute;
-    top: 251px;
-    width: 587px;
+	top: 275px;
+	width: 97%;
     z-index: 999;
 }
 
@@ -775,7 +785,8 @@ Noticias: F033A3
 .page-blog .flex-caption .by{
 	margin: 0;
 }
-.page-blog .flexslider{
+.page-blog .flexslider,
+.node-blog .flexslider{
 	border: none;
 	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
@@ -785,14 +796,20 @@ Noticias: F033A3
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
+	margin: 0px;
 } 
-.page-blog .flex-control-nav{
+.page-blog .flex-control-nav,
+.node-blog .flex-control-nav{
 	width: 20px;
 	height: auto;
 	right: 0px;
 	top: 140px;
 	right: 15px;
 	z-index: 5;
+}
+.node-blog .flex-control-nav{
+	top: 182px;
+	height: 50px;
 }
 .flex-control-paging{
 

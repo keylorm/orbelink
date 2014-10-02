@@ -13,6 +13,10 @@ jQuery(document).ready(function(){
 	$container.masonry({
 		itemSelector: '.views-row'
 	});	
+	jQuery('.views-row').addClass("hidden").viewportChecker({
+	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
+	    offset: 50    
+	   }); 	
 	//columnWidth: 200,
 	//jQuery(".views-row").attr('data-ix','box-post');
 
