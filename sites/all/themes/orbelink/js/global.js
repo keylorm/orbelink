@@ -9,7 +9,12 @@ jQuery(document).ready(function(){
 		jQuery('.menu-desplegable').slideUp();
 	});
 	
-
+	var $container = jQuery('#blog-list-content');
+	$container.masonry({
+		columnWidth: 315,
+		itemSelector: '.views-row'
+	});
+	
 	jQuery('#blog-list-content .views-row').each(function(indice, elemento) {
 		var left = jQuery(this).css('left');
 		var alto = jQuery(this).css('height');
@@ -23,11 +28,7 @@ jQuery(document).ready(function(){
 	  //console.log('El elemento con el índice '+indice+' contiene '+jQuery(elemento).text());
 	});	
 	
-	var $container = jQuery('#blog-list-content');
-	$container.masonry({
-		columnWidth: 315,
-		itemSelector: '.views-row'
-	});
+
 	
 	
 	jQuery('#blog-list-content .views-row').addClass("hidden").viewportChecker({
