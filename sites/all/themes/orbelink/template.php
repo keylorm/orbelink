@@ -198,6 +198,12 @@ function orbelink_preprocess_page(&$variables) {
     // name will be "page--my-machine-name.tpl.php".
     $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
   }
+
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $term = taxonomy_term_load(arg(2));
+    $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
+  }
+  
 }
 
 
