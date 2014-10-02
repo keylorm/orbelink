@@ -796,7 +796,7 @@ field-name-field-imagen-departamento
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
-	margin: 0px;
+	margin: 0px 0px 32px;
 } 
 .page-blog .flex-control-nav,
 .node-blog .flex-control-nav{
