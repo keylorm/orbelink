@@ -475,7 +475,7 @@ h1#page-title{
   width: 300px;
   margin-bottom: 25px;
   position:relative;
-  min-height: 350px;
+  /*min-height: 350px;*/
 }
 
 /* PESTAÑA DE LOS POST */
@@ -736,4 +736,45 @@ Noticias: F033A3
   background-image: url('../images/red_ins.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+
+
+/*Slider Blog*/
+
+.page-blog .flex-caption {
+    background-color: transparent;
+    background-image: url("../images/bg-caption-slider.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    height: 100px;
+    margin-left: 10px;
+    padding: 38px 32px 15px;
+    position: absolute;
+    top: 251px;
+    width: 587px;
+    z-index: 999;
+}
+
+.page-blog .flex-caption h3 a,
+.page-blog .flex-caption h3{
+	margin: 0;
+	font-family: "ProximaNova";
+	font-size: 22px;
+	color: #1A1A1A;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.page-blog .flex-caption .by{
+	margin: 0;
+}
+
+.flexslider a{
+
+}
+
+#block-views-blog-slider-block h2{
+	display: none;
 }
