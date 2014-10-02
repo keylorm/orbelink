@@ -350,11 +350,12 @@ a:hover{
 }
 
 #block-menu-menu-categorias-blog ul.menu li a:hover {
-  padding-left: 50px;
-  -webkit-transform: translate(15px, 0px);
-  -ms-transform: translate(15px, 0px);
-  -o-transform: translate(15px, 0px);
-  transform: translate(15px, 0px);
+  padding-left: 50px; color: #0BA59B;
+  -webkit-transform: translate(-15px, 0px);
+  -ms-transform: translate(-15px, 0px);
+  -o-transform: translate(-15px, 0px);
+  transform: translate(-15px, 0px);
+ 
 
 }
 
@@ -453,6 +454,9 @@ h1#page-title{
   font-style: italic;
   font-weight: 400;
   font-size:14px;
+}
+.by a{
+	text-decoration:underline;
 }
 .field-name-field-tags-blog .field-items a,
 .tag a{
@@ -681,8 +685,9 @@ Noticias: F033A3
 }
 */
 
-.field field-name-field-departamento{
+.field-name-field-departamento{
 	float:left;
+	clear:both;
 }
 
 /* BOTONES COMPARTIR */
@@ -770,9 +775,48 @@ Noticias: F033A3
 .page-blog .flex-caption .by{
 	margin: 0;
 }
+.page-blog .flexslider{
+	border: none;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+} 
+.page-blog .flex-control-nav{
+	width: 20px;
+	height: auto;
+	right: 0px;
+	top: 140px;
+	right: 15px;
+	z-index: 5;
+}
+.flex-control-paging{
 
+}
+.flex-control-paging li{
+	margin: 0px; padding: 0px; display:inline; 
+}
+.flex-control-paging li a{
+	width: 20px; height: 20px;
+	background-color:transparent;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;	
+	background-image: url(../images/bullet_des.png); margin-bottom: 3px;
+	
+}
+.flex-control-paging li a:hover,
+.flex-control-paging li a.flex-active{
+	width: 20px; height: 20px;
+	background-color:transparent;
+	background-image: url(../images/bullet_act.png);
+}
 .flexslider a{
-
 }
 
 #block-views-blog-slider-block h2{

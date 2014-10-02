@@ -51,9 +51,6 @@ stylesheets[all][] = css/responsive.css
 
 ;-------------- JS -------------
 
-
-
-
 scripts[] = js/masonry.pkgd.min.js
 scripts[] = js/global.js
 
