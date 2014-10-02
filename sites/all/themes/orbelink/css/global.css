@@ -490,6 +490,8 @@ h1#page-title{
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
+	min-height: 300px;
+	clear:both;
 
 }
 .page-blog .main .view-id-view_blog .view-content .views-row-odd{

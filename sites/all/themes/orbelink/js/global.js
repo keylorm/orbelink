@@ -15,7 +15,8 @@ jQuery(document).ready(function(){
 		var alto = jQuery(this).css('height');
 		var marginBottom = jQuery(this).css('margin-bottom');
 		var paddingBottom = jQuery(this).css('padding-bottom');
-		//jQuery(this).css({'height':alto, 'margin-bottom':marginBottom, 'padding-bottom':paddingBottom});
+		jQuery(this).css({'height':alto, 'margin-bottom':marginBottom, 'padding-bottom':paddingBottom});
+		alert(left);
 		if(left != '0px'){
 			jQuery(this).css({'left':'330px'});
 		}
