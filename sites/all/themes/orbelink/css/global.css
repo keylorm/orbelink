@@ -22,6 +22,8 @@
     font-style: italic;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
+
 
 
 html {
@@ -175,7 +177,7 @@ a:hover{
 }
 
 .main-content {
-    padding: 90px 10px 20px;
+    padding: 90px 10px 0px;
     width: 980px;
 }
 
@@ -293,21 +295,22 @@ a:hover{
 
 .page-blog .main-content .main,
 .node-type-blog .main-content .main {
-	width: 630px;
+	width: 665px;
 	float: left;
-	padding: 0;
+	padding: 0 32px 160px 0px;
+	border-right: 1px solid #808080;
 }
 
 
 .page-blog #sidebar-second,
 .node-type-blog #sidebar-second{
 	width: 295px;
-	float: right;
+	float: left;
 }
 
 
 #block-menu-menu-categorias-blog {
-    border-left: 1px solid #808080;
+    
     border-top: 1px solid #808080;
     padding-bottom: 15px;
 }
@@ -479,14 +482,17 @@ h1#page-title{
 #blog-list-content{
 	list-style: none;
 	margin: 0px; padding: 0px;
+	width:630px;
 }
 #blog-list-content li{
 	display: block;
-	float: left;
-	width: 48%;
+	width: 300px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
+
+}
+.page-blog .main .view-id-view_blog .view-content .views-row-odd{
 }
 #blog-list-content li .views-field-title,
 #blog-list-content li .views-field-nothing,
@@ -546,11 +552,6 @@ h1#page-title{
 .pest.p_7{
   background-image: url('../images/pest_noticias.png');
   background-repeat: no-repeat;
-}
-
-
-.page-blog .main .view-id-view_blog .view-content .views-row-odd{
-	margin-right: 10px;
 }
 .field-name-field-categor-a{
 	display:none;
@@ -1037,13 +1038,17 @@ Noticias: F033A3
 
 /*Post populares*/
 
-.view-display-id-block_1 .views-row{
-	width: 235px;
+#block-views-view-blog-block-1 .view-display-id-block_1 .views-row{
+	border-bottom: 1px solid #808080;
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 235px;
 }	
 
 #block-views-view-blog-block-1{
 	border-top: 1px solid #808080;
-	border-left: 1px solid #808080;
+	
 }
 
 #block-views-view-blog-block-1 h2{
@@ -1056,4 +1061,26 @@ Noticias: F033A3
     margin: 0;
     padding: 35px 0 24px 32px;
     text-transform: uppercase;
+}
+
+#block-views-view-blog-block-1 .view-display-id-block_1 .view-content{
+	padding: 40px 0 0 32px;
+}
+
+#block-views-view-blog-block-1 .view-display-id-block_1 .view-content .views-field-title a{
+	color: #4d4d4d;
+    display: block;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.node-type-blog .field-name-body p{
+	color: #58595b;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 23px;
 }
