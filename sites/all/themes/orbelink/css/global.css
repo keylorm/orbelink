@@ -462,6 +462,10 @@ h1#page-title{
 	text-decoration:underline;
 }
 
+.field-name-field-tags-blog{
+	margin-bottom: 20px;
+}
+
 .field-name-field-tags-blog .field-items a,
 .tag a{
   height: 23px;
@@ -896,12 +900,16 @@ Noticias: F033A3
 
 /* BOTONES COMPARTIR */
 
+.field-name-share-block-deta-blog{
+	clear:both;
+}
 
 .compartir {
   height: 57px;
   margin-bottom: 20px;
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+  margin-top: 20px;
 }
 .btn_compartir {
   display: block;
@@ -946,7 +954,24 @@ Noticias: F033A3
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
+.icons_redes {
+  display: block;
+  width: 260px;
+  margin-top: 13px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.titulo_compartir {
+  margin-right: 15px;
+  float: left;
+  font-family: Proximanova, sans-serif;
+  color: #58595b;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
 
 
 /*Slider Blog*/
