@@ -475,11 +475,15 @@ h1#page-title{
   line-height: 23px;	
 }
 
-.page-blog .main .view-id-view_blog .view-content .views-row{
+#blog-list-content li{
   width: 300px;
   margin-bottom: 25px;
   position:relative;
-  /*min-height: 350px;*/
+
+}
+#blog-list-content{
+	list-style: none;
+	margin: 0px; padding: 0px;
 }
 .hidden{
 	opacity: 0;
