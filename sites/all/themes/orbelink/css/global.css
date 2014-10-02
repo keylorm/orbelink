@@ -458,6 +458,7 @@ h1#page-title{
 .by a{
 	text-decoration:underline;
 }
+
 .field-name-field-tags-blog .field-items a,
 .tag a{
   height: 23px;
@@ -475,16 +476,28 @@ h1#page-title{
   line-height: 23px;	
 }
 
-#blog-list-content li{
-  width: 300px;
-  margin-bottom: 25px;
-  position:relative;
-
-}
 #blog-list-content{
 	list-style: none;
 	margin: 0px; padding: 0px;
 }
+#blog-list-content li{
+	display: block;
+	float: left;
+	width: 48%;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	background-color: #F2F2F2;
+}
+#blog-list-content li .views-field-title,
+#blog-list-content li .views-field-nothing,
+#blog-list-content li .field-name-field-tags-blog{
+	padding: 0px 20px 0px 20px;
+}
+/*#blog-list-content li:nth-child(2n+2){
+	height: 500px;
+	background-color:#F36;
+}*/
+
 .hidden{
 	opacity: 0;
 }

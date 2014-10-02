@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
 	$container.masonry({
 		itemSelector: '.views-row'
 	});	
-	jQuery('.views-row').addClass("hidden").viewportChecker({
+	jQuery('#blog-list-content .views-row').addClass("hidden").viewportChecker({
 	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
 	    offset: 90    
 	   }); 	
