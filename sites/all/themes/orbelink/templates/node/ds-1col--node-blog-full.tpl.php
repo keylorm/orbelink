@@ -11,7 +11,7 @@
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <?php dprint_r($ds_content);
+  <?php 
   print $ds_content; ?>
 </<?php print $ds_content_wrapper ?>>
 
