@@ -13,16 +13,7 @@ jQuery(document).ready(function(){
 	$container.masonry({
 		itemSelector: '.views-row'
 	});	
-	
-	jQuery(".views-row").attr('data-ix','box-post');
-
-
-	
-/*var container = document.querySelector('.view-id-view_blog .view-content');
-var msnry = new Masonry( container, {
-  // options
-  columnWidth: 200,
-  itemSelector: '.views-row'
-});	*/
+	//columnWidth: 200,
+	//jQuery(".views-row").attr('data-ix','box-post');
 
 });

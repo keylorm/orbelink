@@ -454,7 +454,7 @@ h1#page-title{
   font-weight: 400;
   font-size:14px;
 }
-/*.page-blog .main .field-name-field-tags-blog .field-items a,*/
+.field-name-field-tags-blog .field-items a,
 .tag a{
   height: 23px;
   margin-right: 10px;
@@ -475,7 +475,7 @@ h1#page-title{
   width: 300px;
   margin-bottom: 25px;
   position:relative;
-  min-height: 350px;
+
 }
 
 /* PESTAÑA DE LOS POST */
