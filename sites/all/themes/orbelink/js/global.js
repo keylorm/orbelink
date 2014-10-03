@@ -23,4 +23,6 @@ jQuery(document).ready(function(){
 	    offset: 90    
 	   });
 
+	jQuery('.subtitle-comentario a').smoothScroll();
+
 });
