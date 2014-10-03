@@ -494,25 +494,36 @@ h1#page-title{
   line-height: 23px;	
 }
 
-#blog-list-content{
+#blog-list-content,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content{
 	list-style: none;
 	margin: 0px; padding: 0px;
 	width:630px;
 }
-#blog-list-content li{
+#blog-list-content .views-row,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row{
 	display: block;
 	width: 300px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
 	clear:both;
+	overflow: hidden;
 
 }
 .page-blog .main .view-id-view_blog .view-content .views-row-odd{
 }
-#blog-list-content li .views-field-title,
-#blog-list-content li .views-field-nothing,
-#blog-list-content li .field-name-field-tags-blog{
+#blog-list-content .views-row .views-field-title,
+#blog-list-content .views-row .views-field-nothing,
+#blog-list-content .views-row .field-name-field-tags-blog,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-title,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-nothing,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-title,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-nothing,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog{
 	padding: 0px 20px 0px 20px;
 }
 /*#blog-list-content li:nth-child(2n+2){
