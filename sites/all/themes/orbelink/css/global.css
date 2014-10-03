@@ -493,6 +493,9 @@ h1#page-title{
   font-size: 12px;
   line-height: 23px;	
 }
+.node-blog .field-name-field-tags-blog .field-items a{
+	background-image: url('../images/tag-arrow_2.jpg');
+}
 
 #blog-list-content,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content,
