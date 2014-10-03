@@ -1049,7 +1049,7 @@ Noticias: F033A3
 }
 .icons_redes {
   display: block;
-  width: 260px;
+  width: 265px;
   margin-top: 13px;
   margin-right: auto;
   margin-left: auto;
@@ -1061,7 +1061,7 @@ Noticias: F033A3
   color: #58595b;
   font-size: 15px;
   line-height: 32px;
-  font-weight: 400;
+  font-weight: normal;
   margin-top: 0px;
   text-transform: uppercase;
 }
