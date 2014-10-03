@@ -683,7 +683,20 @@ h1#page-title{
   border: none;
   margin-top: 15px;
   cursor: pointer;
+  
+ /* -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  
+  background-image: url('../images/tendencias.png');
+  background-position: 0px 50%;
+  background-size: 45px 45px;
+  background-repeat: no-repeat; */ 
 }
+/*#comments #edit-submit:hover{
+	background-position: 100% 50%;
+	background-size: 400%;
+}*/
 #comments .form-required{
 	display: none;
 }
