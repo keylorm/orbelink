@@ -22,11 +22,9 @@ jQuery(document).ready(function(){
 	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
 	    offset: 90    
 	   });
-<<<<<<< HEAD
 
 	jQuery('.subtitle-comentario a').smoothScroll();
 
-=======
 	alert(jQuery(".main #blog-list-content").css('height'));
 	
 	//jQuery("#blog-list-content .views-row").css({'display':'none'});
@@ -39,5 +37,5 @@ jQuery(document).ready(function(){
 	}
 	
 	});
->>>>>>> 818585ef8c07d4d94d2887044c3f972d38710b4d
+
 });
