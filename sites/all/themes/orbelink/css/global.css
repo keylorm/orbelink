@@ -1,27 +1,24 @@
 @font-face {
-    font-family: 'ProximaNova';
-    src: url('../fonts/proximanova-regular.eot');
-    
-    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-    	url('../fonts/proximanova-regular.woff') format('woff'), 
-    	url('../fonts/proximanova-regular.ttf') format('truetype'),
-    	url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
-    font-weight: normal;
-}
-
-@font-face {
 	font-family: 'Baskerville';
-    src: url('../fonts/baskerville-italic.eot');/* Para Internet Explorer */
-    
     src: url('../fonts/baskerville-italic.eot?#iefix') format('embedded-opentype'),
     	url('../fonts/baskerville-italic.woff') format('woff'), 
     	url('../fonts/baskerville-italic.ttf') format('truetype'),
     	url('../fonts/baskerville-italic.svg#Baskerville') format('svg');
+		src: url('../fonts/baskerville-italic.eot');/* Para Internet Explorer */
     font-weight: normal;
-    
+    font-style: normal;
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/proximanova-regular.woff') format('woff'), 
+    	url('../fonts/proximanova-regular.ttf') format('truetype'),
+    	url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
+		src: url('../fonts/proximanova-regular.eot');
+    font-weight: normal;
+	font-style: normal;
+}
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
 
 
@@ -348,7 +345,7 @@ a:hover{
 
 #block-menu-menu-categorias-blog ul.menu li a{
 	display: block;
-  width: 86%;
+  width: 200px;
   height: 45px;
   padding-left: 60px;
   -webkit-transition: all 500ms ease;
@@ -1115,16 +1112,33 @@ Noticias: F033A3
 .node-blog .flex-control-nav{
 	width: 20px;
 	height: auto;
-	/*top: 140px;*/
 	right: 15px;
 	z-index: 5;
 }
-.node-blog .flex-control-nav{
-	/*top: 182px;
-	height: 50px;*/
+.more_post {
+  clear: both;
+  border-top: 1px solid #ccc;
+  margin-top: 50px;
 }
-.flex-control-paging{
-
+.icon_more_post {
+  display: block;
+  width: 90px;
+  height: 70px;
+  margin-top: -37px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url('../images/more_post.jpg') !important;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.icon_more_post:hover {
+  -webkit-transform: translate(0px, 10px);
+  -ms-transform: translate(0px, 10px);
+  -o-transform: translate(0px, 10px);
+  transform: translate(0px, 10px);
 }
 .flex-control-paging li{
 	margin: 0px; padding: 0px; display:inline; 
@@ -1144,8 +1158,6 @@ Noticias: F033A3
 	width: 20px; height: 20px;
 	background-color:transparent;
 	background-image: url(../images/bullet_act.png);
-}
-.flexslider a{
 }
 
 #block-views-blog-slider-block h2{
