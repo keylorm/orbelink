@@ -8,39 +8,29 @@ jQuery(document).ready(function(){
 	jQuery('#boton-cerrar-menu').click(function(){
 		jQuery('.menu-desplegable').slideUp();
 	});
-	
-	var $container = jQuery('#blog-list-content');
-	$container.masonry({
-		columnWidth: 315,
-		itemSelector: '.views-row',
-		isFitWidth: true
-	});
-	// data: ajax_data,
-/*jQuery.ajax({
-    type: "POST",
-    url: 'http://localhost/orbelink/blog?page=1',
-    cache: false,
-    success: function (html) {
-        if (html.length > 0) {
-            var el = jQuery(html);
-			var post = jQuery(html).find("#blog-list-content").html();
-			var rows = jQuery( html ).filter('div.views-row');
-            $container.append(post).masonry( 'appended', post);		
-			
-        }
-    }
-});	*/
+
+	/*jQuery.ajax({
+		type: "POST",
+		url: 'http://localhost/orbelink/blog?page=1',
+		cache: false,
+		success: function (html) {
+			if (html.length > 0) {
+				var el = jQuery(html);
+				var post = jQuery(html).find("#blog-list-content").html();
+				var rows = jQuery( html ).filter('div.views-row');
+				$container.append(post).masonry( 'appended', post);		
+				
+			}
+		}
+	});	*/
 	
 	jQuery('#blog-list-content .views-row').each(function(indice, elemento) {
-		var left = jQuery(this).css('left');
 		//var alto = jQuery(this).css('height');
 		//var marginBottom = jQuery(this).css('margin-bottom');
 		//var paddingBottom = jQuery(this).css('padding-bottom');
 		//jQuery(this).css({'height':alto, 'margin-bottom':marginBottom, 'padding-bottom':paddingBottom});
 		//alert(left);
-		if(left != '0px'){
-			jQuery(this).css({'left':'330px'});
-		}
+		
 	  //console.log('El elemento con el índice '+indice+' contiene '+jQuery(elemento).text());
 	});	
 	
