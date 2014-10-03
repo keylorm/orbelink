@@ -27,7 +27,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?>">
+<div class="<?php print $classes; ?> view-content" id="blog-list-content">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
@@ -52,9 +52,9 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content">
+  <!--  <ul class="view-content" id="blog-list-content"> -->
       <?php print $rows; ?>
-    </div>
+  <!--  </ul> -->
   <?php elseif ($empty): ?>
     <div class="view-empty">
       <?php print $empty; ?>
