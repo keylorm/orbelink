@@ -12,8 +12,24 @@ jQuery(document).ready(function(){
 	var $container = jQuery('#blog-list-content');
 	$container.masonry({
 		columnWidth: 315,
-		itemSelector: '.views-row'
+		itemSelector: '.views-row',
+		isFitWidth: true
 	});
+	// data: ajax_data,
+/*jQuery.ajax({
+    type: "POST",
+    url: 'http://localhost/orbelink/blog?page=1',
+    cache: false,
+    success: function (html) {
+        if (html.length > 0) {
+            var el = jQuery(html);
+			var post = jQuery(html).find("#blog-list-content").html();
+			var rows = jQuery( html ).filter('div.views-row');
+            $container.append(post).masonry( 'appended', post);		
+			
+        }
+    }
+});	*/
 	
 	jQuery('#blog-list-content .views-row').each(function(indice, elemento) {
 		var left = jQuery(this).css('left');
