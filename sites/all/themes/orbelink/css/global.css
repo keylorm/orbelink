@@ -504,7 +504,8 @@ h1#page-title{
 
 #blog-list-content,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content,
-.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content{
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content{
 	list-style: none;
 	margin: 0px; padding: 0px;
 	width:630px;
@@ -513,7 +514,8 @@ h1#page-title{
 
 #blog-list-content .views-row,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
-.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row{
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row{
 	display: block;
 	width: 300px;
 	margin-bottom: 20px;
@@ -526,7 +528,8 @@ h1#page-title{
 
 #blog-list-content .views-row .imagen img,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img,
-.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img{
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img{
 	width:100%;
 }
 
@@ -541,7 +544,10 @@ h1#page-title{
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-title,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-nothing,
-.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog{
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-title,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-nothing,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog{
 	padding: 0px 20px 0px 20px;
 }
 /*#blog-list-content li:nth-child(2n+2){
