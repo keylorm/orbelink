@@ -9,22 +9,21 @@ jQuery(document).ready(function(){
 		jQuery('.menu-desplegable').slideUp();
 	});
 	
-	var $container = jQuery('#blog-list-content');
+	/*var $container = jQuery('#blog-list-content');
 	$container.masonry({
-		columnWidth: 315,
-		itemSelector: '.views-row'
-	});
+		itemSelector: '.views-row',
+		columnWidth: 300,
+		gutter: 30
+		
+	});*/
 	
 	jQuery('#blog-list-content .views-row').each(function(indice, elemento) {
-		var left = jQuery(this).css('left');
 		//var alto = jQuery(this).css('height');
 		//var marginBottom = jQuery(this).css('margin-bottom');
 		//var paddingBottom = jQuery(this).css('padding-bottom');
 		//jQuery(this).css({'height':alto, 'margin-bottom':marginBottom, 'padding-bottom':paddingBottom});
 		//alert(left);
-		if(left != '0px'){
-			jQuery(this).css({'left':'330px'});
-		}
+		
 	  //console.log('El elemento con el índice '+indice+' contiene '+jQuery(elemento).text());
 	});	
 	

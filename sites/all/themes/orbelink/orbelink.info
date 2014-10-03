@@ -53,7 +53,7 @@ stylesheets[all][] = css/animate.css
 ;-------------- JS -------------
 
 scripts[] = js/viewportchecker.js
-scripts[] = js/masonry.pkgd.min.js
+; scripts[] = js/masonry.pkgd.min.js
 scripts[] = js/global.js
 
 

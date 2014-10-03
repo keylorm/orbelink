@@ -297,19 +297,22 @@ a:hover{
 .page-blog .main-content .main,
 .node-type-blog .main-content .main,
 .vocabulary-categorias_de_blog .main-content .main,
-.vocabulary-departamento  .main-content .main {
+.vocabulary-departamento  .main-content .main,
+.vocabulary-tags  .main-content .main {
 	width: 665px;
 	float: left;
 	padding: 0 32px 160px 0px;
 	border-right: 1px solid #808080;
 	min-height: 1600px;
+	overflow: hidden;
 }
 
 
 .page-blog #sidebar-second,
 .node-type-blog #sidebar-second,
 .vocabulary-categorias_de_blog #sidebar-second,
-.vocabulary-departamento  #sidebar-second{
+.vocabulary-departamento  #sidebar-second,
+.vocabulary-tags  #sidebar-second{
 	width: 295px;
 	float: left;
 }
