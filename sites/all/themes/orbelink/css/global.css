@@ -1044,21 +1044,18 @@ Noticias: F033A3
 	box-shadow: none;
 	margin: 0px 0px 32px;
 } 
-.page-blog .flexslider{
-	
-}
+
 .page-blog .flex-control-nav,
 .node-blog .flex-control-nav{
 	width: 20px;
 	height: auto;
-	right: 0px;
-	top: 140px;
+	/*top: 140px;*/
 	right: 15px;
 	z-index: 5;
 }
 .node-blog .flex-control-nav{
-	top: 182px;
-	height: 50px;
+	/*top: 182px;
+	height: 50px;*/
 }
 .flex-control-paging{
 
@@ -1073,7 +1070,7 @@ Noticias: F033A3
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;	
-	background-image: url(../images/bullet_des.png); margin-bottom: 3px;
+	background-image: url(../images/bullet_des.png); margin-bottom: 2px;
 	
 }
 .flex-control-paging li a:hover,

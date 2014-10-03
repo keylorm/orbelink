@@ -28,8 +28,13 @@ jQuery(document).ready(function(){
 	  //console.log('El elemento con el índice '+indice+' contiene '+jQuery(elemento).text());
 	});	
 	
-
 	
+	var cantidad_li = 0;
+	jQuery('.flex-control-nav li').each(function(indice, elemento) {
+		cantidad_li = cantidad_li + 1;
+	});
+	var result = 196 - ((cantidad_li - 1) * 11);
+	jQuery('.flex-control-nav').css({'top':result});
 	
 	jQuery('#blog-list-content .views-row').addClass("hidden").viewportChecker({
 	    classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
