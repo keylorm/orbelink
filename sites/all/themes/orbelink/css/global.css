@@ -510,6 +510,7 @@ h1#page-title{
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
 	clear:both;
+	overflow: hidden;
 
 }
 .page-blog .main .view-id-view_blog .view-content .views-row-odd{
