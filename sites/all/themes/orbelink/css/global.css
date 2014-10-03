@@ -499,7 +499,7 @@ h1#page-title{
 	margin: 0px; padding: 0px;
 	width:630px;
 }
-#blog-list-content li{
+#blog-list-content .views-row{
 	display: block;
 	width: 300px;
 	margin-bottom: 20px;
@@ -510,9 +510,9 @@ h1#page-title{
 }
 .page-blog .main .view-id-view_blog .view-content .views-row-odd{
 }
-#blog-list-content li .views-field-title,
-#blog-list-content li .views-field-nothing,
-#blog-list-content li .field-name-field-tags-blog{
+#blog-list-content .views-row .views-field-title,
+#blog-list-content .views-row .views-field-nothing,
+#blog-list-content .views-row .field-name-field-tags-blog{
 	padding: 0px 20px 0px 20px;
 }
 /*#blog-list-content li:nth-child(2n+2){
