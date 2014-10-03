@@ -555,6 +555,17 @@ h1#page-title{
 	background-color:#F36;
 }*/
 
+
+.vocabulary-tags .icon_categoria{
+	display: none;
+
+}
+
+.vocabulary-tags .titulo_detalle_blog h1{
+	text-transform: uppercase;
+}
+
+
 .hidden{
 	opacity: 0;
 }
