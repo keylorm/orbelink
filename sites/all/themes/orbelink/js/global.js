@@ -28,7 +28,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.subtitle-comentario a').smoothScroll();
 
-	alert(jQuery(".main #blog-list-content").css('height'));
+	//alert(jQuery(".main #blog-list-content").css('height'));
 	
 	jQuery("#blog-list-content .views-row").css({'display':'none'});
 	var ordenId = 1;
