@@ -179,6 +179,7 @@ a:hover{
 .main-content {
     padding: 90px 10px 0px;
     width: 980px;
+    overflow: visible;
 }
 
 .footer{
@@ -504,6 +505,8 @@ h1#page-title{
 	margin: 0px; padding: 0px;
 	width:630px;
 }
+
+
 #blog-list-content .views-row,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row{
@@ -516,6 +519,14 @@ h1#page-title{
 	overflow: hidden;
 
 }
+
+#blog-list-content .views-row .imagen img,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img{
+	width:100%;
+}
+
+
 .page-blog .main .view-id-view_blog .view-content .views-row-odd{
 }
 #blog-list-content .views-row .views-field-title,
@@ -716,55 +727,74 @@ h1#page-title{
 /* COLOR */
 
 .taxonomy-gente-orbelink .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-gente-orbelink .titulo_detalle_blog h1{
+.taxonomy-gente-orbelink .titulo_detalle_blog h1,
+.page-taxonomy-term-1 .titulo_detalle_blog h1{
 	color: #00a69c;
 }
 .taxonomy-casos-de-exito-orbelink .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-casos-de-exito-orbelink .titulo_detalle_blog h1{
+.taxonomy-casos-de-exito-orbelink .titulo_detalle_blog h1,
+.page-taxonomy-term-2 .titulo_detalle_blog h1{
 	color: #FBB03B;
 }
 .taxonomy-editorial .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-editorial .titulo_detalle_blog h1{
+.taxonomy-editorial .titulo_detalle_blog h1,
+.page-taxonomy-term-3 .titulo_detalle_blog h1{
 	color: #AF4CA0;
 }
 .taxonomy-casos-de-exito-en-el-mundo .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-casos-de-exito-en-el-mundo .titulo_detalle_blog h1{
+.taxonomy-casos-de-exito-en-el-mundo .titulo_detalle_blog h1,
+.page-taxonomy-term-4 .titulo_detalle_blog h1{
 	color: #E8442E;
 }
 .taxonomy-tendencias .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-tendencias .titulo_detalle_blog h1{
+.taxonomy-tendencias .titulo_detalle_blog h1,
+.page-taxonomy-term-5 .titulo_detalle_blog h1{
 	color: #B5D563;
 }
 .taxonomy-investigaciones .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-investigaciones .titulo_detalle_blog h1{
+.taxonomy-investigaciones .titulo_detalle_blog h1,
+.page-taxonomy-term-6 .titulo_detalle_blog h1{
 	color: #29ABE2;
 }
 .taxonomy-noticias-del-mundo .field-name-field-departamento .ds-2col > .group-right .link_autor,
-.taxonomy-noticias-del-mundo .titulo_detalle_blog h1{
+.taxonomy-noticias-del-mundo .titulo_detalle_blog h1,
+.page-taxonomy-term-7 .titulo_detalle_blog h1{
 	color: #F033A3;
+}
+
+.vocabulary-categorias_de_blog .titulo_detalle_blog h1,
+.vocabulary-departamento .titulo_detalle_blog h1{
+	margin-top: 10px;
 }
 
 /* ICON */
 
-.taxonomy-gente-orbelink .icon_c{
+.taxonomy-gente-orbelink .icon_c,
+.page-taxonomy-term-1 .icon_c{
 	background-image: url('../images/gente-orbelink.png');
 }
-.taxonomy-casos-de-exito-orbelink .icon_c{
+.taxonomy-casos-de-exito-orbelink .icon_c,
+.page-taxonomy-term-2 .icon_c{
 	background-image: url('../images/casodexitos-orbelink.png');
 }
-.taxonomy-editorial .icon_c{
+.taxonomy-editorial .icon_c,
+.page-taxonomy-term-3 .icon_c{
 	background-image: url('../images/editorial.png');
 }
-.taxonomy-casos-de-exito-en-el-mundo .icon_c{
+.taxonomy-casos-de-exito-en-el-mundo .icon_c,
+.page-taxonomy-term-4 .icon_c{
 	background-image: url('../images/casodexitos-mundo.png');
 }
-.taxonomy-tendencias .icon_c{
+.taxonomy-tendencias .icon_c,
+.page-taxonomy-term-5 .icon_c{
 	background-image: url('../images/tendencias.png');
 }
-.taxonomy-investigaciones .icon_c{
+.taxonomy-investigaciones .icon_c,
+.page-taxonomy-term-6 .icon_c{
 	background-image: url('../images/investigaciones.png');
 }
-.taxonomy-noticias-del-mundo .icon_c{
+.taxonomy-noticias-del-mundo .icon_c,
+.page-taxonomy-term-7 .icon_c{
 	background-image: url('../images/noticias.png');
 }
 
@@ -806,6 +836,7 @@ Noticias: F033A3
   padding-top: 12px;
   background-color: #f1f2f2;
   margin-bottom: 25px;
+  min-height: 72px;
 }
 .titulo_detalle_blog h1{
   font-family: "ProximaNova", sans-serif;
@@ -814,6 +845,7 @@ Noticias: F033A3
   font-weight: 600;
   font-style:normal;
   margin: 0px; padding: 0px;
+  color: #00a69c;
 }
 .info_autor_detalle_blog {
   font-family:'Open Sans', sans-serif;
@@ -1189,4 +1221,8 @@ Noticias: F033A3
     font-weight: 400;
     line-height: 24px;
     text-decoration: none;
+}
+
+.vocabulary-departamento .icon_categoria{
+	display: none;
 }
