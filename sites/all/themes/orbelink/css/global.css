@@ -23,6 +23,25 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
 
 
+#comments{
+	clear: both;
+}
+
+#comments h2.title{
+	font-family: "ProximaNova", sans-serif;
+	font-size: 35px;
+	font-weight: 600;
+	color: #6D6E71;	
+}
+
+#comments h2.title em.subtitle-comentario{
+	font-family: "Baskerville", sans-serif;
+	font-size: 42px;
+	font-weight: 400;
+	font-style: italic;
+}
+
+
 
 html {
 	border-top: none !important; 
@@ -760,42 +779,57 @@ h1#page-title{
 
 .taxonomy-gente-orbelink .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-gente-orbelink .titulo_detalle_blog h1,
-.page-taxonomy-term-1 .titulo_detalle_blog h1{
+.page-taxonomy-term-1 .titulo_detalle_blog h1,
+.taxonomy-gente-orbelink #comments h2.title em.subtitle-comentario,
+.taxonomy-gente-orbelink #comments h2.title em.subtitle-comentario a{
 	color: #00a69c;
 }
 .taxonomy-casos-de-exito-orbelink .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-casos-de-exito-orbelink .titulo_detalle_blog h1,
-.page-taxonomy-term-2 .titulo_detalle_blog h1{
+.page-taxonomy-term-2 .titulo_detalle_blog h1,
+.taxonomy-casos-de-exito-orbelink #comments h2.title em.subtitle-comentario,
+.taxonomy-casos-de-exito-orbelink #comments h2.title em.subtitle-comentario a{
 	color: #FBB03B;
 }
 .taxonomy-editorial .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-editorial .titulo_detalle_blog h1,
-.page-taxonomy-term-3 .titulo_detalle_blog h1{
+.page-taxonomy-term-3 .titulo_detalle_blog h1,
+.taxonomy-editorial #comments h2.title em.subtitle-comentario,
+.taxonomy-editorial #comments h2.title em.subtitle-comentario a{
 	color: #AF4CA0;
 }
 .taxonomy-casos-de-exito-en-el-mundo .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-casos-de-exito-en-el-mundo .titulo_detalle_blog h1,
-.page-taxonomy-term-4 .titulo_detalle_blog h1{
+.page-taxonomy-term-4 .titulo_detalle_blog h1,
+.taxonomy-casos-de-exito-en-el-mundo #comments h2.title em.subtitle-comentario,
+.taxonomy-casos-de-exito-en-el-mundo #comments h2.title em.subtitle-comentario a{
 	color: #E8442E;
 }
 .taxonomy-tendencias .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-tendencias .titulo_detalle_blog h1,
-.page-taxonomy-term-5 .titulo_detalle_blog h1{
+.page-taxonomy-term-5 .titulo_detalle_blog h1,
+.taxonomy-tendencias #comments h2.title em.subtitle-comentario,
+.taxonomy-tendencias #comments h2.title em.subtitle-comentario a{
 	color: #B5D563;
 }
 .taxonomy-investigaciones .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-investigaciones .titulo_detalle_blog h1,
-.page-taxonomy-term-6 .titulo_detalle_blog h1{
+.page-taxonomy-term-6 .titulo_detalle_blog h1,
+.taxonomy-investigaciones #comments h2.title em.subtitle-comentario,
+.taxonomy-investigaciones #comments h2.title em.subtitle-comentario a{
 	color: #29ABE2;
 }
 .taxonomy-noticias-del-mundo .field-name-field-departamento .ds-2col > .group-right .link_autor,
 .taxonomy-noticias-del-mundo .titulo_detalle_blog h1,
-.page-taxonomy-term-7 .titulo_detalle_blog h1{
+.page-taxonomy-term-7 .titulo_detalle_blog h1,
+.taxonomy-noticias-del-mundo #comments h2.title em.subtitle-comentario,
+.taxonomy-noticias-del-mundo #comments h2.title em.subtitle-comentario a{
 	color: #F033A3;
 }
 
 .vocabulary-categorias_de_blog .titulo_detalle_blog h1,
-.vocabulary-departamento .titulo_detalle_blog h1{
+.vocabulary-departamento .titulo_detalle_blog h1,
+.vocabulary-tags .titulo_detalle_blog h1{
 	margin-top: 10px;
 }
 
@@ -1064,7 +1098,9 @@ Noticias: F033A3
   text-transform: uppercase;
 }
 
-
+#ancla-formulario-comentario {
+    height: 90px;
+}
 /*Slider Blog*/
 
 .page-blog .flex-caption {
