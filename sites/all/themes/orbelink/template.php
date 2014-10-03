@@ -141,6 +141,11 @@ function orbelink_preprocess_html(&$variables) {
            $variables['classes_array'][] = "taxonomy-".replace_specials_characters(strtolower(drupal_clean_css_identifier($item->name)));
         }
     }
+
+    if (arg(0) == 'taxonomy' && arg(1) == 'term') {
+    $term = taxonomy_term_load(arg(2));
+    $variables['classes_array'][] = 'vocabulary-' . strtolower($term->vocabulary_machine_name);
+  }
 }
 
 /**

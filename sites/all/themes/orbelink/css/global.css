@@ -294,16 +294,21 @@ a:hover{
 /*Listado Blog*/
 
 .page-blog .main-content .main,
-.node-type-blog .main-content .main {
+.node-type-blog .main-content .main,
+.vocabulary-categorias_de_blog .main-content .main,
+.vocabulary-departamento  .main-content .main {
 	width: 665px;
 	float: left;
 	padding: 0 32px 160px 0px;
 	border-right: 1px solid #808080;
+	min-height: 1600px;
 }
 
 
 .page-blog #sidebar-second,
-.node-type-blog #sidebar-second{
+.node-type-blog #sidebar-second,
+.vocabulary-categorias_de_blog #sidebar-second,
+.vocabulary-departamento  #sidebar-second{
 	width: 295px;
 	float: left;
 }
@@ -441,10 +446,14 @@ h1#page-title{
   font-size: 70px;
 }
 
-.page-blog .main .views-field-title{
+.page-blog .main .views-field-title,
+.vocabulary-departamento .views-field-title,
+.vocabulary-categorias_de_blog .views-field-title{
 	  line-height: 22px;
 }
-.page-blog .main .views-field-title a{
+.page-blog .main .views-field-title a,
+.vocabulary-departamento .views-field-title a,
+.vocabulary-categorias_de_blog .views-field-title a{
   font-family: "ProximaNova", sans-serif;
   color: #4d4d4d;
   font-size: 22px;
@@ -823,7 +832,7 @@ Noticias: F033A3
 
 /* AUTOR */
 
-.field-name-field-departamento{
+.node-type-blog .field-name-field-departamento{
 	float:left;
 	clear:both;
   margin-bottom: 30px;
