@@ -1097,7 +1097,9 @@ Noticias: F033A3
   text-transform: uppercase;
 }
 
-
+#ancla-formulario-comentario {
+    height: 90px;
+}
 /*Slider Blog*/
 
 .page-blog .flex-caption {
