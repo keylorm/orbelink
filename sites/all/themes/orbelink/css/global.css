@@ -527,7 +527,14 @@ h1#page-title{
 	margin: 0px; padding: 0px;
 	width:630px;
 }
-
+.page-blog .main #blog-list-content{
+	/*height:none !important;*/
+	position: relative;
+	width: 630px;
+	float:left;
+	clear:both;	
+	margin-bottom: 50px;
+}
 
 #blog-list-content .views-row,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
@@ -1155,7 +1162,6 @@ Noticias: F033A3
 .more_post {
   clear: both;
   border-top: 1px solid #ccc;
-  margin-top: 50px;
 }
 .icon_more_post {
   display: block;
