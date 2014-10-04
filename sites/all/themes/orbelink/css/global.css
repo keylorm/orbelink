@@ -1108,6 +1108,10 @@ Noticias: F033A3
 #ancla-formulario-comentario {
     height: 90px;
 }
+
+#titulo-comentarios a{
+  text-decoration: underline;
+}
 /*Slider Blog*/
 
 .page-blog .flex-caption {
