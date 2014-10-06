@@ -1,27 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
 @font-face {
     font-family: 'ProximaNova';
-	src: url('../fonts/proximanova-regular.eot');
-	
-    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-    	url('../fonts/proximanova-regular.woff') format('woff'), 
-    	url('../fonts/proximanova-regular.ttf') format('truetype'),
-    	url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
+	src: url('../fonts/Proximanova-Regular.eot');
+    src: url('../fonts/Proximanova-Regular.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/Proximanova-Regular.woff') format('woff'), 
+    	url('../fonts/Proximanova-Regular.ttf') format('truetype'),
+    	url('../fonts/Proximanova-Regular.svg#ProximaNova') format('svg');
     font-weight: normal;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Baskerville';
-	src: url('../fonts/baskerville-italic.eot');/* Para Internet Explorer */
-	
-    src: url('../fonts/baskerville-italic.eot?#iefix') format('embedded-opentype'),
-    	url('../fonts/baskerville-italic.woff') format('woff'), 
-    	url('../fonts/baskerville-italic.ttf') format('truetype'),
-    	url('../fonts/baskerville-italic.svg#Baskerville') format('svg');
+	src: url('../fonts/Baskerville-Italic.eot');/* Para Internet Explorer */
+    src: url('../fonts/Baskerville-Italic.eot?#iefix') format('embedded-opentype'),
+    	url('../fonts/Baskerville-Italic.woff') format('woff'), 
+    	url('../fonts/Baskerville-Italic.ttf') format('truetype'),
+    	url('../fonts/Baskerville-Italic.svg#Baskerville') format('svg');
     font-weight: normal;
     font-style: italic;
 }
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
-
 
 #comments{
 	clear: both;
@@ -82,7 +79,7 @@ a:hover{
 
 #block-system-main-menu ul.menu{
 	text-align: center;
-	clear: both;
+	/*clear: both;*/
     margin-top: 85px;
 	
 }
@@ -106,7 +103,7 @@ a:hover{
 	font-size: 20px;
 	color: #fff;
 	font-weight: 400;
-	font-family: "ProximaNova";	
+	font-family: "ProximaNova", sans-serif;	
 	transition: all 0.3s ease 0s;
 	-webkit-transition-property: all;
     -webkit-transition-duration: 0.3s;
@@ -218,7 +215,7 @@ a:hover{
 	font-size: 20px;
 	color: #fff;
 	font-weight: 400;
-	font-family: "ProximaNova";	
+	font-family: "ProximaNova", sans-serif;	
 	
 }
 
@@ -235,7 +232,7 @@ a:hover{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 400;
-	font-family: "ProximaNova";	
+	font-family: "ProximaNova", sans-serif;	
 	transition: all 0.2s ease 0s;
 	-webkit-transition-property: all;
     -webkit-transition-duration: 0.2s;
@@ -248,7 +245,7 @@ a:hover{
 	font-size: 15px;
 	color: #fff;
 	font-weight: 400;
-	font-family: "ProximaNova";	
+	font-family: "ProximaNova", sans-serif;	
 } 
 .footer .footer-box .block-block p{
 	margin-bottom: 10px;
@@ -344,7 +341,7 @@ a:hover{
 #block-menu-menu-categorias-blog h3 {
     border-bottom: 1px solid #808080;
     color: #1a1a1a;
-    font-family: "ProximaNova";
+    font-family: "ProximaNova", sans-serif;
     font-size: 28px;
     font-style: normal;
     margin: 0;
@@ -527,7 +524,7 @@ h1#page-title{
 	margin: 0px; padding: 0px;
 	width:630px;
 }
-.page-blog .main #blog-list-content{
+#blog-list-content{ /*.page-blog .main*/
 	/*height:none !important;*/
 	position: relative;
 	width: 630px;
@@ -1134,7 +1131,7 @@ Noticias: F033A3
 .page-blog .flex-caption h3 a,
 .page-blog .flex-caption h3{
 	margin: 0;
-	font-family: "ProximaNova";
+	font-family: "ProximaNova", sans-serif;
 	font-size: 22px;
 	color: #1A1A1A;
 	font-weight: 400;
@@ -1233,7 +1230,7 @@ Noticias: F033A3
 	border-bottom: 1px solid #808080;
     color: #1a1a1a;
     display: block;
-    font-family: "ProximaNova",sans-serif;
+    font-family: "ProximaNova", sans-serif;
     font-size: 28px;
     font-style: normal;
     margin: 0;
