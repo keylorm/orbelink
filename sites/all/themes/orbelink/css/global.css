@@ -719,7 +719,7 @@ h1#page-title{
   margin-top: 15px;
 }
 
-#comments #edit-submit{
+#comments .form-submit{
   padding: 13px 20px;
   float: left;
   border-radius: 5px;
@@ -759,27 +759,27 @@ h1#page-title{
 .taxonomy-gente-orbelink .btn_compartir{
 	background-color: #00a69c;
 }
-.taxonomy-casos-de-exito-orbelink #comments #edit-submit,
+.taxonomy-casos-de-exito-orbelink #comments .form-submit,
 .taxonomy-casos-de-exito-orbelink .btn_compartir{
 	background-color: #FBB03B;
 }
-.taxonomy-editorial #comments #edit-submit,
+.taxonomy-editorial #comments .form-submit,
 .taxonomy-editorial .btn_compartir{
 	background-color: #AF4CA0;
 }
-.taxonomy-casos-de-exito-en-el-mundo #comments #edit-submit,
+.taxonomy-casos-de-exito-en-el-mundo #comments .form-submit,
 .taxonomy-casos-de-exito-en-el-mundo .btn_compartir{
 	background-color: #E8442E;
 }
-.taxonomy-tendencias #comments #edit-submit,
+.taxonomy-tendencias #comments .form-submit,
 .taxonomy-tendencias .btn_compartir{
 	background-color: #B5D563;
 }
-.taxonomy-investigaciones #comments #edit-submit,
+.taxonomy-investigaciones #comments .form-submit,
 .taxonomy-investigaciones .btn_compartir{
 	background-color: #29ABE2;
 }
-.taxonomy-noticias-del-mundo #comments #edit-submit,
+.taxonomy-noticias-del-mundo #comments .form-submit,
 .taxonomy-noticias-del-mundo .btn_compartir{
 	background-color: #F033A3;
 }
