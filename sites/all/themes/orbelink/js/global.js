@@ -58,7 +58,7 @@ jQuery(document).ready(function(){
 	
 	});
 	
-	setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
+	//setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
 	
 	<!--Valida el formulario de comentarios-->
 	jQuery('#comment-form').on('submit', function(e){

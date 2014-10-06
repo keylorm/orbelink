@@ -76,5 +76,13 @@
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $page_bottom; ?>
+
+  <!-- scripts: esperar a que carge la pagina para agregar una funcion de clic -->
+  <script type="text/javascript">
+    jQuery(window).load(function(){
+      jQuery(".icon_more_post").click();
+    });
+  </script>
+
 </body>
 </html>
