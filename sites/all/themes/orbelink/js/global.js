@@ -42,7 +42,6 @@ jQuery(document).ready(function(){
 		}else{
 			ld = ld + a;
 		}
-		
 		if(li>ld){
 			jQuery("#blog-list-content").animate({'height':(li)+'px'});	
 		}else{
