@@ -20,7 +20,7 @@ jQuery(document).ready(function(){
 	   
 	jQuery('.subtitle-comentario a').smoothScroll();
 
-	jQuery("#blog-list-content .views-row").addClass("hidden");
+	jQuery("#blog-list-content .views-row").addClass("hidden").css({'display':'none'});
 	
 	var ordenid = 1;
 	var cantv = 3;	
@@ -32,7 +32,9 @@ jQuery(document).ready(function(){
 	var c = ordenid + cantv;
 	
 	for(i=ordenid;i<=c;i++){
+		
 		var div = jQuery(".views-row-"+i);
+		div.css({'display':'block'});
 		
 		var a = div.outerHeight(true);
 		var l = div.position();
@@ -48,7 +50,7 @@ jQuery(document).ready(function(){
 			jQuery("#blog-list-content").animate({'height':(ld)+'px'});
 		}
 		
-		jQuery("#blog-list-content .views-row-"+i).viewportChecker({
+		jQuery("#blog-list-content .views-row-"+i).css({'display':'block'}).viewportChecker({
 	    	classToAdd: 'visible animated bounceInUp',
 	    	offset: 300    
 	   });		
