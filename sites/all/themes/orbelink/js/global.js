@@ -20,51 +20,45 @@ jQuery(document).ready(function(){
 	   
 	jQuery('.subtitle-comentario a').smoothScroll();
 
-	jQuery("#blog-list-content .views-row").addClass("hidden").viewportChecker({
-	    	classToAdd: 'visible animated bounceInUp',
-	    	offset: 90    
-	   });	
-
-	/*jQuery("#blog-list-content .views-row").addClass("hidden");
+	jQuery("#blog-list-content .views-row").addClass("hidden");
+	
 	var ordenid = 1;
-	var cantv = 3;
-	
-	//alert(jQuery(".main #blog-list-content").css('height'));
-	
-	jQuery("#blog-list-content .views-row").css({'display':'none'});
+	var cantv = 3;	
 	var ordenId = 1;
+	var li = 0;
+	var ld = 0;
 	
 	jQuery(".icon_more_post").click(function(){
 	var c = ordenid + cantv;
+	
 	for(i=ordenid;i<=c;i++){
 		var div = jQuery(".views-row-"+i);
 		
 		var a = div.outerHeight(true);
 		var l = div.position();
-		var li = 0;
-		var ld = 0;
-		if(l=='0'){
-			li = l.left + a;
+
+		if(l.left=='0'){
+			li = li + a;
 		}else{
-			ld = l.left + a;
+			ld = ld + a;
 		}
-		alert(li);
 		
 		if(li>ld){
-			jQuery("#blog-list-content").css({'height':(li+100)+'px'});	//alert((li+100)+'px');
+			jQuery("#blog-list-content").animate({'height':(li)+'px'});	
 		}else{
-			jQuery("#blog-list-content").css({'height':(ld+100)+'px'});//	alert((ld+100)+'px');
+			jQuery("#blog-list-content").animate({'height':(ld)+'px'});
 		}
 		
-		
 		jQuery("#blog-list-content .views-row-"+i).viewportChecker({
-	    	classToAdd: 'visible animated bounceInUp', // Class to add to the elements when they are visible
-	    	offset: 90    
+	    	classToAdd: 'visible animated bounceInUp',
+	    	offset: 300    
 	   });		
 	   ordenid = ordenid + 1;
 	}
 	
-	});*/
+	});
+	
+	setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
 	
 
 });
