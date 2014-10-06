@@ -2,7 +2,7 @@
 <div id="comments" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <?php if ($content['comments'] && $node->type != 'forum'): ?>
 <?php print render($title_prefix); ?>
-<h2 id="titulo-comentarios"  class="title"><?php print $node->comment_count.' '.t('Comments'); ?></h2>
+<h2 id="titulo-comentarios"  class="title"><?php print $node->comment_count.' '.t('Comments'); ?><em class="subtitle-comentario"><a href="#ancla-formulario-comentario"><?php print " agrege el suyo"; ?></a></em></h2>
 <?php print render($title_suffix); ?>
 <?php endif; ?>
 <?php print render($content['comments']); ?>
