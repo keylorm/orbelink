@@ -79,8 +79,9 @@
 
   <!-- scripts: esperar a que carge la pagina para agregar una funcion de clic -->
   <script type="text/javascript">
-    jQuery(window).load(function(){
-      jQuery(".icon_more_post").click();
+    jQuery(document).ready(function(){
+      setTimeout(function (){ jQuery(".icon_more_post").click(); }, 1000);
+      //jQuery(".icon_more_post").click();
     });
   </script>
 
