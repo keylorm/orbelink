@@ -60,5 +60,31 @@ jQuery(document).ready(function(){
 	
 	setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
 	
+	<!--Valida el formulario de comentarios-->
+	jQuery('#comment-form').on('submit', function(e){
+        e.preventDefault();
+		var v = 1;
+		jQuery(this).find(':input,textarea').each(function() {
+			var valor = this.value;
+			var req = jQuery("#"+this.id).hasClass("required");
+			if(req == true && (valor) == "" || (valor) == null) {
+				alert('Campos obligatorios estan vacios');
+				jQuery("#"+this.id).focus();
+				v = 0;return false;
+			}					
+			if((this.id)=='edit-field-comment-email-und-0-value'){
+				var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+				if (!regex.test(valor)) {
+					alert('Por favor digite un E-mail válido');
+					jQuery("#"+this.id).focus();
+					v = 0;return false;
+				}
+			}
+		});	
+		if(v == 1){
+			this.submit();
+		}
+			
+    });	
 
 });
