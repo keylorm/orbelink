@@ -3,11 +3,13 @@ jQuery(document).ready(function(){
 	
 	jQuery('#boton-menu').click(function(){
 		jQuery('.menu-desplegable').slideDown();
+		//jQuery('.menu-desplegable').animate({display: 'block', opacity: 0.1}, 1000);
 
 	});
 
 	jQuery('#boton-cerrar-menu').click(function(){
 		jQuery('.menu-desplegable').slideUp();
+		//jQuery('.menu-desplegable').animate({display: 'none', opacity: 0.0}, 1000);
 	});
 	
 	var cantidad_li = 0;

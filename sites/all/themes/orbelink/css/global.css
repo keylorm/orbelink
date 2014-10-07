@@ -376,15 +376,36 @@ a:hover{
 }
 
 #block-menu-menu-categorias-blog ul.menu li a:hover {
-  padding-left: 50px; color: #0BA59B;
+  padding-left: 50px; /*color: #0BA59B;*/
   -webkit-transform: translate(-15px, 0px);
   -ms-transform: translate(-15px, 0px);
   -o-transform: translate(-15px, 0px);
   transform: translate(-15px, 0px);
- 
-
 }
 
+.menu-547:hover{
+	color: #00a69c !important;
+}
+.menu-545:hover{
+	color: #FBB03B !important;
+}
+.menu-546:hover{
+	color: #AF4CA0 !important;
+}
+.menu-544:hover{
+	color: #E8442E !important;
+}
+.menu-550:hover{
+	color: #B5D563 !important;
+}
+.menu-548:hover{
+	color: #29ABE2 !important;
+}
+.menu-549:hover{
+	color: #F033A3 !important;
+}
+
+/*****/
 #block-menu-menu-categorias-blog ul.menu li a.menu-547 {
 	background-image: url("../images/gente-orbelink.png");
     background-position: 0 50%;
@@ -491,7 +512,6 @@ h1#page-title{
 
 .field-name-field-tags-blog{
 	float: left;
-    margin-top: 18px;
     width: 100%;
 }
 
@@ -1054,7 +1074,7 @@ Noticias: F033A3
   transition: all 500ms ease;
 }
 .btn_compartir:hover {
-  box-shadow: #737373 1px 1px 3px 0px;
+  /*box-shadow: #737373 1px 1px 3px 0px;*/
   -webkit-transform: translate(0px, -5px) rotate(10deg);
   -ms-transform: translate(0px, -5px) rotate(10deg);
   -o-transform: translate(0px, -5px) rotate(10deg);
