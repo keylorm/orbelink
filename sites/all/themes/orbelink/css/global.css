@@ -1335,3 +1335,19 @@ Noticias: F033A3
 .vocabulary-departamento .icon_categoria{
 	display: none;
 }
+
+.breadcrumb a{
+  color: #929498;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.breadcrumb span.crumbs-current-page{
+  font-family: "Baskerville", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #939598;
+  font-weight: 400;
+}
