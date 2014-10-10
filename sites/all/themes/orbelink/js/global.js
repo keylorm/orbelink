@@ -20,8 +20,6 @@ jQuery(document).ready(function(){
 	
 	var result = 196 - ((cantidad_li - 1) * 11);
 	jQuery('.flex-control-nav').css({'top':result});
-	   
-	jQuery('.subtitle-comentario a').smoothScroll();
 
 	jQuery("#blog-list-content .views-row").addClass("hidden").css({'display':'none'});
 	
@@ -101,7 +99,7 @@ jQuery(document).ready(function(){
 		}
 			
     });	
-
+		//funcionalidad para el totop, extrae la posicion del scroll
 	  jQuery(window).scroll(function(){
 	  	if(jQuery(this).scrollTop() > 100) {
 	  		jQuery('#scroll_navigation').fadeIn();	  		
@@ -114,5 +112,29 @@ jQuery(document).ready(function(){
 	  jQuery('#scroll_navigation ul li a').click(function(){
           jQuery('html, body').animate({scrollTop: 0}, 600);
      }); 
+
+
+	jQuery('em.subtitle-comentario a[href*=#]').click(function() {
+
+	     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+	         && location.hostname == this.hostname) {
+
+	             var target = jQuery(this.hash);
+	             target = target.length && target || jQuery('[name=' + this.hash.slice(1) +']');
+
+	             if (target.length) {
+
+	                 var targetOffset = target.offset().top;
+	                 //targetOffset = targetOffset-90;
+	                 console.log(targetOffset);
+	                 jQuery('html,body').animate({scrollTop: targetOffset-90 }, 1000);
+
+	                 return false;
+
+	            }
+
+	       }
+
+	   });
 
 });

@@ -81,7 +81,6 @@
   <script type="text/javascript">
     jQuery(document).ready(function(){
       setTimeout(function (){ jQuery(".icon_more_post").click(); }, 1000);
-      //jQuery(".icon_more_post").click();
     });
   </script>
 
