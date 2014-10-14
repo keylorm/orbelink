@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600,400italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Open+Sans:400,300,600,700,400italic);
 @font-face {
+
     font-family: 'ProximaNova';
 	src: url('../fonts/proximanova-regular.eot');
     src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
@@ -1398,6 +1399,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-family: "ProximaNova",sans-serif;
     font-size: 48px;
     font-weight: 400;
+    margin: 32px 0 8px;
+    
 }
 
 .page-node-38 .main-content .main .content .field-name-body p{
@@ -1406,13 +1409,95 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-size: 35px;
     font-weight: 400;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 40px;
 }
 
 
 .page-node-38 .main-content .main .content .field-name-body p .fuente-italica{
 
     font-family: "Baskerville",sans-serif;
-    font-size: 35px;
+    font-size: 48px;
     font-weight: 400;
+    font-style: italic;
 
+}
+
+.page-node-38 .main-content .main .content .field-name-body p .naranja{
+
+    color: #E8442E;
+
+}
+
+.page-node-38 .main-content .main .content .field-name-body .text-descri-nuestro-trabajo p{
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #4D4D4D;
+    line-height: 30px;
+
+}
+
+#block-block-4 {
+    background-color: #00a69c;
+    min-height: 280px;
+    padding: 24px 0 58px;
+    text-align: center;
+    width: 100%;
+}
+
+#block-block-4 h2{
+    color: #ffffff;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    margin: 0;
+}
+
+#block-block-4 h2 .h2-italica{
+    color: #ffffff;
+    font-family: "Baskerville",sans-serif;
+    font-size: 57px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#block-block-4 p{
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+
+#block-block-4 #enlace-cuentanos-tu-sueno {
+    height: 58px;
+    margin: 0 auto;
+    width: 280px;
+    text-align: center;
+}
+
+
+#block-block-4 #enlace-cuentanos-tu-sueno a{
+    display: block;
+    color: #ffffff;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #fff;
+    line-height: 58px;
+}
+
+#block-block-4 #enlace-cuentanos-tu-sueno a span{
+    color: #ffffff;
+    font-family: "Baskerville",sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
 }
