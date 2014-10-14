@@ -81,9 +81,15 @@
   <script type="text/javascript">
     jQuery(document).ready(function(){
       setTimeout(function (){ jQuery(".icon_more_post").click(); }, 1000);
-      //jQuery(".icon_more_post").click();
     });
   </script>
+
+  <!-- ancla to top -->
+<div id="scroll_navigation">
+    <ul>
+      <li><a href="#"><img src="/orbelink/sites/all/themes/orbelink/images/ui.totop.png"/></a></li>
+    </ul>
+</div>
 
 </body>
 </html>

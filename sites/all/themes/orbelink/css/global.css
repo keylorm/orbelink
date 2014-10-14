@@ -38,8 +38,6 @@
 	font-style: italic;
 }
 
-
-
 html {
 	border-top: none !important; 
 }
@@ -62,20 +60,26 @@ a:hover{
 	background-color: transparent !important;
 }
 
-
-
 .menu-desplegable{
-	background-color: #e8442e;
-    display: none;
+  background-color: #e8442e;
+    display: block;
+    top: -240px;    
     height: 240px;
     padding-top: 22px;
     position: fixed;
     width: 100%;
     z-index: 100;
-
-	
 }
 
+.menu-desplegable {
+  -webkit-transition: top 0.8s ease;
+  -moz-transition: top 0.8s ease;
+  transition: top 0.8s ease;
+}
+
+.menu-desplegable.abierto{
+    top: 0px;
+}
 
 #block-system-main-menu ul.menu{
 	text-align: center;
@@ -309,6 +313,7 @@ a:hover{
 /*Listado Blog*/
 
 .page-blog .main-content .main,
+.page-blog-todos .main-content .main,
 .node-type-blog .main-content .main,
 .vocabulary-categorias_de_blog .main-content .main,
 .vocabulary-departamento  .main-content .main,
@@ -321,16 +326,9 @@ a:hover{
 	overflow: hidden;
 }
 
-
-.page-blog #sidebar-second,
-.node-type-blog #sidebar-second,
-.vocabulary-categorias_de_blog #sidebar-second,
-.vocabulary-departamento  #sidebar-second,
-.vocabulary-tags  #sidebar-second{
-	width: 295px;
-	float: left;
+.gu-1-3 {
+  float: left;
 }
-
 
 #block-menu-menu-categorias-blog {
     
@@ -537,6 +535,7 @@ h1#page-title{
 }
 
 #blog-list-content,
+#blog-todos-list-content,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content,
 .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content{
@@ -544,7 +543,8 @@ h1#page-title{
 	margin: 0px; padding: 0px;
 	width:630px;
 }
-#blog-list-content{ /*.page-blog .main*/
+#blog-list-content,
+#blog-todos-list-content{ /*.page-blog .main*/
 	/*height:none !important;*/
 	position: relative;
 	width: 630px;
@@ -554,6 +554,7 @@ h1#page-title{
 }
 
 #blog-list-content .views-row,
+#blog-todos-list-content .views-row,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
 .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row{
@@ -568,6 +569,7 @@ h1#page-title{
 }
 
 #blog-list-content .views-row .imagen img,
+#blog-todos-list-content .views-row .imagen img,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img,
 .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .imagen img{
@@ -580,6 +582,9 @@ h1#page-title{
 #blog-list-content .views-row .views-field-title,
 #blog-list-content .views-row .views-field-nothing,
 #blog-list-content .views-row .field-name-field-tags-blog,
+#blog-todos-list-content .views-row .views-field-title,
+#blog-todos-list-content .views-row .views-field-nothing,
+#blog-todos-list-content .views-row .field-name-field-tags-blog,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-title,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .views-field-nothing,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog,
@@ -1124,9 +1129,6 @@ Noticias: F033A3
   text-transform: uppercase;
 }
 
-#ancla-formulario-comentario {
-    height: 90px;
-}
 
 #titulo-comentarios a{
   text-decoration: underline;
@@ -1272,9 +1274,12 @@ Noticias: F033A3
     text-decoration: none;
 }
 
+
 .node-type-blog .field-name-body p,
 .node-type-blog .field-name-body ul li,
 .node-type-blog .field-name-body ol li{
+{
+
 	color: #58595b;
     font-family: "Open Sans",sans-serif;
     font-size: 15px;
@@ -1359,4 +1364,27 @@ Noticias: F033A3
   font-style: italic;
   color: #939598;
   font-weight: 400;
+}
+
+/* Added by Juan Martinez */
+.comment-form { clear: both; float: left; width: 100%;}
+h2#titulo-comentarios {margin-top: 25px;}
+h2#titulo-comentarios, .comment {float: left; width: 100%;}
+#scroll_navigation {
+  float: right;
+  position: fixed;
+  bottom: 25px;
+  right: 35px;
+}
+
+#scroll_navigation {width: 51px; height: 60px;}
+
+#scroll_navigation ul li, #scroll_navigation ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#scroll_navigation ul li img:hover {
+  opacity: 0.8;
 }
