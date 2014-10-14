@@ -1277,7 +1277,7 @@ Noticias: F033A3
 
 .node-type-blog .field-name-body p,
 .node-type-blog .field-name-body ul li,
-.node-type-blog .field-name-body ol li{
+.node-type-blog .field-name-body ol li
 {
 
 	color: #58595b;
@@ -1387,4 +1387,32 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #scroll_navigation ul li img:hover {
   opacity: 0.8;
+}
+
+
+
+/* Nuestro Trabajo */
+
+.page-node-38 h1#page-title{
+    color: #E8442E;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.page-node-38 .main-content .main .content .field-name-body p{
+    color: #1A1A1A;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.page-node-38 .main-content .main .content .field-name-body p .fuente-italica{
+
+    font-family: "Baskerville",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+
 }
