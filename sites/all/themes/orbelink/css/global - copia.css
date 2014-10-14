@@ -201,8 +201,6 @@ a:hover{
     overflow: visible;
 }
 
-
-
 .footer{
 	 background-color: #e8442e;
     max-width: 100%;
@@ -1410,8 +1408,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-family: "ProximaNova",sans-serif;
     font-size: 48px;
     font-weight: 400;
-    margin: 32px auto 8px;
-    width: 960px;
+    margin: 32px 0 8px;
+    
 }
 
 .page-node-38 .main-content .main .content .field-name-body p{
@@ -1490,7 +1488,6 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     margin: 0 auto;
     width: 280px;
     text-align: center;
-    border: 1px solid #fff;
 }
 
 
@@ -1502,7 +1499,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-weight: 400;
     text-decoration: none;
     text-align: center;
-    
+    border: 1px solid #fff;
     line-height: 58px;
 }
 
@@ -1542,85 +1539,4 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #block-views-view-blog-block-nuestro-blog .view-footer {
     margin: 40px 0;
-}
-
-.page-node-38 .breadcrumb {
-    margin: 0 auto;
-    width: 960px;
-}
-
-.page-node-38 .node-page{
-  width: 960px;
-  margin: 0 auto;
-}
-
-.page-node-38 .main-content {
-    padding: 90px 0px 0px;
-    width: 1280px;
-    max-width: 1280px;
-    overflow: visible;
-} 
-
-.page-node-38 .main-content .main .content .view-display-id-block_resumen_portafolio .views-row{
-    width: 425px;
-    height: 225px;
-    float: left;
-    margin: 0;
-}
-
-.below-content{
-  clear: both;
-}
-
-
-/*Slider Home*/
-.view-slider-home .flex-caption{
-  text-align: center;
-}
-
-.view-slider-home .flex-caption h2{
-    color: #FFFFFF;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 62px;
-    font-weight: 400;
-}
-
-.view-slider-home .flex-caption h2 span{
-    color: #FFFFFF;
-    font-family: "Baskerville",sans-serif;
-    font-size: 79px;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.view-slider-home .flex-caption h2 span{
-    color: #FFFFFF;
-    font-family: "Baskerville",sans-serif;
-    font-size: 79px;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.view-slider-home .flex-caption .caption-slider-home-pequeno{
-    color: #FFFFFF;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-}
-
-.view-slider-home .flex-caption .link-slider-box {
-    border: 2px solid #FFFFFF;
-    margin: 0 auto;
-}
-
-.view-slider-home .flex-caption .link-slider-box a{
-    display: block;
-    padding: 0 5px;
-    color: #FFFFFF;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 29px;
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 58px;
-
 }

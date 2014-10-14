@@ -71,6 +71,11 @@ jQuery(document).ready(function(){
 	    	offset: 300    
 	});
 	
+	jQuery("#block-views-view-blog-block-nuestro-blog .view-display-id-block_nuestro_blog .views-row").addClass('hidden').viewportChecker({
+	    	classToAdd: 'visible animated bounceInUp',
+	    	offset: 300    
+	});
+
 	//setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
 	
 	<!--Valida el formulario de comentarios-->
