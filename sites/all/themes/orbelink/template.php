@@ -63,7 +63,7 @@ function orbelink_preprocess_html(&$variables) {
   $meta_x_ua_compatible = array(
     '#tag' => 'meta',
     '#attributes' => array(
-      'http-equiv' => 'x-ua-compatible',
+      'http-equiv' => 'X-UA-Compatible',
       'content' => 'ie=edge, chrome=1',
     ),
   );
