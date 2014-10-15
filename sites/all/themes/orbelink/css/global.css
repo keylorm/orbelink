@@ -1574,18 +1574,31 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 
 /*Slider Home*/
-.view-slider-home .flex-caption{
-  text-align: center;
+
+.page-inicio .main-content{
+     padding: 90px 0px 0px;
+    width: 1280px;
+    max-width: 1280px;
+    overflow: visible;
+}
+.view-slider-home .flex-caption {
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    bottom: 144px;
+    width: 100%;
 }
 
-.view-slider-home .flex-caption h2{
-    color: #FFFFFF;
+.view-slider-home .flex-caption h3{
+    color: #ffffff;
     font-family: "ProximaNova",sans-serif;
     font-size: 62px;
     font-weight: 400;
+    line-height: 45px;
+    margin: 0;
 }
 
-.view-slider-home .flex-caption h2 span{
+.view-slider-home .flex-caption h3 span{
     color: #FFFFFF;
     font-family: "Baskerville",sans-serif;
     font-size: 79px;
@@ -1593,24 +1606,33 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-style: italic;
 }
 
-.view-slider-home .flex-caption h2 span{
-    color: #FFFFFF;
-    font-family: "Baskerville",sans-serif;
-    font-size: 79px;
-    font-weight: 400;
-    font-style: italic;
-}
 
 .view-slider-home .flex-caption .caption-slider-home-pequeno{
-    color: #FFFFFF;
+    color: #ffffff;
     font-family: "ProximaNova",sans-serif;
     font-size: 34px;
     font-weight: 400;
+    margin: 0;
 }
 
 .view-slider-home .flex-caption .link-slider-box {
-    border: 2px solid #FFFFFF;
-    margin: 0 auto;
+    border: 2px solid #ffffff;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.4);
+    height: 58px;
+    line-height: 50px;
+    margin: 30px auto 0;
+    width: 220px;
+    -webkit-transition:all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+  }
+
+.view-slider-home .flex-caption .link-slider-box:hover {
+  background-color: #E8442E;
+  background-repeat: repeat;
+  border: 2px solid #E8442E;
+
 }
 
 .view-slider-home .flex-caption .link-slider-box a{
@@ -1621,6 +1643,36 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-size: 29px;
     font-weight: 400;
     text-decoration: none;
-    line-height: 58px;
+    line-height: 49px;
 
+}
+
+.view-slider-home .flex-caption .link-slider-box a span{
+   
+    color: #FFFFFF;
+    font-family: "Baskerville",sans-serif;
+    font-size: 39px;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+.view-slider-home .flex-control-nav {
+    height: auto;
+    right: 15px;
+    width: 20px;
+    z-index: 5;
+}
+
+.view-slider-home .flex-control-paging li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.view-slider-home .flexslider{
+  border: none;
+  background: none;
+  box-shadow: none; 
 }

@@ -21,6 +21,20 @@ jQuery(document).ready(function(){
 	var result = 196 - ((cantidad_li - 1) * 11);
 	jQuery('.flex-control-nav').css({'top':result});
 
+
+/* Para hacer el paginador vertical en el slider del home */
+	var cantidad_li = 0;
+	jQuery('.view-slider-home .flex-control-nav li').each(function(indice, elemento) {
+		cantidad_li = cantidad_li + 1;
+	});
+	
+	var result = 237 - ((cantidad_li - 1) * 11);
+	jQuery('.view-slider-home .flex-control-nav').css({'top':result});
+
+
+
+	/*Infinite scroll*/
+
 	jQuery("#blog-list-content .views-row").addClass("hidden").css({'display':'none'});
 	
 	var ordenid = 1;
