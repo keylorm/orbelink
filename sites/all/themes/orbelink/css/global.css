@@ -1675,4 +1675,40 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   border: none;
   background: none;
   box-shadow: none; 
+  margin: 0 0 48px;
+}
+
+
+/* Islas Home */
+
+.page-inicio .pane-1{
+  width: 980px;
+  margin: 0 auto;
+}
+
+.page-inicio .pane-1 .pane-content h2{
+   color: #1A1A1A;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.page-inicio .pane-1 .pane-content h2 span{
+   color: #E8442E;
+    font-family: "Baskerville",sans-serif;
+    font-size: 47px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.page-inicio .pane-1 .pane-content p{
+   font-family: "Roboto Slab",sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    color: #4D4D4D;
+    text-align: center;
+    line-height: 30px;
 }
