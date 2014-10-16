@@ -1930,3 +1930,11 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio{
   position: relative;
 }
+
+/* Funcionalidad principal para los tabs */
+.accordion-tabs-minimal a.tab-link {
+    display: block;
+}
+ .accordion-tabs-minimal .tab-content, .resultado {
+    display: none;
+}

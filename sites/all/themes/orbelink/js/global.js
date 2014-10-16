@@ -1,6 +1,58 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
+	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
+
+	 jQuery("#container1").twentytwenty();
+
+	//agregar funcionalidad para la seciccion de estrategia
+	jQuery(".casilla").hide();
+	jQuery("#tablero-consulta .roll-over").hide();
+	cambiarCasillasTablero();
+
+	jQuery("input[name='consulta']").change(function(){
+		jQuery(".casilla").hide();
+		cambiarCasillasTablero();		
+	});
+
+	//agregar funcionalidad para desplegar el resultado del objetivo
+	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
+	jQuery( "#busqueda-resultado-"+valor_conversion ).removeClass("resultado");
+
+	jQuery( "#conversion-opciones" ).change(function(){
+		jQuery( "#busqueda-resultado img").hide("slow");
+		var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
+		jQuery( "#busqueda-resultado-"+valor_conversion ).show("slow");
+	});
+
+	//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
+	cambiarObjetivo();
+
+	jQuery("input[name='presupuesto']").change(function(){
+		cambiarObjetivo();		
+	});
+
+	//agregar funcionalidad de tabs para la aplicacion de cual es su objetivo?
+	  jQuery('.accordion-tabs-minimal').each(function(index) {
+	    jQuery(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+	    cambiarObjetivo();
+	  });
+
+	  jQuery('.accordion-tabs-minimal').on('click', 'li > a', function(event) {
+	    if (!jQuery(this).hasClass('is-active')) {
+	      event.preventDefault();
+	      var accordionTabs = jQuery(this).closest('.accordion-tabs-minimal')
+	      accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+	      jQuery(this).next().toggleClass('is-open').toggle();
+	      accordionTabs.find('.is-active').removeClass('is-active');
+	      jQuery(this).addClass('is-active');
+	    } else {
+	      event.preventDefault();
+	    }
+	  });
+
+
 	//ajustar funcionalidad del menu principal
 	var menu = jQuery(".menu-desplegable");
 	jQuery("#boton-menu").bind('click', function(){
@@ -157,3 +209,79 @@ jQuery(document).ready(function(){
 	   });
 
 });
+
+function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
+	switch(presupuesto){
+		case "100-200":
+			if(conversion){
+				return "1,750-50";
+			}else if (branding == "facebook"){
+				return "30,000-100";
+			}else{
+				return "4,000-50";
+			}
+		break;
+		case "300-600":
+			if(conversion){
+				return "3,500-100";
+			}else if (branding == "facebook"){
+				return "600,000-250";
+			}else{
+				return "8,000-100";
+			}
+		break;
+		case "700-1000":
+			if(conversion){
+				return "4,750-150";
+			}else if (branding == "facebook"){
+				return "1,000,000-450";
+			}else{
+				return "12,000-175";
+			}
+		break;
+		case "1100-1500":
+			if(conversion){
+				return "6,500-225";
+			}else if (branding == "facebook"){
+				return "1,300,000-575";
+			}else{
+				return "16,000-225";
+			}
+		break;
+		case "1500-2000":
+			if(conversion){
+				return "8,700-330";
+			}else if (branding == "facebook"){
+				return "2,000,000-750";
+			}else{
+				return "20,000-300";
+			}
+		break;
+	}
+}
+
+function cambiarCasillasTablero(){
+	var valor_consulta = jQuery("input[name='consulta']:checked").val();
+	jQuery("."+valor_consulta).show("slow");
+}
+
+function cambiarObjetivo(){
+	var presupuesto = jQuery("input[name='presupuesto']:checked").val();
+	var conversion = false;
+	var branding = "";
+	var calculo = "";
+
+	if(jQuery("a#conversion").hasClass("is-active")){
+		conversion = true;
+	} else if(jQuery("a#facebook").hasClass("is-active")) {
+		branding = "facebook";
+	} else if(jQuery("a#google").hasClass("is-active")){
+		branding = "google";
+	}
+
+	calculo = obtenerCalculoClicsImpresiones(presupuesto, conversion, branding);
+	calculo = calculo.split("-");
+	
+	jQuery("#cantidad-clics").text(calculo[0]);
+	jQuery("#cantidad-impresiones").text(calculo[1]);
+}
