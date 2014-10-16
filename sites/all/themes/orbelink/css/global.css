@@ -374,6 +374,11 @@ a:hover{
   font-size: 16px;
   line-height: 45px;
   text-decoration: none;
+  behavior: url(sites/all/themes/orbelink/css/css-pie/PIE.htc);
+}
+
+.node-blog #block-menu-menu-categorias-blog ul.menu li a{
+  behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
 }
 
 #block-menu-menu-categorias-blog ul.menu li a:hover {
@@ -757,6 +762,11 @@ h1#page-title{
   padding: 13px 20px;
   float: left;
   border-radius: 5px;
+    -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -o-border-radius: 5px;
+
+
   font-family:'Open Sans', sans-serif;
   color: white;
   font-size: 17px;
@@ -764,6 +774,7 @@ h1#page-title{
   border: none;
   margin-top: 15px;
   cursor: pointer;
+    behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
   
  /* -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -1011,12 +1022,18 @@ Noticias: F033A3
   height: 139px;
   float: left;
   border-radius: 150px;
+    -webkit-border-radius:150px;
+  -moz-border-radius:150px;
+  -o-border-radius: 150px;
+
+
   background-position: 12% 26%;
   background-size: 139px;
   background-repeat: no-repeat;
   -webkit-transition: all 650ms ease;
   -o-transition: all 650ms ease;
   transition: all 650ms ease;
+    behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
 }
 .autor_img:hover {
   background-size: 145px;
@@ -1086,9 +1103,15 @@ Noticias: F033A3
   margin-right: 10px;
   float: left;
   border-radius: 150px;
+    -webkit-border-radius:150px;
+  -moz-border-radius:150px;
+  -o-border-radius: 150px;
+ 
+
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+   behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
 }
 .btn_compartir:hover {
   /*box-shadow: #737373 1px 1px 3px 0px;*/
@@ -1182,12 +1205,23 @@ Noticias: F033A3
 	-moz-border-radius: 0px;
 	-o-border-radius: 0px;
 	border-radius: 0px;
+  
+
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
 	margin: 0px 0px 32px;
+  
 } 
+
+.page-blog .flexslider{
+  behavior: url(sites/all/themes/orbelink/css/css-pie/PIE.htc);
+
+}
+.node-blog .flexslider{
+  behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
+}
 
 .page-blog .flex-control-nav,
 .node-blog .flex-control-nav{
@@ -1711,4 +1745,188 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     color: #4D4D4D;
     text-align: center;
     line-height: 30px;
+}
+
+
+.page-inicio .view-display-id-block_islas_especialidad{
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row{
+  width: 296px;
+  float: left;  
+  margin-right: 36px;
+  text-align: center;
+}
+
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-3,
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-6,
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-9,
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-12,
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-15,
+.page-inicio .view-display-id-block_islas_especialidad .views-row.views-row-18{
+
+  margin-right: 0px;
+
+}
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row .view-mode-teaser img{
+  border-radius: 87px;
+  -webkit-border-radius:87px;
+  -moz-border-radius:87px;
+  -o-border-radius: 87px;
+  behavior: url(sites/all/themes/orbelink/css/css-pie/PIE.htc);
+
+}
+
+.view-display-id-block_nuestro_blog .views-field-field-imagenes .field-content{
+  position: relative;
+}
+
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-title h2{
+  text-transform: uppercase;
+   color: #333333;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-body,
+  .page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-body p{
+     color: #808080;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    text-align: center;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+#block-block-6{
+  background-color: #e8442e;
+    height: 400px;
+}
+
+#block-block-6 .content{
+  background-image: url("../images/cintillo-prueba-tiempo.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0 auto;
+    width: 960px;
+ } 
+
+ #cintillo-10-years{
+   background-image: url("../images/flecha-cintillo-10anos.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    float: right;
+    margin-top: -30px;
+    padding-left: 326px;
+    padding-top: 104px;
+    width: 100%;
+ }
+
+#block-block-6 .content{
+
+}
+ #block-block-6 h2{
+  text-transform: uppercase;
+   color: #FFFFFF;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 49px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 49px;
+
+ }
+
+  #block-block-6 h3{
+  text-transform: uppercase;
+   color: #FFFFFF;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 30px;
+ }
+
+
+
+  #block-block-6 h3 span{
+  text-transform: lowercase;
+   color: #FFFFFF;
+    font-family: "Baskerville",sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    font-style: italic;
+ }
+
+   #block-block-6 p{
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+   }
+
+ 
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno{
+  width: 1280px;
+  padding-top: 52px;
+  margin: 0 auto;
+}
+
+.page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70,
+.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02{
+  background-color: #F7F7F7;
+}
+
+.page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70{
+  min-height: 600px;
+}
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno{
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno h2{
+  color: #1A1A1A;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno h2 span{
+  color: #00A69C;
+    font-family: "Baskerville",sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
+  color: #4D4D4D;
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content{
+  width: 100%;
+  margin: 0 auto;
+}
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row{
+  float: left;
+  width: 423px;
+  height: 272px;
+}
+
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio{
+  position: relative;
 }
