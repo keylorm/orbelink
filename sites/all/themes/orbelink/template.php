@@ -147,6 +147,13 @@ function orbelink_preprocess_html(&$variables) {
     $term = taxonomy_term_load(arg(2));
     $variables['classes_array'][] = 'vocabulary-' . strtolower($term->vocabulary_machine_name);
   }
+
+  //agregar librerias js y css para la funcionalidad de la aplicacion de la seccion de analitica y usabilidad
+  drupal_add_js(libraries_get_path('twentytwenty-master') . '/js/jquery.event.move.js', array('group' => JS_THEME, 'every_page' => TRUE));
+  drupal_add_js(libraries_get_path('twentytwenty-master') . '/js/jquery.twentytwenty.js', array('group' => JS_THEME, 'every_page' => TRUE));
+
+  drupal_add_css(libraries_get_path('twentytwenty-master') . '/css/twentytwenty.css');
+
 }
 
 /**
