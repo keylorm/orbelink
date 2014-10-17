@@ -92,7 +92,7 @@ a:hover{
 #block-system-main-menu ul.menu li{
 	display: inline-block;
 	margin: 0;
-  padding: 0 32px;
+  padding: 0 42px;
 
 }
 
@@ -292,21 +292,21 @@ a:hover{
 }
 
 .footer .footer-box #block-menu-block-1{
-	width: 150px;
+	width: 174px;
 }
 .footer .footer-box #block-menu-block-2{
 	width: 153px;
 }
 .footer .footer-box #block-menu-block-3{
-	width: 206px;
+	width: 224px;
 }
 
 .footer .footer-box #block-menu-block-4{
-	width: 118px;
+	width: 148px;
 }
 
 .footer .footer-box #block-block-2{
-	width: 58px;
+	width: 155px;
 }
 
 .footer .footer-box #block-block-1{
