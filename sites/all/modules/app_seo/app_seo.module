@@ -1,0 +1,103 @@
+<?php
+/**
+ * Declare what blocks are provided by this module.
+ * Implements hook_block_info().
+ */
+function app_seo_block_info(){
+    $block['seo_application'] = array(
+        'info' => t('Aplication SEO for Drupal by Orbelink'),
+        'cache' => DRUPAL_NO_CACHE,
+    );
+    return $block;
+}
+ 
+/**
+ * Define what our block is going to look like.
+ * Implements hook_block_view().
+ */
+function app_seo_block_view($block_key){
+    $block = array();
+ 
+    if($block_key == 'seo_application'){ //We only want to define the content of OUR block
+        //This is the title of the block.
+        $block['subject'] = "";
+ 
+        //Define the block content.
+        $block['content'] = '<form action="#" method="post" id="formulario-seo">
+                                Mi web: <input type="text" name="miweb" id="miweb" /><br /><br />
+                                Google: <input type="radio" name="bot" value="cr" checked="checked" /> CR <input type="radio" name="bot" value="0" /> Global <br /><br />
+                                Idioma: <input type="radio" name="idioma" value="es_CR" checked="checked" /> Español <input type="radio" name="idioma" value="en_US" /> Inglés <br /><br />
+                                Termino: <input type="text" name="q" id="q" />
+                                <a href="javascript:void(0)" id="consulta-seo">consulta</a>
+
+                                <div id="loader"><img src="/orbelink/sites/all/themes/orbelink/images/loading.gif"></div>
+
+                            </form>';
+
+    }
+ 
+    return $block;
+}
+
+/**
+ * 
+ *  Implements hook_menu().
+ *
+ */
+
+function app_seo_menu() {
+    $items['consulta-seo'] = array(
+      'page callback' => 'app_seo_abc_view',
+      'access arguments' => array('access content'),
+    );
+    return $items;
+  }
+
+function app_seo_abc_view() {
+    if(isset($_POST['q']) and $_POST['q']!=""){
+        
+        $miweb = $_POST['miweb'];
+        
+        $q = $_POST['q'];
+        $q = urlencode($q);
+        $q = str_replace(" ", "+", $q);
+        
+        buscar($q,$miweb);
+    }
+  }
+
+function buscar($aQue,$web){
+    $aUrl = "http://ajax.googleapis.com/ajax/services/search/web";
+    $posicion = 0;
+    $break = 0;
+    $bot = '';
+    if($_POST['bot'] != 0){ $bot = '&gl='.$_POST['bot'];}
+    
+    for($e=1;$e<=12;$e++){
+    $data = file_get_contents($aUrl."?v=1.0&rsz=large".$bot."&hl=".$_POST['idioma']."&userip=192.165.0.1&start=".$posicion."&q=".$aQue); // Obtenemos el resultado
+    $obj = json_decode($data); // Decodificamos el Json
+
+    $results = $obj->responseData->results; // Entramos al array de los resultados
+
+    for ($i=0; $i<sizeof($results); $i++) {
+        $posicion = $posicion + 1;
+        $tmp = $results[$i]; 
+        //echo "POSICIÓN:" . $posicion . "<br />";
+        
+        flush(); ob_flush(); sleep(2);
+        
+        if(strpos($tmp->url, $web)){
+            //echo "Se encuentra en la posición: <strong>" . $posicion . "</strong>, para el termino <strong>" . $_POST['q'] ."</strong>";
+            print "{\"status\":1,\"posicion\":".$posicion.",\"termino:\",".$_POST['q']."}";
+            $break = 1;
+            break;
+        } elseif ($posicion == 31){
+            print "{\"status\":0}";
+            $break = 1;
+            break;
+        }
+    }
+    if($break==1){ break; }
+    
+    }
+}

@@ -3,7 +3,21 @@ jQuery(document).ready(function(){
 
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 
-	 jQuery("#container1").twentytwenty();
+	jQuery( "#formulario-seo a#consulta-seo" ).click(function( event ) {
+
+		var var_miweb = jQuery("#miweb").val();
+		var var_bot = jQuery("input[name='bot']").val();
+		var var_idioma = jQuery("input[name='idioma']").val();
+		var var_q = jQuery("input#q").val();
+
+		jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+		  .done(function( data ) {
+		    alert( "Data Loaded: " + data );
+		});
+
+	});
+
+	jQuery("#container1").twentytwenty();
 
 	//agregar funcionalidad para la seciccion de estrategia
 	jQuery(".casilla").hide();
