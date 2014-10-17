@@ -23,16 +23,15 @@ function app_seo_block_view($block_key){
         $block['subject'] = "";
  
         //Define the block content.
-        $block['content'] = '<form action="#" method="post" id="formulario-seo">
+        $block['content'] = '<div id="formulario-seo-contenido"><form action="#" method="post" id="formulario-seo">
                                 Mi web: <input type="text" name="miweb" id="miweb" /><br /><br />
                                 Google: <input type="radio" name="bot" value="cr" checked="checked" /> CR <input type="radio" name="bot" value="0" /> Global <br /><br />
                                 Idioma: <input type="radio" name="idioma" value="es_CR" checked="checked" /> Español <input type="radio" name="idioma" value="en_US" /> Inglés <br /><br />
                                 Termino: <input type="text" name="q" id="q" />
                                 <a href="javascript:void(0)" id="consulta-seo">consulta</a>
 
-                                <div id="loader"><img src="/orbelink/sites/all/themes/orbelink/images/loading.gif"></div>
-
-                            </form>';
+                               <div id="resultado-seo"></div>
+                            </form></div>';
 
     }
  
@@ -74,7 +73,7 @@ function buscar($aQue,$web){
     if($_POST['bot'] != 0){ $bot = '&gl='.$_POST['bot'];}
     
     for($e=1;$e<=12;$e++){
-    $data = file_get_contents($aUrl."?v=1.0&rsz=large".$bot."&hl=".$_POST['idioma']."&userip=192.165.0.1&start=".$posicion."&q=".$aQue); // Obtenemos el resultado
+    $data = file_get_contents($aUrl."?v=1.0&rsz=large".$bot."&hl=".$_POST['idioma']."&userip=192.165.0.12&start=".$posicion."&q=".$aQue); // Obtenemos el resultado
     $obj = json_decode($data); // Decodificamos el Json
 
     $results = $obj->responseData->results; // Entramos al array de los resultados
@@ -84,15 +83,15 @@ function buscar($aQue,$web){
         $tmp = $results[$i]; 
         //echo "POSICIÓN:" . $posicion . "<br />";
         
-        flush(); ob_flush(); sleep(2);
+        flush(); ob_flush(); sleep(3);
         
         if(strpos($tmp->url, $web)){
             //echo "Se encuentra en la posición: <strong>" . $posicion . "</strong>, para el termino <strong>" . $_POST['q'] ."</strong>";
-            print "{\"status\":1,\"posicion\":".$posicion.",\"termino:\",".$_POST['q']."}";
+            print "{\"estatus\":1,\"posicion\":".$posicion.",\"termino\":\"".$_POST['q']."\"}";
             $break = 1;
             break;
         } elseif ($posicion == 31){
-            print "{\"status\":0}";
+            print "{\"estatus\":0}";
             $break = 1;
             break;
         }

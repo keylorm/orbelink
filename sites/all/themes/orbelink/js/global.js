@@ -10,9 +10,30 @@ jQuery(document).ready(function(){
 		var var_idioma = jQuery("input[name='idioma']").val();
 		var var_q = jQuery("input#q").val();
 
+		document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+
 		jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 		  .done(function( data ) {
-		    alert( "Data Loaded: " + data );
+		    //alert( "Data Loaded: " + data );
+		    var obj = jQuery.parseJSON(data);
+		    var pagina = 0;
+
+		    if(obj.estatus == '0'){
+	
+				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
+		    } else {
+
+			   	if(obj.posicion <= 10 ){
+			    	pagina = 1;
+			    } else if(obj.posicion <= 20 ){
+			    	pagina = 2;
+			    } else if(obj.posicion <= 30 ){
+			    	pagina = 3;
+			    }
+
+		    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+		    }
+
 		});
 
 	});
@@ -39,17 +60,9 @@ jQuery(document).ready(function(){
 		jQuery( "#busqueda-resultado-"+valor_conversion ).show("slow");
 	});
 
-	//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
-	cambiarObjetivo();
-
-	jQuery("input[name='presupuesto']").change(function(){
-		cambiarObjetivo();		
-	});
-
 	//agregar funcionalidad de tabs para la aplicacion de cual es su objetivo?
 	  jQuery('.accordion-tabs-minimal').each(function(index) {
 	    jQuery(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
-	    cambiarObjetivo();
 	  });
 
 	  jQuery('.accordion-tabs-minimal').on('click', 'li > a', function(event) {
@@ -221,6 +234,13 @@ jQuery(document).ready(function(){
 	       }
 
 	   });
+
+		//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
+	cambiarObjetivo();
+
+	jQuery("input[name='presupuesto']").change(function(){
+		cambiarObjetivo();		
+	});
 
 });
 
