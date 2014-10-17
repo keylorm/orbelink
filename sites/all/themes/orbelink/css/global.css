@@ -2112,16 +2112,57 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-views-ed5db07469e68153e4002605aea7ce02 .content{
-  width: 1280px;
+  width: 960px;
+  text-align: center;
   margin: 0 auto;
 }
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02{
   min-height: 928px;
+  margin-top: 40px;
 }
 
+
+
+
 #encabezado-nuestro-proceso{
-  width: 960px;
-  margin: 0 auto;
-  text-align: center;
+   background-image: url("../images/flecha-cintillo-proceso-home.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin: -33px auto 0;
+    padding-top: 52px;
+    position: relative;
+    width: 100%;
+}
+
+#encabezado-nuestro-proceso h2{
+  color: #1A1A1A;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+#encabezado-nuestro-proceso h2 span{
+   color: #E8442E;
+  font-family: "Baskerville",sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#encabezado-nuestro-proceso p{
+  color: #4d4d4d;
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-top: 0;
+}
+
+.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content{
+  clear: both;
+
 }
