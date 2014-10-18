@@ -1570,6 +1570,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 70px;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -1px;
 
 
 }
@@ -1735,6 +1736,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  font-size: 47px;
  font-style: italic;
  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 
@@ -1758,6 +1760,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 296px;
   float: left;  
   margin-right: 36px;
+  min-height: 450px;
   text-align: center;
 }
 
@@ -1794,10 +1797,11 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 19px;
   text-align: center;
   font-weight: 400;
+  line-height: 22px;
 }
 
-.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-body,
-.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-body p{
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home,
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home p{
  color: #808080;
  font-family: "Open Sans",sans-serif;
  font-size: 15px;
@@ -1913,6 +1917,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 56px;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -1px;
 }
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
@@ -2071,6 +2076,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 56px;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -1px;
 }
 
 #block-block-7 .content p{
@@ -2078,11 +2084,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     font-family: "Roboto Slab",sans-serif;
     font-size: 23px;
     font-weight: 400;
-    margin: 0 auto;
-    width: 250px; 
-    text-transform: uppercase;
     line-height: 35px;
-    margin-top: 0;
+    margin: 0 auto 42px;
 }
 
 #loader {display: none;}
@@ -2114,10 +2117,11 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 39px;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -1px;
 }
 
 #block-views-ed5db07469e68153e4002605aea7ce02 .content{
-  width: 960px;
+  width: 1280px;
   text-align: center;
   margin: 0 auto;
 }
@@ -2125,6 +2129,13 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02{
   min-height: 928px;
   margin-top: 40px;
+}
+
+#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
+   width: 970px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 
@@ -2136,7 +2147,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
     background-repeat: no-repeat;
     display: block;
     float: left;
-    margin: -33px auto 0;
+    margin: -33px auto 15px;
     padding-top: 52px;
     position: relative;
     width: 100%;
@@ -2156,6 +2167,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 48px;
   font-weight: 400;
   font-style: italic;
+  letter-spacing: -1px;
 }
 
 #encabezado-nuestro-proceso p{
@@ -2170,4 +2182,96 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content{
   clear: both;
 
+}
+
+
+.page-inicio .jcarousel-container{
+  height: 610px;
+  width: 100%;
+  padding: 0;
+}
+
+.page-inicio .jcarousel-skin-default .jcarousel-container .jcarousel-item{
+  background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    height: 100%;
+    margin: 0;
+    text-align: left;
+    width: 350px !important;
+}
+
+.page-inicio  .view-nuestro-proceso .view-content{
+  width: 770px;
+  float: right;
+}
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
+  width: 100%;
+}
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .views-field-title a{
+    color: #1a1a1a;
+    display: block;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: url(../images/linea-bg-proceso-home.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body{
+      width: 320px;
+}
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body p{
+   color: #4d4d4d;
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-top: 8px;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
+  display: none;
+}
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
+    background-image: url("../images/carousel-next-image.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 44px;
+    left: -172px;
+    position: absolute;
+    top: 66px;
+    width: 44px;
+  }
+
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
+    position: absolute;
+    top: 268px;
+}
+
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
+    color: #1a1a1a;
+    display: block;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
+    color: #00A69C;
+    display: block;
+    font-family: "Baskerville",sans-serif;
+    font-size: 75px;
+     letter-spacing: -2px;
+    font-weight: 400;
 }
