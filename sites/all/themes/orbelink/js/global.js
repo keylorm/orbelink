@@ -38,6 +38,35 @@ jQuery(document).ready(function(){
 
 	});
 
+	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
+
+			var var_miweb_calc = jQuery("#miweb").val();
+
+			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
+			  .done(function( data ) {
+			    alert( "Data Loaded: " + data );
+			    //var obj = jQuery.parseJSON(data);
+			    
+			    /*if(obj.estatus == '0'){
+		
+					document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
+			    } else {
+
+				   	if(obj.posicion <= 10 ){
+				    	pagina = 1;
+				    } else if(obj.posicion <= 20 ){
+				    	pagina = 2;
+				    } else if(obj.posicion <= 30 ){
+				    	pagina = 3;
+				    }
+
+			    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+			    }*/
+
+			});
+
+		});
+
 	jQuery("#container1").twentytwenty();
 
 	//agregar funcionalidad para la seciccion de estrategia
