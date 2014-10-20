@@ -194,6 +194,8 @@ jQuery(document).ready(function(){
 	   	}
 
 	   });
+	   
+	   
 
 	jQuery("#blog-todos-list-content .views-row").addClass('hidden').viewportChecker({
 		classToAdd: 'visible animated bounceInUp',
@@ -205,7 +207,7 @@ jQuery(document).ready(function(){
 		offset: 300    
 	});
 
-	//setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
+	setTimeout(function(){ jQuery(".icon_more_post").click(); }, 1000);
 	
 	<!--Valida el formulario de comentarios-->
 	jQuery('#comment-form').on('submit', function(e){
