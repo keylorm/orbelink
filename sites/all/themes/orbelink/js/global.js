@@ -54,22 +54,22 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<iframe id="iframe-tablet" class="activo" width="800" height="1024" src="'+ jQuery("input[name='miweb']").val() +'"></iframe><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="255" height="440" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
-			    	jQuery("iframe#iframe-tablet").addClass("activo");
-			    	jQuery("iframe#iframe-movil").removeClass("activo");
+			    	jQuery("#iframe-tablet-contenedor").addClass("activo");
+			    	jQuery("#iframe-phone-contenedor").removeClass("activo");
 			    });
 
 			     jQuery("#encabezado-calc ul li #icono-movil").click(function(){
-			    	jQuery("iframe#iframe-movil").addClass("activo");
-			    	jQuery("iframe#iframe-tablet").removeClass("activo");
+			    	jQuery("#iframe-phone-contenedor").addClass("activo");
+			    	jQuery("#iframe-tablet-contenedor").removeClass("activo");
 			    });
 
 				//inyectar codigo html para crear la barra vertical
 
-				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:70px;\"><div id=\"top\"></div><div id=\"contenido\" style=\"height:" + obj + "px;\"><div id=\"bottom\"></div></div>";
+				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:70px;\"><div id=\"top\"></div><div id=\"contenido\" style=\"height:" + obj + "px;\"></div><div id=\"bottom\"></div></div>";
 			});
 
 		});
