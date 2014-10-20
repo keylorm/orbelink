@@ -2397,3 +2397,11 @@ iframe.activo {display: block !important;}
 
 
 /**********/
+
+/* app diseno web y movil - juan martinez */
+form#formulario-calc { padding: 58px 0 69px 0; background-color: #E8442E; text-align: center;}
+form#formulario-calc h2 {color: #fff; font-family: 'ProximaNova', sans-serif; font-size: 35.69px; font-weight: 400; margin: 0 0 30px 0; line-height: 27px;}
+input[name="miweb"] {width: 600px; height: 44px; border: none; padding: 8px 45px 8px 15px; border-radius: 5px;}
+#consulta-calc { padding: 22px; position: absolute; right: 0; bottom: 0; background-image: url('../images/boton-formulario-diseno-web-movil.png'); background-repeat: no-repeat; background-position: 6px 6px;}
+form#formulario-calc .form-content {width: 600px; margin: 0 auto; position: relative;}
+
