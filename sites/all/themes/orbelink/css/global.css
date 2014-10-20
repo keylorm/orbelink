@@ -1,23 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Open+Sans:400,300,600,700,400italic);
 @font-face {
-    font-family: 'ProximaNova';
-	src: url('../fonts/proximanova-regular.eot');
-    src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
-    	url('../fonts/proximanova-regular.woff') format('woff'), 
-    	url('../fonts/proximanova-regular.ttf') format('truetype'),
-    	url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
-    font-weight: normal;
-	font-style: normal;
+  font-family: 'ProximaNova';
+  src: url('../fonts/proximanova-regular.eot');
+  src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/proximanova-regular.woff') format('woff'), 
+  url('../fonts/proximanova-regular.ttf') format('truetype'),
+  url('../fonts/proximanova-regular.svg#ProximaNova') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
 	font-family: 'Baskerville';
 	src: url('../fonts/baskerville-Italic.eot');/* Para Internet Explorer */
-    src: url('../fonts/baskerville-Italic.eot?#iefix') format('embedded-opentype'),
-    	url('../fonts/baskerville-Italic.woff') format('woff'), 
-    	url('../fonts/baskerville-Italic.ttf') format('truetype'),
-    	url('../fonts/baskerville-Italic.svg#Baskerville') format('svg');
-    font-weight: normal;
-    font-style: italic;
+  src: url('../fonts/baskerville-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/baskerville-Italic.woff') format('woff'), 
+  url('../fonts/baskerville-Italic.ttf') format('truetype'),
+  url('../fonts/baskerville-Italic.svg#Baskerville') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
 #comments{
@@ -1735,7 +1735,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  font-size: 47px;
  font-style: italic;
  font-weight: 400;
-  letter-spacing: -1px;
+ letter-spacing: -1px;
 }
 
 
@@ -1892,10 +1892,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70{
   margin: 0;
-    min-height: 600px;
-    overflow: hidden;
+  min-height: 600px;
+  overflow: hidden;
 
-  }
+}
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
   width: 960px;
@@ -1949,10 +1949,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 /* Funcionalidad principal para los tabs */
 .accordion-tabs-minimal a.tab-link {
-    display: block;
+  display: block;
 }
- .accordion-tabs-minimal .tab-content, .resultado {
-    display: none;
+.accordion-tabs-minimal .tab-content, .resultado {
+  display: none;
 }
 
 
@@ -1988,8 +1988,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   position: absolute;
   text-align: center;
   top: 273px;
-    width: 423px;
-    height: 272px;
+  width: 423px;
+  height: 272px;
   background-image: url(../images/bg-portfolio-home-hover.png);
   background-repeat: repeat;
 
@@ -2031,14 +2031,14 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .roll-over-porfolio-descri{
-   color: #ffffff;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 2px;
-    margin-top: 8px;
-    min-height: 40px;
+ color: #ffffff;
+ font-family: "ProximaNova",sans-serif;
+ font-size: 22px;
+ font-weight: 400;
+ line-height: 24px;
+ margin-bottom: 2px;
+ margin-top: 8px;
+ min-height: 40px;
 }
 
 .roll-over-portfolio-show-more .ruta{
@@ -2055,7 +2055,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   min-height: 280px;
   width: 100%;
   overflow: hidden;
-clear: both;
+  clear: both;
 }
 
 #block-block-7 .content{
@@ -2063,32 +2063,32 @@ clear: both;
   margin: 0 auto;
   text-align: center;
 }
- 
+
 #block-block-7 .content h2{
-    color: #ffffff;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    margin-bottom: 0;
-    margin-top: 13px;
+  color: #ffffff;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 13px;
 }
 
 #block-block-7 .content h2 span{
-     color: #ffffff;
-  font-family: "Baskerville",sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -1px;
+ color: #ffffff;
+ font-family: "Baskerville",sans-serif;
+ font-size: 56px;
+ font-weight: 400;
+ font-style: italic;
+ letter-spacing: -1px;
 }
 
 #block-block-7 .content p{
   color: #ffffff;
-    font-family: "Roboto Slab",sans-serif;
-    font-size: 23px;
-    font-weight: 400;
-    line-height: 35px;
-    margin: 0 auto 42px;
+  font-family: "Roboto Slab",sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  margin: 0 auto 42px;
 }
 
 #loader {display: none;}
@@ -2107,11 +2107,11 @@ clear: both;
 #block-block-7 .content #enlace-ir-a-portafolio a{
   display: block;
   color: #ffffff;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 29px;
-    font-weight: 400;
-    text-decoration: none;
-    line-height: 50px;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 29px;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 50px;
 }
 
 #block-block-7 .content #enlace-ir-a-portafolio span{
@@ -2135,51 +2135,51 @@ clear: both;
 }
 
 #block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
-   width: 970px;
-  text-align: center;
-  margin: 0 auto;
-  position: relative;
+ width: 970px;
+ text-align: center;
+ margin: 0 auto;
+ position: relative;
 }
 
 
 
 
 #encabezado-nuestro-proceso{
-   background-image: url("../images/flecha-cintillo-proceso-home.png");
-    background-position: center top;
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-    margin: -33px auto 15px;
-    padding-top: 52px;
-    position: relative;
-    width: 100%;
+ background-image: url("../images/flecha-cintillo-proceso-home.png");
+ background-position: center top;
+ background-repeat: no-repeat;
+ display: block;
+ float: left;
+ margin: -33px auto 15px;
+ padding-top: 52px;
+ position: relative;
+ width: 100%;
 }
 
 #encabezado-nuestro-proceso h2{
   color: #1A1A1A;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 0;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 #encabezado-nuestro-proceso h2 span{
-   color: #E8442E;
-  font-family: "Baskerville",sans-serif;
-  font-size: 48px;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: -1px;
+ color: #E8442E;
+ font-family: "Baskerville",sans-serif;
+ font-size: 48px;
+ font-weight: 400;
+ font-style: italic;
+ letter-spacing: -1px;
 }
 
 #encabezado-nuestro-proceso p{
   color: #4d4d4d;
-    font-family: "Roboto Slab",sans-serif;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 34px;
-    margin-top: 0;
+  font-family: "Roboto Slab",sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 34px;
+  margin-top: 0;
 }
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content{
@@ -2196,11 +2196,11 @@ clear: both;
 
 .page-inicio .jcarousel-skin-default .jcarousel-container .jcarousel-item{
   background: none repeat scroll 0 0 transparent;
-    border: medium none;
-    height: 100%;
-    margin: 0;
-    text-align: left;
-    width: 350px !important;
+  border: medium none;
+  height: 100%;
+  margin: 0;
+  text-align: left;
+  width: 350px !important;
 }
 
 .page-inicio  .view-nuestro-proceso .view-content{
@@ -2213,70 +2213,70 @@ clear: both;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .views-field-title a{
-    color: #1a1a1a;
-    display: block;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 22px;
-    font-weight: 400;
-    padding-top: 15px;
-    padding-bottom: 18px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-image: url(../images/linea-bg-proceso-home.png);
-    background-repeat: no-repeat;
-    background-position: bottom left;
+  color: #1a1a1a;
+  display: block;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-image: url(../images/linea-bg-proceso-home.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body{
-      width: 320px;
+  width: 320px;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body p{
-   color: #4d4d4d;
-    font-family: "Roboto Slab",sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 24px;
-    margin-top: 8px;
+ color: #4d4d4d;
+ font-family: "Roboto Slab",sans-serif;
+ font-size: 17px;
+ font-weight: 300;
+ line-height: 24px;
+ margin-top: 8px;
 }
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
   display: none;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
-    background-image: url("../images/carousel-next-image.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 44px;
-    left: -172px;
-    position: absolute;
-    top: 66px;
-    width: 44px;
-  }
+  background-image: url("../images/carousel-next-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 44px;
+  left: -172px;
+  position: absolute;
+  top: 66px;
+  width: 44px;
+}
 
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
-    position: absolute;
-    top: 268px;
+  position: absolute;
+  top: 268px;
 }
 
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
-    color: #1a1a1a;
-    display: block;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 52px;
-    margin-top: 0;
-    text-align: left;
+  color: #1a1a1a;
+  display: block;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 52px;
+  margin-top: 0;
+  text-align: left;
 }
 
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
-    color: #00A69C;
-    display: block;
-    font-family: "Baskerville",sans-serif;
-    font-size: 75px;
-     letter-spacing: -2px;
-    font-weight: 400;
+  color: #00A69C;
+  display: block;
+  font-family: "Baskerville",sans-serif;
+  font-size: 75px;
+  letter-spacing: -2px;
+  font-weight: 400;
 
 }
 
@@ -2289,18 +2289,18 @@ clear: both;
 
 .node-type-especialidad .node-especialidad .field-name-body h2{
 
-   color: #1A1A1A;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    text-align: center;
-    margin-top: 0;
+ color: #1A1A1A;
+ font-family: "ProximaNova",sans-serif;
+ font-size: 34px;
+ font-weight: 400;
+ margin-bottom: 5px;
+ text-align: center;
+ margin-top: 0;
 }
 
 
 .node-type-especialidad .node-especialidad .field-name-body h2 span{
-color: #E8442E;
+  color: #E8442E;
   font-family: "Baskerville",sans-serif;
   font-size: 48px;
   font-weight: 400;
@@ -2310,14 +2310,14 @@ color: #E8442E;
 }
 
 .node-type-especialidad .node-especialidad .field-name-body .parrafo{
-   color: #4D4D4D;
-    font-family: "Roboto Slab",sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    float: left;
-    width: 462px;
-line-height: 32px;
-margin-top: 0;
+ color: #4D4D4D;
+ font-family: "Roboto Slab",sans-serif;
+ font-size: 20px;
+ font-weight: 300;
+ float: left;
+ width: 462px;
+ line-height: 32px;
+ margin-top: 0;
 }
 
 .node-type-especialidad .node-especialidad .field-name-body #parrafo-1{
@@ -2325,17 +2325,17 @@ margin-top: 0;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad{
-    clear: both;
-    float: left;
-    margin-top: 30px;
+  clear: both;
+  float: left;
+  margin-top: 30px;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
-    float: left;
-    margin-right: 36px;
-    min-height: 415px;
-    text-align: center;
-    width: 296px;
+  float: left;
+  margin-right: 36px;
+  min-height: 415px;
+  text-align: center;
+  width: 296px;
 
 }
 
@@ -2349,7 +2349,7 @@ margin-top: 0;
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-9,
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-12,
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-15{
-   margin-right: 0px;
+ margin-right: 0px;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas:nth-child(3n+3){
@@ -2357,23 +2357,23 @@ margin-top: 0;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas .field-name-title h2{
-color: #333333;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 24px;
-    margin-bottom: 20px;
-    margin-top: 8px;
-    min-height: 48px;
-    text-transform: uppercase;
+  color: #333333;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  min-height: 48px;
+  text-transform: uppercase;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas .taxonomy-term-description p{
   color: #808080;
-    font-family: "Open Sans",sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 22px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .node-type-especialidad #page-title{
@@ -2392,8 +2392,72 @@ color: #333333;
 iframe#iframe-tablet, iframe#iframe-movil {display: none;}
 iframe.activo {display: block !important;}
 
+/* Aplicación - Analitica y funcionalidad */
+
+.bloque-encabezado-construimos-sueno{
+  min-height: 146px;
+  background-color: #E8442E;
+  background-image: url(../images/puntos-bg-sueno.png);
+  background-repeat: repeat;
+  width: 100%;
+}
+
+
+.bloque-encabezado-construimos-sueno-inner {
+  height: 146px;
+  margin: 0 auto;
+  text-align: center;
+  width: 1280px;
+  background-image: url(../images/liston-blanco-sueno-especialidad.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+
+.bloque-encabezado-construimos-sueno-inner h2{
+  color: #ffffff;
+  float: left;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 48px;
+  margin: 40px 0 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.bloque-encabezado-construimos-sueno-inner h3{
+  color: #ffffff;
+  float: left;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 33px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+  width: 100%;
+}
+
+#block-block-11 .twentytwenty-wrapper{
+   margin: 45px auto 0;
+    width: 970px;
+}
+
+#block-block-11 #container1{
+  width: 100%;
+}
+
+#block-block-11 #container1 img{
+  width: 100%;
+}
+
+#block-block-11 {
+    margin-bottom: 10px;
+}
 /*  ANDREY SOLIS :: 20/10/2014 */
 
 
 
 /**********/
+
+
