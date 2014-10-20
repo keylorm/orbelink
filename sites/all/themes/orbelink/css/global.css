@@ -1878,7 +1878,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno{
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno,
+.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado {
   width: 1280px;
   padding-top: 52px;
   margin: 0 auto;
@@ -1896,7 +1897,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
   }
 
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno{
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
   width: 960px;
   margin: 0 auto 55px;
   text-align: center;
@@ -1925,18 +1926,21 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 23px;
   font-weight: 400;
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content{
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content
+.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content{
   width: 100%;
   margin: 0 auto;
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row{
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
+.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row{
   float: left;
   width: 423px;
   height: 272px;
   overflow: hidden;
 }
 
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio{
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
+.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row .resumen-portafolio{
   position: relative;
   height: 272px;
   width: 423px;
@@ -2051,7 +2055,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   min-height: 280px;
   width: 100%;
   overflow: hidden;
-
+clear: both;
 }
 
 #block-block-7 .content{
@@ -2371,6 +2375,16 @@ color: #333333;
     font-weight: 400;
     line-height: 22px;
 }
+
+.node-type-especialidad #page-title{
+  display: none;
+}
+
+
+#block-views-c6455c73bf843430ca10bae1eb2af77e{
+
+}
+
 #encabezado-calc ul li {list-style: none; display: inline;}
 #encabezado-calc ul li div {height: 80px; width: 80px;}
 #encabezado-calc ul li.activo div#icono-tablet {background-image: url('../images/tablet-calc-activo.png'); background-repeat: no-repeat;}

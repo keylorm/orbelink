@@ -296,6 +296,32 @@ jQuery(document).ready(function(){
 
 	});
 
+
+	/*Hacer Efecto Roll Over en portfolio del detalle de especialidades */
+	var cuadros_portfolio_deta_especia=0;
+	jQuery('.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .views-row').each(function(indice, elemento) {
+		cuadros_portfolio_deta_especia=cuadros_portfolio_deta_especia+1;
+		jQuery(this).attr('id','views-row-portfolio-'+cuadros_portfolio_deta_especia);
+
+
+		var id= jQuery(this).attr('id');
+		jQuery('#'+id+' .resumen-portafolio').hover(
+
+
+		function() {
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "0"}, 600,function() {});
+
+
+		},function() {
+
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "273"}, 600,function() {});
+
+		});
+
+	});
+
 	/* Añadir Id a islas de detalle de especialidad */
 	var numero_islas=0;
 	jQuery('.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas').each(function(indice, elemento) {
