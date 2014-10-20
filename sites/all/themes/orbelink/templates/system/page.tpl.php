@@ -127,13 +127,13 @@ global $base_url;
     </div>
 
   <?php if ($page['sidebar_first']): ?>
-    <div id="sidebar-first" class="">
+    <div id="sidebar-first" class="gu-1-3">
       <?php print render($page['sidebar_first']); ?>
     </div> <!-- /.section, /#sidebar-first -->
   <?php endif; ?>
 
   <?php if ($page['sidebar_second']): ?>
-    <div id="sidebar-second" class="">
+    <div id="sidebar-second" class="gu-1-3">
       <?php print render($page['sidebar_second']); ?>
     </div> <!-- /.section, /#sidebar-second -->
   <?php endif; ?>

@@ -1,0 +1,4 @@
+name = SEO Application 
+description = This module provides a custom block for retreive information about position in Google. 
+package = Custom Block 
+core = 7.x
