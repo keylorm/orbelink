@@ -2275,3 +2275,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
      letter-spacing: -2px;
     font-weight: 400;
 }
+
+#encabezado-calc ul li {list-style: none; display: inline;}
+#encabezado-calc ul li div {height: 80px; width: 80px;}
+#encabezado-calc ul li.activo div#icono-tablet {background-image: url('../images/tablet-calc-activo.png'); background-repeat: no-repeat;}
+#encabezado-calc ul li div#icono-movil {background-image: url('../images/movil-calc.png'); background-repeat: no-repeat;}
+iframe#iframe-tablet, iframe#iframe-movil {display: none;}
+iframe.activo {display: block !important;}

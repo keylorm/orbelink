@@ -47,7 +47,13 @@ function app_seo_block_view($block_key){
         $block['content'] = '<form id="formulario-calc" action="#" method="post">
                                 Mi web: <input type="text" name="miweb" id="miweb" /><br /><br />
                                 <a href="javascript:void(0)" id="consulta-calc">consultar</a>
-                            </form>';
+                            </form>
+                            <div id="resultado-calc">
+                                <div id="encabezado-calc"></div>
+                                <div id="contenedor-iframe-calc">    
+                                </div>
+                                <div id="barra-vertical-calc"></div>
+                            </div>';
     }
  
     return $block;

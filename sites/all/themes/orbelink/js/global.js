@@ -3,6 +3,10 @@ jQuery(document).ready(function(){
 
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 
+	jQuery('.flexslider').flexslider({
+		 manualControls: ".flex-control-nav li",
+	});
+
 	jQuery( "#formulario-seo a#consulta-seo" ).click(function( event ) {
 
 		var var_miweb = jQuery("#miweb").val();
@@ -44,25 +48,28 @@ jQuery(document).ready(function(){
 
 			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
-			    alert( "Data Loaded: " + data );
-			    //var obj = jQuery.parseJSON(data);
+			    var obj = data;
 			    
-			    /*if(obj.estatus == '0'){
+			    //inyectar codigo html para mostrar una barra vertical
+			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
+			    
+			    //inyectar el codigo html para los displays tablet y movil
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<iframe id="iframe-tablet" class="activo" width="800" height="1024" src="'+ jQuery("input[name='miweb']").val() +'"></iframe><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe>';
 		
-					document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
-			    } else {
+			    //funcionalidad tab para los displays
+			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
+			    	jQuery("iframe#iframe-tablet").addClass("activo");
+			    	jQuery("iframe#iframe-movil").removeClass("activo");
+			    });
 
-				   	if(obj.posicion <= 10 ){
-				    	pagina = 1;
-				    } else if(obj.posicion <= 20 ){
-				    	pagina = 2;
-				    } else if(obj.posicion <= 30 ){
-				    	pagina = 3;
-				    }
+			     jQuery("#encabezado-calc ul li #icono-movil").click(function(){
+			    	jQuery("iframe#iframe-movil").addClass("activo");
+			    	jQuery("iframe#iframe-tablet").removeClass("activo");
+			    });
 
-			    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
-			    }*/
+				//inyectar codigo html para crear la barra vertical
 
+				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:70px;\"><div id=\"top\"></div><div id=\"contenido\" style=\"height:" + obj + "px;\"><div id=\"bottom\"></div></div>";
 			});
 
 		});
