@@ -31,18 +31,52 @@ function app_seo_block_view($block_key){
         //Define the block content.
         $block['content'] = '<div id="formulario-seo-contenido"><div class="bloque-encabezado-construimos-sueno">
                                 <div class="bloque-encabezado-construimos-sueno-inner">
-                                <h3>CALIFIQUE LA POSICIÓN DE SU SITIO EN GOOGLE.</h3>
+                                <h2>CALIFIQUE LA POSICIÓN DE SU SITIO EN GOOGLE</h2>
                                 </div>
                                 </div>
-                                <form action="#" method="post" id="formulario-seo">
-                                Mi web: <input type="text" name="miweb" id="miweb" /><br /><br />
-                                Google: <input type="radio" name="bot" value="cr" checked="checked" /> CR <input type="radio" name="bot" value="0" /> Global <br /><br />
-                                Idioma: <input type="radio" name="idioma" value="es_CR" checked="checked" /> Español <input type="radio" name="idioma" value="en_US" /> Inglés <br /><br />
-                                Termino: <input type="text" name="q" id="q" />
-                                <a href="javascript:void(0)" id="consulta-seo">consultar</a>
+                                <div id="formulario-seo-contenedor">
+                                    <div id="formulario-seo-contenedor-inner">
+                                        <form action="#" method="post" id="formulario-seo">
+                                        <div class="formulario-seo-inner">
+                                                <div class="input-web-wrapper input-type-text">
+                                                    <input type="text" name="miweb" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
+                                                </div>
+                                                <div class="input-termino-wrapper input-type-text">
+                                                    <input type="text" name="q" id="q" placeholder="Palabra clave" />
+                                                </div>
+                                                <div class="input-idioma-wrapper">
+                                                    <div class="input-radio-espa">
+                                                        <div class="input-radio-idioma-wrapper radio-activado">
+                                                            <input type="radio" name="idioma" value="es_CR" checked="checked" />
+                                                        </div> Español 
+                                                    </div>
+                                                    <div class="input-radio-eng">
+                                                        <div class="input-radio-idioma-wrapper radio-desactivado">
+                                                            <input type="radio" name="idioma" value="en_US" />
+                                                        </div> Inglés 
+                                                    </div>
+                                                </div>
+                                                <div class="input-google-wrapper">
+                                                    <div class="input-radio-cr">
+                                                        <div class="input-radio-google-wrapper radio-activado">
+                                                            <input type="radio" name="bot" value="cr" checked="checked" />
+                                                        </div> Google.co.cr</div>
+                                                    <div class="input-radio-global">
+                                                        <div class="input-radio-google-wrapper radio-desactivado">
+                                                            <input type="radio" name="bot" value="0" />
+                                                        </div> Google.com 
+                                                     </div>
+                                                </div>
+                                               
+                                                
+                                                <a href="javascript:void(0)" id="consulta-seo">consultar</a>
+                                            </div>
 
-                               <div id="resultado-seo"></div>
-                            </form></div>';
+                                           <div id="resultado-seo"></div>
+                                    </form>
+                                </div>
+                            </div>
+                            </div>';
 
     } else if ($block_key == 'calc_application') {
         //This is the title of the block.

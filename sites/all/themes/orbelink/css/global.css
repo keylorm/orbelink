@@ -2415,15 +2415,15 @@ iframe.activo {display: block !important;}
 
 
 .bloque-encabezado-construimos-sueno-inner h2{
-  color: #ffffff;
-  float: left;
-  font-family: "ProximaNova",sans-serif;
-  font-size: 42px;
-  font-weight: 400;
-  line-height: 48px;
-  margin: 40px 0 0;
-  text-transform: uppercase;
-  width: 100%;
+   color: #ffffff;
+    float: left;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 48px;
+    margin: 40px 0 0;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 
@@ -2454,7 +2454,99 @@ iframe.activo {display: block !important;}
 #block-block-11 {
     margin-bottom: 10px;
 }
+
+#block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2{
+margin: 58px 0 0;
+}
+
+
+
+
+/* App SEO */
 /*  ANDREY SOLIS :: 20/10/2014 */
+#formulario-seo-contenedor{
+  width: 960px;
+  margin: 0 auto;
+}
+
+#formulario-seo-contenedor-inner{
+  width: 100%;
+  float: left;
+  border: 1px solid #D1D3D4;
+  
+}
+#formulario-seo-contenedor-inner .input-web-wrapper{
+  margin-bottom: 15px;
+}
+
+#formulario-seo-contenedor-inner .input-type-text input{
+  background-color: #F1F2F2;
+   border: medium none;
+    border-radius: 5px;
+    height: 44px;
+    padding: 8px 45px 8px 15px;
+    width: 600px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #808080;
+    line-height: 44px;
+}
+
+#formulario-seo-contenedor-inner .input-radio-idioma-wrapper,
+#formulario-seo-contenedor-inner .input-radio-google-wrapper {
+    background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 40px;
+    overflow: hidden;
+    width: 40px;
+}
+
+#formulario-seo-contenedor-inner .input-radio-idioma-wrapper.radio-activado,
+#formulario-seo-contenedor-inner .input-radio-google-wrapper.radio-activado{
+  background-image: url("../images/radio-buttom-seo-checked.png");
+
+}
+
+#formulario-seo-contenedor-inner .input-radio-idioma-wrapper.radio-desactivado,
+#formulario-seo-contenedor-inner .input-radio-google-wrapper.radio-desactivado{
+  background-image: url("../images/radio-buttom-seo-unchecked.png");
+
+}
+
+#formulario-seo-contenedor-inner .input-radio-idioma-wrapper input,
+#formulario-seo-contenedor-inner .input-radio-google-wrapper input {
+    display: block;
+    height: 40px;
+    width: 100px;
+}
+
+#formulario-seo-contenedor-inner .input-radio-eng,
+#formulario-seo-contenedor-inner .input-radio-espa,
+#formulario-seo-contenedor-inner .input-radio-cr,
+#formulario-seo-contenedor-inner .input-radio-global{
+    height: 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #808080;
+    line-height: 40px;
+    width: 180px;
+    float: left;
+}
+
+.formulario-seo-inner{
+  padding: 18px 40px;
+  width: 660px;
+  float: left;
+}
+
+.input-idioma-wrapper,
+.input-google-wrapper{
+  clear: both;
+}
 
 
 

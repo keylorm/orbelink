@@ -6,39 +6,54 @@ jQuery(document).ready(function(){
 	jQuery('.flexslider').flexslider({
 		 manualControls: ".flex-control-nav li",
 	});
+	jQuery('input, textarea').placeholder();
 
 	jQuery( "#formulario-seo a#consulta-seo" ).click(function( event ) {
 
-		var var_miweb = jQuery("#miweb").val();
+		var var_miweb =jQuery("#miweb").val();	 
 		var var_bot = jQuery("input[name='bot']").val();
 		var var_idioma = jQuery("input[name='idioma']").val();
 		var var_q = jQuery("input#q").val();
 
-		document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+		if ( var_miweb  == "" ){
+			alert("Debe Insertar Una Ruta de un sitio web para realizar la búsqueda en Google y obtener el Resultado de su posición.");
+			return false;
+		}
+		else if(var_q == ""){
+				alert("Debe Insertar una Palabra clave para hacer la búsqueda en Google y obtener el Resultado de su posición.");
+				return false;
+		}else{
+				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-		jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
-		  .done(function( data ) {
-		    //alert( "Data Loaded: " + data );
-		    var obj = jQuery.parseJSON(data);
-		    var pagina = 0;
+				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				  .done(function( data ) {
+				    //alert( "Data Loaded: " + data );
+				    var obj = jQuery.parseJSON(data);
+				    var pagina = 0;
 
-		    if(obj.estatus == '0'){
-	
-				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
-		    } else {
+				    if(obj.estatus == '0'){
+			
+						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
+				    } else {
 
-			   	if(obj.posicion <= 10 ){
-			    	pagina = 1;
-			    } else if(obj.posicion <= 20 ){
-			    	pagina = 2;
-			    } else if(obj.posicion <= 30 ){
-			    	pagina = 3;
-			    }
+					   	if(obj.posicion <= 10 ){
+					    	pagina = 1;
+					    } else if(obj.posicion <= 20 ){
+					    	pagina = 2;
+					    } else if(obj.posicion <= 30 ){
+					    	pagina = 3;
+					    }
 
-		    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"http://localhost:8080/orbelink/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
-		    }
+				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+				    }
 
-		});
+				});
+
+			
+			
+
+		}
+		
 
 	});
 
@@ -46,7 +61,7 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 			    var obj = data;
 			    
@@ -331,6 +346,76 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass('isla-caracteristica-'+numero_islas);
 		
 
+	});
+
+
+/* Radio customs en aplicacion de SEO*/
+	jQuery(".input-radio-eng .input-radio-idioma-wrapper").click(function(){
+		if(jQuery(".input-radio-eng .input-radio-idioma-wrapper").hasClass("radio-activado")){
+			if(jQuery(".input-radio-espa .input-radio-idioma-wrapper").hasClass("radio-desactivado")){
+				return false;
+			}else{
+				jQuery(".input-radio-espa .input-radio-idioma-wrapper").addClass("radio-desactivado");
+			}
+
+		}else{
+			jQuery(".input-radio-eng .input-radio-idioma-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-eng .input-radio-idioma-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-espa .input-radio-idioma-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-espa .input-radio-idioma-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-espa .input-radio-idioma-wrapper").click(function(){
+		if(jQuery(".input-radio-espa .input-radio-idioma-wrapper").hasClass("radio-activado")){
+			if(jQuery(".input-radio-eng .input-radio-idioma-wrapper").hasClass("radio-desactivado")){
+				return false;
+			}else{
+				jQuery(".input-radio-eng .input-radio-idioma-wrapper").addClass("radio-desactivado");
+			}
+
+		}else{
+			jQuery(".input-radio-espa .input-radio-idioma-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-espa .input-radio-idioma-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-eng .input-radio-idioma-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-eng .input-radio-idioma-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-cr .input-radio-google-wrapper").click(function(){
+		if(jQuery(".input-radio-cr .input-radio-google-wrapper").hasClass("radio-activado")){
+			if(jQuery(".input-radio-global .input-radio-google-wrapper").hasClass("radio-desactivado")){
+				return false;
+			}else{
+				jQuery(".input-radio-global .input-radio-google-wrapper").addClass("radio-desactivado");
+			}
+
+		}else{
+			jQuery(".input-radio-cr .input-radio-google-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-cr .input-radio-google-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-global .input-radio-google-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-global .input-radio-google-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-global .input-radio-google-wrapper").click(function(){
+		if(jQuery(".input-radio-global .input-radio-google-wrapper").hasClass("radio-activado")){
+			if(jQuery(".input-global-cr .input-radio-google-wrapper").hasClass("radio-desactivado")){
+				return false;
+			}else{
+				jQuery(".input-radio-cr .input-radio-google-wrapper").addClass("radio-desactivado");
+			}
+
+		}else{
+			jQuery(".input-radio-global .input-radio-google-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-global .input-radio-google-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-cr .input-radio-google-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-cr .input-radio-google-wrapper").addClass("radio-desactivado");
+		}
+		
 	});
 	
 
