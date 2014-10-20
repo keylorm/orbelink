@@ -94,11 +94,15 @@ jQuery(document).ready(function(){
 	//agregar funcionalidad para la seciccion de estrategia
 	jQuery(".casilla").hide();
 	jQuery("#tablero-consulta .roll-over").hide();
-	cambiarCasillasTablero();
+	setTimeout(function(){ jQuery("#formulario-consulta-sueno li#estrategia1").click(); }, 1000);
 
-	jQuery("input[name='consulta']").change(function(){
+	jQuery("#formulario-consulta-sueno li").click(function(){
+		jQuery("#formulario-consulta-sueno li").removeClass('activo');
 		jQuery(".casilla").hide();
-		cambiarCasillasTablero();		
+		var valor_consulta = jQuery(this).attr('id');
+		jQuery(this).addClass('activo');
+		//jQuery("."+valor_consulta).show("slow");
+		jQuery("."+valor_consulta).toggle("scale");		
 	});
 
 	//agregar funcionalidad para desplegar el resultado del objetivo
@@ -481,11 +485,6 @@ function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 			}
 		break;
 	}
-}
-
-function cambiarCasillasTablero(){
-	var valor_consulta = jQuery("input[name='consulta']:checked").val();
-	jQuery("."+valor_consulta).show("slow");
 }
 
 function cambiarObjetivo(){

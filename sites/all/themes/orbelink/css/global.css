@@ -2548,8 +2548,124 @@ margin: 58px 0 0;
   clear: both;
 }
 
+#encabezado-cual-es-su-objetivo h2{
+	margin-top: 55px;
+}
+#formulario-consulta-sueno{
+	width: 960px;
+	height: 210px; margin: 0 auto;
+	padding: 0px;
+	
+	margin-top: 50px;
+	margin-bottom: 35px;
+	clear:both;
+	background-image: url(../images/linea_box_estrategias.png);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+#formulario-consulta-sueno li{
+	display:block;
+	width: 182px;
+	height: 155px;
+	padding: 10px;
+	background-color: #f1f2f2;
+	float:left;
+	font-family: "ProximaNova",sans-serif;
+	font-size: 17px;
+	color: #6d6e71;
+	text-align:center;
+	line-height: 19px;
+	background-image: url(../images/radio_estrategias_off.png);
+	background-position: center 10%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	padding-top: 60px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box; 
+  margin-left: 10px;
+}
+#formulario-consulta-sueno li.activo{
+	background-image: url(../images/radio_estrategias_on.png);
+}
+#formulario-consulta-sueno li:first-child{
+	margin-left: 0px;
+}
+#tablero-consulta{
+	width: 960px;
+	margin: 0 auto;
+	position:relative;
+	background-image: url(../images/box_estrategias.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	clear:both;
+	height: 672px;
+}
+
+#tablero-consulta .casilla{
+	width: 238px;
+	height: 220px;
+	background-image: url(../images/box_verde.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	font-family: "ProximaNova",sans-serif;
+	font-size: 27px;
+	padding: 15px;
+	text-align:center;
+	color: #FFF;
+	text-transform:uppercase;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  display:table;
+  position:absolute; 		
+}
+#tablero-consulta .casilla p{
+	line-height: 27px;
+	margin: auto;
+	display:table-cell;
+	vertical-align:middle;
+	white-space: pre-wrap;
+}
 
 
+
+.cp1{
+	top: 0px; left: 0px;
+}
+.cp2{
+	top: 0px; left: 240px;
+}
+.cp3{
+	top: 0px; left: 480px;
+}
+.cp4{
+	top: 0px; left: 722px;
+}
+.cp5{
+	top: 226px; left: 0px;
+}
+.cp6{
+	top: 226px; left: 240px;
+}
+.cp7{
+	top: 226px; left: 480px;
+}
+.cp8{
+	top: 226px; left: 722px;
+}
+.cp9{
+	top: 446px; left: 0px;
+}
+.cp10{
+	top: 446px; left: 240px;
+}
+.cp11{
+	top: 446px; left: 480px;
+}
+.cp12{
+	top: 446px; left: 722px;
+}
 /**********/
 
 /* app diseno web y movil - juan martinez */
