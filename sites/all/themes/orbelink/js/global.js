@@ -296,7 +296,14 @@ jQuery(document).ready(function(){
 
 	});
 
+	/* Añadir Id a islas de detalle de especialidad */
+	var numero_islas=0;
+	jQuery('.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas').each(function(indice, elemento) {
+		numero_islas=numero_islas+1;
+		jQuery(this).addClass('isla-caracteristica-'+numero_islas);
+		
 
+	});
 	
 
 
@@ -308,6 +315,8 @@ jQuery(document).ready(function(){
 	jQuery("input[name='presupuesto']").change(function(){
 		cambiarObjetivo();		
 	});
+
+
 
 });
 
@@ -386,3 +395,5 @@ function cambiarObjetivo(){
 	jQuery("#cantidad-clics").text(calculo[0]);
 	jQuery("#cantidad-impresiones").text(calculo[1]);
 }
+
+
