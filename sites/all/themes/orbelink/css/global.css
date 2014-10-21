@@ -2485,7 +2485,7 @@ margin: 58px 0 0;
    border: medium none;
     border-radius: 5px;
     height: 44px;
-    padding: 8px 45px 8px 15px;
+    padding: 0 45px 0 15px;
     width: 600px;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -2519,7 +2519,7 @@ margin: 58px 0 0;
 #formulario-seo-contenedor-inner .input-radio-google-wrapper input {
     display: block;
     height: 40px;
-    width: 100px;
+    width: 150px;
 }
 
 #formulario-seo-contenedor-inner .input-radio-eng,
