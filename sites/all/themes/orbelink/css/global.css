@@ -2930,6 +2930,88 @@ margin: 58px 0 0;
 .cp12{
 	top: 450px; left: 724px;
 }
+
+
+
+
+/*** SOBRE NOSOTROS */
+
+.page-node-48 #block-block-7{
+	background-color: #e8442e;
+}
+.page-node-48 h2 span {
+color: #E8442E;
+font-family: "Baskerville",sans-serif;
+font-size: 47px;
+font-style: italic;
+font-weight: 400;
+letter-spacing: -1px;
+}
+
+.page-node-48 h2 {
+color: #1A1A1A;
+font-family: "ProximaNova",sans-serif;
+font-size: 34px;
+text-align: center;
+font-weight: 400;
+line-height: 35px;
+}
+
+.page-node-48 .bienvenido{
+	display:block;
+	width: 100%;
+	font-family: "Roboto Slab",sans-serif;
+	text-align:center;
+	font-size: 48px;
+	line-height: 50px;
+	color: #e8442e;
+}
+#block-block-5{
+	width: 1280px;
+	height: 900px;
+	margin:auto;
+}
+.bloque{
+	float:left;
+	cursor: pointer;
+}
+.caption{
+	position:absolute;
+}
+.caption p{
+	font-family: "Roboto Slab",sans-serif;
+	font-size: 46px;
+	color:#FFF;
+}
+.caption span{
+	font-family: "Baskerville",sans-serif;
+	font-size: 71px;
+}
+#bloque-1{
+	width: 582px;
+	height: 455px;	
+}
+#bloque-2{
+	width: 698px;
+	height: 455px;	
+}
+#bloque-3{
+	width: 875px;
+	height: 455px;	
+}1274
+#bloque-4{
+	width: 405px;
+	height: 455px;	
+}
+#block-views-c5d5133c5fb8e77f14adb2f41cab4493{
+	width: 1280px;
+	height: 630px;
+	margin:auto;
+	background-image: url(../images/bg_about.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;	
+}
+
 /**********/
 
 /* app diseno web y movil - juan martinez */
