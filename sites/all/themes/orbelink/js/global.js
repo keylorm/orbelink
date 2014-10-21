@@ -142,6 +142,36 @@ jQuery(document).ready(function(){
 		info.show().animate({"transform": "scale(0,0)"});
 	});
 
+    /*** FUNCIONALIDAD SOBRE NOSOTROS *******/
+	jQuery(".bloque").hover(function() {
+		var caption = jQuery(this).find( ".caption" );
+		var rollover = jQuery(this).find( ".rollover_about" );
+		
+		caption.show().animate({"transform": "scale(0,0)"});
+		rollover.delay(100).show().animate({"transform": "scale(1,1)"});
+	}, function(){
+		var caption = jQuery(this).find( ".caption" );
+		var rollover = jQuery(this).find( ".rollover_about" );
+		
+		caption.show().animate({"transform": "scale(1,1)"});
+		rollover.delay(100).show().animate({"transform": "scale(0,0)"});
+	});
+    /*** FUNCIONALIDAD SOBRE NOSOTROS PERSONAL *******/
+	/*jQuery(".bloque-personal").hover(function() {
+		//var caption = jQuery(this).find( ".caption" );
+		var rollover = jQuery(this).find( ".rolloverpersonal" );
+		
+		//caption.show().animate({"transform": "scale(0,0)"});
+		rollover.delay(100).show().animate({"transform": "scale(1,1)"});
+	}, function(){
+		//var caption = jQuery(this).find( ".caption" );
+		var rollover = jQuery(this).find( ".rolloverpersonal" );
+		
+		//caption.show().animate({"transform": "scale(1,1)"});
+		rollover.delay(100).show().animate({"transform": "scale(0,0)"});
+	});		*/
+		
+
 	//agregar funcionalidad para desplegar el resultado del objetivo
 	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
 	jQuery( "#busqueda-resultado-"+valor_conversion ).removeClass("resultado");
