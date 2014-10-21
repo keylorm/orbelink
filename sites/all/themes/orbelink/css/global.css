@@ -2394,7 +2394,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 /* Aplicación - Analitica y funcionalidad */
 
-.bloque-encabezado-construimos-sueno{
+.bloque-encabezado-construimos-sueno, .encabezado-cual-es-su-objetivo{
   min-height: 146px;
   background-color: #E8442E;
   background-image: url(../images/puntos-bg-sueno.png);
@@ -2403,7 +2403,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner {
+.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner {
   height: 146px;
   margin: 0 auto;
   text-align: center;
@@ -2414,7 +2414,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner h2{
+.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2{
    color: #ffffff;
     float: left;
     font-family: "ProximaNova",sans-serif;
@@ -2878,3 +2878,4 @@ width: 60px !important;
 position: relative !important;
 margin-bottom: -20px !important;}
 .st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important;}
+#block-block-8 .accordion-tabs-minimal li{list-style: none;}
