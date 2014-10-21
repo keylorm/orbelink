@@ -312,14 +312,14 @@ a:hover{
 	width: 180px;
 }
 
-#block-block-1 map area,
+
 #block-block-1 img{
   transition: all 0.3s ease 0s;
 }
 
-#block-block-1 map area:hover,
+
 #block-block-1 img:hover{
-  transform: translate(0px, -2px);
+  transform: translate(0px, -5px) rotate(10deg);
 }
 
 /*Listado Blog*/
@@ -1005,7 +1005,8 @@ Noticias: F033A3
   background-repeat: no-repeat;
 }
 .link_autor_titulo {
-  color: #808285;
+  color: #808285 !important;
+    text-decoration: underline !important;
 }
 
 
@@ -1799,7 +1800,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row .view-mode-teaser img:hover{
-  transform: translate(0px, -3px);
+  transform: translate(0px, -5px) ;
 }
 
 .view-display-id-block_nuestro_blog .views-field-field-imagenes .field-content{
@@ -2929,6 +2930,88 @@ margin: 58px 0 0;
 .cp12{
 	top: 450px; left: 724px;
 }
+
+
+
+
+/*** SOBRE NOSOTROS */
+
+.page-node-48 #block-block-7{
+	background-color: #e8442e;
+}
+.page-node-48 h2 span {
+color: #E8442E;
+font-family: "Baskerville",sans-serif;
+font-size: 47px;
+font-style: italic;
+font-weight: 400;
+letter-spacing: -1px;
+}
+
+.page-node-48 h2 {
+color: #1A1A1A;
+font-family: "ProximaNova",sans-serif;
+font-size: 34px;
+text-align: center;
+font-weight: 400;
+line-height: 35px;
+}
+
+.page-node-48 .bienvenido{
+	display:block;
+	width: 100%;
+	font-family: "Roboto Slab",sans-serif;
+	text-align:center;
+	font-size: 48px;
+	line-height: 50px;
+	color: #e8442e;
+}
+#block-block-5{
+	width: 1280px;
+	height: 900px;
+	margin:auto;
+}
+.bloque{
+	float:left;
+	cursor: pointer;
+}
+.caption{
+	position:absolute;
+}
+.caption p{
+	font-family: "Roboto Slab",sans-serif;
+	font-size: 46px;
+	color:#FFF;
+}
+.caption span{
+	font-family: "Baskerville",sans-serif;
+	font-size: 71px;
+}
+#bloque-1{
+	width: 582px;
+	height: 455px;	
+}
+#bloque-2{
+	width: 698px;
+	height: 455px;	
+}
+#bloque-3{
+	width: 875px;
+	height: 455px;	
+}1274
+#bloque-4{
+	width: 405px;
+	height: 455px;	
+}
+#block-views-c5d5133c5fb8e77f14adb2f41cab4493{
+	width: 1280px;
+	height: 630px;
+	margin:auto;
+	background-image: url(../images/bg_about.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;	
+}
+
 /**********/
 
 /* app diseno web y movil - juan martinez */
@@ -2977,8 +3060,8 @@ margin: 0 22.5px;
 #contenedor-calculo-barra {width: 100%; background-color: #E6E6E6;}
 .node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -173px;}
 #block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 263px; position: relative; top: 170px; z-index: 3; top: 372px;}
-#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 600px; height: 315px; position: relative; top: -120px; margin: 0 auto; text-align: center;}
-.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; margin-left: 15px; }
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 600px; height: 315px; position: relative; top: -156px; margin: 0 auto; text-align: center;}/*top: -120px*/
+.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px; }
 #block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 35px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0;}
 #block-views-especialidad-block-1 .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
 #block-views-especialidad-block-1 .attachment-after ul li.last {border: none;}
