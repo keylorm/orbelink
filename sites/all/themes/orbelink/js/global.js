@@ -26,7 +26,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -71,7 +71,7 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 			    var obj = data;
 
@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="255" height="440" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){

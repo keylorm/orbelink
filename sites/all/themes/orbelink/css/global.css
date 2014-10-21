@@ -2935,8 +2935,10 @@ width: 100%;
 background-image: url('../images/tab-navegacion-responsivo.png');
 background-repeat: no-repeat;
 text-align: center;
+background-position: 44% center;
 background-position-x: 165px;
 background-position-y: 40px;
+
 }
 #encabezado-calc ul li {
 list-style: none;
@@ -2944,7 +2946,7 @@ display: inline-block;
 margin: 0 22.5px;
 }
 #iframe-tablet-contenedor {width: 715px; height: 906px; background-image: url('../images/tablet-fondo.jpg'); background-repeat: no-repeat; padding: 100px 66px;}
-#iframe-phone-contenedor {width: 278px; height: 591px; background-image: url('../images/phone.jpg'); background-repeat: no-repeat; padding: 75px 12px; margin:0 auto;}
+#iframe-phone-contenedor {width: 367px; height: 718px; background-image: url('../images/phone.png'); background-repeat: no-repeat; padding: 115px 24px; margin:0 auto;}
 #iframe-tablet, #iframe-movil {border: none;}
 #contenedor-iframe-calc {float: left; width: 715px; margin-bottom: 70px;}
 #barra-vertical-calc {float: left; margin-left: 80px; margin-top: 140px;}
