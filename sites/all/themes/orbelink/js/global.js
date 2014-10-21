@@ -67,7 +67,7 @@ jQuery(document).ready(function(){
 
 
 
-	jquery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
+	jQuery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
     	if(e.which == 13) {
     		jQuery( "#formulario-calc a#consulta-calc" ).click();
 	    }
