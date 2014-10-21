@@ -2423,8 +2423,29 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #encabezado-calc ul li {list-style: none; display: inline;}
 #encabezado-calc ul li div {height: 83px; width: 83px;}
-#encabezado-calc ul li.activo div#icono-tablet {background-image: url('../images/tablet-calc-activo.png'); background-repeat: no-repeat;}
-#encabezado-calc ul li div#icono-movil {background-image: url('../images/movil-calc.png'); background-repeat: no-repeat;}
+
+#encabezado-calc ul li.activo div#icono-tablet {
+  background-image: url('../images/tablet-calc-activo.png'); 
+  background-repeat: no-repeat;
+}
+#encabezado-calc ul li div#icono-tablet {
+  background-image: url('../images/tablet-calc.png'); 
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#encabezado-calc ul li.activo div#icono-movil {
+  background-image: url('../images/movil-calc-activo.png'); 
+  background-repeat: no-repeat;
+}
+
+#encabezado-calc ul li div#icono-movil {
+  background-image: url('../images/movil-calc.png'); 
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+
 .iframe-contenedor {display: none;}
 .iframe-contenedor.activo {display: block !important;}
 
