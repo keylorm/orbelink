@@ -2481,16 +2481,22 @@ margin: 58px 0 0;
 }
 
 #formulario-seo-contenedor-inner .input-type-text input{
-  background-color: #F1F2F2;
-   border: medium none;
+  background-color: #f1f2f2;
+    border: medium none;
     border-radius: 5px;
-    height: 44px;
+    color: #808080;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    height: 43px;
+    line-height: 43px;
     padding: 0 45px 0 15px;
     width: 600px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    color: #808080;
-    line-height: 44px;
+}
+
+#formulario-seo-contenedor-inner .input-termino-wrapper input{
+  border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    width: 545px;
 }
 
 #formulario-seo-contenedor-inner .input-radio-idioma-wrapper,
@@ -2501,6 +2507,7 @@ margin: 58px 0 0;
     height: 40px;
     overflow: hidden;
     width: 40px;
+    margin-right: 10px;
 }
 
 #formulario-seo-contenedor-inner .input-radio-idioma-wrapper.radio-activado,
@@ -2665,6 +2672,62 @@ margin: 58px 0 0;
 .input-idioma-wrapper {
     margin-bottom: 18px;
 }
+
+#hover-palabra-clave {
+     background-image: url("../images/signo-pregunta-palabra-clave.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 56px;
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    width: 55px;
+}
+
+.mensaje-palabra-clave{
+   background-image: url("../images/bg-mensaje-palabra-clave.png");
+    background-repeat: repeat;
+    border-radius: 10px;
+    display: none;
+    padding: 15px;
+    position: absolute;
+    right: -300px;
+    top: 18px;
+    width: 300px;
+    z-index: 999;
+
+}
+
+.not-logged-in .messages-wrapper{
+  display: none;
+}
+
+.mensaje-palabra-clave-wrapper{
+  position: relative;
+}
+
+.mensaje-palabra-clave-flecha{
+ background-image: url("../images/flecha-mensaje-palabra-clave.png");
+    background-repeat: no-repeat;
+    height: 32px;
+    left: -44px;
+    position: absolute;
+    top: 48px;
+    width: 30px;
+}
+
+
+.mensaje-palabra-clave p{
+    color: #fff;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0;
+}
+
+
 
 #encabezado-cual-es-su-objetivo h2{
 	margin-top: 55px;

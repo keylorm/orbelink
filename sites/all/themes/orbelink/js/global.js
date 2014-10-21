@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -57,11 +57,18 @@ jQuery(document).ready(function(){
 
 	});
 
+	jQuery("#hover-palabra-clave").hover(function(){
+		jQuery(".mensaje-palabra-clave").show( "fade", 400)}
+		,function(){
+		jQuery(".mensaje-palabra-clave").hide( "fade", 400);
+	});
+
+
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 			    var obj = data;
 			    
