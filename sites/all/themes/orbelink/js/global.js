@@ -58,7 +58,14 @@ jQuery(document).ready(function(){
 
 	});
 
-	
+
+	jQuery("#hover-palabra-clave").hover(function(){
+		jQuery(".mensaje-palabra-clave").show( "fade", 400)}
+		,function(){
+		jQuery(".mensaje-palabra-clave").hide( "fade", 400);
+	});
+
+
 
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
@@ -74,7 +81,7 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="255" height="440" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
@@ -98,42 +105,42 @@ jQuery(document).ready(function(){
 
 	//agregar funcionalidad para la seciccion de estrategia
 	jQuery(".casilla").css({display:'none'});
-	jQuery("#tablero-consulta .roll-over").hide();
+	jQuery("#tablero-consulta .roll-over").css({display:'none'});
 	setTimeout(function(){ jQuery("#formulario-consulta-sueno li#estrategia1").click(); }, 1000);
 
 	jQuery("#formulario-consulta-sueno li").click(function(){
 		jQuery("#formulario-consulta-sueno li").removeClass('activo');
-		jQuery(".casilla").css({display:'none'});
-		//jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
-            //var id = getRandomInt(1, 12);
-			//jQuery("#"+element.id).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
-       // });
-		
-		var valor_consulta = jQuery(this).attr('id');
 		jQuery(this).addClass('activo');
-		jQuery("."+valor_consulta).toggle("scale");
-		//jQuery("."+valor_consulta).show().effect("scale", {percent:100, origin:['middle','center']}, 500);	
+		jQuery(".casilla").show().animate({"transform": "scale(0,0)"});
+		/*jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
+            var id = generateRange(12, 1, 12);
+			jQuery(this).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
+        });*/
+		var div = jQuery("."+jQuery(this).attr('id'));
+		jQuery(".box_tablero").removeClass('box_activo');
+		div.parent().addClass('box_activo');
+		div.animate({"transform": "scale(1,1)"});
 	});
-jQuery(".casilla").hover(function(e) {
 	
-	var casilla = jQuery(this);
-	casilla.animate({opacity: 0}, 600);
-	var id = casilla.attr('id');
-	var info = jQuery("#roll-over-"+id);
-	info.show().animate({opacity: 1}, 600);
-	
-}, function(){
-
-	jQuery(this).animate({opacity: 1}, 600);
-	info.animate({opacity: 0}, 600);
-	
-
-});
-jQuery(".roll-over").mouseout(function(e) {	
-	jQuery(this).animate({opacity: 0}, 600).css({display:'none'});
-	var id = jQuery(this).attr('id');
-	jQuery("#roll-over-"+id).show().animate({opacity: 0}, 600);
-});
+	jQuery(".box_tablero").hover(function() {
+		if(jQuery(this).hasClass( "box_activo" ) == false){
+			return false;
+		}
+		var casilla = jQuery(this).find( ".casilla" );
+		casilla.show().animate({"transform": "scale(0,0)"});
+		var id = casilla.attr('id');
+		var info = jQuery("#roll-over-"+id);
+		info.delay(100).show().animate({"transform": "scale(1,1)"});
+	}, function(){
+		if(jQuery(this).hasClass( "box_activo" ) == false){
+			return false;
+		}
+		var casilla = jQuery(this).find( ".casilla" );
+		casilla.delay(100).show().animate({"transform": "scale(1,1)"});
+		var id = casilla.attr('id');
+		var info = jQuery("#roll-over-"+id);	
+		info.show().animate({"transform": "scale(0,0)"});
+	});
 
 	//agregar funcionalidad para desplegar el resultado del objetivo
 	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
@@ -347,6 +354,30 @@ jQuery(".roll-over").mouseout(function(e) {
 
 	});
 
+	var cuadros_portfolio_g=0;
+	jQuery('.view-display-id-block_resumen_portafolio_grande .views-row').each(function(indice, elemento) {
+		cuadros_portfolio_g=cuadros_portfolio_g+1;
+		jQuery(this).attr('id','views-row-portfolio-'+cuadros_portfolio_g);
+
+
+		var id= jQuery(this).attr('id');
+		jQuery('#'+id+' .resumen-portafolio').hover(
+
+
+		function() {
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "0"}, 600,function() {});
+
+
+		},function() {
+
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "273"}, 600,function() {});
+
+		});
+
+	});
+
 
 	/*Hacer Efecto Roll Over en portfolio del detalle de especialidades */
 	var cuadros_portfolio_deta_especia=0;
@@ -466,10 +497,6 @@ jQuery(".roll-over").mouseout(function(e) {
 
 
 });
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 
 function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 	switch(presupuesto){

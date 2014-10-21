@@ -42,7 +42,9 @@ function app_seo_block_view($block_key){
                                                     <input type="text" name="miweb" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
                                                 </div>
                                                 <div class="input-termino-wrapper input-type-text">
+                                                    <a id="hover-palabra-clave" href="javascript:void(0);"></a>
                                                     <input type="text" name="q" id="q" placeholder="Palabra clave" />
+                                                    <div class="mensaje-palabra-clave"><div class="mensaje-palabra-clave-wrapper"><div class="mensaje-palabra-clave-flecha"></div><p>La Palabra clave se refiere al término con el cual buscaría usted su sitio web en google para saber en que posición se ubica. Por ejemplo, si su página es sobre un hotel en Guanacaste, entonces una palabra o frase clave podría ser: "Hotel Guanacaste"</p></div></div>
                                                 </div>
                                                 <div class="input-idioma-wrapper">
                                                     <div class="input-radio-espa">
