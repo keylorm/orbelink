@@ -2703,5 +2703,10 @@ margin: 0 22.5px;
 #iframe-tablet, #iframe-movil {border: none;}
 #contenedor-iframe-calc {float: left; width: 715px; margin-bottom: 70px;}
 #barra-vertical-calc {float: left; margin-left: 80px; margin-top: 140px;}
-#calculo-barra-vertical .top, #calculo-barra-vertical .bottom {width: 50px; height: 50px;}
-#calculo-barra-vertical .top {background-image: url('../images/cara-feliz-diseno-web.png'); background-repeat: no-repeat;}
+#calculo-barra-vertical #top, #calculo-barra-vertical #bottom {width: 50px; height: 50px;}
+#calculo-barra-vertical #top {background-image: url('../images/cara-feliz-diseno-web.png'); background-repeat: no-repeat;}
+#calculo-barra-vertical #bottom {background-image: url('../images/cara-triste-diseno-web.png'); background-repeat: no-repeat; margin-top: 5px;}
+#calculo-barra-vertical #contenido {height: 468px;}
+#contenido-mascara {background-image: url('../images/barra-calculo-mascara.png'); background-repeat: no-repeat; width: 100%; height: 468px;}
+#contenedor-calculo-barra-fondo {height: 468px; width: 71%; margin-left: 5px; background-color: #00A69C; }
+#contenedor-calculo-barra {width: 100%; background-color: #E6E6E6;}
