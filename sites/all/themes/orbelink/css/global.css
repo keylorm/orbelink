@@ -2372,7 +2372,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   transition: all 0.3s ease 0s;
 }
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas img:hover{
-  transform: translate(0px, -3px);
+  transform: translate(0px, -5px);
 }
 
 
@@ -3072,6 +3072,11 @@ height: 60px !important;
 width: 60px !important;
 position: relative !important;
 margin-bottom: -20px !important;}
+
+.st_sharethis_large .stLarge:hover {
+height: 60px !important;
+width: 60px !important;
+background-position: center center !important;}
 .st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important;}
 #block-block-8 .accordion-tabs-minimal li{list-style: none;}
 
