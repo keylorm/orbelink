@@ -67,12 +67,12 @@ jQuery(document).ready(function(){
 
 
 
-	jquery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
+	/*jquery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
     	if(e.which == 13) {
     		jQuery( "#formulario-calc a#consulta-calc" ).click();
 	    }
 	});
-
+*/
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
 			jQuery("#formulario-calc a#consulta-calc").css({
