@@ -547,11 +547,15 @@ h1#page-title{
 #blog-todos-list-content,
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content,
-.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content,
-.view-display-id-block_nuestro_blog .view-content {
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content{
 	list-style: none;
 	margin: 0px; padding: 0px;
 	width:630px;
+}
+
+.view-display-id-block_nuestro_blog .view-content {
+  list-style: none;
+  margin: 0px; padding: 0px;
 }
 
 #blog-list-content,
