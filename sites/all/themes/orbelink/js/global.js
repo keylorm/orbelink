@@ -92,18 +92,43 @@ jQuery(document).ready(function(){
 	jQuery("#container1").twentytwenty();
 
 	//agregar funcionalidad para la seciccion de estrategia
-	jQuery(".casilla").hide();
+	jQuery(".casilla").css({display:'none'});
 	jQuery("#tablero-consulta .roll-over").hide();
 	setTimeout(function(){ jQuery("#formulario-consulta-sueno li#estrategia1").click(); }, 1000);
 
 	jQuery("#formulario-consulta-sueno li").click(function(){
 		jQuery("#formulario-consulta-sueno li").removeClass('activo');
-		jQuery(".casilla").hide();
+		jQuery(".casilla").css({display:'none'});
+		//jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
+            //var id = getRandomInt(1, 12);
+			//jQuery("#"+element.id).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
+       // });
+		
 		var valor_consulta = jQuery(this).attr('id');
 		jQuery(this).addClass('activo');
-		//jQuery("."+valor_consulta).show("slow");
-		jQuery("."+valor_consulta).toggle("scale");		
+		jQuery("."+valor_consulta).toggle("scale");
+		//jQuery("."+valor_consulta).show().effect("scale", {percent:100, origin:['middle','center']}, 500);	
 	});
+jQuery(".casilla").hover(function(e) {
+	
+	var casilla = jQuery(this);
+	casilla.animate({opacity: 0}, 600);
+	var id = casilla.attr('id');
+	var info = jQuery("#roll-over-"+id);
+	info.show().animate({opacity: 1}, 600);
+	
+}, function(){
+
+	jQuery(this).animate({opacity: 1}, 600);
+	info.animate({opacity: 0}, 600);
+	
+
+});
+jQuery(".roll-over").mouseout(function(e) {	
+	jQuery(this).animate({opacity: 0}, 600).css({display:'none'});
+	var id = jQuery(this).attr('id');
+	jQuery("#roll-over-"+id).show().animate({opacity: 0}, 600);
+});
 
 	//agregar funcionalidad para desplegar el resultado del objetivo
 	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
@@ -436,6 +461,10 @@ jQuery(document).ready(function(){
 
 
 });
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 	switch(presupuesto){
