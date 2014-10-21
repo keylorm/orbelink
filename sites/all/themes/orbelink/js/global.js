@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
 				alert("Debe Insertar una Palabra clave para hacer la búsqueda en Google y obtener el Resultado de su posición.");
 				return false;
 		}else{
-				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
 				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
@@ -33,7 +33,7 @@ jQuery(document).ready(function(){
 
 				    if(obj.estatus == '0'){
 			
-						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
+						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 4 páginas de resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
 				    } else {
 
 					   	if(obj.posicion <= 10 ){
@@ -44,7 +44,7 @@ jQuery(document).ready(function(){
 					    	pagina = 3;
 					    }
 
-				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google.com <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p> <br/> <p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
 				    }
 
 				});
