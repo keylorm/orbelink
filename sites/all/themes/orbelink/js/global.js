@@ -67,12 +67,31 @@ jQuery(document).ready(function(){
 
 
 
+	jquery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
+    	if(e.which == 13) {
+    		jQuery( "#formulario-calc a#consulta-calc" ).click();
+	    }
+	});
+
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
+
+			jQuery("#formulario-calc a#consulta-calc").css({
+				"background-image": "url(/sites/all/themes/orbelink/images/responsive-loading.gif)",
+				"background-position": "center center"
+			});
+
+
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
 			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
+
+			  	jQuery("#formulario-calc a#consulta-calc").css({
+					"background-image": "url(/sites/all/themes/orbelink/images/boton-formulario-diseno-web-movil.png)",
+					"background-position": "6px 6px"
+				});
+
 			    var obj = data;
 
 			    jQuery('#resultado-calc').show();	
