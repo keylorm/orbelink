@@ -2548,6 +2548,15 @@ margin: 58px 0 0;
   clear: both;
 }
 
+.buscar-button-box{
+  width: 186px;
+  height: 44px;
+  position: absolute;
+  text-align: center;
+  background-color: #00A69C;
+  border-radius: 5px;
+}
+
 #encabezado-cual-es-su-objetivo h2{
 	margin-top: 55px;
 }

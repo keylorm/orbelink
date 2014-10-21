@@ -69,7 +69,7 @@ function app_seo_block_view($block_key){
                                                 </div>
                                                
                                                 
-                                                <a href="javascript:void(0)" id="consulta-seo">consultar</a>
+                                                <div class="buscar-button-box"><a href="javascript:void(0)" id="consulta-seo">Buscar</a></div>
                                             </div>
 
                                            <div id="resultado-seo"></div>
