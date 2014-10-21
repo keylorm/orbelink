@@ -95,7 +95,6 @@ jQuery(document).ready(function(){
 			    });
 
 				//inyectar codigo html para crear la barra vertical
-				alert(((obj * 460)/100));
 				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + (460-((obj * 460)/100)) + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
 			});
 

@@ -2430,7 +2430,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 /* Aplicación - Analitica y funcionalidad */
 
-.bloque-encabezado-construimos-sueno, .encabezado-cual-es-su-objetivo{
+.bloque-encabezado-construimos-sueno, .encabezado-cual-es-su-objetivo, #block-app-seo-calc-application{
   min-height: 146px;
   background-color: #E8442E;
   background-image: url(../images/puntos-bg-sueno.png);
@@ -2439,7 +2439,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner {
+.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner {
   height: 146px;
   margin: 0 auto;
   text-align: center;
@@ -2450,7 +2450,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2{
+.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2{
    color: #ffffff;
     float: left;
     font-family: "ProximaNova",sans-serif;
@@ -2932,7 +2932,7 @@ margin: 58px 0 0;
 /**********/
 
 /* app diseno web y movil - juan martinez */
-form#formulario-calc { padding: 58px 0 69px 0; background-color: #E8442E; text-align: center;}
+#block-app-seo-calc-application-inner { padding: 28px 0 69px 0; text-align: center;}
 form#formulario-calc h2 {color: #fff; font-family: 'ProximaNova', sans-serif; font-size: 35.69px; font-weight: 400; margin: 0 0 30px 0; line-height: 27px;}
 input[name="miweb"] {width: 600px; height: 44px; border: none; padding: 8px 45px 8px 15px; border-radius: 5px;}
 #consulta-calc { padding: 22px; position: absolute; right: 0; bottom: 0; background-image: url('../images/boton-formulario-diseno-web-movil.png'); background-repeat: no-repeat; background-position: 6px 6px;}
@@ -2991,3 +2991,23 @@ position: relative !important;
 margin-bottom: -20px !important;}
 .st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important;}
 #block-block-8 .accordion-tabs-minimal li{list-style: none;}
+
+
+/* App publicidad */
+ul.accordion-tabs-minimal li.tab-header-and-content { float: left; min-width: 350px; } 
+ul.accordion-tabs-minimal {width: 980px; padding-left: 0px; margin: 0 auto; height: 1200px; margin-top: 70px;}
+ul.accordion-tabs-minimal .tab-content { position: absolute; width: 980px; text-align: center; margin-top: 76px;}
+#conversion-opciones {border: none; background-color: #E6E7E8; padding: 21px 43px; font-family: 'ProximaNova' !important; font-size: 19px !important; text-transform: uppercase;}
+div#busqueda-resultado { margin-top: 45px; }
+ul.accordion-tabs-minimal a {padding: 0 55px 20px 55px; text-align: center; border: 1px solid #bbb;}
+ul.accordion-tabs-minimal a#conversion { margin: 0 25px 0 110px;}
+ul.accordion-tabs-minimal a h2, ul.accordion-tabs-minimal a h3, ul.accordion-tabs-minimal a p{ margin: 0; padding: 0; }
+ul.accordion-tabs-minimal a h3 {color: #000;}
+ul.accordion-tabs-minimal a p{ color: #00A69C; }
+ul.accordion-tabs-minimal a h3 { font-family: 'ProximaNova', sans-serif; font-weight: 400; font-size: 34.53px; text-transform: uppercase; margin-top: -17px;}
+ul.accordion-tabs-minimal a p {font-family: 'baskerville-Italic', sans-serif; font-style: italic; font-size: 27.25px;}
+ul.accordion-tabs-minimal a.is-active {border:none;}
+ul.accordion-tabs-minimal a.is-active p, ul.accordion-tabs-minimal a.is-active h3{color: #fff;}
+ul.accordion-tabs-minimal a.is-active#conversion { background-image: url('../images/background-tab-app-publicidad.png'); background-repeat: no-repeat;}
+ul.accordion-tabs-minimal a.is-active#branding { background-image: url('../images/background-tab-app-publicidad-2.png'); background-repeat: no-repeat; }
+ul.accordion-tabs-minimal li.tab-header-and-content.primero {margin-right: 40px;}
