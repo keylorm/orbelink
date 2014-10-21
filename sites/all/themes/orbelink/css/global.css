@@ -312,6 +312,16 @@ a:hover{
 	width: 180px;
 }
 
+#block-block-1 map area,
+#block-block-1 img{
+  transition: all 0.3s ease 0s;
+}
+
+#block-block-1 map area:hover,
+#block-block-1 img:hover{
+  transform: translate(0px, -2px);
+}
+
 /*Listado Blog*/
 
 .page-blog .main-content .main,
@@ -2356,6 +2366,14 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 296px;
 
 }
+
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas img{
+  transition: all 0.3s ease 0s;
+}
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas img:hover{
+  transform: translate(0px, -3px);
+}
+
 
 .node-type-especialidad .node-especialidad .field-name-body{
   display: block;
