@@ -5,6 +5,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.flexslider').flexslider({
 		 manualControls: ".flex-control-nav li",
+		 directionNav: false, 
 	});
 	jQuery('input, textarea').placeholder();
 
@@ -57,11 +58,13 @@ jQuery(document).ready(function(){
 
 	});
 
+
 	jQuery("#hover-palabra-clave").hover(function(){
 		jQuery(".mensaje-palabra-clave").show( "fade", 400)}
 		,function(){
 		jQuery(".mensaje-palabra-clave").hide( "fade", 400);
 	});
+
 
 
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
@@ -71,6 +74,8 @@ jQuery(document).ready(function(){
 			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 			    var obj = data;
+
+			    jQuery('#resultado-calc').show();	
 			    
 			    //inyectar codigo html para mostrar una barra vertical
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';

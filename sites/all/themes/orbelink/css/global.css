@@ -2926,3 +2926,18 @@ margin: 0 22.5px;
 #contenido-mascara {background-image: url('../images/barra-calculo-mascara.png'); background-repeat: no-repeat; width: 100%; height: 468px;}
 #contenedor-calculo-barra-fondo {height: 468px; width: 71%; margin-left: 5px; background-color: #00A69C; }
 #contenedor-calculo-barra {width: 100%; background-color: #E6E6E6;}
+.node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -173px;}
+#block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 263px; position: relative; top: 170px; z-index: 3; top: 372px;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 600px; height: 315px; position: relative; top: -120px; margin: 0 auto; text-align: center;}
+.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; margin-left: 15px; }
+#block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 35px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0;}
+#block-views-especialidad-block-1 .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
+#block-views-especialidad-block-1 .attachment-after ul li.last {border: none;}
+#resultado-calc {display: none;}
+.last.sharethis {margin-left: 100px;}
+.st_sharethis_large .stLarge {background-image: url('../images/sharethis.png') !important; display: inline-block !important;
+height: 60px !important;
+width: 60px !important;
+position: relative !important;
+margin-bottom: -20px !important;}
+.st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important;}

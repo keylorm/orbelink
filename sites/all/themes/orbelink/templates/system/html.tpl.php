@@ -93,5 +93,9 @@
     </ul>
 </div>
 
+<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "0d00cd3c-5972-48d7-92b0-73ff0a0e54ff", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
 </body>
 </html>
