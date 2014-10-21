@@ -65,37 +65,58 @@ jQuery(document).ready(function(){
 		jQuery(".mensaje-palabra-clave").hide( "fade", 400);
 	});
 
-
-
+	/*jquery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
+    	if(e.which == 13) {
+    		jQuery( "#formulario-calc a#consulta-calc" ).click();
+	    }
+	});*/
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
+
+			jQuery("#formulario-calc a#consulta-calc").css({
+				"background-image": "url(/sites/all/themes/orbelink/images/responsive-loading.gif)",
+				"background-position": "center center"
+			});
+
+
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
 			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
+
+			  	jQuery("#formulario-calc a#consulta-calc").css({
+					"background-image": "url(/sites/all/themes/orbelink/images/boton-formulario-diseno-web-movil.png)",
+					"background-position": "6px 6px"
+				});
+
 			    var obj = data;
 
 			    jQuery('#resultado-calc').show();	
 			    
 			    //inyectar codigo html para mostrar una barra vertical
-			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
+			    document.getElementById("encabezado-calc").innerHTML = '<ul><li id="li-tablet" class="activo"><div class="img" id="icono-tablet"/></li><li id="li-phone"><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
 			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
+			    	jQuery("#li-tablet").addClass("activo");
+			    	jQuery("#li-phone").removeClass("activo");
+
 			    	jQuery("#iframe-tablet-contenedor").addClass("activo");
-			    	jQuery("#iframe-phone-contenedor").removeClass("activo");
+    				jQuery("#iframe-phone-contenedor").removeClass("activo");
 			    });
 
 			     jQuery("#encabezado-calc ul li #icono-movil").click(function(){
+			    	jQuery("#li-phone").addClass("activo");
+			    	jQuery("#li-tablet").removeClass("activo");
+
 			    	jQuery("#iframe-phone-contenedor").addClass("activo");
-			    	jQuery("#iframe-tablet-contenedor").removeClass("activo");
+    				jQuery("#iframe-tablet-contenedor").removeClass("activo");
 			    });
 
 				//inyectar codigo html para crear la barra vertical
-				alert(((obj * 460)/100));
 				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + (460-((obj * 460)/100)) + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
 			});
 
