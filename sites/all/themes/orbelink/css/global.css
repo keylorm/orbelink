@@ -1529,8 +1529,12 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 280px;
   text-align: center;
   border: 1px solid #fff;
+  transition: all 0.3s ease 0s;
 }
 
+#block-block-4 #enlace-cuentanos-tu-sueno:hover {
+  transform: translate(0px, -2px);
+}
 
 #block-block-4 #enlace-cuentanos-tu-sueno a{
   display: block;
@@ -1781,12 +1785,11 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row .view-mode-teaser img{
-  border-radius: 87px;
-  -webkit-border-radius:87px;
-  -moz-border-radius:87px;
-  -o-border-radius: 87px;
-  behavior: url(sites/all/themes/orbelink/css/css-pie/PIE.htc);
+  transition: all 0.3s ease 0s;
+}
 
+.page-inicio .view-display-id-block_islas_especialidad .views-row .view-mode-teaser img:hover{
+  transform: translate(0px, -3px);
 }
 
 .view-display-id-block_nuestro_blog .views-field-field-imagenes .field-content{
@@ -2263,6 +2266,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   position: absolute;
   top: 66px;
   width: 44px;
+  transition: all 0.3s ease 0s;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next:hover{
+  transform: translate(0px, -2px);
 }
 
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
