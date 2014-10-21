@@ -312,14 +312,14 @@ a:hover{
 	width: 180px;
 }
 
-#block-block-1 map area,
+
 #block-block-1 img{
   transition: all 0.3s ease 0s;
 }
 
-#block-block-1 map area:hover,
+
 #block-block-1 img:hover{
-  transform: translate(0px, -2px);
+  transform: translate(0px, -5px) rotate(10deg);
 }
 
 /*Listado Blog*/
@@ -1005,7 +1005,8 @@ Noticias: F033A3
   background-repeat: no-repeat;
 }
 .link_autor_titulo {
-  color: #808285;
+  color: #808285 !important;
+    text-decoration: underline !important;
 }
 
 
@@ -1799,7 +1800,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row .view-mode-teaser img:hover{
-  transform: translate(0px, -3px);
+  transform: translate(0px, -5px) ;
 }
 
 .view-display-id-block_nuestro_blog .views-field-field-imagenes .field-content{
