@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
 				alert("Debe Insertar una Palabra clave para hacer la búsqueda en Google y obtener el Resultado de su posición.");
 				return false;
 		}else{
-				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
 				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
@@ -34,7 +34,7 @@ jQuery(document).ready(function(){
 
 				    if(obj.estatus == '0'){
 			
-						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><h2>Lo sentimos, ha superado el límite recomendado</h2><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/></div>"; 		    	
+						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 4 páginas de resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
 				    } else {
 
 					   	if(obj.posicion <= 10 ){
@@ -45,7 +45,7 @@ jQuery(document).ready(function(){
 					    	pagina = 3;
 					    }
 
-				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p>Esta en la posición "+ obj.posicion +" de la página " + pagina + " de Google.com para el término " + obj.termino + "</p> <br/> <p>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google.com <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p> <br/> <p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
 				    }
 
 				});
@@ -97,18 +97,43 @@ jQuery(document).ready(function(){
 	jQuery("#container1").twentytwenty();
 
 	//agregar funcionalidad para la seciccion de estrategia
-	jQuery(".casilla").hide();
+	jQuery(".casilla").css({display:'none'});
 	jQuery("#tablero-consulta .roll-over").hide();
 	setTimeout(function(){ jQuery("#formulario-consulta-sueno li#estrategia1").click(); }, 1000);
 
 	jQuery("#formulario-consulta-sueno li").click(function(){
 		jQuery("#formulario-consulta-sueno li").removeClass('activo');
-		jQuery(".casilla").hide();
+		jQuery(".casilla").css({display:'none'});
+		//jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
+            //var id = getRandomInt(1, 12);
+			//jQuery("#"+element.id).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
+       // });
+		
 		var valor_consulta = jQuery(this).attr('id');
 		jQuery(this).addClass('activo');
-		//jQuery("."+valor_consulta).show("slow");
-		jQuery("."+valor_consulta).toggle("scale");		
+		jQuery("."+valor_consulta).toggle("scale");
+		//jQuery("."+valor_consulta).show().effect("scale", {percent:100, origin:['middle','center']}, 500);	
 	});
+jQuery(".casilla").hover(function(e) {
+	
+	var casilla = jQuery(this);
+	casilla.animate({opacity: 0}, 600);
+	var id = casilla.attr('id');
+	var info = jQuery("#roll-over-"+id);
+	info.show().animate({opacity: 1}, 600);
+	
+}, function(){
+
+	jQuery(this).animate({opacity: 1}, 600);
+	info.animate({opacity: 0}, 600);
+	
+
+});
+jQuery(".roll-over").mouseout(function(e) {	
+	jQuery(this).animate({opacity: 0}, 600).css({display:'none'});
+	var id = jQuery(this).attr('id');
+	jQuery("#roll-over-"+id).show().animate({opacity: 0}, 600);
+});
 
 	//agregar funcionalidad para desplegar el resultado del objetivo
 	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
@@ -441,6 +466,10 @@ jQuery(document).ready(function(){
 
 
 });
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
 function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 	switch(presupuesto){

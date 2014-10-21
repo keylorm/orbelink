@@ -2465,8 +2465,9 @@ margin: 58px 0 0;
 /* App SEO */
 /*  ANDREY SOLIS :: 20/10/2014 */
 #formulario-seo-contenedor{
-  width: 960px;
-  margin: 0 auto;
+ height: 280px;
+    margin: 20px auto 5px;
+    width: 960px;
 }
 
 #formulario-seo-contenedor-inner{
@@ -2484,7 +2485,7 @@ margin: 58px 0 0;
    border: medium none;
     border-radius: 5px;
     height: 44px;
-    padding: 8px 45px 8px 15px;
+    padding: 0 45px 0 15px;
     width: 600px;
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
@@ -2518,7 +2519,7 @@ margin: 58px 0 0;
 #formulario-seo-contenedor-inner .input-radio-google-wrapper input {
     display: block;
     height: 40px;
-    width: 100px;
+    width: 150px;
 }
 
 #formulario-seo-contenedor-inner .input-radio-eng,
@@ -2538,23 +2539,131 @@ margin: 58px 0 0;
 }
 
 .formulario-seo-inner{
-  padding: 18px 40px;
-  width: 660px;
   float: left;
+    padding: 18px 0 38px 35px;
+    position: relative;
+    width: 654px;
 }
 
 .input-idioma-wrapper,
 .input-google-wrapper{
   clear: both;
+  height: 40px;
 }
 
 .buscar-button-box{
-  width: 186px;
-  height: 44px;
-  position: absolute;
-  text-align: center;
-  background-color: #00A69C;
-  border-radius: 5px;
+  background-color: #00a69c;
+    border-radius: 5px;
+    bottom: 39px;
+    height: 44px;
+    left: 450px;
+    position: absolute;
+    text-align: center;
+    width: 186px;
+    transition: all 0.3s ease 0s;
+}
+
+.buscar-button-box:hover{
+  transform: translate(0px, -2px);
+}
+
+.buscar-button-box a{
+   text-transform: uppercase;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 48px;
+    text-decoration: none;
+    display: block;
+}
+
+#resultado-seo{
+  background-image: url("../images/bg-resultado-app-seo.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #F1F2F2;
+    float: right;
+    height: 282px;
+    padding-left: 32px;
+    text-align: center;
+    width: 304px;
+    position: relative;
+}
+
+#resultado-seo h2{
+    color: #58595b;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 72px;
+    text-align: center;
+}
+
+#resultado-seo img.loader{
+  left: 55px;
+    position: absolute;
+    top: 148px;
+}
+
+#resultado-error{
+  padding-top: 20px;
+}
+
+#resultado-error .mensaje-principal{
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+#resultado-error .mensaje-principal .posicion-seo{
+  text-transform: uppercase;
+   font-family: "ProximaNova",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #58595B;
+}
+
+#resultado-error .mensaje-principal .posicion-seo .numero-posicion-seo{
+   font-family: "ProximaNova",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A69C;
+}
+
+#resultado-error .mensaje-principal .pagina-seo{
+  font-family: "ProximaNova",sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #58595B;
+}
+
+#resultado-error .mensaje-principal .terminio-resultado-seo{
+  text-transform: uppercase;
+   font-family: "ProximaNova",sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00A69C;
+}
+
+#resultado-error .leyenda-italica{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "ProximaNova",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #58595B;
+    font-style: italic;
+}
+
+
+.input-termino-wrapper {
+    margin-bottom: 25px;
+}
+
+.input-idioma-wrapper {
+    margin-bottom: 18px;
 }
 
 #encabezado-cual-es-su-objetivo h2{
@@ -2627,7 +2736,8 @@ margin: 58px 0 0;
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
   display:table;
-  position:absolute; 		
+  position:absolute;
+  cursor: pointer; 		
 }
 #tablero-consulta .casilla p{
 	line-height: 27px;
@@ -2637,7 +2747,41 @@ margin: 58px 0 0;
 	white-space: pre-wrap;
 }
 
-
+.roll-over{
+	background-color: #e8442e;
+	width: 238px;
+	height: 220px;
+	font-family: "ProximaNova",sans-serif;
+	font-size: 17px;
+	padding: 15px;
+	text-align:center;
+	color: #FFF;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+  display:none;
+  position:absolute;
+  cursor: pointer; 	
+}
+.roll-over p{
+	line-height: 19px;
+}
+.roll-over a{
+	display:block;
+	width: 160px;
+	height: 44px;
+	color: #FFF;
+	margin:auto;
+	border: solid 1px #FFF;
+	font-family: "ProximaNova",sans-serif;
+	font-size: 22px;
+	line-height: 40px;	
+}
+.roll-over a span{
+  font-family: "Baskerville",sans-serif;
+  font-size: 25px;
+  color: #FFF;	
+}
 
 .cp1{
 	top: 0px; left: 0px;
