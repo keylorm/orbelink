@@ -3012,6 +3012,17 @@ line-height: 35px;
 	background-position:bottom;	
 }
 
+
+/* Aplicación Presupuesto */
+#block-block-9{
+  min-height: 405px;
+  background-color: #F1F2F2;
+}
+
+#block-block-9 .content{
+  
+}
+
 /**********/
 
 /* app diseno web y movil - juan martinez */

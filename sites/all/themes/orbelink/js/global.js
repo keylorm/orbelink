@@ -66,12 +66,14 @@ jQuery(document).ready(function(){
 	});
 
 
-
+/*
 	jQuery("#block-app-seo-calc-application input#miweb").keypress(function(e) {
     	if(e.which == 13) {
     		jQuery( "#formulario-calc a#consulta-calc" ).click();
 	    }
 	});
+
+*/
 
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
