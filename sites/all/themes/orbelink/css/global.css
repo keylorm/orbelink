@@ -3089,7 +3089,7 @@ margin: 0 22.5px;
 .node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -173px;}
 #block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 263px; position: relative; top: 170px; z-index: 3; top: 372px;}
 #block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 600px; height: 315px; position: relative; top: -120px; margin: 0 auto; text-align: center;}
-.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; margin-left: 15px; }
+.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px; }
 #block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 35px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0;}
 #block-views-especialidad-block-1 .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
 #block-views-especialidad-block-1 .attachment-after ul li.last {border: none;}
