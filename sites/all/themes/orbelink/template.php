@@ -155,6 +155,7 @@ function orbelink_preprocess_html(&$variables) {
 
 
   drupal_add_js('//code.jquery.com/ui/1.11.2/jquery-ui.js');
+  drupal_add_js(drupal_get_path('theme', 'orbelink') . '/js/jquery.transform2d.js', array('group' => CSS_SYSTEM, 'weight' => -100));
 
   drupal_add_css(libraries_get_path('flexslider') . '/flexslider.css');
   drupal_add_css(libraries_get_path('twentytwenty-master') . '/css/twentytwenty.css');

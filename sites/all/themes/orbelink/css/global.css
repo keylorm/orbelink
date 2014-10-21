@@ -2789,9 +2789,16 @@ margin: 58px 0 0;
 	clear:both;
 	height: 672px;
 }
-
+.box_tablero{
+	width: 236px;
+	height: 220px;
+	position:absolute;
+}
+.box_tablero.box_activo{
+	z-index: 2;
+}
 #tablero-consulta .casilla{
-	width: 238px;
+	width: 236px;
 	height: 220px;
 	background-image: url(../images/box_verde.png);
 	background-repeat: no-repeat;
@@ -2802,12 +2809,13 @@ margin: 58px 0 0;
 	text-align:center;
 	color: #FFF;
 	text-transform:uppercase;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box;
-  display:table;
-  position:absolute;
-  cursor: pointer; 		
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	display:table;
+	cursor: pointer;
+	position:absolute;
+	transform: scale(0,0); 		
 }
 #tablero-consulta .casilla p{
 	line-height: 27px;
@@ -2819,19 +2827,20 @@ margin: 58px 0 0;
 
 .roll-over{
 	background-color: #e8442e;
-	width: 238px;
+	width: 236px;
 	height: 220px;
 	font-family: "ProximaNova",sans-serif;
 	font-size: 17px;
 	padding: 15px;
 	text-align:center;
 	color: #FFF;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; 
-  box-sizing: border-box;
-  display:none;
-  position:absolute;
-  cursor: pointer; 	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	cursor: pointer;
+	position:absolute;
+	z-index: 1;
+	transform: scale(0,0); 	
 }
 .roll-over p{
 	line-height: 19px;
@@ -2854,40 +2863,42 @@ margin: 58px 0 0;
 }
 
 .cp1{
-	top: 0px; left: 0px;
+	top: 1px; left: 0px;
 }
 .cp2{
-	top: 0px; left: 240px;
+	top: 1px; left: 241px;
 }
 .cp3{
-	top: 0px; left: 480px;
+	top: 1px; left: 483px;
 }
 .cp4{
-	top: 0px; left: 722px;
+	top: 1px; left: 724px;
 }
+
 .cp5{
 	top: 226px; left: 0px;
 }
 .cp6{
-	top: 226px; left: 240px;
+	top: 226px; left: 241px;
 }
 .cp7{
-	top: 226px; left: 480px;
+	top: 226px; left: 483px;
 }
 .cp8{
-	top: 226px; left: 722px;
+	top: 226px; left: 724px;
 }
+
 .cp9{
-	top: 446px; left: 0px;
+	top: 450px; left: 0px;
 }
 .cp10{
-	top: 446px; left: 240px;
+	top: 450px; left: 241px;
 }
 .cp11{
-	top: 446px; left: 480px;
+	top: 450px; left: 483px;
 }
 .cp12{
-	top: 446px; left: 722px;
+	top: 450px; left: 724px;
 }
 /**********/
 

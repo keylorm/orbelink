@@ -105,42 +105,42 @@ jQuery(document).ready(function(){
 
 	//agregar funcionalidad para la seciccion de estrategia
 	jQuery(".casilla").css({display:'none'});
-	jQuery("#tablero-consulta .roll-over").hide();
+	jQuery("#tablero-consulta .roll-over").css({display:'none'});
 	setTimeout(function(){ jQuery("#formulario-consulta-sueno li#estrategia1").click(); }, 1000);
 
 	jQuery("#formulario-consulta-sueno li").click(function(){
 		jQuery("#formulario-consulta-sueno li").removeClass('activo');
-		jQuery(".casilla").css({display:'none'});
-		//jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
-            //var id = getRandomInt(1, 12);
-			//jQuery("#"+element.id).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
-       // });
-		
-		var valor_consulta = jQuery(this).attr('id');
 		jQuery(this).addClass('activo');
-		jQuery("."+valor_consulta).toggle("scale");
-		//jQuery("."+valor_consulta).show().effect("scale", {percent:100, origin:['middle','center']}, 500);	
+		jQuery(".casilla").show().animate({"transform": "scale(0,0)"});
+		/*jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
+            var id = generateRange(12, 1, 12);
+			jQuery(this).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
+        });*/
+		var div = jQuery("."+jQuery(this).attr('id'));
+		jQuery(".box_tablero").removeClass('box_activo');
+		div.parent().addClass('box_activo');
+		div.animate({"transform": "scale(1,1)"});
 	});
-jQuery(".casilla").hover(function(e) {
 	
-	var casilla = jQuery(this);
-	casilla.animate({opacity: 0}, 600);
-	var id = casilla.attr('id');
-	var info = jQuery("#roll-over-"+id);
-	info.show().animate({opacity: 1}, 600);
-	
-}, function(){
-
-	jQuery(this).animate({opacity: 1}, 600);
-	info.animate({opacity: 0}, 600);
-	
-
-});
-jQuery(".roll-over").mouseout(function(e) {	
-	jQuery(this).animate({opacity: 0}, 600).css({display:'none'});
-	var id = jQuery(this).attr('id');
-	jQuery("#roll-over-"+id).show().animate({opacity: 0}, 600);
-});
+	jQuery(".box_tablero").hover(function() {
+		if(jQuery(this).hasClass( "box_activo" ) == false){
+			return false;
+		}
+		var casilla = jQuery(this).find( ".casilla" );
+		casilla.show().animate({"transform": "scale(0,0)"});
+		var id = casilla.attr('id');
+		var info = jQuery("#roll-over-"+id);
+		info.delay(100).show().animate({"transform": "scale(1,1)"});
+	}, function(){
+		if(jQuery(this).hasClass( "box_activo" ) == false){
+			return false;
+		}
+		var casilla = jQuery(this).find( ".casilla" );
+		casilla.delay(100).show().animate({"transform": "scale(1,1)"});
+		var id = casilla.attr('id');
+		var info = jQuery("#roll-over-"+id);	
+		info.show().animate({"transform": "scale(0,0)"});
+	});
 
 	//agregar funcionalidad para desplegar el resultado del objetivo
 	var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
@@ -497,10 +497,6 @@ jQuery(".roll-over").mouseout(function(e) {
 
 
 });
-
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
 
 function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 	switch(presupuesto){
