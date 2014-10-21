@@ -5,6 +5,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.flexslider').flexslider({
 		 manualControls: ".flex-control-nav li",
+		 directionNav: false, 
 	});
 	jQuery('input, textarea').placeholder();
 
@@ -57,6 +58,8 @@ jQuery(document).ready(function(){
 
 	});
 
+	
+
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
 			var var_miweb_calc = jQuery("#miweb").val();
@@ -64,6 +67,8 @@ jQuery(document).ready(function(){
 			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 			    var obj = data;
+
+			    jQuery('#resultado-calc').show();	
 			    
 			    //inyectar codigo html para mostrar una barra vertical
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li class="activo"><div class="img" id="icono-tablet"/></li><li><div class="img" id="icono-movil"/><li></ul>';
