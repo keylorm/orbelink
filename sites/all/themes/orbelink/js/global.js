@@ -73,7 +73,7 @@ jQuery(document).ready(function(){
 	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
 
 			jQuery("#formulario-calc a#consulta-calc").css({
-				"background-image": "url(/sites/all/themes/orbelink/images/responsive-loading.gif)",
+				"background-image": "url(http://nuevo.orbelink.com/sites/all/themes/orbelink/images/responsive-loading.gif)",
 				"background-position": "center center"
 			});
 
@@ -85,7 +85,7 @@ jQuery(document).ready(function(){
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc a#consulta-calc").css({
-					"background-image": "url(/sites/all/themes/orbelink/images/boton-formulario-diseno-web-movil.png)",
+					"background-image": "url(http://nuevo.orbelink.com/sites/all/themes/orbelink/images/boton-formulario-diseno-web-movil.png)",
 					"background-position": "6px 6px"
 				});
 
