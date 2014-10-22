@@ -3472,6 +3472,12 @@ height: 150px;
 padding: 22px 100px 32px 100px;
 float: left;
 margin-bottom: 23px; }
-#enlace-mas-informacion {width: 35%;  margin: 0 auto; margin-bottom: 50px;}
+#enlace-mas-informacion {width: 35%;  margin: 0 auto; margin-bottom: 50px; clear:both;}
 #enlace-mas-informacion a { font-family: 'ProximaNova', sans-serif; font-weight: 400; font-size: 29px; color: #333333; padding: 15px 7px; border: 2px solid #333;}
 #enlace-mas-informacion a span{font-family: 'Baskerville', sans-serif; font-style: italic; color: #333333; font-size: 39px;}
+#iconos-redes-sociales .iconos img, #enlace-mas-informacion{
+  transition: all 0.3s ease 0s;
+}
+#iconos-redes-sociales .iconos img:hover, #enlace-mas-informacion:hover{
+  transform: translate(0px, -2px);
+}
