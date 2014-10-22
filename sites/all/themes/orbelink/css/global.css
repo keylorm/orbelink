@@ -3162,12 +3162,144 @@ line-height: 40px;
 #block-block-9{
   min-height: 405px;
   background-color: #F1F2F2;
+  padding: 52px 0;
 }
 
 #block-block-9 .content{
-  
+  width: 960px;
+  margin: 0 auto;
 }
 
+#block-block-9 h2{
+  color: #6d6e71;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 42px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#block-block-9 h2 span{
+  color: #E8442E;
+font-family: "Baskerville",sans-serif;
+font-size: 48px;
+font-style: italic;
+font-weight: 400;
+letter-spacing: -1px;
+text-transform: lowercase;
+}
+
+#block-block-9 h3{
+  background-image: url("../images/bg-h3-resultados-objetivos.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #6d6e71;
+    font-family: "ProximaNova",sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.input-rango-wrapper{
+  clear: both;
+    height: 40px;
+    margin-top: 24px;
+    margin-bottom: 35px
+}
+
+.input-radio-rango{
+   float: left;    
+    height: 40px;    
+    
+    }
+
+
+.input-radio-rango-1{
+  width: 188px;
+}
+.input-radio-rango-2{
+  width: 188px;
+}
+.input-radio-rango-3{
+  width: 198px;
+}
+.input-radio-rango-4{
+  width: 198px;
+}
+.input-radio-rango-5{
+  width: 184px;
+}
+
+
+.page-node-78 .view-display-id-block_resumen_portafolio_pequeno_sin_encabezado{
+  padding-top: 0;
+}
+.input-radio-rango p{
+  color: #808080;
+  font-family: "ProximaNova",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 0;
+}
+
+.input-radio-rango-wrapper{
+background-position: left center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 40px;
+    margin-right: 5px;
+    overflow: hidden;
+    width: 40px;
+  }
+.input-radio-rango-wrapper input{
+  display: block;
+    height: 40px;
+    width: 150px;
+  }
+
+.input-radio-rango-wrapper.radio-activado{
+    background-image: url("../images/radio-buttom-seo-checked.png");
+}
+
+.input-radio-rango-wrapper.radio-desactivado{
+    background-image: url("../images/radio-buttom-seo-unchecked.png");
+}
+
+#resultado-calculo{
+   background-image: url("../images/bg-resultado-impr-clicks.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 28px;
+    width: 524px;
+}
+
+#resultado-calculo .impresiones,
+#resultado-calculo .clicks{
+  color: #FFF;
+  font-family: "ProximaNova",sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+text-transform: uppercase;
+    line-height: 44px;
+    float: left;
+    text-align: center;
+}
+
+#resultado-calculo .impresiones{
+  border-right: 1px solid #FFFFFF;
+  width: 295px;
+}
+
+#resultado-calculo .clicks{
+  width: 229px;
+}
 /**********/
 
 /* app diseno web y movil - juan martinez */

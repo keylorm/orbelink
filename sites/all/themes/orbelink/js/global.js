@@ -533,6 +533,175 @@ jQuery(document).ready(function(){
 		}
 		
 	});
+
+
+
+	/* Radio customs en aplicacion de Cotización de clicks */
+	jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").click(function(){
+		if(jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").hasClass("radio-activado")){
+
+				if (!jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				
+			
+
+		}else{
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").click(function(){
+		if(jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").hasClass("radio-activado")){
+
+				if (!jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				
+			
+
+		}else{
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").click(function(){
+		if(jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").hasClass("radio-activado")){
+
+				if (!jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				
+			
+
+		}else{
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").click(function(){
+		if(jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").hasClass("radio-activado")){
+
+				if (!jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				
+			
+
+		}else{
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+
+	jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").click(function(){
+		if(jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").hasClass("radio-activado")){
+
+				if (!jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				if (!jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").hasClass("radio-desactivado")){
+					jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+				}
+				
+			
+
+		}else{
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").addClass("radio-activado");
+			jQuery(".input-radio-rango-5 .input-radio-rango-wrapper").removeClass("radio-desactivado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-1 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-2 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-4 .input-radio-rango-wrapper").addClass("radio-desactivado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").removeClass("radio-activado");
+			jQuery(".input-radio-rango-3 .input-radio-rango-wrapper").addClass("radio-desactivado");
+		}
+		
+	});
+	
 	
 
 
