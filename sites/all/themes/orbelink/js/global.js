@@ -3,6 +3,36 @@ jQuery(document).ready(function(){
 
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 
+	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/facebook-active-tab.png')");
+
+	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin").click(function(){
+		jQuery(this).css("background-image","url('/orbelink/sites/all/themes/orbelink/images/linkedin-active-tab.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/instagram-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/twitter-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/facebook-inactive.png')");
+	})
+
+	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter").click(function(){
+		jQuery(this).css("background-image","url('/orbelink/sites/all/themes/orbelink/images/twitter-active-tab.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/instagram-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/linkedin-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/facebook-inactive.png')");
+	})
+
+	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").click(function(){
+		jQuery(this).css("background-image","url('/orbelink/sites/all/themes/orbelink/images/facebook-active-tab.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/instagram-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/twitter-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/linkedin-inactive.png')");
+	})
+
+	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram").click(function(){
+		jQuery(this).css("background-image","url('/orbelink/sites/all/themes/orbelink/images/instagram-active-tab.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/linkedin-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/twitter-inactive.png')");
+		jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/orbelink/sites/all/themes/orbelink/images/facebook-inactive.png')");
+	})
+
 	jQuery('.flexslider').flexslider({
 		 manualControls: ".flex-control-nav li",
 		 directionNav: false, 

@@ -1742,7 +1742,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 /* Islas Home */
 
-.page-inicio .pane-1{
+.page-inicio .pane-1, .app-redes-sociales-contenido{
   width: 980px;
   margin: 0 auto;
 }
@@ -2459,7 +2459,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 /* Aplicación - Analitica y funcionalidad */
 
-.bloque-encabezado-construimos-sueno, .encabezado-cual-es-su-objetivo, #block-app-seo-calc-application{
+.bloque-encabezado-construimos-sueno, .encabezado-cual-es-su-objetivo, #block-app-seo-calc-application, .encabezado-app-redes-sociales{
   min-height: 146px;
   background-color: #E8442E;
   background-image: url(../images/puntos-bg-sueno.png);
@@ -2468,7 +2468,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner {
+.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
   height: 146px;
   margin: 0 auto;
   text-align: center;
@@ -2479,7 +2479,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 
-.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2{
+.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2{
    color: #ffffff;
     float: left;
     font-family: "ProximaNova",sans-serif;
@@ -3426,3 +3426,51 @@ background-position: 44% 40px;
 background-position-x: 44%;
 background-position-y: 40px;
 }
+
+
+/* app redes sociales */
+.app-redes-sociales-contenido .parrafo {font-family: 'Roboto Slab', sans-serif; font-weight: 300;  text-align: center;}
+.app-redes-sociales-contenido #primer-parrafo {font-size: 20px;}
+.app-redes-sociales-contenido #segundo-parrafo {font-size: 22px; font-weight: bold;}
+.app-redes-sociales-contenido h3 { padding: 20px 0 38px 0; border-top: 1px solid #E8442E; border-bottom: 1px solid #E8442E; text-align: center; font-size: 35.34px; color: #333333; font-family: 'ProximaNova', sans-serif;}
+.app-redes-sociales-contenido h3 span {font-family: 'Baskerville', sans-serif; font-style: italic; color: #E8442E; font-size: 57.78px;}
+.app-redes-sociales-contenido .accordion-tabs-minimal {margin-top: 115px; height: 870px;} 
+.app-redes-sociales-contenido .accordion-tabs-minimal li { list-style: none; }
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li.tab-header-and-content { float: none;  min-width: 495px;  width: 495px;  min-height: 160px; margin-bottom: 30px; background-repeat: no-repeat; background-position: 0 39px;}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li.tab-header-and-content a {
+padding: 30px 30px 30px 150px;
+height: 160px;
+background-image: url('../images/app-redes-sociales-tab-inactivo-fondo.png');
+background-repeat: no-repeat;
+border: none;
+background-position: 103px 0px;}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li.tab-header-and-content p{font-family: 'ProximaNova', sans-serif; font-weight: 400; font-size: 18px; line-height: 21px; text-align: left;}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook {background-image: url('../images/facebook-inactive.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter {background-image: url('../images/twitter-inactive.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram {background-image: url('../images/instagram-inactive.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin {background-image: url('../images/linkedin-inactive.png'); }
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin a.is-active {background-image: url('../images/app-redes-sociales-tab-activo-fondo-linkedin.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#twitter a.is-active {background-image: url('../images/app-redes-sociales-tab-activo-fondo-twitter.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook a.is-active {background-image: url('../images/app-redes-sociales-tab-activo-fondo-facebook.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li#instagram a.is-active {background-image: url('../images/app-redes-sociales-tab-activo-fondo-instagram.png');}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li a {display: table;}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li a p{display: table-cell; vertical-align: middle;}
+.app-redes-sociales-contenido {position: relative;}
+.app-redes-sociales-contenido ul.accordion-tabs-minimal li .tab-content { background-image: url("../images/phone-background.png");
+    background-repeat: no-repeat;
+    height: 881px;
+    left: 560px;
+    margin: 0;
+    padding: 84px 34px;
+    position: absolute;
+    top: 450px;
+    width: 423px;}
+#iconos-redes-sociales div.iconos {float: left; width: 87px; height: 87px; margin: 0 12px;}
+div#iconos-redes-sociales { width: 100%;
+height: 150px;
+padding: 22px 100px 32px 100px;
+float: left;
+margin-bottom: 23px; }
+#enlace-mas-informacion {width: 35%;  margin: 0 auto; margin-bottom: 50px;}
+#enlace-mas-informacion a { font-family: 'ProximaNova', sans-serif; font-weight: 400; font-size: 29px; color: #333333; padding: 15px 7px; border: 2px solid #333;}
+#enlace-mas-informacion a span{font-family: 'Baskerville', sans-serif; font-style: italic; color: #333333; font-size: 39px;}
