@@ -290,6 +290,7 @@ a:hover{
 .footer .footer-box #block-menu-block-3{
 	float: left;
 	margin-right: 24px;
+  padding-bottom: 15px;
 }
 
 .footer .footer-box #block-block-1{
@@ -2960,10 +2961,14 @@ margin: 58px 0 0;
 
 /*** SOBRE NOSOTROS */
 
+.page-node-48 #page-title{
+  display: none;
+}
+
 .page-node-48 #block-block-7{
 	background-color: #e8442e;
 }
-.page-node-48 h2 span,
+.page-node-48 .field-name-body  h2 span,
 #bloque-3 .rollover_about span{
 color: #E8442E;
 font-family: "Baskerville",sans-serif;
@@ -2973,7 +2978,7 @@ font-weight: 400;
 letter-spacing: -1px;
 }
 
-.page-node-48 h2,
+.page-node-48 .field-name-body h2,
 #bloque-3 .rollover_about p{
 color: #1A1A1A;
 font-family: "ProximaNova",sans-serif;
