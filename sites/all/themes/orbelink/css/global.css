@@ -95,6 +95,10 @@ a:hover{
 
 }
 
+#block-system-main-menu ul.menu li.expanded ul.menu{
+  display: none;
+}
+
 #block-system-main-menu ul.menu li.first {
   padding-left: 0;
 }
