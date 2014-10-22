@@ -89,7 +89,7 @@
   <!-- ancla to top -->
 <div id="scroll_navigation">
     <ul>
-      <li><a href="#"><img src="/sites/all/themes/orbelink/images/ui.totop.png"/></a></li>
+      <li><a href="#"><img src="/sites/all/themes/orbelink/images/ui.totop.png" alt="Subir"></a></li>
     </ul>
 </div>
 
