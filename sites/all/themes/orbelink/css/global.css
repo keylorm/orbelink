@@ -11,11 +11,11 @@
 }
 @font-face {
 	font-family: 'Baskerville';
-	src: url('../fonts/baskerville-Italic.eot');/* Para Internet Explorer */
-  src: url('../fonts/baskerville-Italic.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/baskerville-Italic.woff') format('woff'), 
-  url('../fonts/baskerville-Italic.ttf') format('truetype'),
-  url('../fonts/baskerville-Italic.svg#Baskerville') format('svg');
+	src: url('../fonts/baskerville-italic.eot');/* Para Internet Explorer */
+  src: url('../fonts/baskerville-italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/baskerville-italic.woff') format('woff'), 
+  url('../fonts/baskerville-italic.ttf') format('truetype'),
+  url('../fonts/baskerville-italic.svg#Baskerville') format('svg');
   font-weight: normal;
   font-style: italic;
 }
@@ -3372,7 +3372,7 @@ height: 60px !important;
 width: 60px !important;
 position: relative !important;
 margin-bottom: -20px !important;}
-.st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important;}
+.st_sharethis_large .stLarge:hover {background-image: url('../images/sharethis.png') !important; background-repeat: no-repeat; opacity: 0.5 !important; background-position: center center !important;}
 #block-block-8 .accordion-tabs-minimal li{list-style: none;}
 
 
