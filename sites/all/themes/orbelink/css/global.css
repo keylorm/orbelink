@@ -3419,4 +3419,10 @@ div#branding-content a {border:none;}
 }
 #branding-content .ulaccordion-tabs-minimal2{
 	margin-top: -15px !important;
+  background-image: url('../images/tab-navegacion-responsivo.png');
+background-repeat: no-repeat;
+text-align: center;
+background-position: 44% 40px;
+background-position-x: 44%;
+background-position-y: 40px;
 }
