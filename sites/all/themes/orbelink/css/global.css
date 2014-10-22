@@ -1012,7 +1012,8 @@ Noticias: F033A3
   background-repeat: no-repeat;
 }
 .link_autor_titulo {
-  color: #808285;
+  color: #808285 !important;
+  text-decoration: underline !important;
 }
 
 
