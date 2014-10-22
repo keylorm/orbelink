@@ -2311,8 +2311,9 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   display: block;
   font-family: "Baskerville",sans-serif;
   font-size: 75px;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   font-weight: 400;
+  font-style: italic;
 
 }
 
