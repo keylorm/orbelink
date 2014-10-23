@@ -252,6 +252,10 @@ jQuery(document).ready(function(){
 	    } else {
 	      event.preventDefault();
 	    }
+		
+		if(jQuery(this).attr('id') == 'branding'){
+			jQuery("#facebook").click();
+		}
 	  });
 
 
@@ -735,11 +739,7 @@ jQuery(document).ready(function(){
 	});
 	
 	
-
-
-
-
-		//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
+	//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
 	cambiarObjetivo();
 
 	jQuery("input[name='presupuesto']").change(function(){
@@ -750,7 +750,8 @@ jQuery(document).ready(function(){
 
 });
 
-function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
+function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding)
+{
 	switch(presupuesto){
 		case "100-200":
 			if(conversion){
@@ -797,10 +798,10 @@ function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding){
 				return "20,000-300";
 			}
 		break;
-	}
-}
+	}}
 
-function cambiarObjetivo(){
+function cambiarObjetivo()
+{
 	var presupuesto = jQuery("input[name='presupuesto']:checked").val();
 	var conversion = false;
 	var branding = "";
@@ -818,7 +819,6 @@ function cambiarObjetivo(){
 	calculo = calculo.split("-");
 	
 	jQuery("#cantidad-clics").text(calculo[0]);
-	jQuery("#cantidad-impresiones").text(calculo[1]);
-}
+	jQuery("#cantidad-impresiones").text(calculo[1]);}
 
 
