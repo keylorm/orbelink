@@ -56,7 +56,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -132,7 +132,7 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li id="li-tablet" class="activo"><div class="img" id="icono-tablet"/></li><li id="li-phone"><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ obj.web +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ obj.web +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ obj.web +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
@@ -151,9 +151,24 @@ jQuery(document).ready(function(){
     				jQuery("#iframe-tablet-contenedor").removeClass("activo");
 			    });
 				var c = (460-((obj.score * 460)/100));
+				
+				var bg = '';
+
+				if(c <= 460){
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png');";
+				}
+				if(c <= 345){
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png');";
+				}				
+				if(c <= 230){
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-panico-diseno-web.png');";
+				}				
+				if(c <= 115){
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-triste-diseno-web.png');";
+				}												
 				//alert(c);
 				//inyectar codigo html para crear la barra vertical
-				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + c + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
+				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\" style=\""+bg+"\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + c + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
 			});
 
 		});
