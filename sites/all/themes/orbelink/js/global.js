@@ -155,17 +155,17 @@ jQuery(document).ready(function(){
 				var bg = '';
 
 				if(c <= 460){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png');";
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-triste-diseno-web.png');";
 				}
 				if(c <= 345){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png');";
-				}				
-				if(c <= 230){
 					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-panico-diseno-web.png');";
 				}				
+				if(c <= 230){
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png');";
+				}				
 				if(c <= 115){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-triste-diseno-web.png');";
-				}												
+					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png');";
+				}											
 				//alert(c);
 				//inyectar codigo html para crear la barra vertical
 				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\" style=\""+bg+"\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + c + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
