@@ -256,6 +256,8 @@ jQuery(document).ready(function(){
 	    } else {
 	      event.preventDefault();
 	    }
+
+	    	cambiarObjetivo();
 		
 		if(jQuery(this).attr('id') == 'branding'){
 			jQuery("#facebook").click();
@@ -750,7 +752,8 @@ jQuery(document).ready(function(){
 		cambiarObjetivo();		
 	});
 
-
+	//realizamos el ajuste de calculo cuando el usuario cambia los tabs de branding y conversion
+	//jQuery("#block-block-8 .tab-header-and-content a").click(function(){ cambiarObjetivo(); })
 
 });
 
@@ -823,6 +826,7 @@ function cambiarObjetivo()
 	calculo = calculo.split("-");
 	
 	jQuery("#cantidad-clics").text(calculo[0]);
-	jQuery("#cantidad-impresiones").text(calculo[1]);}
+	jQuery("#cantidad-impresiones").text(calculo[1]);
+}
 
 
