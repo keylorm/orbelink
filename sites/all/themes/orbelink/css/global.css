@@ -282,7 +282,9 @@ a:hover{
 .footer .footer-box #block-menu-block-1,
 .footer .footer-box #block-menu-block-2,
 .footer .footer-box #block-menu-block-4,
-.footer .footer-box #block-block-2{
+.footer .footer-box #block-block-2,
+.footer .footer-box #block-block-13,
+.footer .footer-box #block-block-14{
 	float: left;
 	margin-right: 22px;
 }
@@ -311,7 +313,7 @@ a:hover{
 	width: 148px;
 }
 
-.footer .footer-box #block-block-2{
+.footer .footer-box #block-block-2, .footer .footer-box #block-block-13, .footer .footer-box #block-block-14{
 	width: 155px;
 }
 
@@ -2507,6 +2509,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-11 .twentytwenty-wrapper{
    margin: 45px auto 0;
     width: 970px;
+    height: 500px;
 }
 
 #block-block-11 #container1{
