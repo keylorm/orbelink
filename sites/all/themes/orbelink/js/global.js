@@ -56,7 +56,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -64,7 +64,7 @@ jQuery(document).ready(function(){
 
 				    if(obj.estatus == '0'){
 			
-						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 4 páginas de resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 3 páginas de los resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
 				    } else {
 
 					   	if(obj.posicion <= 10 ){
@@ -75,7 +75,7 @@ jQuery(document).ready(function(){
 					    	pagina = 3;
 					    }
 
-				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google.com <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p> <br/> <p class='leyenda-italica'>Nosotros le ayudamos a llegara una mejor posición.</p></div>"; 		    	
+				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p> <br/> <p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
 				    }
 
 				});
@@ -111,7 +111,7 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc a#consulta-calc").css({
@@ -119,7 +119,8 @@ jQuery(document).ready(function(){
 					"background-position": "6px 6px"
 				});
 
-			    var obj = data;
+			    var obj = jQuery.parseJSON(data);
+				console.log(obj);
 
 			    jQuery('#resultado-calc').show();	
 			    
@@ -127,7 +128,7 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li id="li-tablet" class="activo"><div class="img" id="icono-tablet"/></li><li id="li-phone"><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="590" height="707" src="'+ obj.web +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="320" height="480" src="'+ jQuery("input[name='miweb']").val() +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
@@ -145,9 +146,10 @@ jQuery(document).ready(function(){
 			    	jQuery("#iframe-phone-contenedor").addClass("activo");
     				jQuery("#iframe-tablet-contenedor").removeClass("activo");
 			    });
-
+				var c = (460-((obj.score * 460)/100));
+				//alert(c);
 				//inyectar codigo html para crear la barra vertical
-				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + (460-((obj * 460)/100)) + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
+				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + c + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
 			});
 
 		});

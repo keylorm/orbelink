@@ -109,7 +109,8 @@ function app_seo_block_view($block_key){
  *
  */
 
-function app_seo_menu() {
+function app_seo_menu()
+{
     $items['consulta-seo'] = array(
       'page callback' => 'app_seo_view',
       'access arguments' => array('access content'),
@@ -122,7 +123,8 @@ function app_seo_menu() {
     return $items;
   }
 
-function app_seo_view() {
+function app_seo_view()
+{
     if(isset($_POST['q']) and $_POST['q']!=""){
         
         $miweb = $_POST['miweb'];
@@ -135,12 +137,24 @@ function app_seo_view() {
     }
   }
 
-function app_calc_view() {
+function app_calc_view()
+{
         
         calificar();
   }
 
-function buscar($aQue,$web){
+function getIp()
+{
+	if(!empty($_SERVER['HTTP_CLIENT_IP'])) {
+		return $_SERVER['HTTP_CLIENT_IP'];
+	} elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		return $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+		return $_SERVER['REMOTE_ADDR'];
+	}}
+
+function buscar($aQue,$web)
+{
     $aUrl = "http://ajax.googleapis.com/ajax/services/search/web";
     $posicion = 0;
     $break = 0;
@@ -148,7 +162,7 @@ function buscar($aQue,$web){
     if($_POST['bot'] != 0){ $bot = '&gl='.$_POST['bot'];}
     
     for($e=1;$e<=12;$e++){
-    $data = file_get_contents($aUrl."?v=1.0&rsz=large".$bot."&hl=".$_POST['idioma']."&userip=192.165.0.12&start=".$posicion."&q=".$aQue); // Obtenemos el resultado
+    $data = file_get_contents($aUrl."?v=1.0&rsz=large".$bot."&hl=".$_POST['idioma']."&userip=".getIp()."&start=".$posicion."&q=".$aQue); // Obtenemos el resultado
     $obj = json_decode($data); // Decodificamos el Json
 
     $results = $obj->responseData->results; // Entramos al array de los resultados
@@ -160,12 +174,13 @@ function buscar($aQue,$web){
         
         flush(); ob_flush(); sleep(3);
         
-        if(strpos($tmp->url, $web)){
+		$pos = strpos($tmp->url, addhttp($web));
+		if($pos !== false){
             //echo "Se encuentra en la posición: <strong>" . $posicion . "</strong>, para el termino <strong>" . $_POST['q'] ."</strong>";
             print "{\"estatus\":1,\"posicion\":".$posicion.",\"termino\":\"".$_POST['q']."\"}";
             $break = 1;
             break;
-        } elseif ($posicion == 31){
+        } elseif ($posicion == 30){
             print "{\"estatus\":0}";
             $break = 1;
             break;
@@ -173,8 +188,7 @@ function buscar($aQue,$web){
     }
     if($break==1){ break; }
     
-    }
-}
+    }}
 
 
 function calificar(){
@@ -185,13 +199,13 @@ function calificar(){
     $mediaqueries_score_2 = 0;
 
     if(isset($_POST['miweb']) and $_POST['miweb'] != ""){
-
-    $data = file_get_contents("https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=".$_POST['miweb']."&locale=es_ES&strategy=mobile&key=AIzaSyCT_m7t-NebK-7yuIhS9v7KBGL_dpsdt-8");
+	$web = addhttp($_POST['miweb']);
+    $data = file_get_contents("https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=".$web."&locale=es_ES&strategy=mobile&key=AIzaSyBEI5SY3n4oRzk76cz1J1sYHVwf2USRW_w");
     $obj = json_decode($data); 
     //echo $obj->score . "<br />";
     $google_score = (($obj->score)*100)/50;  
         
-        $html = file_get_contents($_POST['miweb']);
+        $html = file_get_contents($web);
         
         if(strpos($html, 'viewport')){
             $score_viewport = 30;
@@ -223,12 +237,12 @@ function calificar(){
             }
         }               
 
-        print "{\"score\":"+ $obj->score +",\"viewport_score\":"+ $score_viewport +",\"mediaqueries_score\":"+ $mediaqueries_score+$mediaqueries_score_2 +"}";
+        print "{\"score\":\"". $obj->score ."\", \"web\":\"". $web ."\", \"otro\":\"". $_POST['miweb'] ."\"}";
         
     }
 }
 
-function addhttp($url,$css=0){
+function addhttpVIEJA($url,$css=0){
     if($css == 'css'){
         $res = preg_match('@(www\.|http://)([^\s]*)@i', $_POST['miweb'], $link);
         $url = $link[0] . "/" . $url;
@@ -237,6 +251,24 @@ function addhttp($url,$css=0){
         return 'http://' . $url;
     }
     return $url;
+}
+function addhttp($url,$css=0){
+	if($css == 1){
+		
+		$res = preg_match('@(www\.|http://)([^\s]*)@i', $url, $link);
+		$url = $link[0];
+		if (false === strpos($url, '://')) {
+			$url = 'http://' . $url;
+		}	
+			
+	}else{
+	
+		if (!preg_match("~^(?:f|ht)tps?://~i", $url)) {
+			$url = "http://" . $url;
+		}
+	
+	}
+	return $url;
 }
 
 function strposa($haystack, $needle, $offset=0) {
