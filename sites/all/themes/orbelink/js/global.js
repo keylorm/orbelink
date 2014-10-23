@@ -56,11 +56,12 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
 				    var pagina = 0;
+				    var icono = "";
 
 				    if(obj.estatus == '0'){
 			
@@ -69,13 +70,16 @@ jQuery(document).ready(function(){
 
 					   	if(obj.posicion <= 10 ){
 					    	pagina = 1;
+					    	icono = "cara-feliz.png";
 					    } else if(obj.posicion <= 20 ){
 					    	pagina = 2;
+					    	icono = "cara-seria.png";
 					    } else if(obj.posicion <= 30 ){
 					    	pagina = 3;
+					    	icono = "cara-decepcion.png";
 					    }
 
-				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-feliz.png\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p> <br/> <p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
+				    	document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/"+icono+"\"/><p class='mensaje-principal'><span class='posicion-seo'>Esta en la posición #<span class='numero-posicion-seo'>"+ obj.posicion +"</span></span><br /> <span class='pagina-seo'>de la página " + pagina + " de Google <br />para el término</span> <span class='terminio-resultado-seo'>" + obj.termino + "</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
 				    }
 
 				});
@@ -111,7 +115,7 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc a#consulta-calc").css({
