@@ -85,19 +85,81 @@ function app_seo_block_view($block_key){
         $block['subject'] = "";
  
         //Define the block content.
-        $block['content'] = '<div id="block-app-seo-calc-application-inner"><form id="formulario-calc" action="#" method="post">
-                            <h2>CALIFIQUE LA RESPONSIVIDAD DE SU SITIO</h2>
+        $block['content'] = '<div class="block-app-seo-wrapper">
+		<div id="block-app-seo-calc-application-inner"><form id="formulario-calc" action="#" method="post">
+        <h2>CALIFIQUE LA RESPONSIVIDAD DE SU SITIO</h2>
                                 <div class="form-content">
                                     <input type="text" name="miweb" onkeypress="javascript:void();" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
                                     <a href="javascript:void(0);" id="consulta-calc"></a>
                                 </div>
-                            </form></div>
+                            </form></div></div>
+							
+
+
+
+							
+							
+							
                             <div id="resultado-calc">
-                                <div id="encabezado-calc"></div>
-                                <div id="contenedor-iframe-calc">    
-                                </div>
-                                <div id="barra-vertical-calc"></div>
-                            </div>';
+
+<div class="row r1">
+	<div id="encabezado-calc"></div>
+	<div id="contenedor-iframe-calc"></div>
+</div>
+<div class="row r2">
+	
+	
+
+<table width="100%" border="0" class="reporte_d">
+  <tr>
+    <td colspan="3"><div id="top" style="background-image: url(/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png);"></div></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Ventana gráfica:</td>
+    <td>0000</td>
+    <td>%</td>
+  </tr>
+  <tr>
+    <td>Velocidad de la web:</td>
+    <td>0000</td>
+    <td>%</td>
+  </tr>
+  <tr>
+    <td>Tamaño de fuente:</td>
+    <td>0000</td>
+    <td>%</td>
+  </tr>
+  <tr>
+    <td>Usabilidad tactil:</td>
+    <td>0000</td>
+    <td>%</td>
+  </tr>
+</table>
+
+
+	
+	
+<!--	<div id="barra-vertical-calc">
+	
+	
+	
+	
+	
+	</div>-->
+	
+	
+</div>
+  
+                            </div>
+							
+							
+							
+							';
     }
  
     return $block;
