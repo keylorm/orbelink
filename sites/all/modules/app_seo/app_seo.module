@@ -93,95 +93,16 @@ function app_seo_block_view($block_key){
                                     <a href="javascript:void(0);" id="consulta-calc"></a>
                                 </div>
                             </form></div></div>
+		
 							
-
-
-
-							
-							
-							
-                            <div id="resultado-calc">
-							<div id="encabezado-calc"></div>
-
-<div class="row r1">
-	<div id="contenedor-iframe-calc"></div>
-</div>
-<div class="row r2">
-	
-	
-
-<table width="480" border="0" class="reporte_d">
-  <tr>
-    <td colspan="3">
-		<img src="/orbelink/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png" />
-	</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="left">Ventana gráfica:</td>
-    <td>
-	<div class="bg-gris">
-		<div class="bg-vc" id="vg"></div>
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
+<div id="resultado-calc">
+	<div id="encabezado-calc"></div>
+	<div class="row r1">
+		<div id="contenedor-iframe-calc"></div>
 	</div>
-	</td>
-    <td id="porcentaje_vg">50%</td>
-  </tr>
-  <tr>
-    <td align="left">Velocidad de la web:</td>
-    <td>
-	<div class="bg-gris">
-		<div class="bg-vc" id="vw"></div>
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
-	</div>	
-	</td>
-    <td id="porcentaje_vw">20%</td>
-  </tr>
-  <tr>
-    <td align="left">Tamaño de fuente:</td>
-    <td>
-	<div class="bg-gris">
-		<div class="bg-vc" id="tf"></div>
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
-	</div>	
-	</td>
-    <td id="porcentaje_tf">10%</td>
-  </tr>
-  <tr>
-    <td align="left">Usabilidad tactil:</td>
-    <td>
-	<div class="bg-gris">
-		<div class="bg-vc" id="ut"></div>
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
-	</div>	
-	</td>
-    <td id="porcentaje_ut">8%</td>
-  </tr>
-</table>
+	<div class="row r2" id="reporte_grafico"></div>
+</div>';
 
-
-	
-	
-<!--	<div id="barra-vertical-calc">
-	
-	
-	
-	
-	
-	</div>-->
-	
-	
-</div>
-  
-                            </div>
-							
-							
-							
-							';
     }
  
     return $block;
@@ -299,11 +220,7 @@ function calificar(){
        $porcentajeIndividualimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoIndividual'];
        $porcentajeGrupalimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoGrupal'];
 
-       $arrayVelocidad = array("impactoVelocidad" => array(
-                                                    "porcentajeVelocidad" => $porcentajeIndividualimpactoVelocidad,
-                                                    //"porcentajeGrupal" => $porcentajeGrupalimpactoVelocidad
-                                                )
-                               );
+       $arrayVelocidad = array("impactoVelocidad" => $porcentajeIndividualimpactoVelocidad);
 
        // obtener el url a consultar
        $id = $obj->id;
@@ -333,7 +250,7 @@ function calificar(){
     $porcentajeIndividualimpactoSizeContentToViewport = 0;
     $porcentajeGrupalimpactoSizeContentToViewport = 0;
     
-    if($ruleResults->ConfigureViewport->ruleImpact != 10){
+    if($ruleResults->ConfigureViewport->ruleImpact == 0){
         //aplicar calculo
         $porcentajesimpactoSizeContentToViewport = calcularPorcentajeDeImpacto($ruleResults->SizeContentToViewport->ruleImpact, 50);
         $porcentajeIndividualimpactoSizeContentToViewport = $porcentajesimpactoSizeContentToViewport['porcentajeImpactoIndividual'];
@@ -351,18 +268,10 @@ function calificar(){
     $porcentajeGrupalimpactoSizeTapTargetsAppropriately = $porcentajesimpactoSizeTapTargetsAppropriately['porcentajeImpactoGrupal'];
 
     return array(
-            "impactoSizeContentToViewport" => array(
-                                                "porcentajeIndividual" => $porcentajeIndividualimpactoSizeContentToViewport
-                                            ),
-            "impactoUseLegibleFontSizes" => array(
-                                                "porcentajeIndividual" => $porcentajeIndividualimpactoUseLegibleFontSizes
-                                            ),
-            "SizeTapTargetsAppropriately" => array(
-                                                "porcentajeIndividual" => $porcentajeIndividualimpactoSizeTapTargetsAppropriately
-                                            ),
-            "TotalPorcentajeGrupal" => array(
-                                                "porcentajeGrupal" => $porcentajeGrupalimpactoSizeContentToViewport + $porcentajeGrupalimpactoUseLegibleFontSizes + $porcentajeGrupalimpactoSizeTapTargetsAppropriately +  $velocidad
-                                            )
+            "impactoSizeContentToViewport" => $porcentajeIndividualimpactoSizeContentToViewport,
+            "impactoUseLegibleFontSizes" => $porcentajeIndividualimpactoUseLegibleFontSizes,
+            "SizeTapTargetsAppropriately" => $porcentajeIndividualimpactoSizeTapTargetsAppropriately,
+            "TotalPorcentajeGrupal" => $porcentajeGrupalimpactoSizeContentToViewport + $porcentajeGrupalimpactoUseLegibleFontSizes + $porcentajeGrupalimpactoSizeTapTargetsAppropriately +  $velocidad                        
             );
  }
 

@@ -132,7 +132,7 @@ jQuery(document).ready(function(){
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li id="li-tablet" class="activo"><div class="img" id="icono-tablet"/></li><li id="li-phone"><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="351" height="427" src="'+ obj.web +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="230" height="345" src="'+ obj.web +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="351" height="427" src="'+ obj.url +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="230" height="345" src="'+ obj.url +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
@@ -150,25 +150,79 @@ jQuery(document).ready(function(){
 			    	jQuery("#iframe-phone-contenedor").addClass("activo");
     				jQuery("#iframe-tablet-contenedor").removeClass("activo");
 			    });
-				var c = (460-((obj.score * 460)/100));
+				var c = obj.TotalPorcentajeGrupal;
 				
 				var bg = '';
 
-				if(c <= 460){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-triste-diseno-web.png');";
+				if(c <= 100){
+					bg = "/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png";
 				}
-				if(c <= 345){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-panico-diseno-web.png');";
+				if(c <= 75){
+					bg = "/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png";
 				}				
-				if(c <= 230){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png');";
+				if(c <= 50){
+					bg = "/sites/all/themes/orbelink/images/cara-panico-diseno-web.png";
 				}				
-				if(c <= 115){
-					bg = "background-image: url('/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png');";
+				if(c <= 25){
+					bg = "/sites/all/themes/orbelink/images/cara-triste-diseno-web.png";
 				}											
 				//alert(c);
 				//inyectar codigo html para crear la barra vertical
-				document.getElementById("barra-vertical-calc").innerHTML = "<div id=\"calculo-barra-vertical\" style=\"height:615px; width:50px;\"><div id=\"top\" style=\""+bg+"\"></div><div id=\"contenedor-calculo-barra-fondo\"><div id=\"contenedor-calculo-barra\" style=\"height:" + c + "px;\"><div id=\"contenido-mascara\"></div></div></div><div id=\"bottom\"></div></div>";
+						
+document.getElementById("reporte_grafico").innerHTML = '\
+<table width="480" border="0" class="reporte_d">\
+  <tr>\
+    <td colspan="3">\
+		<img src="/orbelink'+bg+'" />\
+	</td>\
+  </tr>\
+  <tr>\
+    <td>&nbsp;</td>\
+    <td>&nbsp;</td>\
+    <td>&nbsp;</td>\
+  </tr>\
+  <tr>\
+    <td align="left">Ventana gráfica:</td>\
+    <td>\
+	<div class="bg-gris">\
+		<div class="bg-vc" style="width: '+obj.impactoSizeContentToViewport+'%;"></div>\
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+	</div>\
+	</td>\
+    <td>'+obj.impactoSizeContentToViewport+'%</td>\
+  </tr>\
+  <tr>\
+    <td align="left">Velocidad de la web:</td>\
+    <td>\
+	<div class="bg-gris">\
+		<div class="bg-vc" style="width: '+obj.impactoVelocidad+'%;"></div>\
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+	</div>\
+	</td>\
+    <td>'+obj.impactoVelocidad+'%</td>\
+  </tr>\
+  <tr>\
+    <td align="left">Tamaño de fuente:</td>\
+    <td>\
+	<div class="bg-gris">\
+		<div class="bg-vc" style="width: '+obj.impactoUseLegibleFontSizes+'%;"></div>\
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+	</div>\
+	</td>\
+    <td>'+obj.impactoUseLegibleFontSizes+'%</td>\
+  </tr>\
+  <tr>\
+    <td align="left">Usabilidad tactil:</td>\
+    <td>\
+	<div class="bg-gris">\
+		<div class="bg-vc" style="width: '+obj.SizeTapTargetsAppropriately+'%;"></div>\
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+	</div>\
+	</td>\
+    <td>'+obj.SizeTapTargetsAppropriately+'%</td>\
+  </tr>\
+</table>';
+			
 			});
 
 		});

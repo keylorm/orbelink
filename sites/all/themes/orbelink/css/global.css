@@ -3387,8 +3387,8 @@ width: 100%;
 background-image: url('../images/tab-navegacion-responsivo.png');
 background-repeat: no-repeat;
 text-align: center;
-background-position: 44% center;
-background-position-x: 165px;
+background-position: 50% center;
+background-position-x: 50%;
 background-position-y: 40px;
 
 }
