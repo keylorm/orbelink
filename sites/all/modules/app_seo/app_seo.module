@@ -213,7 +213,7 @@ function calificar(){
 
        $porcentajesimpactoVelocidad = calcularVelocidad($impactoVelocidad, 30);
        $porcentajeIndividualimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoIndividual'];
-       //$porcentajeGrupalimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoGrupal'];
+       $porcentajeGrupalimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoGrupal'];
 
        $arrayVelocidad = array("impactoVelocidad" => array(
                                                     "porcentajeVelocidad" => $porcentajeIndividualimpactoVelocidad,
@@ -226,7 +226,7 @@ function calificar(){
        $arrayUrl = array("url" => $id);
 
        //obtener el array final y hacer un merge entre los arrays
-       $datosImpactos = obtenerImpactos($obj->formattedResults->ruleResults);
+       $datosImpactos = obtenerImpactos($obj->formattedResults->ruleResults, $porcentajeGrupalimpactoVelocidad);
        
        $datosImpactos = array_merge($datosImpactos, $arrayUrl);
        $datosImpactos = array_merge($datosImpactos, $arrayVelocidad);
@@ -240,7 +240,7 @@ function calificar(){
    //ADAPTACION (Size content to viewport): El contenido de tu página encaja con la ventana gráfica.
    //FUENTE (UseLegibleFontSizes): Si los tamaños de las tipografias son los adecuados segun dispositivo empleado
    //ANCHO WEB (): Como el sitio se adapta al ancho del dispositivo
- function obtenerImpactos($ruleResults){
+ function obtenerImpactos($ruleResults, $velocidad){
 
     //extraer el impacto de cada una de las reglas empleados
     //1. SizeContentToViewport
@@ -277,7 +277,7 @@ function calificar(){
                                                 "porcentajeIndividual" => $porcentajeIndividualimpactoSizeTapTargetsAppropriately
                                             ),
             "TotalPorcentajeGrupal" => array(
-                                                "porcentajeGrupal" => $porcentajeGrupalimpactoSizeContentToViewport + $porcentajeGrupalimpactoUseLegibleFontSizes + $porcentajeGrupalimpactoSizeTapTargetsAppropriately
+                                                "porcentajeGrupal" => $porcentajeGrupalimpactoSizeContentToViewport + $porcentajeGrupalimpactoUseLegibleFontSizes + $porcentajeGrupalimpactoSizeTapTargetsAppropriately +  $velocidad
                                             )
             );
  }
@@ -310,8 +310,8 @@ function calcularPorcentajeDeImpacto($impacto, $porcentajeGrupal){
 
     $velocidad = floor($velocidad);
 
-        $porcentajeImpactoIndividual = ($velocidad * $porcentajeGrupal)/100;
-        $porcentajeImpactoGrupal = $velocidad;
+        $porcentajeImpactoGrupal = ($velocidad * $porcentajeGrupal)/100;
+        $porcentajeImpactoIndividual = $velocidad;
 
     return array(
             "porcentajeImpactoIndividual" => $porcentajeImpactoIndividual,
