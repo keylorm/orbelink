@@ -3318,7 +3318,7 @@ text-transform: uppercase;
 }
 /***** AJUSTE A BANNER PRICIPALES ******/
 
-.not-front .flexslider .slides img {
+.node-type-especialidad .flexslider .slides img {
 	max-width: 1423px;
 	min-width: 1423px;
 	margin: auto;
