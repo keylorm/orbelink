@@ -115,7 +115,7 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
-			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc a#consulta-calc").css({

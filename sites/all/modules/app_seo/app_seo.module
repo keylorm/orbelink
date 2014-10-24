@@ -193,54 +193,132 @@ function buscar($aQue,$web)
 
 function calificar(){
 
-    $score_viewport = 0;
-    $google_score = 0;
-    $mediaqueries_score = 0;
-    $mediaqueries_score_2 = 0;
-
     if(isset($_POST['miweb']) and $_POST['miweb'] != ""){
-	$web = addhttp($_POST['miweb']);
-    $data = file_get_contents("https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=".$web."&locale=es_ES&strategy=mobile&key=AIzaSyBEI5SY3n4oRzk76cz1J1sYHVwf2USRW_w");
-    $obj = json_decode($data); 
-    //echo $obj->score . "<br />";
-    $google_score = (($obj->score)*100)/50;  
-        
-        $html = file_get_contents($web);
-        
-        if(strpos($html, 'viewport')){
-            $score_viewport = 30;
-        }
-        
-        $array_media = array(
-        'all and',
-        'orientation',
-        'device',
-        'handheld and',
-        'screen and',
-        '@media',
-        'only screen');
-        if($a = strposa($html, $array_media)){
-            $mediaqueries_score = 10;
-        }
+    	$web = addhttp($_POST['miweb']);
+        $url = "https://www.googleapis.com/pagespeedonline/v1/runPagespeed?url=".$web."&locale=es_ES&strategy=mobile&key=AIzaSyBEI5SY3n4oRzk76cz1J1sYHVwf2USRW_w";
+      // Create the stream context, we solve the issue for hung and waitting
+                $context = stream_context_create(array(
+                    'http' => array(
+                    'timeout' => 2      // Timeout in seconds
+                    )
+                ));
 
-        $html = str_replace("'", "\"", $html);
-        preg_match_all("/href=\"(.*\.(css?(.*?))+)\"/i",$html,$salida);
-        preg_match_all("/@import url\(\"(.*\.(css?(.*?))+)\"\)/i",$html,$salida2);
-        for($e = 0; $e < count($salida2[1]); $e++){
-            $salida[1][] = $salida2[1][$e];
-        }           
-        $counnt = count($salida[1]);
-        for($i = 0; $i < count($salida[1]); $i++){
-            $css = file_get_contents(addhttp($salida[1][$i],1));
-            if($a = strposa($css, $array_media)){
-                 $mediaqueries_score_2 = 10;
-            }
-        }               
+       $data = @file_get_contents($url, 0, $context);
 
-        print "{\"score\":\"". $obj->score ."\", \"web\":\"". $web ."\", \"otro\":\"". $_POST['miweb'] ."\"}";
-        
+       $obj = json_decode($data);
+       //print_r($obj->formattedResults->ruleResults->SizeContentToViewport->ruleImpact); 
+       
+       //2. velocidad
+       $impactoVelocidad = $obj->score;
+
+       $porcentajesimpactoVelocidad = calcularVelocidad($impactoVelocidad, 30);
+       $porcentajeIndividualimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoIndividual'];
+       //$porcentajeGrupalimpactoVelocidad = $porcentajesimpactoVelocidad['porcentajeImpactoGrupal'];
+
+       $arrayVelocidad = array("impactoVelocidad" => array(
+                                                    "porcentajeVelocidad" => $porcentajeIndividualimpactoVelocidad,
+                                                    //"porcentajeGrupal" => $porcentajeGrupalimpactoVelocidad
+                                                )
+                               );
+
+       // obtener el url a consultar
+       $id = $obj->id;
+       $arrayUrl = array("url" => $id);
+
+       //obtener el array final y hacer un merge entre los arrays
+       $datosImpactos = obtenerImpactos($obj->formattedResults->ruleResults);
+       
+       $datosImpactos = array_merge($datosImpactos, $arrayUrl);
+       $datosImpactos = array_merge($datosImpactos, $arrayVelocidad);
+
+       print_r(json_encode($datosImpactos));
+            
     }
 }
+
+ //nuestro indicador para obtener los impactos se basan en los siguientes casos:
+   //ADAPTACION (Size content to viewport): El contenido de tu página encaja con la ventana gráfica.
+   //FUENTE (UseLegibleFontSizes): Si los tamaños de las tipografias son los adecuados segun dispositivo empleado
+   //ANCHO WEB (): Como el sitio se adapta al ancho del dispositivo
+ function obtenerImpactos($ruleResults){
+
+    //extraer el impacto de cada una de las reglas empleados
+    //1. SizeContentToViewport
+    //importante verificar si tiene configurado el viewport
+    //si lo tiene configurado, entonces se procede a extraer el impacto del size content to view port
+    $porcentajeIndividualimpactoSizeContentToViewport = 0;
+    $porcentajeGrupalimpactoSizeContentToViewport = 0;
+    
+    if($ruleResults->ConfigureViewport->ruleImpact != 10){
+        //aplicar calculo
+        $porcentajesimpactoSizeContentToViewport = calcularPorcentajeDeImpacto($ruleResults->SizeContentToViewport->ruleImpact, 50);
+        $porcentajeIndividualimpactoSizeContentToViewport = $porcentajesimpactoSizeContentToViewport['porcentajeImpactoIndividual'];
+        $porcentajeGrupalimpactoSizeContentToViewport = $porcentajesimpactoSizeContentToViewport['porcentajeImpactoGrupal'];
+    }
+
+    //3. UseLegibleFontSizes
+    $porcentajesimpactoUseLegibleFontSizes = calcularPorcentajeDeImpacto($ruleResults->UseLegibleFontSizes->ruleImpact, 15);
+    $porcentajeIndividualimpactoUseLegibleFontSizes = $porcentajesimpactoUseLegibleFontSizes['porcentajeImpactoIndividual'];
+    $porcentajeGrupalimpactoUseLegibleFontSizes = $porcentajesimpactoUseLegibleFontSizes['porcentajeImpactoGrupal'];
+
+    //4. SizeTapTargetsAppropriately
+    $porcentajesimpactoSizeTapTargetsAppropriately = calcularPorcentajeDeImpacto($ruleResults->SizeTapTargetsAppropriately->ruleImpact, 5);
+    $porcentajeIndividualimpactoSizeTapTargetsAppropriately = $porcentajesimpactoSizeTapTargetsAppropriately['porcentajeImpactoIndividual'];
+    $porcentajeGrupalimpactoSizeTapTargetsAppropriately = $porcentajesimpactoSizeTapTargetsAppropriately['porcentajeImpactoGrupal'];
+
+    return array(
+            "impactoSizeContentToViewport" => array(
+                                                "porcentajeIndividual" => $porcentajeIndividualimpactoSizeContentToViewport
+                                            ),
+            "impactoUseLegibleFontSizes" => array(
+                                                "porcentajeIndividual" => $porcentajeIndividualimpactoUseLegibleFontSizes
+                                            ),
+            "SizeTapTargetsAppropriately" => array(
+                                                "porcentajeIndividual" => $porcentajeIndividualimpactoSizeTapTargetsAppropriately
+                                            ),
+            "TotalPorcentajeGrupal" => array(
+                                                "porcentajeGrupal" => $porcentajeGrupalimpactoSizeContentToViewport + $porcentajeGrupalimpactoUseLegibleFontSizes + $porcentajeGrupalimpactoSizeTapTargetsAppropriately
+                                            )
+            );
+ }
+
+function calcularPorcentajeDeImpacto($impacto, $porcentajeGrupal){
+
+    $impacto = floor($impacto);
+
+    if($impacto >= 10) {
+        $porcentajeImpactoIndividual = 0;
+        $porcentajeImpactoGrupal = 0;   
+    } else if($impacto > 0) {
+        $porcentajeImpactoIndividual = (10 - $impacto)*(100/10);
+        $porcentajeImpactoGrupal = $porcentajeImpactoIndividual * ($porcentajeGrupal/100);
+    }
+
+    if($impacto == 0) {
+        $porcentajeImpactoIndividual = 100; 
+        $porcentajeImpactoGrupal = $porcentajeGrupal;
+    }
+
+    return array(
+            "porcentajeImpactoIndividual" => $porcentajeImpactoIndividual,
+            "porcentajeImpactoGrupal" => $porcentajeImpactoGrupal
+        );
+
+ }
+
+ function calcularVelocidad($velocidad, $porcentajeGrupal){
+
+    $velocidad = floor($velocidad);
+
+        $porcentajeImpactoIndividual = ($velocidad * $porcentajeGrupal)/100;
+        $porcentajeImpactoGrupal = $velocidad;
+
+    return array(
+            "porcentajeImpactoIndividual" => $porcentajeImpactoIndividual,
+            "porcentajeImpactoGrupal" => $porcentajeImpactoGrupal
+        );
+
+ }
 
 function addhttpVIEJA($url,$css=0){
     if($css == 'css'){
