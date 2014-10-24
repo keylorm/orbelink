@@ -3316,6 +3316,14 @@ text-transform: uppercase;
 #resultado-calculo .clicks{
   width: 229px;
 }
+/***** AJUSTE A BANNER PRICIPALES ******/
+
+.node-type-especialidad .flexslider .slides img {
+	max-width: 1423px;
+	min-width: 1423px;
+	margin: auto;
+}
+
 /**********/
 
 /* app diseno web y movil - juan martinez */
