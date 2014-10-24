@@ -101,18 +101,20 @@ function app_seo_block_view($block_key){
 							
 							
                             <div id="resultado-calc">
+							<div id="encabezado-calc"></div>
 
 <div class="row r1">
-	<div id="encabezado-calc"></div>
 	<div id="contenedor-iframe-calc"></div>
 </div>
 <div class="row r2">
 	
 	
 
-<table width="100%" border="0" class="reporte_d">
+<table width="480" border="0" class="reporte_d">
   <tr>
-    <td colspan="3"><div id="top" style="background-image: url(/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png);"></div></td>
+    <td colspan="3">
+		<img src="/orbelink/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png" />
+	</td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -120,24 +122,44 @@ function app_seo_block_view($block_key){
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td>Ventana gráfica:</td>
-    <td>0000</td>
-    <td>%</td>
+    <td align="left">Ventana gráfica:</td>
+    <td>
+	<div class="bg-gris">
+		<div class="bg-vc" id="vg"></div>
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
+	</div>
+	</td>
+    <td id="porcentaje_vg">50%</td>
   </tr>
   <tr>
-    <td>Velocidad de la web:</td>
-    <td>0000</td>
-    <td>%</td>
+    <td align="left">Velocidad de la web:</td>
+    <td>
+	<div class="bg-gris">
+		<div class="bg-vc" id="vw"></div>
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
+	</div>	
+	</td>
+    <td id="porcentaje_vw">20%</td>
   </tr>
   <tr>
-    <td>Tamaño de fuente:</td>
-    <td>0000</td>
-    <td>%</td>
+    <td align="left">Tamaño de fuente:</td>
+    <td>
+	<div class="bg-gris">
+		<div class="bg-vc" id="tf"></div>
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
+	</div>	
+	</td>
+    <td id="porcentaje_tf">10%</td>
   </tr>
   <tr>
-    <td>Usabilidad tactil:</td>
-    <td>0000</td>
-    <td>%</td>
+    <td align="left">Usabilidad tactil:</td>
+    <td>
+	<div class="bg-gris">
+		<div class="bg-vc" id="ut"></div>
+		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />
+	</div>	
+	</td>
+    <td id="porcentaje_ut">8%</td>
   </tr>
 </table>
 

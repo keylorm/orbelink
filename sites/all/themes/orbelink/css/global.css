@@ -3332,7 +3332,7 @@ form#formulario-calc h2 {color: #fff; font-family: 'ProximaNova', sans-serif; fo
 input[name="miweb"] {width: 600px; height: 44px; border: none; padding: 8px 45px 8px 15px; border-radius: 5px;}
 #consulta-calc { padding: 22px; position: absolute; right: 0; bottom: 0; background-image: url('../images/boton-formulario-diseno-web-movil.png'); background-repeat: no-repeat; background-position: 6px 6px;}
 form#formulario-calc .form-content {width: 600px; margin: 0 auto; position: relative;}
-div#resultado-calc { width: 960px; margin: 0 auto; display:table; }
+#resultado-calc { width: 960px; margin: 0 auto;}
 div#encabezado-calc {
 width: 100%;
 float: left;
@@ -3346,10 +3346,10 @@ padding: 45px 0;
 
 }
 .r1{
-	width: 30%;
+	width: 480px;
 }
 .r2{
-	width: 65%;
+	width: 480px;
 	vertical-align:middle;
 }
 .reporte_d{
@@ -3357,6 +3357,25 @@ padding: 45px 0;
 }
 .reporte_d tbody{
 	border: none;
+}
+.bg-gris{
+	display:block;
+	position:relative;
+	width: 190px;
+	height: 35px;
+	background-color: #e4e4e4;
+}
+.bg-vc{
+	display:block;
+	
+	width:15%;
+	height: 35px;
+	background-color: #5da39a;
+}
+.bg-gris img{
+	position:absolute;
+	left: 0px; top: 0px;
+
 }
 
 div#encabezado-calc ul {
@@ -3381,7 +3400,7 @@ margin: 0px 0px 0px 60px;
 #iframe-tablet-contenedor { background-image: url('../images/tablet-fondo.jpg'); background-repeat: no-repeat; padding: 57px 37px; background-position: center;}
 #iframe-phone-contenedor { background-image: url('../images/phone.png'); background-repeat: no-repeat; padding: 83px 17px; margin:0 auto; background-position: center;}
 #iframe-tablet, #iframe-movil {border: none;}
-#contenedor-iframe-calc {float: left; width: 715px; margin-bottom: 70px;}
+#contenedor-iframe-calc {float: left; width: 480px; margin-bottom: 70px;}
 #barra-vertical-calc { margin-left: 80px; margin-top: 140px;}
 #calculo-barra-vertical #top, #calculo-barra-vertical #bottom {width: 50px; height: 50px;}
 #calculo-barra-vertical #top {background-image: url('../images/cara-feliz-diseno-web.png'); background-repeat: no-repeat;}
