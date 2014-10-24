@@ -36,7 +36,7 @@ function app_seo_block_view($block_key){
                                 </div>
                                 <div id="formulario-seo-contenedor">
                                     <div id="formulario-seo-contenedor-inner">
-                                        <form action="#" method="post" id="formulario-seo">
+                                        <form action="/" method="post" id="formulario-seo">
                                         <div class="formulario-seo-inner">
                                                 <div class="input-web-wrapper input-type-text">
                                                     <input type="text" name="miweb" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
@@ -71,7 +71,9 @@ function app_seo_block_view($block_key){
                                                 </div>
                                                
                                                 
-                                                <div class="buscar-button-box"><a href="javascript:void(0);" id="consulta-seo">Buscar</a></div>
+                                                <div class="buscar-button-box">
+                                                <input type="submit" value="Buscar" id="consulta-seo">
+                                                </div>
                                             </div>
 
                                            <div id="resultado-seo"></div>
@@ -86,11 +88,11 @@ function app_seo_block_view($block_key){
  
         //Define the block content.
         $block['content'] = '<div class="block-app-seo-wrapper">
-		<div id="block-app-seo-calc-application-inner"><form id="formulario-calc" action="#" method="post">
+		<div id="block-app-seo-calc-application-inner"><form id="formulario-calc" action="/" method="post">
         <h2>CALIFIQUE LA RESPONSIVIDAD DE SU SITIO</h2>
                                 <div class="form-content">
                                     <input type="text" name="miweb" onkeypress="javascript:void();" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
-                                    <a href="javascript:void(0);" id="consulta-calc"></a>
+                                    <input type="submit" id="consulta-calc" value="">
                                 </div>
                             </form></div></div>
 		

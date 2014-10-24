@@ -39,7 +39,10 @@ jQuery(document).ready(function(){
 	});
 	jQuery('input, textarea').placeholder();
 
-	jQuery( "#formulario-seo a#consulta-seo" ).click(function( event ) {
+	jQuery( "#formulario-seo" ).submit(function( event ) {
+
+		//detememos el submition del formulario
+		event.preventDefault();
 
 		var var_miweb =jQuery("#miweb").val();	 
 		var var_bot = jQuery("input[name='bot']").val();
@@ -104,21 +107,22 @@ jQuery(document).ready(function(){
     		jQuery( "#formulario-calc a#consulta-calc" ).click();
 	    }
 	});*/
-	jQuery( "#formulario-calc a#consulta-calc" ).click(function( event ) {
+	jQuery( "#formulario-calc" ).submit(function( event ) {
 
-			jQuery("#formulario-calc a#consulta-calc").css({
+			//detenemos el submition del formulario
+			event.preventDefault();
+
+			jQuery("#formulario-calc input#consulta-calc").css({
 				"background-image": "url(http://nuevo.orbelink.com/sites/all/themes/orbelink/images/responsive-loading.gif)",
 				"background-position": "center center"
 			});
-
-
 
 			var var_miweb_calc = jQuery("#miweb").val();
 
 			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
-			  	jQuery("#formulario-calc a#consulta-calc").css({
+			  	jQuery("#formulario-calc input#consulta-calc").css({
 					"background-image": "url(http://nuevo.orbelink.com/sites/all/themes/orbelink/images/boton-formulario-diseno-web-movil.png)",
 					"background-position": "6px 6px"
 				});
