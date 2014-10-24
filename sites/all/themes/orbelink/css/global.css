@@ -3346,11 +3346,11 @@ padding: 45px 0;
 
 }
 .r1{
-	width: 480px;
+	width: 480px;;
 }
 .r2{
 	width: 480px;
-	vertical-align:middle;
+	vertical-align:top;
 }
 .reporte_d{
 	color: #808080; font-family: 'ProximaNova', sans-serif; font-size: 20px; 
