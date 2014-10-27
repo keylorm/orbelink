@@ -59,7 +59,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -119,25 +119,8 @@ jQuery(document).ready(function(){
 
 			var var_miweb_calc = jQuery("#miweb").val();
 			
-/*zoom: 0.9;
--moz-transform: scale(0.8);
--moz-transform-origin: 0 0;
--o-transform: scale(0.8);
--o-transform-origin: 0 0;
--webkit-transform: scale(0.7);
--webkit-transform-origin: 0 0;*/	
 			
-			jQuery("#iframe-movil").css({
-				"-moz-transform": "scale(0.7)",
-				"-webkit-transform": "scale(0.7)",
-				"-o-transform": "scale(0.7)",
-				"-ms-transform": "scale(0.7)",
-				"-moz-transform-origin": "0 0",
-				"-webkit-transform-origin": "0 0",
-				"-o-transform-origin": "0 0",
-				"-ms-transform-origin": "0 0",				
-				"zoom":'0.9'});
-			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc input#consulta-calc").css({
