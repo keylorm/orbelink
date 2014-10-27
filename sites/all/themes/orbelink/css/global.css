@@ -3342,10 +3342,12 @@ margin: 0px auto;
 padding: 45px 0;
 }
 
+.divt{
+	clear:both;
+}
 .row{
 	text-align:center;
 	display:table-cell;
-
 }
 .r1{
 	width: 480px;;
@@ -3399,8 +3401,27 @@ list-style: none;
 display: inline-block;
 margin: 0px 0px 0px 60px;
 }
-#iframe-tablet-contenedor { background-image: url('../images/tablet-fondo.jpg'); background-repeat: no-repeat; padding: 57px 37px; background-position: center;}
-#iframe-phone-contenedor { background-image: url('../images/phone.png'); background-repeat: no-repeat; padding: 83px 17px; margin:0 auto; background-position: center;}
+#iframe-tablet-contenedor { background-image: url('../images/tablet-fondo.jpg'); background-repeat: no-repeat; padding: 57px 37px; background-position: center;
+
+
+}
+#iframe-phone-contenedor { background-image: url('../images/phone.png'); background-repeat: no-repeat; padding: 89px 21px; margin:0 auto; background-position: center;
+width: 280px;
+height: 537px;
+
+
+}
+
+#iframe-movil{
+zoom: 0.9;
+-moz-transform: scale(0.7);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.7);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.7);
+-webkit-transform-origin: 0 0;	
+}
+
 #iframe-tablet, #iframe-movil {border: none;}
 #contenedor-iframe-calc {float: left; width: 480px; margin-bottom: 70px;}
 #barra-vertical-calc { margin-left: 80px; margin-top: 140px;}

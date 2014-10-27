@@ -118,7 +118,25 @@ jQuery(document).ready(function(){
 			});
 
 			var var_miweb_calc = jQuery("#miweb").val();
-
+			
+/*zoom: 0.9;
+-moz-transform: scale(0.8);
+-moz-transform-origin: 0 0;
+-o-transform: scale(0.8);
+-o-transform-origin: 0 0;
+-webkit-transform: scale(0.7);
+-webkit-transform-origin: 0 0;*/	
+			
+			jQuery("#iframe-movil").css({
+				"-moz-transform": "scale(0.7)",
+				"-webkit-transform": "scale(0.7)",
+				"-o-transform": "scale(0.7)",
+				"-ms-transform": "scale(0.7)",
+				"-moz-transform-origin": "0 0",
+				"-webkit-transform-origin": "0 0",
+				"-o-transform-origin": "0 0",
+				"-ms-transform-origin": "0 0",				
+				"zoom":'0.9'});
 			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
@@ -128,15 +146,26 @@ jQuery(document).ready(function(){
 				});
 
 			    var obj = jQuery.parseJSON(data);
-				console.log(obj);
+				//console.log(obj);
 
-			    jQuery('#resultado-calc').show();	
+			    jQuery('#resultado-calc').show();
+				var w = '370';
+				var h = '540';
+				if(jQuery.browser.msie){
+					var w = '260';
+					var h = '395';					
+				}
+				if(jQuery.browser.mozilla){
+					var w = '340';
+					var h = '510';					
+				}				
+				
 			    
 			    //inyectar codigo html para mostrar una barra vertical
 			    document.getElementById("encabezado-calc").innerHTML = '<ul><li id="li-tablet" class="activo"><div class="img" id="icono-tablet"/></li><li id="li-phone"><div class="img" id="icono-movil"/><li></ul>';
 			    
 			    //inyectar el codigo html para los displays tablet y movil
-			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="351" height="427" src="'+ obj.url +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="230" height="345" src="'+ obj.url +'"></iframe></div>';
+			    document.getElementById("contenedor-iframe-calc").innerHTML = '<div id="iframe-tablet-contenedor" class="iframe-contenedor activo"><iframe id="iframe-tablet" width="351" height="427" src="'+ obj.url +'"></iframe></div><div id="iframe-phone-contenedor" class="iframe-contenedor" ><iframe id="iframe-movil" width="'+w+'" height="'+h+'" src="'+ obj.url +'"></iframe></div>';
 		
 			    //funcionalidad tab para los displays
 			    jQuery("#encabezado-calc ul li #icono-tablet").click(function(){
@@ -196,7 +225,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>'+obj.impactoSizeContentToViewport+'%</td>\
   </tr>\
   <tr>\
-    <td align="left">Velocidad de la web:</td>\
+    <td align="left">Velocidad de carga:</td>\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.impactoVelocidad+'%;"></div>\
@@ -216,7 +245,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>'+obj.impactoUseLegibleFontSizes+'%</td>\
   </tr>\
   <tr>\
-    <td align="left">Usabilidad tactil:</td>\
+    <td align="left">Usabilidad táctil:</td>\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.SizeTapTargetsAppropriately+'%;"></div>\
