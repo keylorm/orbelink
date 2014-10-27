@@ -99,10 +99,12 @@ function app_seo_block_view($block_key){
 							
 <div id="resultado-calc">
 	<div id="encabezado-calc"></div>
-	<div class="row r1">
-		<div id="contenedor-iframe-calc"></div>
+	<div class="divt">
+		<div class="row r1">
+			<div id="contenedor-iframe-calc"></div>
+		</div>
+		<div class="row r2" id="reporte_grafico"></div>
 	</div>
-	<div class="row r2" id="reporte_grafico"></div>
 </div>';
 
     }
