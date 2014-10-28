@@ -319,7 +319,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	jQuery( "#busqueda-resultado-"+valor_conversion ).removeClass("resultado");
 
 	jQuery( "#conversion-opciones" ).change(function(){
-		jQuery( "#busqueda-resultado a").hide("slow").css({display:'none'});
+		jQuery( "#busqueda-resultado img").hide("slow");
 		var valor_conversion = jQuery( "#conversion-opciones option:selected" ).val();
 		jQuery( "#busqueda-resultado-"+valor_conversion ).show("slow");
 	});
@@ -913,5 +913,3 @@ function cambiarObjetivo()
 	jQuery("#cantidad-clics").text(calculo[0]);
 	jQuery("#cantidad-impresiones").text(calculo[1]);
 }
-
-

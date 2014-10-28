@@ -1989,6 +1989,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   display: none;
 }
 
+
 .hover-titulo {
   height: 272px;
   position: absolute;
@@ -3170,9 +3171,9 @@ line-height: 40px;
 
 /* Aplicación Presupuesto */
 #block-block-9{
-  min-height: 365px;
+  min-height: 405px;
   background-color: #F1F2F2;
-  padding: 35px 0;
+  padding: 52px 0;
 }
 
 #block-block-9 .content{
@@ -3186,7 +3187,7 @@ line-height: 40px;
     font-size: 42px;
     font-weight: 400;
     line-height: 32px;
-    margin: 0 0 30px;
+    margin: 0 0 42px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -3444,11 +3445,10 @@ margin-bottom: -20px !important;}
 
 /* App publicidad */
 ul.accordion-tabs-minimal li.tab-header-and-content { float: left; /*min-width: 350px;*/ } 
-ul.accordion-tabs-minimal {width: 980px; padding-left: 0px; margin: 0 auto; height: 330px; margin-top: 40px;}
-ul.accordion-tabs-minimal .tab-content { position: absolute; width: 980px; text-align: center; margin-top: 40px;}
+ul.accordion-tabs-minimal {width: 980px; padding-left: 0px; margin: 0 auto; height: 1200px; margin-top: 70px;}
+ul.accordion-tabs-minimal .tab-content { position: absolute; width: 980px; text-align: center; margin-top: 50px;}
 #conversion-opciones {border: none; background-color: #E6E7E8; padding: 21px 43px; font-family: 'ProximaNova' !important; font-size: 19px !important; text-transform: uppercase;}
-div#busqueda-resultado { margin-top: 15px;}
-div#busqueda-resultado a{ display:none; }
+div#busqueda-resultado { margin-top: 45px; }
 ul.accordion-tabs-minimal a {padding: 2px 55px 21px 55px; text-align: center; border: 1px solid #bbb;}
 ul.accordion-tabs-minimal a#conversion { margin: 0 25px 0 110px;}
 ul.accordion-tabs-minimal a h2, ul.accordion-tabs-minimal a h3, ul.accordion-tabs-minimal a p{ margin: 0; padding: 0; }
@@ -3478,35 +3478,8 @@ ul.accordion-tabs-minimal li.tab-header-and-content.primero p{ color: #e8442e;}
 #branding-content a.is-active.logo-facebook {background-image: url('../images/facebook-tab-active.png');}
 #branding-content a.is-active.logo-google {background-image: url('../images/google-tab-active.png');}
 div#branding-content { /*margin-left: -250px;*/ }
-div#branding-content a {border: none;}
-div#branding-content .tab-content a{
-	display:block;
-	border: 1px solid #00A69C;
-	line-height: 50px;
-	width: 220px;
-	height:50px;	
-	margin:auto;
-	font-family: 'ProximaNova', sans-serif;
-	font-size: 24px;
-	
-}
-#busqueda-resultado a{
-	display:block;
-	border: 1px solid #00A69C;
-	line-height: 50px;
-	width: 220px;
-	height:50px;	
-	margin:auto;
-	font-family: 'ProximaNova', sans-serif;
-	font-size: 24px;
-	padding: 10px;
-}
-div#branding-content .tab-content a span,
-#busqueda-resultado a span{
-	font-family: "Baskerville",sans-serif;
-	font-size: 30px;
-	color:#00A69C;	
-}
+div#branding-content a {border:none;}
+
 #branding-content ul,
 #branding-content #google2{
 	margin-left: -485px !important;
