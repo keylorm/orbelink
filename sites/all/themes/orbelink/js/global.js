@@ -913,3 +913,8 @@ function cambiarObjetivo()
 	jQuery("#cantidad-clics").text(calculo[0]);
 	jQuery("#cantidad-impresiones").text(calculo[1]);
 }
+
+function popupflash970()
+{ 
+	jQuery("#flash970").click();
+}
