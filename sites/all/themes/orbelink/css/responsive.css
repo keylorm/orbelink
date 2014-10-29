@@ -2,14 +2,47 @@
 	margin: 0 auto;
 }
 
+/* Global */
 .container-nivel2{
-	width: 980px;
+	width: 100%;
 	margin: 0 auto;
 }
 
 /* Nuestro Trabajo */
-
 #block-block-4 .content{
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
+}
+
+/* movil landscape */
+@media all and (min-width:480px) and (max-width:767px) { 
+
+	.container-nivel2{
+		width: 90%;
+	}
+
+}
+
+/* tablet */
+@media all and (min-width:768px) and (max-width:979px) { 
+
+	.container-nivel2{
+		width: 80%;
+	}
+
+}
+
+/* default */
+@media all and (min-width:980px) { 
+
+	.container-nivel2{
+		width: 980px;
+	}
+
+	/* Nuestro Trabajo */
+
+	#block-block-4 .content{
+	    width: 1280px;
+	}
+
 }
