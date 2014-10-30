@@ -12,7 +12,7 @@
 	/* Slider home */
 
 	.view-slider-home .flex-caption {
-	  bottom: 144px;
+	  bottom: 50px;
 	}
 
 	.view-slider-home .flex-caption h3{
@@ -36,6 +36,13 @@
 	  margin: 30px auto 0;
 	  width: 220px;
 	}
+	.view-slider-home .flex-caption .link-slider-box a{
+	  font-size: 26px;
+	  line-height: 55px;
+	}	
+	.view-slider-home .flex-caption .link-slider-box a span{
+	  font-size: 31px;
+	}		
 
 	/* footer */
 
@@ -62,5 +69,30 @@
 	.footer .footer-box .block-menu-block ul li a{
 		font-size: 1em;
 	}
+	
+	/**** Andrey Solís :: 30-10-2014 ******/
+	
+	.page-inicio .pane-1 .pane-content h2{
+	 font-size: 33px;
+	 line-height: 31px;
+	}
+	.page-inicio .pane-1 .pane-content p{
+	 font-size: 20px;
+	 line-height: 25px;
+	}
+	.page-inicio .view-display-id-block_islas_especialidad .views-row{
+	  width: 46%;
+	  padding-left: 2%;
+	  padding-right: 2%;
+	  margin-right: 0px;
+	}
+	#cintillo-10-years{
+	 padding-top: 60px;
+	}
+	#block-block-7{
+		min-height: 100px;
+	}						
+	
+	/**************************************/
 
 }
