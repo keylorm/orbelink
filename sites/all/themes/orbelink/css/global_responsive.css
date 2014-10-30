@@ -1903,7 +1903,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
-  width: 960px;
+  width: 100%;
   margin: 0 auto 55px;
   text-align: center;
 }
@@ -1914,6 +1914,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-size: 40px;
   font-weight: 400;
   margin: 0;
+  line-height: 40px;
 }
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno h2 span{
@@ -1930,7 +1931,13 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-family: "Roboto Slab",sans-serif;
   font-size: 23px;
   font-weight: 400;
+  line-height: 29px;
 }
+
+.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
+	width: 100%;
+}
+
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content
 .view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
 .view-display-id-block_resumen_portafolio_grande .view-content{
@@ -1942,7 +1949,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .view-display-id-block_resumen_portafolio_grande .view-content .views-row
 {
   float: left;
-  width: 423px;
+  width: 100%;
   height: 272px;
   overflow: hidden;
 }
@@ -1953,7 +1960,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
   position: relative;
   height: 272px;
-  width: 423px;
+  width: 100%;
 }
 
 
@@ -1971,7 +1978,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   position: absolute;
   text-align: center;
   top: 0;
-  width: 423px;
+  width: 100%;
   background-image: url(../images/bg-boton-slider.png);
   background-repeat: repeat;
 }
@@ -1998,7 +2005,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   position: absolute;
   text-align: center;
   top: 273px;
-  width: 423px;
+  width: 100%;
   height: 272px;
   background-image: url(../images/bg-portfolio-home-hover.png);
   background-repeat: repeat;
@@ -2006,7 +2013,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .roll-over-portfolio-inner{
-  width: 388px;
+  width: 100%;
   margin: 35px auto 0;
 
 }

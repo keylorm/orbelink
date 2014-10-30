@@ -211,7 +211,29 @@
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado,
 	.view-display-id-block_resumen_portafolio_grande  {
 	  width: 1280px;
-	}					
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
+	  width: 960px;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno h2{
+		line-height: 50px;
+	}		
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
+	  line-height: 37px;
+	}
+
+
+.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
+	width: auto;
+}
+.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
+.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
+.view-display-id-block_resumen_portafolio_grande .view-content
+{
+  width: 100%;
+  margin: auto;
+}
+							
 	/**************************************/
 
 }
