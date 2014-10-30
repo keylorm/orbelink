@@ -56,7 +56,6 @@ stylesheets[all][] = css/animate.css
 ;-------------- JS -------------
 
 scripts[] = js/viewportchecker.js
-scripts[] = js/respond.min.js
 scripts[] = js/jquery.smooth-scroll.min.js
 scripts[] = js/jquery.placeholder.js
 scripts[] = js/global.js
