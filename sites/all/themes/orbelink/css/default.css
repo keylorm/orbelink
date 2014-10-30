@@ -16,6 +16,7 @@
 	#block-system-main-menu ul.menu li{
 	  	width: auto;
 	  	text-align: center;
+	  	margin: 0px;
 	}
 
 	/* Slider home */
@@ -55,6 +56,10 @@
 	.footer .footer-box h2 a{
 		font-size: 1em;
 		border-bottom: none;
+	}
+
+	.footer .footer-box .block-menu-block ul li a{
+		font-size: 0.9em;
 	}
 
 	.footer .footer-box #block-menu-block-1,
