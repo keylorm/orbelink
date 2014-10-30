@@ -85,12 +85,12 @@ a:hover{
 
 #block-system-main-menu ul.menu{
 	text-align: center;
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 #block-system-main-menu ul.menu li{
 	display: inline-block;
-	margin: 4px 0px;
+	margin: 0;
   padding: 0 42px;
   width: 100%;
   text-align: left;
@@ -1652,10 +1652,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   border: 2px solid #ffffff;
   background-repeat: no-repeat;
   background-color: rgba(0,0,0,0.4);
-  height: 58px;
-  line-height: 50px;
+  height: 45px;
+  line-height: 45px;
   margin: 20px auto 20px;
-  width: 220px;
+  width: 150px;
   -webkit-transition:all 500ms ease;
   -o-transition: all 500ms ease;
   transition:all 500ms ease;
@@ -1673,10 +1673,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   padding: 0 5px;
   color: #FFFFFF;
   font-family: "ProximaNova",sans-serif;
-  font-size: 29px;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: none;
-  line-height: 49px;
+  line-height: 35px;
 
 }
 
@@ -1684,7 +1684,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
   color: #FFFFFF;
   font-family: "Baskerville",sans-serif;
-  font-size: 39px;
+  font-size: 26px;
   font-weight: 400;
   font-style: italic;
 
@@ -1710,28 +1710,32 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   box-shadow: none; 
   margin: 0 0 48px;
 }
+.view-slider-home .flexslider .slides li img{
+	min-width: 320px;
+	min-height: 150px;
+}
 
 
 /* Islas Home */
 
 .page-inicio .pane-1, .app-redes-sociales-contenido{
-  width: 980px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .page-inicio .pane-1 .pane-content h2{
  color: #1A1A1A;
  font-family: "ProximaNova",sans-serif;
- font-size: 34px;
+ font-size: 24px;
  text-align: center;
  font-weight: 400;
- line-height: 45px;
+ line-height: 25px;
 }
 
 .page-inicio .pane-1 .pane-content h2 span{
  color: #E8442E;
  font-family: "Baskerville",sans-serif;
- font-size: 47px;
+ font-size: 40px;
  font-style: italic;
  font-weight: 400;
  letter-spacing: -1px;
@@ -1740,22 +1744,22 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio .pane-1 .pane-content p{
  font-family: "Roboto Slab",sans-serif;
- font-size: 21px;
+ font-size: 15px;
  font-weight: 300;
  color: #4D4D4D;
  text-align: center;
- line-height: 30px;
+ line-height: 22px;
 }
 
 
 .page-inicio .view-display-id-block_islas_especialidad{
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
 }
 
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row{
-  width: 296px;
+  width: 98%;
   float: left;  
   margin-right: 36px;
   min-height: 450px;
@@ -1809,16 +1813,15 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #block-block-6{
   background-color: #e8442e;
-  height: 400px;
+  height: auto;
+  float:left;
 }
 
 #block-block-6 .content{
-  background-image: url("../images/cintillo-prueba-tiempo.png");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+  background-image: none;
   height: 100%;
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
 } 
 
 #cintillo-10-years{
@@ -1827,8 +1830,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  background-repeat: no-repeat;
  float: right;
  margin-top: -30px;
- padding-left: 326px;
+/* padding-left: 326px;*/
  padding-top: 104px;
+ padding-left: 10px;
+ padding-right: 10px;
  width: 100%;
 }
 
@@ -1839,10 +1844,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   text-transform: uppercase;
   color: #FFFFFF;
   font-family: "ProximaNova",sans-serif;
-  font-size: 49px;
+  font-size: 39px;
   font-weight: 400;
   margin: 0;
-  line-height: 49px;
+  line-height: 36px;
 
 }
 
@@ -1870,8 +1875,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-6 p{
   color: #ffffff;
   font-family: "Open Sans",sans-serif;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 20px;
   font-weight: 400;
 }
 
@@ -2128,7 +2133,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-views-ed5db07469e68153e4002605aea7ce02 .content{
-  width: 1280px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
@@ -2139,7 +2144,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
- width: 970px;
+ width: 100%;
  text-align: center;
  margin: 0 auto;
  position: relative;
@@ -2163,7 +2168,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #encabezado-nuestro-proceso h2{
   color: #1A1A1A;
   font-family: "ProximaNova",sans-serif;
-  font-size: 34px;
+  font-size: 25px;
+  line-height: 28px;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -2171,7 +2177,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #encabezado-nuestro-proceso h2 span{
  color: #E8442E;
  font-family: "Baskerville",sans-serif;
- font-size: 48px;
+ font-size: 36px;
  font-weight: 400;
  font-style: italic;
  letter-spacing: -1px;
@@ -2180,10 +2186,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #encabezado-nuestro-proceso p{
   color: #4d4d4d;
   font-family: "Roboto Slab",sans-serif;
-  font-size: 22px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 34px;
-  margin-top: 0;
+  line-height: 20px;
+  margin-top: 15px;
 }
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content{
