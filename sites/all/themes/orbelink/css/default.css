@@ -103,5 +103,96 @@
 	.footer .footer-box #block-block-1{
 		width: 180px;
 	}
+	
+	
+	/**** Andrey Solís :: 29-10-2014 ******/
+	
+
+	/* Islas Home */
+	
+	.page-inicio .pane-1, .app-redes-sociales-contenido{
+	  width: 960px;
+	}
+	
+	.page-inicio .view-display-id-block_islas_especialidad{
+	  width: 960px;
+	}
+	.page-inicio .pane-1 .pane-content h2{
+	 font-size: 34px;
+	 line-height: 45px;
+	}
+	.page-inicio .pane-1 .pane-content h2 span{
+	 font-size: 47px;
+	}
+	.page-inicio .pane-1 .pane-content p{
+	 font-size: 21px;
+	 line-height: 30px;
+	}			
+	
+	.page-inicio .view-display-id-block_islas_especialidad .views-row{
+	  width: 296px;
+	  margin-right: 36px;
+	}	
+	.view-slider-home .flex-caption .link-slider-box {
+	  height: 58px;
+	  line-height: 50px;
+	  width: 220px;
+	}
+	.view-slider-home .flex-caption .link-slider-box a{
+	  font-size: 29px;
+	  line-height: 49px;
+	
+	}
+	.view-slider-home .flex-caption .link-slider-box a span{
+	  font-size: 39px;
+	}
+	#block-block-6{
+	  float:none;
+	  height: 400px;
+	}	
+	#block-block-6 .content{
+	  width: 960px;
+	  background-image: url("../images/cintillo-prueba-tiempo.png");
+	  background-position: left bottom;
+	  background-repeat: no-repeat;	  
+	}
+	#block-block-6 h2{
+	  font-size: 49px;
+	  line-height: 49px;
+	}
+	#block-block-6 p{
+	  font-size: 15px;
+	  line-height: 20px;
+	}		
+	#cintillo-10-years{
+	 background-image: url("../images/flecha-cintillo-10anos.png");
+	 background-position: center top;
+	 background-repeat: no-repeat;
+	 float: right;
+	 margin-top: -30px;
+	 padding-left: 326px;
+	 padding-top: 104px;
+	 width: 100%;
+	}	 		
+
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content{
+	  width: 1280px;
+	}
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
+	 width: 970px;
+	}
+	#encabezado-nuestro-proceso h2{
+	  font-size: 38px;
+	  line-height: 40px;
+	}
+	#encabezado-nuestro-proceso h2 span{
+	 font-size: 48px;
+	}			
+	#encabezado-nuestro-proceso p{
+	  font-size: 22px;
+	  line-height: 34px;
+	  margin-top: 0px;
+	}	
+	/**************************************/
 
 }

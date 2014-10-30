@@ -376,8 +376,8 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	jQuery('.view-slider-home .flex-control-nav li').each(function(indice, elemento) {
 		cantidad_li = cantidad_li + 1;
 	});
-	
-	var result = 237 - ((cantidad_li - 1) * 11);
+	var height = jQuery('.view-slider-home li img').height() / 2;
+	var result = height - ((cantidad_li - 1) * 11);
 	jQuery('.view-slider-home .flex-control-nav').css({'top':result});
 
 
