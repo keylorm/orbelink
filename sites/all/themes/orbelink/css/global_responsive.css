@@ -20,6 +20,23 @@
   font-style: italic;
 }
 
+.container-nivel1{
+  margin: 0 auto;
+}
+
+/* Global */
+.container-nivel2{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Nuestro Trabajo */
+#block-block-4 .content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 #comments{
 	clear: both;
 }

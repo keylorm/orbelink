@@ -49,8 +49,8 @@ stylesheets[all][] = css/sonambulo.css
 stylesheets[all][] = css/global_responsive.css
 stylesheets[all][] = css/movil-landscape.css
 stylesheets[all][] = css/tablet.css
-stylesheets[all][] = css/default.css
-stylesheets[all][] = css/responsive.css
+stylesheets[all][] = css/desktop.css
+stylesheets[all][] = css/desktop-wide.css
 stylesheets[all][] = css/animate.css
 
 ;-------------- JS -------------

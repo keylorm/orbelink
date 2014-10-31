@@ -1,5 +1,9 @@
 @media all and (min-width:480px) { 
 
+	.container-nivel2{
+		width: 90%;
+	}
+
 	.menu-desplegable{
 	  height: 300px;
 	  top: -300px;   

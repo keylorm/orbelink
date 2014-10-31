@@ -1,0 +1,362 @@
+@media all and (min-width:1024px) { 
+	.container-nivel2{
+		width: 980px;
+	}
+
+	/* Nuestro Trabajo */
+
+	#block-block-4 .content{
+	    width: 1024px;
+	}
+
+	.menu-desplegable{
+	  height: 240px;
+	  top: -240px;   
+	}
+
+	#block-system-main-menu ul.menu li.first {
+	  padding-left: 0;
+	}
+
+	#block-system-main-menu ul.menu{
+	  margin-top: 85px;
+	}
+
+	#block-system-main-menu ul.menu li{
+	  	width: auto;
+	  	text-align: center;
+	  	margin: 0px;
+	}
+
+	/* Slider home */
+	.page-inicio .main-content{
+		 width: 1280px;
+		 max-width: 1280px;
+	}
+
+	.view-slider-home .flex-caption {
+	  bottom: 144px;
+	}
+
+	.view-slider-home .flex-caption h3{
+	  font-size: 62px;
+	  line-height: 45px;
+	}
+
+	.view-slider-home .flex-caption h3 span{
+	  font-size: 79px;
+	}
+
+	.view-slider-home .flex-caption .caption-slider-home-pequeno{
+	  font-size: 34px;
+	  margin: 0;
+	  line-height: 50px;
+	}
+
+	.view-slider-home .flex-caption .link-slider-box {
+	  height: 58px;
+	  line-height: 50px;
+	  margin: 30px auto 0;
+	  width: 220px;
+	}
+
+	/* footer */
+
+	#block-block-15 {
+		display: none;
+	}
+
+	.footer{
+	  min-height: 415px;
+	}
+
+	/* Ajustar  el ancho del contenedor solo para que afecte al footer */
+	.footer .container-nivel2{
+		width: 980px;
+	}
+
+	.footer .footer-box #block-menu-block-3 .content,
+	.footer .footer-box #block-menu-block-1 .content,
+	#block-block-1 p{ 
+		display: block;
+	}
+
+	.footer .footer-box h2 a{
+		font-size: 1em;
+		border-bottom: none;
+	}
+
+	.footer .footer-box .block-menu-block ul li a{
+		font-size: 0.9em;
+	}
+
+	.footer .footer-box #block-menu-block-1,
+	.footer .footer-box #block-menu-block-2,
+	.footer .footer-box #block-menu-block-4,
+	.footer .footer-box #block-block-2,
+	.footer .footer-box #block-block-13,
+	.footer .footer-box #block-block-14{
+		margin-right: 22px;
+		float: left;
+	}
+
+	.footer .footer-box #block-menu-block-3{
+		float: left;
+		margin-right: 24px;
+		padding-bottom: 15px;
+	}
+
+	.footer .footer-box #block-block-1{
+		float: left;
+	}
+
+	.footer .footer-box #block-menu-block-1{
+		width: 174px;
+	}
+	.footer .footer-box #block-menu-block-2{
+		width: 153px;
+	}
+	.footer .footer-box #block-menu-block-3{
+		width: 224px;
+	}
+
+	.footer .footer-box #block-menu-block-4{
+		width: 148px;
+	}
+
+	.footer .footer-box #block-block-2, .footer .footer-box #block-block-13, .footer .footer-box #block-block-14{
+		width: 155px;
+	}
+
+	.footer .footer-box #block-block-1{
+		width: 180px;
+	}
+	
+	
+	/**** Andrey Solís :: 29-10-2014 ******/
+	
+
+	/* Islas Home */
+	
+	.page-inicio .pane-1, .app-redes-sociales-contenido{
+	  width: 960px;
+	}
+	
+	.page-inicio .view-display-id-block_islas_especialidad{
+	  width: 960px; 
+	}
+	.page-inicio .pane-1 .pane-content h2{
+	 font-size: 33px;
+	 line-height: 45px;
+	}
+	.page-inicio .pane-1 .pane-content h2 span{
+	 font-size: 47px;
+	}
+	.page-inicio .pane-1 .pane-content p{
+	 font-size: 21px;
+	 line-height: 30px;
+	}			
+	
+	.page-inicio .view-display-id-block_islas_especialidad .views-row{
+	  width: 296px;
+	  margin-right: 36px;
+	  padding-left: 0px;
+      padding-right: 0px;	  	 	  
+	}	
+	.view-slider-home .flex-caption .link-slider-box {
+	  height: 58px;
+	  line-height: 50px;
+	  width: 220px;
+	}
+	.view-slider-home .flex-caption .link-slider-box a{
+	  font-size: 29px;
+	  line-height: 49px;
+	}
+	.view-slider-home .flex-caption .link-slider-box a span{
+	  font-size: 39px;
+	}
+	#block-block-6{
+	  float:none;
+	  height: 400px;
+	}	
+	#block-block-6 .content{
+	  width: 960px;
+	  background-image: url("../images/cintillo-prueba-tiempo.png");
+	  background-position: left bottom;
+	  background-repeat: no-repeat;	  
+	}
+	#block-block-6 h2{
+	  font-size: 49px;
+	  line-height: 49px;
+	}
+	#block-block-6 p{
+	  font-size: 16px;
+	  line-height: 28px;
+	}		
+	#cintillo-10-years{
+	 padding-left: 326px;
+	 padding-right: 0px;
+	 padding-top: 104px;
+	 width: 100%;
+	}	 		
+
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
+	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
+	  width: 1280px;
+	}
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header,
+	#block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-nuestro-proceso  .view-header{
+	 width: 970px;
+	}	
+	#encabezado-nuestro-proceso h2{
+	  font-size: 37px;
+	  line-height: 40px;
+	}
+	#encabezado-nuestro-proceso h2 span{
+	 font-size: 48px;
+	}			
+	#encabezado-nuestro-proceso p{
+	  font-size: 22px;
+	  line-height: 34px;
+	  margin-top: 0px;
+	}
+	#block-block-7 .content{
+	  width: 960px;
+	  padding-left: 0px;
+	  padding-right: 0px;
+	  padding-bottom: 0px;	  
+	}
+	#block-block-7 .content h2{
+	  font-size: 40px;
+	  line-height: 60px;
+	  margin-bottom: 0px;
+	}
+	#block-block-7 .content p{
+	  font-size: 23px;
+	  line-height: 50px;
+	}		
+	.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
+	  position: absolute;
+	  top: 268px;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado,
+	.view-display-id-block_resumen_portafolio_grande  {
+	  width: 1280px;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
+	  width: 960px;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno h2{
+		line-height: 50px;
+	}		
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
+	  line-height: 37px;
+	}
+	#block-block-7{
+		min-height: 280px;
+	}		
+
+
+	.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
+		width: auto;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
+	.view-display-id-block_resumen_portafolio_grande .view-content
+	{
+	  width: 100%;
+	  margin: auto;
+	}
+.roll-over-porfolio-title  a,
+.roll-over-porfolio-title  a:hover,
+.roll-over-porfolio-title  a:visited{
+  font-size: 25px;
+  width: 250px; 
+}
+.roll-over-porfolio-fecha{
+  font-size: 30px;
+  margin-top: 24px;
+}
+.roll-over-porfolio-descri{
+ font-size: 22px;
+ line-height: 24px;
+}
+.page-inicio .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
+  width: 100%;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
+	display:none;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
+	left: -172px;
+	position: absolute;
+	top: 88px;
+}
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
+	text-align: left;
+}
+.page-inicio .view-nuestro-proceso .view-content{
+	width: 770px;
+	float: right;
+}
+							
+	/**************************************/
+
+/* Juan Martinez */
+/* Bloque blog home */
+#block-views-view-blog-block-nuestro-blog {
+	display: block;
+  width: 980px;
+}
+.view-display-id-block_nuestro_blog .view-content {
+	margin: 0;
+}
+
+#block-views-view-blog-block-nuestro-blog h2 {
+	text-align: left;
+}
+
+
+
+
+ /* ajustar */
+    .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	{
+	  width: 341px;
+	  float: left;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row 											.resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+	  width: 341px;
+	}
+	.hover-titulo {
+	  width: 341px;
+	}
+	.roll-over-portfolio{
+	  width: 341px;
+	}
+	.roll-over-portfolio-inner{
+	  width: 341px;
+	}
+		/* Slider home */
+	.page-inicio .main-content{
+		 width: 100%;
+		 max-width: 1024px;
+	}
+
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
+	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
+	  width: 100%;
+	}
+
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado,
+	.view-display-id-block_resumen_portafolio_grande  {
+	  width: 100%;
+	}
+
+}
