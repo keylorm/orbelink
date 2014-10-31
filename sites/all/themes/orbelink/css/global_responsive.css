@@ -300,6 +300,10 @@ a:hover{
   transform: translate(0px, -2px);
 }
 
+#block-block-15 {
+    display: none;
+  }
+
 /*Listado Blog*/
 
 .page-blog .main-content .main,
