@@ -1,4 +1,9 @@
 @media all and (min-width:1024px) { 
+
+	#block-system-main-menu ul.menu li {
+		padding: 0 42px;
+	}
+
 	.container-nivel2{
 		width: 980px;
 	}
@@ -30,8 +35,8 @@
 
 	/* Slider home */
 	.page-inicio .main-content{
-		 width: 1280px;
-		 max-width: 1280px;
+		 width: 1024px;
+		 max-width: 1024px;
 	}
 
 	.view-slider-home .flex-caption {
@@ -359,12 +364,6 @@
 	.roll-over-portfolio-inner{
 	  width: 341px;
 	}
-		/* Slider home */
-	.page-inicio .main-content{
-		 width: 100%;
-		 max-width: 1024px;
-	}
-
 	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
 	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
 	  width: 100%;
