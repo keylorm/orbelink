@@ -53,6 +53,25 @@
 
 	/* footer */
 
+	#block-block-15 {
+		display: none;
+	}
+
+	.footer{
+	  min-height: 415px;
+	}
+
+	/* Ajustar  el ancho del contenedor solo para que afecte al footer */
+	.footer .container-nivel2{
+		width: 980px;
+	}
+
+	.footer .footer-box #block-menu-block-3 .content,
+	.footer .footer-box #block-menu-block-1 .content,
+	#block-block-1 p{ 
+		display: block;
+	}
+
 	.footer .footer-box h2 a{
 		font-size: 1em;
 		border-bottom: none;

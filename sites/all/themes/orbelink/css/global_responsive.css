@@ -487,7 +487,8 @@ h1#page-title{
 .page-blog .main .views-field-title a,
 .vocabulary-departamento .views-field-title a,
 .vocabulary-categorias_de_blog .views-field-title a,
-#block-views-view-blog-block-nuestro-blog .views-field-title a{
+#block-views-view-blog-block-nuestro-blog .views-field-title a,
+.bloque-nuestro-blog-movil .views-field-title a {
   font-family: "ProximaNova", sans-serif;
   color: #4d4d4d;
   font-size: 22px;
@@ -561,7 +562,8 @@ h1#page-title{
 .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
 .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
 .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
-.view-display-id-block_nuestro_blog .view-content .views-row {
+.view-display-id-block_nuestro_blog .view-content .views-row,
+.bloque-nuestro-blog-movil .views-row{
 	display: block;
 	width: 300px;
 	margin-bottom: 20px;
@@ -570,6 +572,10 @@ h1#page-title{
 	clear:both;
 	overflow: hidden;
 
+}
+
+.bloque-nuestro-blog-movil .views-row{
+  margin: 15px auto;
 }
 
 #blog-list-content .views-row .imagen img,
@@ -601,7 +607,10 @@ h1#page-title{
 .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row .field-name-field-tags-blog,
 .view-display-id-block_nuestro_blog .view-content .views-row .views-field-title,
 .view-display-id-block_nuestro_blog .view-content .views-row .views-field-nothing,
-.view-display-id-block_nuestro_blog .view-content .views-row .field-name-field-tags-blog{
+.view-display-id-block_nuestro_blog .view-content .views-row .field-name-field-tags-blog,
+.bloque-nuestro-blog-movil .view-content .views-row .views-field-title,
+.bloque-nuestro-blog-movil .view-content .views-row .views-field-nothing,
+.bloque-nuestro-blog-movil .view-content .views-row .field-name-field-tags-blog{
 	padding: 0px 20px 0px 20px;
 }
 /*#blog-list-content li:nth-child(2n+2){
@@ -1786,6 +1795,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   transform: translate(0px, -3px);
 }
 
+.bloque-nuestro-blog-movil .views-field-field-imagenes .field-content,
 .view-display-id-block_nuestro_blog .views-field-field-imagenes .field-content{
   position: relative;
 }
