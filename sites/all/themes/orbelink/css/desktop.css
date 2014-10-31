@@ -285,17 +285,28 @@
 .page-inicio .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
   width: 100%;
 }
+.page-inicio .view-nuestro-proceso #titulo-nuestro-proceso h3 span {
+    font-size: 60px;
+}
+.page-inicio .jcarousel-skin-default .jcarousel-container .jcarousel-item{
+	width: 320px !important;
+}
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
 	display:none;
 }
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
-	left: -172px;
-	position: absolute;
-	top: 88px;
+	left: 0px;
+    position: absolute;
+    top: 75px;	
 }
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
 	text-align: left;
+	font-size: 60px;
+    line-height: 45px;	
 }
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
+  font-size: 60px;
+}	
 .page-inicio .view-nuestro-proceso .view-content{
 	width: 770px;
 	float: right;
