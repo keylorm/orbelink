@@ -65,6 +65,22 @@
 	.hover-titulo a {
 		font-size: 25px;
 	}
+
+	.page-inicio .jcarousel-skin-default .jcarousel-container .jcarousel-item{
+		width: 350px !important;
+	}
+	.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
+		left: -172px;
+		position: absolute;
+		top: 88px;
+	}
+	.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
+		font-size: 75px;
+		line-height: 50px;	
+	}	
+	.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
+	  font-size: 75px;
+	}		
 	
 	.roll-over-porfolio-fecha {
 		font-size: 30px;
