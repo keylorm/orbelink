@@ -190,6 +190,7 @@
 	}		
 	.page-inicio .view-nuestro-proceso .view-content{
 	  width: 700px;
+	  margin: 0 auto;
 	}
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
   left: 275px;
