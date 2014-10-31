@@ -11,10 +11,6 @@
 
 	/* Slider home */
 
-	.view-slider-home .flex-caption {
-	  bottom: 50px;
-	}
-
 	.view-slider-home .flex-caption h3{
 	  font-size: 62px;
 	  line-height: 45px;
@@ -143,6 +139,7 @@
 	  padding-left: 2%;
 	  padding-right: 2%;
 	  margin-right: 0px;
+	  min-height: 450px;
 	}
 	#cintillo-10-years{
 	 padding-top: 60px;
@@ -151,37 +148,69 @@
 		min-height: 100px;
 	}						
 
-.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
-	width: auto;
+	.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
+		width: auto;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
+	.view-display-id-block_resumen_portafolio_grande .view-content
+	{
+	  width: 450px;
+	  margin: 0 auto;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	{
+	  width: 423px;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row 											.resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+	  width: 423px;
+	}
+	.hover-titulo {
+	  width: 423px;
+	}
+	.roll-over-portfolio{
+	  width: 423px;
+	}
+	.roll-over-portfolio-inner{
+	  width: 388px;
+	}
+	.page-inicio .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
+	  width: 700px;
+	}
+	.page-inicio .jcarousel-skin-default .jcarousel-container .jcarousel-item{
+	  padding: 0px;
+	  width: 350px !important;
+	}
+	.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal img{
+		width: 100%;
+	}		
+	.page-inicio .view-nuestro-proceso .view-content{
+	  width: 700px;
+	}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
+  left: 275px;
+  top: -50px;
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
-.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
-.view-display-id-block_resumen_portafolio_grande .view-content
-{
-  width: 450px;
-  margin: 0 auto;
+
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
+  right: 275px;
+  top: -50px; 
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
-.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-.view-display-id-block_resumen_portafolio_grande .view-content .views-row
-{
-  width: 423px;
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
+  font-size: 72px;
+  line-height: 52px;
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
-.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row .resumen-portafolio,
-.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
-  width: 423px;
+
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
+  font-size: 75px;
+}	
+.page-inicio .jcarousel-container{
+  height: 610px;
 }
-.hover-titulo {
-  width: 423px;
-}
-.roll-over-portfolio{
-  width: 423px;
-}
-.roll-over-portfolio-inner{
-  width: 388px;
-}
-	
 	/**************************************/
 
 /* Juan Martinez */

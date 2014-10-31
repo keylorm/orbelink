@@ -1735,7 +1735,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   margin: 0 0 48px;
 }
 .view-slider-home .flexslider .slides li img{
-	min-width: 320px;
+	/*min-width: 320px;*/
 	min-height: 150px;
 }
 
@@ -1768,7 +1768,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio .pane-1 .pane-content p{
  font-family: "Roboto Slab",sans-serif;
- font-size: 15px;
+ font-size: 18px;
  font-weight: 300;
  color: #4D4D4D;
  text-align: center;
@@ -1786,7 +1786,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 98%;
   float: left;  
   margin-right: 36px;
-  min-height: 450px;
+  min-height: 400px;
   text-align: center;
 }
 
@@ -1830,7 +1830,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home p{
  color: #808080;
  font-family: "Open Sans",sans-serif;
- font-size: 15px;
+ font-size: 18px;
  text-align: center;
  line-height: 22px;
  font-weight: 400;
@@ -1915,16 +1915,22 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70,
-.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02{
+.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
+.page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c{
   background-color: #F7F7F7;
 }
 
 .page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70{
 	width: 100%;
   margin: 0;
-  min-height: 600px;
+  min-height: 500px;
   overflow: hidden;
-
+}
+#block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-header{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;	
 }
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno {
@@ -1999,7 +2005,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 
 .hover-titulo {
-  height: 272px;
+  height: 100%;
   position: absolute;
   text-align: center;
   top: 0;
@@ -2055,29 +2061,29 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   color: #ffffff;
   display: block;
   font-family: "Roboto Slab",sans-serif;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0 auto;
-  width: 250px; 
+  width: 100%; 
   text-transform: uppercase;
 }
 
 .roll-over-porfolio-fecha{
   color: #ffffff;
   font-family: "Baskerville",sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   font-style: italic;
   text-transform: lowercase;
-  margin-top: 24px;
+  margin-top: 15px;
 }
 
 .roll-over-porfolio-descri{
  color: #ffffff;
  font-family: "ProximaNova",sans-serif;
- font-size: 22px;
+ font-size: 18px;
  font-weight: 400;
- line-height: 24px;
+ line-height: 20px;
  margin-bottom: 2px;
  margin-top: 8px;
  min-height: 40px;
@@ -2169,18 +2175,21 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   letter-spacing: -1px;
 }
 
-#block-views-ed5db07469e68153e4002605aea7ce02 .content{
+#block-views-ed5db07469e68153e4002605aea7ce02 .content,
+#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
 
-.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02{
+.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
+.page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c{
   min-height: 928px;
   margin-top: 40px;
 }
 
-#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
+#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso .view-header,
+#block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-nuestro-proceso .view-header{
  width: 100%;
  text-align: center;
  margin: 0 auto;
@@ -2223,20 +2232,20 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #encabezado-nuestro-proceso p{
   color: #4d4d4d;
   font-family: "Roboto Slab",sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 20px;
   margin-top: 15px;
 }
 
-.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content{
+.page-inicio #block-views-ed5db07469e68153e4002605aea7ce02 .view-content,
+.page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c .view-content{
   clear: both;
-
 }
 
 
 .page-inicio .jcarousel-container{
-  height: 610px;
+  height: auto;
   width: 100%;
   padding: 0;
 }
@@ -2247,16 +2256,20 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   height: 100%;
   margin: 0;
   text-align: left;
-  width: 350px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px; 
+  width: 300px !important;
 }
 
-.page-inicio  .view-nuestro-proceso .view-content{
-  width: 770px;
-  float: right;
+.page-inicio .view-nuestro-proceso .view-content{
+  float: none;
 }
 
-.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
-  width: 100%;
+.page-inicio .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
+  width: 300px;
+  margin: 0 auto;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .views-field-title a{
@@ -2274,9 +2287,9 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   background-position: bottom left;
 }
 
-.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body{
+/*.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body{
   width: 320px;
-}
+}*/
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal .field-name-body p{
  color: #4d4d4d;
@@ -2287,7 +2300,14 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  margin-top: 8px;
 }
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
-  display: none;
+  background-image: url("../images/carousel-prev-image.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 44px;
+  left: 25px;
+  top: -50px;
+  width: 44px;
+  transition: all 0.3s ease 0s;
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
@@ -2295,17 +2315,17 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   background-position: center center;
   background-repeat: no-repeat;
   height: 44px;
-  left: -172px;
-  position: absolute;
-  top: 66px;
+  right: 25px;
+  top: -50px; 
   width: 44px;
   transition: all 0.3s ease 0s;
 }
-.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next:hover{
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next:hover,
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev:hover{
   transform: translate(0px, -2px);
 }
 
-.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
+.page-inicio .view-nuestro-proceso #titulo-nuestro-proceso {
   position: static;
   top: auto;
 }
@@ -2314,18 +2334,18 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   color: #1a1a1a;
   display: block;
   font-family: "ProximaNova",sans-serif;
-  font-size: 72px;
+  font-size: 42px;
   font-weight: 400;
-  line-height: 52px;
+  line-height: 34px;
   margin-top: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3 span{
   color: #00A69C;
   display: block;
   font-family: "Baskerville",sans-serif;
-  font-size: 75px;
+  font-size: 55px;
   letter-spacing: -1px;
   font-weight: 400;
   font-style: italic;
@@ -2333,7 +2353,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal img{
-  width: 100%;
+  width: 320px;
+  min-width: 320px;
   height: 245px;
 }
 

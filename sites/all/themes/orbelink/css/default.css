@@ -134,10 +134,10 @@
 	}
 	
 	.page-inicio .view-display-id-block_islas_especialidad{
-	  width: 960px;
+	  width: 960px; 
 	}
 	.page-inicio .pane-1 .pane-content h2{
-	 font-size: 34px;
+	 font-size: 33px;
 	 line-height: 45px;
 	}
 	.page-inicio .pane-1 .pane-content h2 span{
@@ -151,6 +151,8 @@
 	.page-inicio .view-display-id-block_islas_especialidad .views-row{
 	  width: 296px;
 	  margin-right: 36px;
+	  padding-left: 0px;
+      padding-right: 0px;	  	 	  
 	}	
 	.view-slider-home .flex-caption .link-slider-box {
 	  height: 58px;
@@ -179,8 +181,8 @@
 	  line-height: 49px;
 	}
 	#block-block-6 p{
-	  font-size: 15px;
-	  line-height: 20px;
+	  font-size: 16px;
+	  line-height: 28px;
 	}		
 	#cintillo-10-years{
 	 padding-left: 326px;
@@ -189,14 +191,16 @@
 	 width: 100%;
 	}	 		
 
-	#block-views-ed5db07469e68153e4002605aea7ce02 .content{
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
+	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
 	  width: 1280px;
 	}
-	#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header{
+	#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header,
+	#block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-nuestro-proceso  .view-header{
 	 width: 970px;
-	}
+	}	
 	#encabezado-nuestro-proceso h2{
-	  font-size: 38px;
+	  font-size: 37px;
 	  line-height: 40px;
 	}
 	#encabezado-nuestro-proceso h2 span{
@@ -215,13 +219,13 @@
 	}
 	#block-block-7 .content h2{
 	  font-size: 40px;
-	  line-height: 40px;
+	  line-height: 60px;
 	  margin-bottom: 0px;
 	}
 	#block-block-7 .content p{
 	  font-size: 23px;
-	  line-height: 35px;
-	}	
+	  line-height: 50px;
+	}		
 	.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso {
 	  position: absolute;
 	  top: 268px;
@@ -240,17 +244,52 @@
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
 	  line-height: 37px;
 	}
+	#block-block-7{
+		min-height: 280px;
+	}		
 
 
-.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
-	width: auto;
+	.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
+		width: auto;
+	}
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
+	.view-display-id-block_resumen_portafolio_grande .view-content
+	{
+	  width: 100%;
+	  margin: auto;
+	}
+.roll-over-porfolio-title  a,
+.roll-over-porfolio-title  a:hover,
+.roll-over-porfolio-title  a:visited{
+  font-size: 25px;
+  width: 250px; 
 }
-.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
-.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
-.view-display-id-block_resumen_portafolio_grande .view-content
-{
+.roll-over-porfolio-fecha{
+  font-size: 30px;
+  margin-top: 24px;
+}
+.roll-over-porfolio-descri{
+ font-size: 22px;
+ line-height: 24px;
+}
+.page-inicio .view-nuestro-proceso .jcarousel-skin-default .jcarousel-clip-horizontal{
   width: 100%;
-  margin: auto;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-prev{
+	display:none;
+}
+.page-inicio  .view-nuestro-proceso .jcarousel-skin-default .jcarousel-next{
+	left: -172px;
+	position: absolute;
+	top: 88px;
+}
+.page-inicio  .view-nuestro-proceso  #titulo-nuestro-proceso h3{
+	text-align: left;
+}
+.page-inicio .view-nuestro-proceso .view-content{
+	width: 770px;
+	float: right;
 }
 							
 	/**************************************/

@@ -12,19 +12,18 @@
 	/* Slider home */
 
 	.view-slider-home .flex-caption {
-	  bottom: 144px;
+	   bottom: 20px;
 	}
 
 	.view-slider-home .flex-caption h3{
-	  font-size: 62px;
-	  line-height: 45px;
+	  font-size: 25px;
 	}
 
 	.view-slider-home .flex-caption h3 span{
-	  font-size: 79px;
+	  font-size: 30px;
 	}
 
-	.view-slider-home .flex-caption .caption-slider-home-pequeno{
+	/*.view-slider-home .flex-caption .caption-slider-home-pequeno{
 	  font-size: 34px;
 	  margin: 0;
 	  line-height: 50px;
@@ -35,7 +34,7 @@
 	  line-height: 50px;
 	  margin: 30px auto 0;
 	  width: 220px;
-	}
+	}*/
 
 	/* footer */
 
@@ -64,5 +63,15 @@
 	.footer .footer-box .block-menu-block ul li a{
 		font-size: 1em;
 	}
-
+	
+	/**** Andrey Solís :: 30-10-2014 ******/
+	
+#encabezado-nuestro-proceso p{
+  font-size: 22px;
+  line-height: 25px;
+}	
+	
+	
+		
+	/**************************************/
 }
