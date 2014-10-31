@@ -544,7 +544,8 @@ h1#page-title{
 
 .view-display-id-block_nuestro_blog .view-content {
   list-style: none;
-  margin: 0px; padding: 0px;
+  margin: 0px; 
+  padding: 0px;
 }
 
 #blog-list-content,
@@ -618,6 +619,9 @@ h1#page-title{
 	background-color:#F36;
   }*/
 
+.bloque-nuestro-blog-movil .more_post {
+  margin: 60px 0 40px 0;
+}
 
   .vocabulary-tags .icon_categoria{
    display: none;
@@ -1556,19 +1560,30 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-views-view-blog-block-nuestro-blog {
+  display: none;
   margin: 0 auto;
   position: relative;
   width: 960px;
 }
 
-#block-views-view-blog-block-nuestro-blog h2{
+#block-views-view-blog-block-nuestro-blog h2,
+#block-views-15d729d67643f4d9a80f31f31f045778 h2{
   color: #1A1A1A;
   font-family: "ProximaNova",sans-serif;
   font-size: 60px;
   font-weight: 400;
   margin: 20px 0 35px;
-
 }
+
+#block-views-15d729d67643f4d9a80f31f31f045778 h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+#block-views-15d729d67643f4d9a80f31f31f045778 h2 em{
+  font-size: 50px;
+}
+
 
 #block-views-view-blog-block-nuestro-blog h2 em.h1_subtitle{
   color: #00A69C;

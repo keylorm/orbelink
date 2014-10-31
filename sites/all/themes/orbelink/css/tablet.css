@@ -184,4 +184,19 @@
 	
 	/**************************************/
 
+/* Juan Martinez */
+/* Bloque blog home */
+#block-views-view-blog-block-nuestro-blog {
+	display: block;
+  width: 82%;
+}
+
+#block-views-15d729d67643f4d9a80f31f31f045778 {
+	display: none;
+}
+
+.view-display-id-block_nuestro_blog .view-content {
+	margin: 0 auto;
+}
+
 }

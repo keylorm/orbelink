@@ -255,4 +255,14 @@
 							
 	/**************************************/
 
+/* Juan Martinez */
+/* Bloque blog home */
+#block-views-view-blog-block-nuestro-blog {
+	display: block;
+  width: 980px;
+}
+.view-display-id-block_nuestro_blog .view-content {
+	margin: 0;
+}
+
 }
