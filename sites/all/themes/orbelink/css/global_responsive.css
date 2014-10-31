@@ -2185,6 +2185,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  clear:both;
 }
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
