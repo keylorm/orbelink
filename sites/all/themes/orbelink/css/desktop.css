@@ -200,10 +200,6 @@
 	 width: 100%;
 	}	 		
 
-	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
-	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
-	  width: 1280px;
-	}
 	#block-views-ed5db07469e68153e4002605aea7ce02 .content .view-nuestro-proceso  .view-header,
 	#block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-nuestro-proceso  .view-header{
 	 width: 970px;
@@ -265,13 +261,13 @@
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
 	.view-display-id-block_resumen_portafolio_grande .view-content
 	{
-	  width: 100%;
+	  width: 1024px;
 	  margin: auto;
 	}
 .roll-over-porfolio-title  a,
 .roll-over-porfolio-title  a:hover,
 .roll-over-porfolio-title  a:visited{
-  font-size: 25px;
+  font-size: 19px;
   width: 250px; 
 }
 .roll-over-porfolio-fecha{
@@ -318,7 +314,17 @@
 }
 
 
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	{
+		 height: 204px;
+	}
 
+	.roll-over-portfolio{
+
+	  height: 204px;
+}
 
  /* ajustar */
     .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
@@ -357,6 +363,28 @@
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado,
 	.view-display-id-block_resumen_portafolio_grande  {
 	  width: 100%;
+	}
+
+	#block-block-7 .content h2{
+	  font-size: 32px;
+	}
+
+	.roll-over-porfolio-title {
+		height: 40px;
+	}
+
+	.hover-titulo a {
+		font-size: 21px;
+	}
+
+	.roll-over-porfolio-fecha {
+		font-size: 25px;
+		margin-top: 15px;
+	}
+
+	.roll-over-porfolio-descri {
+		font-size: 20px;
+		line-height: 20px;
 	}
 
 }
