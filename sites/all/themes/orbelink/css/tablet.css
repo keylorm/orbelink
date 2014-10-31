@@ -1,4 +1,11 @@
-@media all and (min-width:768px) { 
+@media all and (min-width:768px) {
+	.menu-desplegable{
+	  position: fixed;
+	}
+	.header-estatico{
+		position: fixed;
+	}
+		
 	.container-nivel2{
 		width: 80%;
 	}
@@ -14,6 +21,9 @@
 
 	/* Slider home */
 
+	.page-inicio .main-content{
+		 padding: 90px 0px 0px 0px;
+	}
 	.view-slider-home .flex-caption h3{
 	  font-size: 62px;
 	  line-height: 45px;
