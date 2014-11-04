@@ -105,4 +105,29 @@
 	  margin: auto;
 	}
 
+	.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
+		width: 1280px;
+	}
+
+.node-type-especialidad .flexslider .slides img {
+	max-width: 1428px;
+	min-width: 1428px;
+}
+
+.node-type-especialidad .flexslider {margin-top: -175px;}
+#block-views-especialidad-block-1 .attachment-before {
+	height: 265px;
+	top: 374px;
+	width: 100%;
+}
+
+#block-views-especialidad-block-1 .attachment-before img {width: 20%;}
+
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
+	width: 1024px;
+	top: -100px;
+}
+
+.node-type-especialidad .flex-control-nav {top: 545px !important;}
+
 }

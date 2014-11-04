@@ -1,4 +1,11 @@
 @media all and (min-width:768px) {
+
+	/* Main content. Paginas internas */
+	.main-content {
+		padding: 45px 10px 0px;
+	  width: 100%;
+	}
+
 	.menu-desplegable{
 	  position: fixed;
 	}
@@ -247,5 +254,79 @@
 #block-views-view-blog-block-nuestro-blog h2 {
 	text-align: center;
 }
+
+/* seccion interna de especialidades */
+.node-type-especialidad .node-especialidad .field-name-body .parrafo{
+	 width: 47%;
+}
+
+.node-type-especialidad .node-especialidad .field-name-body h2{
+	 font-size: 34px;
+}
+
+.node-type-especialidad .node-especialidad .field-name-body h2 span{
+	  font-size: 48px;
+}
+
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
+	  width: 45%;
+	  margin-right: 36px;
+}
+
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-2,
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-4,
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-6,
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-8,
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-10,
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-12{
+ 	margin-right: 0px;
+}
+
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas:nth-child(2n+2){
+  	margin-right: 0px;
+}
+
+#block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2 {
+	margin: 40px 0 0;
+}
+
+.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2 {
+	font-size: 30px;
+	line-height: 40px;
+	margin: 40px 0 0;
+	padding: 0 216px;
+}
+
+.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
+	width: 100%;
+	background-image: url(../images/liston-blanco-sueno-especialidad-tablet.png);
+}
+
+/***** AJUSTE A BANNER PRICIPALES ******/
+
+.node-type-especialidad .flexslider .slides img {
+	max-width: 768px;
+	min-width: 768px;
+	margin: auto;
+}
+
+.node-type-especialidad .flexslider {margin-top: -34px;}
+#block-views-especialidad-block-1 .attachment-before {
+	height: 125px;
+	position: relative;
+	top: 261px;
+	z-index: 3;
+	width: 768px;
+}
+#block-views-especialidad-block-1 .attachment-before img {display: block; width: 15%; margin: 0 auto;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
+	width: 600px;
+	height: 167px;
+	position: relative;
+	top: -47px;
+	margin: 0 auto;
+	text-align: center;
+}
+#block-views-especialidad-block-1 .attachment-before h1 {font-size: 35px; padding: 0px; line-height: 31px;}
 
 }

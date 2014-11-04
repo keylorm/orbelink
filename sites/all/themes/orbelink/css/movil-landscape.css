@@ -93,4 +93,31 @@
 		height: 60px;
 	}
 	/**************************************/
+
+.node-type-especialidad .node-especialidad .field-name-body h2{
+	 font-size: 30px;
+}
+
+.node-type-especialidad .node-especialidad .field-name-body h2 span{
+	  font-size: 44px;
+}
+
+.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
+ 	margin-right: 0px;
+}
+
+#block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2 {
+	margin: 53px 0 0;
+}
+
+.node-type-especialidad .flexslider .slides img {
+	max-width: 480px;
+	min-width: 480px;
+}
+
+.node-type-especialidad .flexslider {margin-top: -173px;}
+#block-views-especialidad-block-1 .attachment-before {height: 70px; width: 480px; top: 12px;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 480px; top: -153px; margin: 0 auto; text-align: center;}/*top:-120px*/
+#block-views-especialidad-block-1 .attachment-before h1 {font-size: 30px; padding: 10px 0 0 0; line-height: 25px;}
+
 }

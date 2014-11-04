@@ -213,8 +213,8 @@ a:hover{
 }
 
 .main-content {
-  padding: 90px 10px 0px;
-  width: 980px;
+  padding: 30px 10px 0px;
+  width: 100%;
   overflow: visible;
 }
 
@@ -2387,7 +2387,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
  color: #1A1A1A;
  font-family: "ProximaNova",sans-serif;
- font-size: 34px;
+ font-size: 25px;
  font-weight: 400;
  margin-bottom: 5px;
  text-align: center;
@@ -2398,7 +2398,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .node-type-especialidad .node-especialidad .field-name-body h2 span{
   color: #E8442E;
   font-family: "Baskerville",sans-serif;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 400;
   font-style: italic;
   letter-spacing: -1px;
@@ -2411,7 +2411,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  font-size: 20px;
  font-weight: 300;
  float: left;
- width: 462px;
+ width: 100%;
  line-height: 32px;
  margin-top: 0;
 }
@@ -2428,10 +2428,9 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
   float: left;
-  margin-right: 36px;
-  min-height: 415px;
+  margin-right: 0px;
   text-align: center;
-  width: 296px;
+  width: 100%;
 
 }
 
@@ -2446,18 +2445,6 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .node-type-especialidad .node-especialidad .field-name-body{
   display: block;
   float: left;
-}
-
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-3,
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-6,
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-9,
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-12,
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-15{
- margin-right: 0px;
-}
-
-.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas:nth-child(3n+3){
-  margin-right: 0px;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas .field-name-title h2{
@@ -2532,23 +2519,22 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   height: 146px;
   margin: 0 auto;
   text-align: center;
-  width: 1280px;
-  background-image: url(../images/liston-blanco-sueno-especialidad.png);
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center right;
 }
 
 
 .bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2{
-   color: #ffffff;
-    float: left;
-    font-family: "ProximaNova",sans-serif;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 48px;
-    margin: 40px 0 0;
-    text-transform: uppercase;
-    width: 100%;
+ color: #ffffff;
+  float: left;
+  font-family: "ProximaNova",sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 33px;
+  margin: 40px 0 0;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 
@@ -2582,7 +2568,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2{
-margin: 58px 0 0;
+margin: 41px 0 0;
 }
 
 
@@ -3371,8 +3357,8 @@ text-transform: uppercase;
 /***** AJUSTE A BANNER PRICIPALES ******/
 
 .node-type-especialidad .flexslider .slides img {
-	max-width: 1423px;
-	min-width: 1423px;
+	max-width: 320px;
+	min-width: 320px;
 	margin: auto;
 }
 
@@ -3482,11 +3468,13 @@ zoom: 0.9;
 #contenido-mascara {background-image: url('../images/barra-calculo-mascara.png'); background-repeat: no-repeat; width: 100%; height: 468px;}
 #contenedor-calculo-barra-fondo {height: 468px; width: 71%; margin-left: 5px; background-color: #00A69C; }
 #contenedor-calculo-barra {width: 100%; background-color: #E6E6E6;}
-.node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -173px;}
-#block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 263px; position: relative; top: 170px; z-index: 3; top: 372px;}
-#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 600px; height: 315px; position: relative; top: -153px; margin: 0 auto; text-align: center;}/*top:-120px*/
+.node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -70px;}
+#block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 60px; position: relative; z-index: 3; top: 54px; width: 320px; margin: 0 auto;}
+#block-views-especialidad-block-1 .attachment-before img {display: none;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 320px; height: 60px; top: -153px; margin: 0 auto; text-align: center;}/*top:-120px*/
 .node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px;  height: 75px;}
-#block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 35px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0;}
+#block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 22px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0; line-height: 22px; padding-top: 10px;}
+#block-views-especialidad-block-1 .attachment-after {display: none;}
 #block-views-especialidad-block-1 .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
 #block-views-especialidad-block-1 .attachment-after ul li.last {border: none;}
 /*#resultado-calc {display: none;}*/

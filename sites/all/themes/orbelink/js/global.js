@@ -1,6 +1,7 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
+
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 
 	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/sites/all/themes/orbelink/images/facebook-active-tab.png')");

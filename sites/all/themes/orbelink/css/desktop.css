@@ -1,5 +1,11 @@
 @media all and (min-width:1024px) { 
 
+	/* Main content. Paginas internas */
+	.main-content {
+	  width: 980px;
+	  padding: 90px 10px 0px;
+	}
+
 	#block-system-main-menu ul.menu li {
 		padding: 0 42px;
 	}
@@ -396,5 +402,62 @@
 		font-size: 20px;
 		line-height: 20px;
 	}
+
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
+	  width: 30%;
+	  min-height: 450px;
+	}
+
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-2,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-4,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-6,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-8,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-10,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-12{
+	 	margin-right: 36px;
+	}
+
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas:nth-child(2n+2){
+	  	margin-right: 36px;
+	}
+
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-3,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-6,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-9,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-10,
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-12{
+	 	margin-right: 0px;
+	}
+
+	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas:nth-child(3n+3){
+	  	margin-right: 0px;
+	}
+
+.bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2 {
+	font-size: 34px;
+}
+
+.bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
+	background-image: url(../images/liston-blanco-sueno-especialidad.png);
+}
+
+.node-type-especialidad .flexslider .slides img {
+	max-width: 1024px;
+	min-width: 1024px;
+	margin: auto;
+}
+
+.node-type-especialidad .flexslider {margin-top: -110px;}
+#block-views-especialidad-block-1 .attachment-before {
+	height: 200px;
+	top: 284px;
+	width: 1024px;
+}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
+	width: 1024px;
+	top: -77px;
+}
+#block-views-especialidad-block-1 .attachment-after {display: block;}
+.node-type-especialidad .flex-control-nav {top: 410px !important;}
 
 }
