@@ -91,9 +91,8 @@ function orbelink_preprocess_html(&$variables) {
     '#tag' => 'meta',
     '#attributes' => array(
       'name' => 'viewport',
-      'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
-      //'content' => 'width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;',
-      //<meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+      //'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
+      'content' => 'width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0',
     ),
   );
   drupal_add_html_head($meta_viewport, 'meta_viewport');

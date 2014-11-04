@@ -1,9 +1,21 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
+	var IE = '';
+	if(jQuery.browser.msie == true){
+		if(jQuery.browser.version == '8.0' || jQuery.browser.version == '7.0'){
+			IE = true;
+		}
+		
+	}
+	// Cambia los logos y icon de menú en IE 8 y IE 7 a formato PNG
+	if(IE == true){
+		jQuery(".box-logo-estatico").find('img').attr("src", "/sites/all/themes/orbelink/images/logo_p.png");
+		jQuery("#boton-menu").find('img').attr("src", "/sites/all/themes/orbelink/images/icon_menu.png");
+		jQuery("#logo").find('img').attr("src", "/sites/default/files/logo_s_0.png"); 
+	}
 
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
-
 	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/sites/all/themes/orbelink/images/facebook-active-tab.png')");
 
 	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#linkedin").click(function(){
@@ -96,6 +108,8 @@ jQuery(document).ready(function(){
 
 	});
 
+
+	
 
 	jQuery("#hover-palabra-clave").hover(function(){
 		jQuery(".mensaje-palabra-clave").show( "fade", 400)}
@@ -254,7 +268,11 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	jQuery("#formulario-consulta-sueno li").click(function(){
 		jQuery("#formulario-consulta-sueno li").removeClass('activo');
 		jQuery(this).addClass('activo');
-		jQuery(".casilla").show().animate({"transform": "scale(0,0)"});
+		if(IE != ''){
+			jQuery(".casilla").hide();
+		}else{
+			jQuery(".casilla").show().animate({"transform": "scale(0,0)"});
+		}
 		/*jQuery("#tablero-consulta div").each(function(index, element) { console.log(element.id);
             var id = generateRange(12, 1, 12);
 			jQuery(this).removeClass('cp1 cp2 cp3 cp4 cp5 cp6 cp7 cp8 cp9 cp10 cp11 cp12').addClass('cp'+id);
@@ -262,7 +280,12 @@ document.getElementById("reporte_grafico").innerHTML = '\
 		var div = jQuery("."+jQuery(this).attr('id'));
 		jQuery(".box_tablero").removeClass('box_activo');
 		div.parent().addClass('box_activo');
-		div.animate({"transform": "scale(1,1)"});
+		
+		if(IE != ''){
+			div.show();
+		}else{
+			div.animate({"transform": "scale(1,1)"});
+		}
 	});
 	
 	jQuery(".box_tablero").hover(function() {
@@ -270,34 +293,78 @@ document.getElementById("reporte_grafico").innerHTML = '\
 			return false;
 		}
 		var casilla = jQuery(this).find( ".casilla" );
-		casilla.show().animate({"transform": "scale(0,0)"});
+		if(IE != ''){
+			casilla.hide();
+		}else{
+			casilla.show().animate({"transform": "scale(0,0)"});
+		}
+		
 		var id = casilla.attr('id');
 		var info = jQuery("#roll-over-"+id);
-		info.delay(100).show().animate({"transform": "scale(1,1)"});
+		if(IE != ''){
+			info.delay(100).show();
+		}else{
+			info.delay(100).show().animate({"transform": "scale(1,1)"});
+		}
+		
 	}, function(){
 		if(jQuery(this).hasClass( "box_activo" ) == false){
 			return false;
 		}
 		var casilla = jQuery(this).find( ".casilla" );
-		casilla.delay(100).show().animate({"transform": "scale(1,1)"});
+		if(IE != ''){
+			casilla.delay(100).show();
+		}else{
+			casilla.delay(100).show().animate({"transform": "scale(1,1)"});
+		}
+		
 		var id = casilla.attr('id');
-		var info = jQuery("#roll-over-"+id);	
-		info.show().animate({"transform": "scale(0,0)"});
+		var info = jQuery("#roll-over-"+id);
+		if(IE != ''){
+			info.hide();
+		}else{
+			info.show().animate({"transform": "scale(0,0)"});
+		}
+		
 	});
+	
+	/*** FUNCIONALIDAD NUESTRO EQUIPO CARRUSEL *******/
+	jQuery(".rolloverpersonal").css({"opacity": 0, "top": "50px"});
+	
+	jQuery(".bloque-personal").hover(function() { 
+		var rollp = jQuery(this).find( ".rolloverpersonal" );
+		rollp.animate({"opacity": 1, "top": "0px"});
 
+	}, function(){
+		var rollp = jQuery(this).find( ".rolloverpersonal" );
+		rollp.animate({"opacity": 0, "top": "50px"});
+				
+	});
+	
+	
     /*** FUNCIONALIDAD SOBRE NOSOTROS *******/
-	jQuery(".bloque").hover(function() {
+	
+	jQuery(".bloque").hover(function() { 
 		var caption = jQuery(this).find( ".caption" );
 		var rollover = jQuery(this).find( ".rollover_about" );
-		
-		caption.show().animate({"transform": "scale(0,0)"});
-		rollover.delay(100).show().animate({"transform": "scale(1,1)"});
+		if(IE != ''){
+			caption.hide();
+			rollover.delay(100).show();			
+		}else{
+			caption.show().animate({"transform": "scale(0,0)"});
+			rollover.delay(100).show().animate({"transform": "scale(1,1)"});
+		}
 	}, function(){
 		var caption = jQuery(this).find( ".caption" );
 		var rollover = jQuery(this).find( ".rollover_about" );
-		
-		caption.show().animate({"transform": "scale(1,1)"});
-		rollover.delay(100).show().animate({"transform": "scale(0,0)"});
+		if(IE != ''){
+			caption.show();
+			rollover.delay(100).hide();			
+		}else{
+			caption.show().animate({"transform": "scale(1,1)"});
+			rollover.delay(100).show().animate({"transform": "scale(0,0)"});			
+		}
+				
 	});
     /*** FUNCIONALIDAD SOBRE NOSOTROS PERSONAL *******/
 	/*jQuery(".bloque-personal").hover(function() {
