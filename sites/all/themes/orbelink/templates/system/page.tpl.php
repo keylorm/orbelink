@@ -58,11 +58,11 @@ global $base_url;
     <div class="container-nivel1">
       <div class="container-nivel2">
         <div class="box-logo-estatico">
-          <a  href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/logo_p.png" alt="Orbelink"/></a>
+          <a  href="<?php print $front_page; ?>"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/logo.svg" alt="Orbelink"/></a>
         </div>
         
         <div class="menu-toggle">
-          <a id="boton-menu" href="javascript:void(0);"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/icon_menu.png" alt="Orbelink"/></a>
+          <a id="boton-menu" href="javascript:void(0);"><img src="<?php print $base_url; ?>/sites/all/themes/orbelink/images/icon_menu.svg" alt="Orbelink"/></a>
         </div>
       </div>
     </div>

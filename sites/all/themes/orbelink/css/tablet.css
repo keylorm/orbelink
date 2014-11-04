@@ -1,9 +1,9 @@
 @media all and (min-width:768px) {
 	.menu-desplegable{
-	  position: fixed;
+	  position: fixed; 
 	}
 	.header-estatico{
-		position: fixed;
+		position: fixed;	
 	}
 		
 	.container-nivel2{

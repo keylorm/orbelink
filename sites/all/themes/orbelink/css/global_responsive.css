@@ -88,6 +88,7 @@ a:hover{
   position: absolute;
   width: 100%;
   z-index: 100;
+  left: 0;	 
 }
 
 .menu-desplegable {
@@ -185,6 +186,8 @@ a:hover{
 	width: 100%;
 	position: static;
 	z-index: 99;
+	  top: 0;
+	  left: 0;	 	
 }
 
 .header-estatico .box-logo-estatico{
@@ -2935,7 +2938,7 @@ input#consulta-seo {
 	display:table;
 	cursor: pointer;
 	position:absolute;
-	transform: scale(0,0); 		
+	transform: scale(0,0);		
 }
 #tablero-consulta .casilla p{
 	line-height: 23px;
@@ -2960,7 +2963,8 @@ input#consulta-seo {
 	cursor: pointer;
 	position:absolute;
 	z-index: 1;
-	transform: scale(0,0); 	
+	transform: scale(0,0);
+	display: none; 	
 }
 .roll-over p{
 	line-height: 15px;
@@ -3090,7 +3094,7 @@ line-height: 40px;
 	position:absolute;
 	top: 0px;
 	transform: scale(0,0);
-	display:block;
+	display:none;
 	padding: 15px;
 }
 .page-node-48 #bloque-1,
@@ -3160,6 +3164,25 @@ line-height: 40px;
 	font-family: "Baskerville",sans-serif;
 	font-size: 71px;	
 }
+
+.page-node-48 #bloque-1 .rollover_about span{
+	background-image: url(../images/linea-sueno.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 60px;	
+}
+.page-node-48 #bloque-4 .rollover_about span{
+	background-image: url(../images/linea-inspirar.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	height: 60px;	
+}
+
+.page-node-48 #bloque-4 .rollover_about span{
+}
+
 .page-node-48 #block-views-c5d5133c5fb8e77f14adb2f41cab4493{
 	width: 1280px;
 	height: 507px;
@@ -3178,7 +3201,10 @@ line-height: 40px;
 	width: 100%;
 }
 .page-node-48 .jcarousel-skin-default .jcarousel-item{
+	background-color: transparent;
+	background: none;
 	height: 390px;
+	height: 388px\9;
 	border: none;
 }
 .page-node-48 .jcarousel-skin-default .jcarousel-prev-horizontal{
@@ -3212,17 +3238,47 @@ line-height: 40px;
 .bloque-personal:hover .rolloverpersonal{
 	opacity: 1;
 	top: 0px;
+	/*display: block;*/
 }
 .rolloverpersonal{
 	top: 50px;
+	height: 100%;
 	padding: 0 20%;
 	text-align: left;
 	color: #3a4046;
 	opacity: 0;
-	position:absolute;
+	/*display: none;*/
+	position:absolute;	
 	transition: all .4s ease;
 	background-color:rgba(255, 255, 255, 0.8);
 	background: url('../images/rgba.php/rgba(255, 255, 255, 0.8)');	
+}
+.rolloverpersonal .puesto-personal{
+	line-height: 17px;
+	text-transform:uppercase;
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.rolloverpersonal .field-name-body p{
+	font-size: 15px;
+	line-height: 20px;
+	font-family: "Roboto Slab",sans-serif;	
+}
+.rolloverpersonal a{
+	display:block;
+	clear:both;
+	font-family: "ProximaNova",sans-serif;
+	font-size: 20px;
+	font-weight:bold;
+	margin-bottom: 5px;
+}
+a.email-personal{
+	width: 26px; height: 26px;
+	display: block;
+	float:left;
+	background-image: url(../images/email.png);
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 

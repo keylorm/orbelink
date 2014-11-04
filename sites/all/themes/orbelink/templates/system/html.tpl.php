@@ -58,7 +58,7 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script type="text/javascript" src="http://localhost/orbelink/sites/all/themes/orbelink/js/modernizr.js"></script>
+  <script type="text/javascript" src="/sites/all/themes/orbelink/js/modernizr.js"></script>
 
 
 </head>
@@ -98,20 +98,16 @@
 <script type="text/javascript">stLight.options({publisher: "0d00cd3c-5972-48d7-92b0-73ff0a0e54ff", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 <!--[if lt IE 9]> 
-  <script src="http://orbelink.com:8080/sites/all/themes/orbelink/js/html5.js" type="text/javascript"></script> 
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js" type="text/javascript"></script> 
-<![endif]--> <!-- css3-mediaqueries.js for IE less than 9 --> 
-
-<!--[if lte IE 9]> 
-  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js" type="text/javascript"></script> 
+  <script src="/sites/all/themes/orbelink/js/html5.js" type="text/javascript"></script> 
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js" type="text/javascript"></script>
   <script> 
     document.CreateElement('nav'); 
     document.CreateElement('header'); 
     document.CreateElement('footer'); 
     document.CreateElement('article'); 
     document.CreateElement('section'); 
-  </script> 
-<![endif]-->
+  </script>   
+<![endif]--> <!-- css3-mediaqueries.js for IE less than 9 --> 
 
 </body>
 </html>
