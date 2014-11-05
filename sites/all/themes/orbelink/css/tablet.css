@@ -331,14 +331,16 @@
 
 /*Listado Blog*/
 
+/*Listado Blog*/
+
 .page-blog .main-content .main,
 .page-blog-todos .main-content .main,
 .node-type-blog .main-content .main,
 .vocabulary-categorias_de_blog .main-content .main,
 .vocabulary-departamento  .main-content .main,
 .vocabulary-tags  .main-content .main {
-	width: 665px;
-	padding: 0 32px 160px 0px;
+	width: 75%;
+	padding: 0px 3% 160px 0px;
 }
 
 .field-name-field-departamento .ds-2col > .group-left{
@@ -349,5 +351,24 @@
 .field-name-field-departamento .ds-2col > .group-right{
 	width: 470px;
 }
+
+.sobre_autor {
+  line-height: 24px;
+}
+
+.titulo_detalle_blog {
+  padding-bottom: 7px;
+  padding-left: 17px;
+  padding-top: 12px;
+  margin-bottom: 25px;
+}
+
+.icon_c {
+  width: 60px;
+  height: 60px;
+  margin-top: -32px;
+  margin-left: -41px;
+}
+
 
 }
