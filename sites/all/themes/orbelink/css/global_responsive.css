@@ -332,10 +332,10 @@ a:hover{
 .vocabulary-categorias_de_blog .main-content .main,
 .vocabulary-departamento  .main-content .main,
 .vocabulary-tags  .main-content .main {
-	width: 665px;
+	width: 100%;
 	float: left;
-	padding: 0 32px 160px 0px;
-	border-right: 1px solid #808080;
+	padding: 0px 0px 160px 0px;
+	border-right: none;
 	min-height: 1600px;
 	overflow: hidden;
 }
@@ -475,16 +475,16 @@ a:hover{
 .page-title-blog{
   font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
-  font-size: 60px;
+  font-size: 32px;
   font-weight: 400;
   font-style: normal;
   text-align:center;
-  margin: 8px 0 50px;
+  margin: 8px 0 20px;
 }
 .subtitle {
   font-family: "Baskerville", sans-serif;
   color: #00a69c;
-  font-size: 70px;
+  font-size: 40px;
 }
 
 h1#page-title{
@@ -980,7 +980,7 @@ Noticias: F033A3
 
 .titulo_detalle_blog {
   padding-bottom: 7px;
-  padding-left: 17px;
+  padding-left: 75px;
   padding-top: 12px;
   background-color: #f1f2f2;
   margin-bottom: 25px;
@@ -988,8 +988,8 @@ Noticias: F033A3
 }
 .titulo_detalle_blog h1{
   font-family: "ProximaNova", sans-serif;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 17px;
+  line-height: 19px;
   font-weight: 600;
   font-style:normal;
   margin: 0px; padding: 0px;
@@ -1014,8 +1014,8 @@ Noticias: F033A3
 .icon_c {
   width: 60px;
   height: 60px;
-  margin-top: -32px;
-  margin-left: -41px;
+  margin-top: -27px;
+  margin-left: -14px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1038,18 +1038,23 @@ Noticias: F033A3
   text-decoration: none;	
 }
 
+.ds-2col > .group-left {
+  float: none;
+}
+
 .field-name-field-departamento .ds-2col > .group-left{
-	width: 139px;
- margin-right: 20px;
+	width: 100%;
+ margin-right: 0px;
 }
 .field-name-field-departamento .ds-2col > .group-right{
-	width: 470px;
+	width: 100%;
 }
 
 .autor_img {
   width: 139px;
   height: 139px;
-  float: left;
+  float: none;
+  margin: 0 auto;
   border-radius: 150px;
   -webkit-border-radius:150px;
   -moz-border-radius:150px;
@@ -1075,11 +1080,11 @@ Noticias: F033A3
   float: left;
 }
 .sobre_autor {
-  margin-top: 9px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 21px;
 }
 .field-name-field-departamento .ds-2col > .group-right .link_autor {
