@@ -337,6 +337,7 @@
 }
 .gu-1-3{
 	width: 26.7%;
+	float:right;
 }
 .page-title-blog{
 	font-size: 50px;
@@ -347,25 +348,56 @@
 }
 .page-blog .flex-caption{
 	padding: 40px 15px 15px;
-	top: 226px;	
+	top: 226px;
+	background-image: url("../images/bg-caption-slider.png");
+	background-repeat: no-repeat;
+	padding: 38px 32px 15px;
+	height: 100px;
+	top: -110px;
+	width: 97%;
+	display:block;
 }
+
+
 .page-blog .flex-caption h3 a, .page-blog .flex-caption h3{
 	font-size: 19px;
 }
 
-/*#blog-list-content .views-row, #blog-todos-list-content .views-row, .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .view-display-id-block_nuestro_blog .view-content .views-row, .bloque-nuestro-blog-movil .views-row{
-	
-}*/
 #block-views-view-blog-block-3{
-	display:block;}
-	
-	
-.view-display-id-page
-{display: none;
-		}
+	display:block;
+	visibility:visible;
+	position:static;
+}	
+.view-display-id-page{
+	/*display: none;*/
+	position:absolute;
+	left: -1000px;
+	visibility:hidden;
+}
 
 #block-views-view-blog-block-3 .view-content .views-row{
-width: 244px;
+	width: 244px;
+	background-color: #F2F2F2;
+	margin-top: 10px;
+}
+.page-blog .main #block-views-view-blog-block-3 .views-field-title a{
+	font-size: 16px;
+}
+.page-blog .main #block-views-view-blog-block-3 .views-field-title,
+.page-blog .main #block-views-view-blog-block-3 .views-field-nothing{
+	padding:0px 10px 0px 10px;
+	box-sizing:border-box;
+}
+.page-blog .main #block-views-view-blog-block-3 .views-field-nothing .by{
+	font-size: 13px;
+	line-height: 17px;
+}
+.page-blog .main #block-views-view-blog-block-3 .field-name-field-tags-blog{
+	box-sizing:border-box;
+	padding-left: 10px;
+}
+.page-blog .main #block-views-view-blog-block-3 .masonry{
+	margin-bottom: 50px;
 }
 
 #block-menu-menu-categorias-blog h3{
@@ -397,36 +429,48 @@ width: 244px;
 }
  /* PESTAÑA DE LOS POST */
 
- .pest {
+.page-blog .pest {
   width: 60px;
   height: 60px;
 }
-.pest.p_1,
-.pest.p_2,
-.pest.p_3,
-.pest.p_4,
-.pest.p_5,
-.pest.p_6,
-.pest.p_7{
+.page-blog .pest.p_1,
+.page-blog .pest.p_2,
+.page-blog .pest.p_3,
+.page-blog .pest.p_4,
+.page-blog .pest.p_5,
+.page-blog .pest.p_6,
+.page-blog .pest.p_7{
 	background-size: 100%;
 }
 #block-views-view-blog-block-1 .view-display-id-block_1 .view-content .views-field-title a {
 	font-size: 15px;
 	line-height: 17px;
 }
+
+.page-blog .flex-control-nav,
+.node-blog .flex-control-nav{
+	display: block;
+}
+.page-blog .flex-caption .by{
+	display: block;
+}
+
+#blog-list-content,
+#blog-todos-list-content{
+	width: 630px;
+	float:left;
+}
+.breadcrumb a{
+  font-size: 14px;
+}
+
+.breadcrumb span.crumbs-current-page{
+  font-size: 14px;
+}
+
  /**/
 
 /*Listado Blog*/
-
-.page-blog .main-content .main,
-.page-blog-todos .main-content .main,
-.node-type-blog .main-content .main,
-.vocabulary-categorias_de_blog .main-content .main,
-.vocabulary-departamento  .main-content .main,
-.vocabulary-tags  .main-content .main {
-	width: 665px;
-	padding: 0 32px 160px 0px;
-}
 
 .field-name-field-departamento .ds-2col > .group-left{
 	width: 139px;

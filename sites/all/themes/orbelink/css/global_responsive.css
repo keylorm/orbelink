@@ -472,6 +472,12 @@ a:hover{
 
 /* Andrey 30-09-2014 */
 
+#block-views-view-blog-block-3{
+	position:absolute;
+	left: -1000px;
+	visibility:hidden;	
+}	
+
 .page-title-blog{
   font-family: "ProximaNova", sans-serif;
   color: #1a1a1a;
@@ -576,8 +582,8 @@ h1#page-title{
 #blog-todos-list-content{ /*.page-blog .main*/
 	/*height:none !important;*/
 	position: relative;
-	width: 630px;
-	float:left;
+	width: 320px;
+	margin: 0 auto;
 	clear:both;	
 	margin-bottom: 50px;
 }
@@ -590,13 +596,12 @@ h1#page-title{
 .view-display-id-block_nuestro_blog .view-content .views-row,
 .bloque-nuestro-blog-movil .views-row{
 	display: block;
-	width: 300px;
+	width: 100%;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
 	clear:both;
 	overflow: hidden;
-
 }
 
 .bloque-nuestro-blog-movil .views-row{
@@ -1206,16 +1211,18 @@ Noticias: F033A3
 
 .page-blog .flex-caption {
   background-color: transparent;
-  background-image: url("../images/bg-caption-slider.png");
+  /*background-image: url("../images/bg-caption-slider.png");*/
+  background-color:rgba(255, 255, 255, 0.8);
+  background: url('../images/rgba.php/rgba(255, 255, 255, 0.8)');	  
   background-position: center top;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   display: block;
-  height: 100px;
+  height: 70px;
   margin-left: 10px;
-  padding: 38px 32px 15px;
-  position: absolute;
-  top: 290px;
-  width: 97%;
+  padding: 10px;
+  position: relative;
+  top: -80px;
+  width: 95%;
   z-index: 999;
 }
 
@@ -1223,7 +1230,7 @@ Noticias: F033A3
 .page-blog .flex-caption h3{
 	margin: 0;
 	font-family: "ProximaNova", sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	color: #1A1A1A;
 	font-weight: 400;
 	line-height: 24px;
@@ -1231,6 +1238,7 @@ Noticias: F033A3
 
 .page-blog .flex-caption .by{
 	margin: 0;
+	display: none;
 }
 .page-blog .flexslider,
 .node-blog .flexslider{
@@ -1240,12 +1248,11 @@ Noticias: F033A3
 	-o-border-radius: 0px;
 	border-radius: 0px;
 
-
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	-o-box-shadow: none;
 	box-shadow: none;
-	margin: 0px 0px 32px;
+	margin: 0px 0px -32px;
 
 } 
 
@@ -1263,6 +1270,7 @@ Noticias: F033A3
 	height: auto;
 	right: 15px;
 	z-index: 5;
+	display: none;
 }
 .more_post {
   clear: both;
@@ -1433,14 +1441,14 @@ Noticias: F033A3
 .breadcrumb a{
   color: #929498;
   font-family: "ProximaNova",sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
 }
 
 .breadcrumb span.crumbs-current-page{
   font-family: "Baskerville", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-style: italic;
   color: #939598;
   font-weight: 400;

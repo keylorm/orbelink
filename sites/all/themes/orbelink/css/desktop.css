@@ -469,6 +469,7 @@
 }
 .gu-1-3{
 	width: 30.7%;
+	float:left;
 }
 .page-title-blog{
   font-size: 60px;
@@ -479,25 +480,28 @@
 }
 .page-blog .flex-caption{
   padding: 38px 32px 15px;
-  top: 290px;
 }
 .page-blog .flex-caption h3 a, .page-blog .flex-caption h3{
 	font-size: 22px;
 }
 
-/*#blog-list-content .views-row, #blog-todos-list-content .views-row, .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .view-display-id-block_nuestro_blog .view-content .views-row, .bloque-nuestro-blog-movil .views-row{
-	
+/*#block-views-view-blog-block-3{
+	display:none;
+}
+.view-display-id-page{
+	display: block;
 }*/
 
 #block-views-view-blog-block-3{
-	display:none;}
-	
-	
-.view-display-id-page
-{display: block;
-		}
-
-
+	position:absolute;
+	left: -1000px;
+	visibility:hidden;	
+}	
+.view-display-id-page{
+	display:block;
+	visibility:visible;
+	position:static;	
+}
 
 #block-menu-menu-categorias-blog h3{
   font-size: 28px;
@@ -525,6 +529,15 @@
   margin-bottom: 35px;
   padding-bottom: 20px;
   width: 235px;
+}
+#blog-list-content .views-row,
+#blog-todos-list-content .views-row,
+.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
+.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
+.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
+.view-display-id-block_nuestro_blog .view-content .views-row,
+.bloque-nuestro-blog-movil .views-row{
+	width: 300px;
 }
  /* PESTAÑA DE LOS POST */
 
