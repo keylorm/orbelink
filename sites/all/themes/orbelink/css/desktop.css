@@ -597,4 +597,21 @@
 
 .field-name-descrip-depar-deta-blog .w-inline-block {padding: 0;}
 
+a.w-inline-block.autor_red img {
+	width: 86%	;
+}
+
+.field-name-field-tags-blog .field-items a,
+.tag a{
+  height: 23px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-image: url('../images/tag-arrow.jpg');
+}
+
+
+#comments input[type='text']{
+  width: 204px;
+}
+
 }

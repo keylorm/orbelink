@@ -536,23 +536,25 @@ h1#page-title{
 
 .field-name-field-tags-blog .field-items a,
 .tag a{
-  height: 23px;
+  height: 33px;
   margin-right: 10px;
   padding-right: 15px;
   padding-left: 10px;
+  padding-top: 5px;
   margin-bottom: 10px;
+  padding-bottom: 5px;
   float: left;
   background-color: #a7a9ac;
-  background-image: url('../images/tag-arrow.jpg');
+  background-image: url('../images/tag-arrow-p.jpg');
   background-position: 100% 50%;
   background-repeat: no-repeat;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: white;
   font-size: 12px;
-  line-height: 23px;	
+  line-height: 23px;
 }
 .node-blog .field-name-field-tags-blog .field-items a{
-	background-image: url('../images/tag-arrow_2.jpg');
+	background-image: url('../images/tag-arrow-p.jpg');
 }
 
 #blog-list-content,
