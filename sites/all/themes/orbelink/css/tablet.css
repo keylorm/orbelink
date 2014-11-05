@@ -310,11 +310,11 @@
 	margin: auto;
 }
 
-.node-type-especialidad .flexslider {margin-top: -34px;}
+.node-type-especialidad .flexslider {margin-top: -55px;}
 #block-views-especialidad-block-1 .attachment-before {
 	height: 125px;
 	position: relative;
-	top: 261px;
+	top: 240px;
 	z-index: 3;
 	width: 768px;
 }
@@ -328,8 +328,6 @@
 	text-align: center;
 }
 #block-views-especialidad-block-1 .attachment-before h1 {font-size: 35px; padding: 0px; line-height: 31px;}
-
-
 
  /*Andrey 04-11-2014*/
 
@@ -417,6 +415,26 @@ width: 244px;
 	line-height: 17px;
 }
  /**/
- 
+
+/*Listado Blog*/
+
+.page-blog .main-content .main,
+.page-blog-todos .main-content .main,
+.node-type-blog .main-content .main,
+.vocabulary-categorias_de_blog .main-content .main,
+.vocabulary-departamento  .main-content .main,
+.vocabulary-tags  .main-content .main {
+	width: 665px;
+	padding: 0 32px 160px 0px;
+}
+
+.field-name-field-departamento .ds-2col > .group-left{
+	width: 139px;
+ margin-right: 20px;
+}
+
+.field-name-field-departamento .ds-2col > .group-right{
+	width: 470px;
+}
 
 }
