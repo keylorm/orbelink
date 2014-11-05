@@ -460,4 +460,92 @@
 #block-views-especialidad-block-1 .attachment-after {display: block;}
 .node-type-especialidad .flex-control-nav {top: 410px !important;}
 
+
+/*Andrey 04-11-2014*/
+
+.page-blog .main-content .main, .page-blog-todos .main-content .main, .node-type-blog .main-content .main, .vocabulary-categorias_de_blog .main-content .main, .vocabulary-departamento .main-content .main, .vocabulary-tags .main-content .main{
+	width: 665px;
+	padding: 0 32px 160px 0px;
+}
+.gu-1-3{
+	width: 30.7%;
+}
+.page-title-blog{
+  font-size: 60px;
+  margin: 8px 0 50px;	
+}
+.subtitle{
+	font-size: 70px;
+}
+.page-blog .flex-caption{
+  padding: 38px 32px 15px;
+  top: 290px;
+}
+.page-blog .flex-caption h3 a, .page-blog .flex-caption h3{
+	font-size: 22px;
+}
+
+/*#blog-list-content .views-row, #blog-todos-list-content .views-row, .vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row, .view-display-id-block_nuestro_blog .view-content .views-row, .bloque-nuestro-blog-movil .views-row{
+	
+}*/
+
+#block-views-view-blog-block-3{
+	display:none;}
+	
+	
+.view-display-id-page
+{display: block;
+		}
+
+
+
+#block-menu-menu-categorias-blog h3{
+  font-size: 28px;
+  padding: 44px 0 38px 32px;
+}
+#block-menu-menu-categorias-blog ul.menu{
+	margin: 30px 0 0 25px;
+}
+#block-menu-menu-categorias-blog ul.menu li{
+	margin-bottom: 15px;
+}
+#block-menu-menu-categorias-blog ul.menu li a{
+  padding-left: 60px;
+  font-size: 16px;
+}
+
+#block-views-view-blog-block-1 h2{
+  font-size: 28px;
+  padding: 35px 0 24px 32px;	
+}
+#block-views-view-blog-block-1 .view-display-id-block_1 .view-content{
+	padding: 40px 0 0 32px;
+}
+#block-views-view-blog-block-1 .view-display-id-block_1 .views-row {
+  margin-bottom: 35px;
+  padding-bottom: 20px;
+  width: 235px;
+}
+ /* PESTAÑA DE LOS POST */
+
+ .pest {
+  width: 100px;
+  height: 105px;
+}
+.pest.p_1,
+.pest.p_2,
+.pest.p_3,
+.pest.p_4,
+.pest.p_5,
+.pest.p_6,
+.pest.p_7{
+	background-size: 100%;
+}
+#block-views-view-blog-block-1 .view-display-id-block_1 .view-content .views-field-title a {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/**/
+
 }
