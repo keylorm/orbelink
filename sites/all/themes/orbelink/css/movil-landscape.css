@@ -142,20 +142,6 @@
   font-size: 70px;
 }
 
-.titulo_detalle_blog {
-  padding-bottom: 7px;
-  padding-left: 17px;
-  padding-top: 12px;
-  margin-bottom: 25px;
-}
-
-.icon_c {
-  width: 60px;
-  height: 60px;
-  margin-top: -32px;
-  margin-left: -41px;
-}
-
 .titulo_detalle_blog h1{
   font-size: 24px;
   line-height: 29px;
@@ -174,10 +160,8 @@
 .sobre_autor {
   margin-top: 9px;
   margin-bottom: 10px;
-  font-family: "ProximaNova", sans-serif;
-  color: #1a1a1a;
   font-size: 35px;
-  line-height: 21px;
+  line-height: 29px;
 }
 
 .ds-2col > .group-left {

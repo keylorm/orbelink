@@ -338,6 +338,10 @@
 .gu-1-3{
 	width: 26.7%;
 	float:right;
+	
+}
+.page-blog .gu-1-3{
+	border-left: 1px solid #808080;
 }
 .page-title-blog{
 	font-size: 50px;
@@ -419,13 +423,11 @@
 	font-size: 19px;
 	padding: 18px 0 10px 18px;	
 }
-#block-views-view-blog-block-1 .view-display-id-block_1 .view-content {
-	padding: 25px 0 0 18px;
-}
+/*#block-views-view-blog-block-1 .view-display-id-block_1 .view-content {
+	padding: 0;
+}*/
 #block-views-view-blog-block-1 .view-display-id-block_1 .views-row {
-	margin-bottom: 10px;
-	padding-bottom: 10px;
-	width: 100%;
+	width: 90%;
 }
  /* PESTAÑA DE LOS POST */
 
@@ -455,17 +457,32 @@
 	display: block;
 }
 
+
 #blog-list-content,
 #blog-todos-list-content{
 	width: 630px;
 	float:left;
 }
+
+/*Listado Blog*/
+/*.page-blog .main-content .main,
+.page-blog-todos .main-content .main,*/
+.node-type-blog .main-content .main,
+.vocabulary-categorias_de_blog .main-content .main,
+.vocabulary-departamento  .main-content .main,
+.vocabulary-tags  .main-content .main {
+	width: 69.5%;
+	padding: 0px 3% 160px 0px;
+	float: left;
+}
+.node-type-blog .main-content .main{
+	border-right: 1px solid #808080;
+}
 .breadcrumb a{
   font-size: 14px;
 }
-
 .breadcrumb span.crumbs-current-page{
-  font-size: 14px;
+  font-size: 16px;
 }
 
  /**/
@@ -478,7 +495,48 @@
 }
 
 .field-name-field-departamento .ds-2col > .group-right{
-	width: 470px;
+	width: 100%;
 }
+
+.node-type-blog .sobre_autor {
+  line-height: 24px;
+}
+
+.node-type-blog #comments input[type='text']{
+  width: 204px;
+}
+
+.node-type-blog #block-views-view-blog-block-1 .view-display-id-block_1 .views-row{
+	width: 235px;
+}	
+
+.node-type-blog .gu-1-3 {
+	width: 30.5%;
+}
+
+.node-type-blog #block-menu-menu-categorias-blog ul.menu li a{
+  width: 200px;
+}
+
+.node-type-blog #block-menu-menu-categorias-blog ul.menu li a.menu-547 {
+  background-size: 45px 45px;
+}
+
+#block-menu-menu-categorias-blog ul.menu li a.menu-544,
+#block-menu-menu-categorias-blog ul.menu li a.menu-545,
+.page-blog #block-menu-menu-categorias-blog ul.menu li a.menu-549  {
+  line-height: 23px;
+}
+
+.node-type-blog #block-menu-menu-categorias-blog h3 {
+  padding: 44px 0 38px 32px;
+  text-align: left;
+}
+
+.node-type-blog #block-views-view-blog-block-1 h2{
+  padding: 35px 0 24px 32px;
+  text-align: left;
+}
+
 
 }

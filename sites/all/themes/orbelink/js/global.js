@@ -14,6 +14,15 @@ jQuery(document).ready(function(){
 		jQuery("#boton-menu").find('img').attr("src", "/sites/all/themes/orbelink/images/icon_menu.png");
 		jQuery("#logo").find('img').attr("src", "/sites/default/files/logo_s_0.png"); 
 	}
+	
+	var main = jQuery('.page-blog .main');
+	var sidebar = jQuery('.page-blog #sidebar-second');
+	if(sidebar.length>0){ 
+		sidebar.css({'height':(main.height()-550)+"px"});
+	}
+	
+	
+	
 
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/sites/all/themes/orbelink/images/facebook-active-tab.png')");
