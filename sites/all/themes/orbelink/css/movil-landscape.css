@@ -27,19 +27,6 @@
 	  font-size: 30px;
 	}
 
-	/*.view-slider-home .flex-caption .caption-slider-home-pequeno{
-	  font-size: 34px;
-	  margin: 0;
-	  line-height: 50px;
-	}
-
-	.view-slider-home .flex-caption .link-slider-box {
-	  height: 58px;
-	  line-height: 50px;
-	  margin: 30px auto 0;
-	  width: 220px;
-	}*/
-
 	/* footer */
 
 	.footer .footer-box h2 a{
@@ -171,15 +158,9 @@
 .autor_img {
   width: 139px;
 }
-#blog-list-content .views-row,
-#blog-todos-list-content .views-row,
-.vocabulary-categorias_de_blog .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
-.vocabulary-departamento .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
-.vocabulary-tags .view-id-taxonomy_term.view-display-id-page .view-content .views-row,
-.view-display-id-block_nuestro_blog .view-content .views-row,
-.bloque-nuestro-blog-movil .views-row{
-	width: 300px;
-}
 
+#block-menu-menu-categorias-blog ul.menu li a.menu-544  {
+  line-height: 45px;
+}
 
 }

@@ -2,10 +2,17 @@
 
 	/* Main content. Paginas internas */
 	.main-content {
-	  padding: 75px 10px 0px; /*45px*/
+	  /*padding: 90px 10px 0px;*/ /*45px*/
+	  /*margin-top: 70px;*/
 	  width: 100%;
 	}
-
+	.page-blog .main-content,
+	.node-type-blog .main-content{
+		margin-top: 90px;
+	}
+	.front .main-content{
+		margin-top: 70px;
+	}
 	.menu-desplegable{
 	  position: fixed; 
 	}
@@ -28,9 +35,9 @@
 
 	/* Slider home */
 
-	.page-inicio .main-content{
+	/*.page-inicio .main-content{
 		 padding: 90px 0px 0px 0px;
-	}
+	}*/
 	.view-slider-home .flex-caption h3{
 	  font-size: 62px;
 	  line-height: 45px;
@@ -163,7 +170,7 @@
 	  min-height: 450px;
 	}
 	#cintillo-10-years{
-	 padding-top: 60px;
+	 padding-top: 75px;
 	}
 	#block-block-7{
 		min-height: 100px;
@@ -373,9 +380,8 @@
 	position:static;
 }	
 .view-display-id-page{
-	/*display: none;*/
 	position:absolute;
-	left: -1000px;
+	top: 0px;
 	visibility:hidden;
 }
 
@@ -449,6 +455,10 @@
 	line-height: 17px;
 }
 
+.page-blog .flexslider{
+	float: none;
+}
+
 .page-blog .flex-control-nav,
 .node-blog .flex-control-nav{
 	display: block;
@@ -506,7 +516,7 @@
   width: 204px;
 }
 .node-type-blog #block-views-view-blog-block-1 .view-display-id-block_1 .views-row{
-	width: 235px;
+	width: 205px;
 }	
 
 .node-type-blog .gu-1-3 {

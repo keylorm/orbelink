@@ -45,7 +45,8 @@
 	font-family: "ProximaNova", sans-serif;
 	font-size: 35px;
 	font-weight: 600;
-	color: #6D6E71;	
+	color: #6D6E71;
+	line-height: 22px;
 }
 
 #comments h2.title em.subtitle-comentario{
@@ -216,12 +217,17 @@ a:hover{
 }
 
 .main-content {
-  padding: 30px 10px 0px;
+  padding: 10px;
   width: 100%;
   overflow: visible;
 }
-
-
+.front .main-content{
+	margin-top: 0px;
+}
+.page-blog .main-content,
+.node-type-blog .main-content{
+	margin-top: 20px;
+}
 
 .footer{
   background-color: #e8442e;
@@ -446,6 +452,7 @@ a:hover{
   background-position: 0px 50%;
   background-size: 45px 45px;
   background-repeat: no-repeat;
+  line-height: 23px;
 }
 #block-menu-menu-categorias-blog ul.menu li a.menu-550 {
   background-image: url('../images/tendencias.png');
@@ -471,7 +478,7 @@ a:hover{
 
 #block-views-view-blog-block-3{
 	position:absolute;
-	left: -1000px;
+	top: 0px;
 	visibility:hidden;	
 }	
 
@@ -558,7 +565,7 @@ h1#page-title{
   line-height: 23px;
 }
 .node-blog .field-name-field-tags-blog .field-items a{
-	background-image: url('../images/tag-arrow-p.jpg');
+	background-image: url('../images/tag-arrow-p-2.jpg');
 }
 
 #blog-list-content,
@@ -595,7 +602,7 @@ h1#page-title{
 .view-display-id-block_nuestro_blog .view-content .views-row,
 .bloque-nuestro-blog-movil .views-row{
 	display: block;
-	width: 100%;
+	width: 300px;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	background-color: #F2F2F2;
@@ -793,13 +800,17 @@ h1#page-title{
 
 #comments .form-submit{
   padding: 13px 20px;
+  width: 110px;
+  height: 50px;
   float: left;
-  border-radius: 5px;
+  
+  -webkit-appearance: none;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
+  -ms-border-radius: 5px;
   -o-border-radius: 5px;
-
-
+  border-radius: 5px;
+  
   font-family:'Open Sans', sans-serif;
   color: white;
   font-size: 17px;
@@ -807,7 +818,7 @@ h1#page-title{
   border: none;
   margin-top: 15px;
   cursor: pointer;
-  behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);
+  /*behavior: url(../sites/all/themes/orbelink/css/css-pie/PIE.htc);*/
   
  /* -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -1173,7 +1184,7 @@ Noticias: F033A3
   margin-left: auto;
 }
 .titulo_compartir {
-  margin-right: 15px;
+  margin-right: 10px;
   float: left;
   font-family: "ProximaNova", sans-serif;
   color: #58595b;
@@ -1863,6 +1874,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #block-block-6{
   background-color: #e8442e;
+  background-image: url(../images/flecha-cintillo-g.png);
   height: auto;
   float:left;
 }
@@ -1875,21 +1887,13 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 } 
 
 #cintillo-10-years{
- background-image: url("../images/flecha-cintillo-10anos.png");
- background-position: center top;
- background-repeat: no-repeat;
  float: right;
- margin-top: -30px;
-/* padding-left: 326px;*/
- padding-top: 104px;
+ padding-top: 65px;
  padding-left: 10px;
  padding-right: 10px;
  width: 100%;
 }
 
-#block-block-6 .content{
-
-}
 #block-block-6 h2{
   text-transform: uppercase;
   color: #FFFFFF;
@@ -1943,6 +1947,15 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
 .page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c{
   background-color: #F7F7F7;
+}
+
+.page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c,
+#block-block-6{
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c{
+	background-image: url(../images/flecha-cintillo.png);
 }
 
 .page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70{
@@ -2211,7 +2224,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
 .page-inicio #block-views-ff46cc3723cde3ff848cce721def5c9c{
-  min-height: 928px;
+  min-height: 890px;
   margin-top: 40px;
 }
 
@@ -2227,12 +2240,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 
 #encabezado-nuestro-proceso{
- background-image: url("../images/flecha-cintillo-proceso-home.png");
- background-position: center top;
- background-repeat: no-repeat;
  display: block;
  float: left;
- margin: -33px auto 15px;
  padding-top: 52px;
  position: relative;
  width: 100%;

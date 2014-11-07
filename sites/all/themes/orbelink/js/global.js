@@ -1,6 +1,6 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
-
+	
 	var IE = '';
 	if(jQuery.browser.msie == true){
 		if(jQuery.browser.version == '8.0' || jQuery.browser.version == '7.0'){
@@ -18,7 +18,7 @@ jQuery(document).ready(function(){
 	var main = jQuery('.page-blog .main');
 	var sidebar = jQuery('.page-blog #sidebar-second');
 	if(sidebar.length>0){ 
-		sidebar.css({'height':(main.height()-550)+"px"});
+		//sidebar.css({'height':main.height()+"px"});
 	}
 	
 	
