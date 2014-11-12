@@ -100,7 +100,7 @@ global $base_url;
     <div class="messages-content">
       <?php print $messages; ?>
     </div>
-    <a href="#" id="messages-toggle"><?php print t('Close');?></a>
+    <!--<a href="#" id="messages-toggle"><?php print t('Close');?></a>-->
   </div>
   <?php endif; ?>
     <a id="main-content"></a>

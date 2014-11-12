@@ -154,27 +154,75 @@
 
 	/**** Andrey Solís :: 30-10-2014 ******/
 	
-	.page-inicio .pane-1 .pane-content h2{
+	.page-inicio .pane-1 .pane-content h2,
+	.page-nuestros-servicios .pane-1 .pane-content h2{
 	 font-size: 33px;
 	 line-height: 31px;
 	}
-	.page-inicio .pane-1 .pane-content p{
+	.page-inicio .pane-1 .pane-content p,
+	.page-nuestros-servicios .pane-1 .pane-content p{
 	 font-size: 20px;
 	 line-height: 25px;
 	}
-	.page-inicio .view-display-id-block_islas_especialidad .views-row{
-	  width: 46%;
+	.page-inicio .view-display-id-block_islas_especialidad .views-row,
+	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
+	  width: 50%;
 	  padding-left: 2%;
 	  padding-right: 2%;
 	  margin-right: 0px;
-	  min-height: 450px;
 	}
+
+	.page-inicio .view-display-id-block_islas_especialidad .views-row{
+		 min-height: 450px;
+	}
+
+	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
+		min-height: 370px;
+	}
+
+	.page-inicio .view-display-id-block_islas_especialidad, .page-nuestros-servicios .view-id-especialidad.view-display-id-block_2{
+		 margin: 0 auto;
+    width: 94%;
+	}
+
+
+	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-title h2{
+	
+}
+
+.page-nuestros-servicios .main-content{
+	margin-top: 80px;
+}
+
+
+
 	#cintillo-10-years{
 	 padding-top: 75px;
 	}
 	#block-block-7{
-		min-height: 100px;
-	}						
+  min-height: 100px;
+}
+
+#block-block-7 .content h2,
+#block-block-16 .content h2{  
+  font-size: 38px;  
+}
+
+
+#block-block-7 .content h2 span,
+#block-block-16 .content h2 span{ 
+ font-size: 56px;
+}
+
+
+
+#block-block-16{
+  min-height: 190px;
+}			
+
+#block-block-16 .content{
+	padding-top: 20px;
+}
 
 	.page-inicio .resumen-portafolio .imagen-portafolio-wrap > img{
 		width: auto;
@@ -547,5 +595,122 @@
   text-align: left;
 }
 
+
+/*Contacto*/
+.page-contactenos .main-content{
+	margin-top: 80px;
+}
+
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-encabezado-inside h2{
+    font-size: 34px;
+}
+
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-encabezado-inside h2 span{
+    font-size: 48px;
+}
+
+
+
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-center-inside .contacto-redes-sociales h3,
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .contacto-redes-sociales h3{
+     font-size: 40px;
+}
+
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-center-inside .contenedor-info-contacto .contacto-info-logo-inner p,
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .contenedor-info-contacto .contacto-info-logo-inner p{
+      font-size: 18px;
+}
+
+
+
+.panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-center {
+    float: left;
+    width: 49.5%;
+    display: block;
+}
+
+.panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho {
+    float: left;
+    width: 49.5%;
+}
+
+.page-contactenos .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-3{
+  display: none;
+}
+
+.page-contactenos  .panels-flexible-row-layout_1_columna_arriba_2_columnas_abajo-main-row{
+  margin-bottom: 65px;
+}
+
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95{
+  padding: 30px 40px 40px;
+}
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95 .form-item {
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95 .form-item.webform-component-textfield input,
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95 .form-item.webform-component-email input{
+  height: 73px;
+  padding: 0 25px;
+  line-height: normal;
+  font-weight: 400px;
+  font-size: 17px;
+
+}
+
+
+
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95 .form-item.webform-component-textarea textarea{
+  width: 100%;
+  height: 186px;
+  border:0;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 186px;
+  min-height: 186px;
+  padding: 25px;
+  line-height: 21px;
+  font-size: 17px;
+}
+
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-2 h2{
+  font-size: 30px;
+  line-height: 32px;
+}
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-2 h2 span{
+	font-size: 48px;
+}
+
+
+.page-contactenos  .panels-flexible-region-layout_1_columna_arriba_2_columnas_abajo-derecho .pane-webform-client-block-95 .form-actions input{
+  
+    font-size: 39px;
+    width: 144px;
+    height: 53px;
+
+}
+
+.page-contactenos .pane-webform-client-block-95 .webform-confirmation{
+
+    font-size: 22px;
+    line-height: 30px;
+
+}
+
+.page-contactenos .pane-webform-client-block-95 .captcha.form-wrapper .form-type-textfield input{
+  width: 100%;
+  height: 73px;
+  padding: 0 25px;
+  line-height: normal;
+  font-weight: 400px;
+  font-size: 17px;
+}
 
 }

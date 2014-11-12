@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 		}else{
 				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
 
-				jQuery.post( "/orbelink/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
+				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
 				    //alert( "Data Loaded: " + data );
 				    var obj = jQuery.parseJSON(data);
@@ -144,7 +144,7 @@ jQuery(document).ready(function(){
 			var var_miweb_calc = jQuery("#miweb").val();
 			
 			
-			jQuery.post( "/orbelink/consulta-calc", { miweb: var_miweb_calc })
+			jQuery.post( "/consulta-calc", { miweb: var_miweb_calc })
 			  .done(function( data ) {
 
 			  	jQuery("#formulario-calc input#consulta-calc").css({
@@ -213,7 +213,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
 <table width="480" border="0" class="reporte_d">\
   <tr>\
     <td colspan="3">\
-		<img src="/orbelink'+bg+'" />\
+		<img src="'+bg+'" />\
 	</td>\
   </tr>\
   <tr>\
@@ -226,7 +226,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.impactoSizeContentToViewport+'%;"></div>\
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+		<img src="/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
 	</div>\
 	</td>\
     <td>'+obj.impactoSizeContentToViewport+'%</td>\
@@ -236,7 +236,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.impactoVelocidad+'%;"></div>\
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+		<img src="/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
 	</div>\
 	</td>\
     <td>'+obj.impactoVelocidad+'%</td>\
@@ -246,7 +246,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.impactoUseLegibleFontSizes+'%;"></div>\
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+		<img src="/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
 	</div>\
 	</td>\
     <td>'+obj.impactoUseLegibleFontSizes+'%</td>\
@@ -256,7 +256,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
     <td>\
 	<div class="bg-gris">\
 		<div class="bg-vc" style="width: '+obj.SizeTapTargetsAppropriately+'%;"></div>\
-		<img src="/orbelink/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
+		<img src="/sites/all/themes/orbelink/images/barra-calculo-mascara-horizontal.png" />\
 	</div>\
 	</td>\
     <td>'+obj.SizeTapTargetsAppropriately+'%</td>\
