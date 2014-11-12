@@ -43,6 +43,7 @@
 	.page-inicio .main-content{
 		 width: 1024px;
 		 max-width: 1024px;
+		 padding: 0;
 	}
 
 	.view-slider-home .flex-caption {
@@ -214,6 +215,7 @@
 	  background-image: url("../images/cintillo-prueba-tiempo.png");
 	  background-position: left bottom;
 	  background-repeat: no-repeat;	  
+	  padding: 0;
 	}
 	#block-block-6 h2{
 	  font-size: 49px;
@@ -248,9 +250,7 @@
 	#block-block-7 .content,
 	#block-block-16 .content{
 	  width: 960px;
-	  padding-left: 0px;
-	  padding-right: 0px;
-	  padding-bottom: 0px;	  
+	  padding: 0;	  
 	}
 	#block-block-7 .content h2,
 	#block-block-16 .content h2{
@@ -407,6 +407,7 @@
 	#block-views-ed5db07469e68153e4002605aea7ce02 .content,
 	#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
 	  width: 100%;
+	  padding: 0;
 	}
 
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno,
@@ -440,6 +441,9 @@
 	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
 	  width: 30%;
 	  min-height: 450px;
+	  padding: 0;
+	  margin-right: 36px;
+
 	}
 
 	.node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-2,
@@ -469,8 +473,13 @@
 
 .bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2 {
 	font-size: 34px;
+	padding: 0 216px;
+	margin-top: 40px;
 }
 
+#block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2 {
+	margin: 60px 0 0;
+}
 .bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
 	background-image: url(../images/liston-blanco-sueno-especialidad.png);
 }
@@ -675,6 +684,53 @@ a.w-inline-block.autor_red img {
      font-size: 48px;
 }
 
+.page-inicio #block-views-4ab025ea2c9c030c19587b4350b98e70{
+	padding: 0;
+}
+
+.footer .container-nivel1 {
+
+padding: 0;
+}
+
+.app-redes-sociales-contenido{
+	padding: 0;
+}
+
+
+.bloque-encabezado-construimos-sueno-inner h2{
+	font-size: 30px;
+}
+
+.bloque-encabezado-construimos-sueno-inner h3{
+	font-size: 33px;
+}
+form#formulario-calc h2{
+	font-size: 35.69px; line-height: 27px;
+}
+
+.page-node-38 .main-content {
+    max-width: 1280px;
+    padding: 90px 0 0;
+    width: 1280px;
+}
+
+.page-node-38 h1#page-title {
+    
+    width: 960px;
+}
+
+.page-node-38 .breadcrumb {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.page-node-38 .node-page{
+  width: 960px;
+  margin: 0 auto;
+}
+
+}
 
 
 }

@@ -228,6 +228,7 @@ function orbelink_preprocess_page(&$variables) {
 function orbelink_form_webform_client_form_alter(&$form, $form_state, $form_id) {
   if($form['#node']->nid==95){
      $form['actions']['submit']['#attributes']['id'] = 'edit-webform-ajax-submit-'.$form['#node']->nid;
+     $form['actions']['submit']['#attributes']['onclick'] = 'scrollFormContacto()';
   }
    
 }

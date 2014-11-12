@@ -203,6 +203,7 @@
   min-height: 100px;
 }
 
+
 #block-block-7 .content h2,
 #block-block-16 .content h2{  
   font-size: 38px;  
@@ -313,6 +314,8 @@
 /* seccion interna de especialidades */
 .node-type-especialidad .node-especialidad .field-name-body .parrafo{
 	 width: 47%;
+	 padding: 0;
+	 font-size: 20px;
 }
 
 .node-type-especialidad .node-especialidad .field-name-body h2{
@@ -324,8 +327,9 @@
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas{
-	  width: 45%;
-	  margin-right: 36px;
+	   padding: 0 2%;
+    width: 50%;
+	  margin-right: 0;
 }
 
 .node-type-especialidad .node-especialidad .group-islas-especialidad .vocabulary-caracteristicas.isla-caracteristica-2,
@@ -342,18 +346,28 @@
 }
 
 #block-app-seo-seo-application .bloque-encabezado-construimos-sueno-inner h2 {
-	margin: 40px 0 0;
+	margin: 15px 0 0;
 }
 
 .bloque-encabezado-construimos-sueno-inner h2, .encabezado-cual-es-su-objetivo h2, #block-app-seo-calc-application-inner h2, .encabezado-app-redes-sociales h2 {
 	font-size: 30px;
 	line-height: 40px;
-	margin: 40px 0 0;
-	padding: 0 216px;
+	margin: 20px 0 0;
+	padding: 0 200px;
+}
+
+.bloque-encabezado-construimos-sueno-inner h2{
+	margin: 15px 0 0;
+	font-size: 25px;
+}
+
+.bloque-encabezado-construimos-sueno-inner h3{
+	font-size: 23px;
 }
 
 .bloque-encabezado-construimos-sueno-inner, .encabezado-cual-es-su-objetivo-inner, #block-app-seo-calc-application-inner, .encabezado-app-redes-sociales-inner {
 	width: 100%;
+	
 	background-image: url(../images/liston-blanco-sueno-especialidad-tablet.png);
 }
 
@@ -712,5 +726,72 @@
   font-weight: 400px;
   font-size: 17px;
 }
+
+
+.page-inicio .main-content {
+    max-width: 96%;
+    overflow: visible;
+    padding: 0 2%;
+    width: 96%;
+}
+
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home,
+.page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home p,
+.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-view-node{
+ font-size: 18px;
+ line-height: 22px;
+}
+
+#block-views-ff46cc3723cde3ff848cce721def5c9c .content{
+	padding:0;
+}
+
+.page-node-38 .main-content{
+	padding: 90px 4% 0;
+}
+
+.page-node-38 .main-content .main .content .field-name-body p{
+  
+  font-size: 35px;
+    line-height: 40px;
+}
+
+
+.page-node-38 .main-content .main .content .field-name-body p .fuente-italica{
+	font-size: 48px;
+}
+
+.page-node-38 .main-content .main .content .field-name-body .text-descri-nuestro-trabajo p{
+  font-size: 20px;
+
+}
+
+.page-node-38 h1#page-title{
+	font-size: 48px;
+}
+
+.page-node-48 .field-name-body h2{
+	font-size: 34px;
+}
+
+.page-node-48 .field-name-body h2 span{
+	font-size: 47px;
+}
+
+#block-block-4{
+	padding: 24px 0 58px;
+}
+
+form#formulario-calc h2{
+	font-size: 35.69px; line-height: 35px;
+}
+
+.app-redes-sociales-contenido #primer-parrafo {font-size: 20px;}
+
+.app-redes-sociales-contenido #segundo-parrafo {font-size: 22px; font-weight: bold;}
+
+.app-redes-sociales-contenido h3 { font-size: 34px; ;}
+.app-redes-sociales-contenido h3 span { font-size: 56px;}
+
 
 }

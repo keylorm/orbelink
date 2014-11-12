@@ -1,5 +1,7 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
+
+	
 	
 	var IE = '';
 	if(jQuery.browser.msie == true){
@@ -669,6 +671,10 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	});
 
 
+
+	
+
+
 /* Radio customs en aplicacion de SEO*/
 	jQuery(".input-radio-eng .input-radio-idioma-wrapper").click(function(){
 		if(jQuery(".input-radio-eng .input-radio-idioma-wrapper").hasClass("radio-activado")){
@@ -917,7 +923,29 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	//realizamos el ajuste de calculo cuando el usuario cambia los tabs de branding y conversion
 	//jQuery("#block-block-8 .tab-header-and-content a").click(function(){ cambiarObjetivo(); })
 
+/*evento Scroll para formulario*/
+
+		
+
+	
 });
+
+function scrollFormContacto(){
+	
+		//e.preventDefault();
+
+		var target = "#main-content";
+		$target = jQuery(target);
+
+		jQuery('html, body').stop().animate({
+		'scrollTop': $target.offset().top
+		}, 900, 'swing', function () {
+		window.location.hash = target;
+		});
+	
+}
+
+
 
 function obtenerCalculoClicsImpresiones(presupuesto, conversion, branding)
 {

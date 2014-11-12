@@ -24,6 +24,10 @@
   margin: 0 auto;
 }
 
+.footer .container-nivel1{
+  width: 100%;
+padding: 0 6%;
+}
 /* Global */
 .container-nivel2{
   width: 100%;
@@ -217,7 +221,7 @@ a:hover{
 }
 
 .main-content {
-  padding: 10px;
+  padding: 0 4%;
   width: 100%;
   overflow: visible;
 }
@@ -1440,14 +1444,14 @@ Noticias: F033A3
 .breadcrumb a{
   color: #929498;
   font-family: "ProximaNova",sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   text-decoration: none;
 }
 
 .breadcrumb span.crumbs-current-page{
   font-family: "Baskerville", sans-serif;
-  font-size: 21px;
+  font-size:18px;
   font-style: italic;
   color: #939598;
   font-weight: 400;
@@ -1483,28 +1487,28 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-node-38 h1#page-title{
   color: #E8442E;
   font-family: "ProximaNova",sans-serif;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 400;
   margin: 32px auto 8px;
-  width: 960px;
+  width: 100%;
 }
 
 .page-node-38 .main-content .main .content .field-name-body p{
   color: #1A1A1A;
   font-family: "ProximaNova",sans-serif;
-  font-size: 35px;
+  font-size: 26px;
   font-weight: 400;
   text-align: center;
   margin-top: 0;
   margin-bottom: 15px;
-  line-height: 40px;
+  line-height: 28px;
 }
 
 
 .page-node-38 .main-content .main .content .field-name-body p .fuente-italica{
 
   font-family: "Baskerville",sans-serif;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 400;
   font-style: italic;
 
@@ -1518,7 +1522,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-node-38 .main-content .main .content .field-name-body .text-descri-nuestro-trabajo p{
   font-family: "Roboto Slab",sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   color: #4D4D4D;
   line-height: 30px;
@@ -1528,7 +1532,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-4 {
   background-color: #00a69c;
   min-height: 280px;
-  padding: 24px 0 58px;
+  padding: 24px 4% 58px;
   text-align: center;
   width: 100%;
   clear: both;
@@ -1638,18 +1642,20 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-node-38 .breadcrumb {
   margin: 0 auto;
-  width: 960px;
+  width: 100%;
+
 }
 
 .page-node-38 .node-page{
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
+  
 }
 
 .page-node-38 .main-content {
-  padding: 90px 0px 0px;
-  width: 1280px;
-  max-width: 1280px;
+  padding: 10px 4% 0px;
+  width: 100%;
+  max-width: 100%;
   overflow: visible;
 } 
 
@@ -1668,10 +1674,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 /*Slider Home*/
 
 .page-inicio .main-content{
- padding: 0px 0px 0px 0px;
- width: 100%;
  max-width: 100%;
- overflow: visible;
+    overflow: visible;
+    padding: 0 4%;
+    width: 100%;
 }
 .view-slider-home .flex-caption {
   margin: 0 auto;
@@ -1781,7 +1787,12 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-inicio .pane-1, .app-redes-sociales-contenido,.page-nuestros-servicios .pane-1{
   width: 100%;
   margin: 0 auto;
+  }
+.app-redes-sociales-contenido{
+  padding: 0 4%;
 }
+  
+
 
 .page-inicio .pane-1 .pane-content h2,
 .page-nuestros-servicios .pane-1 .pane-content h2{
@@ -1832,7 +1843,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row{
-  min-height: 400px;
+  min-height: 440px;
 }
 
 .page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row{
@@ -1890,9 +1901,9 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-view-node{
  color: #808080;
  font-family: "Open Sans",sans-serif;
- font-size: 18px;
+ font-size: 16px;
  text-align: center;
- line-height: 22px;
+ line-height: 20px;
  font-weight: 400;
 }
 
@@ -1919,6 +1930,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   height: 100%;
   margin: 0 auto;
   width: 100%;
+  padding: 0 4%;
 } 
 
 #cintillo-10-years{
@@ -1997,6 +2009,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 	width: 100%;
   margin: 0;
   min-height: 500px;
+  padding: 0 4%;
   overflow: hidden;
 }
 #block-views-ff46cc3723cde3ff848cce721def5c9c .content .view-header{
@@ -2194,9 +2207,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-16 .content{
   width: 100%;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 25px 10px;
   text-align: center;
 }
 
@@ -2280,6 +2291,7 @@ width: 280px;
   text-align: center;
   margin: 0 auto;
   clear:both;
+  padding:0 4%;
 }
 
 .page-inicio #block-views-ed5db07469e68153e4002605aea7ce02,
@@ -2481,12 +2493,13 @@ width: 280px;
 .node-type-especialidad .node-especialidad .field-name-body .parrafo{
  color: #4D4D4D;
  font-family: "Roboto Slab",sans-serif;
- font-size: 20px;
+ font-size: 16px;
  font-weight: 300;
  float: left;
  width: 100%;
  line-height: 32px;
  margin-top: 0;
+ padding: 0 4%;
 }
 
 .node-type-especialidad .node-especialidad .field-name-body #parrafo-1{
@@ -2504,6 +2517,7 @@ width: 280px;
   margin-right: 0px;
   text-align: center;
   width: 100%;
+  padding:0 4%;
 
 }
 
@@ -2593,6 +2607,7 @@ width: 280px;
   margin: 0 auto;
   text-align: center;
   width: 100%;
+  padding: 0 4%;
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -2605,17 +2620,25 @@ width: 280px;
   font-size: 26px;
   font-weight: 400;
   line-height: 33px;
-  margin: 40px 0 0;
+  margin: 20px 0 0;
   text-transform: uppercase;
   width: 100%;
 }
 
+.encabezado-cual-es-su-objetivo h2{
+  margin: 40px 0 0;
+}
+
+.bloque-encabezado-construimos-sueno-inner h2{
+  font-size: 23px;
+  margin: 15px 0 0;
+}
 
 .bloque-encabezado-construimos-sueno-inner h3{
   color: #ffffff;
   float: left;
   font-family: "ProximaNova",sans-serif;
-  font-size: 33px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 28px;
   margin: 0;
@@ -3095,6 +3118,12 @@ font-weight: 400;
 letter-spacing: -1px;
 }
 
+.page-node-48 .field-name-body  h2 span{
+  font-size: 38px;
+}
+
+
+
 .page-node-48 .field-name-body h2,
 #bloque-3 .rollover_about p{
 color: #1A1A1A;
@@ -3104,6 +3133,10 @@ text-align: center;
 font-weight: 400;
 line-height: 40px;
 }
+.page-node-48 .field-name-body h2{
+font-size: 26px;
+}
+
 
 .page-node-48 .bienvenido,
 .page-node-48 #block-views-c5d5133c5fb8e77f14adb2f41cab4493 h2{
@@ -3492,7 +3525,7 @@ text-transform: uppercase;
 
 /* app diseno web y movil - juan martinez */
 #block-app-seo-calc-application-inner { padding: 28px 0 69px 0; text-align: center;}
-form#formulario-calc h2 {color: #fff; font-family: 'ProximaNova', sans-serif; font-size: 35.69px; font-weight: 400; margin: 0 0 30px 0; line-height: 27px;}
+form#formulario-calc h2 {color: #fff; font-family: 'ProximaNova', sans-serif; font-size: 26px; font-weight: 400; margin: 0 0 30px 0; line-height: 30px;}
 input[name="miweb"] {width: 600px; height: 44px; border: none; padding: 8px 45px 8px 15px; border-radius: 5px;}
 #consulta-calc { height: 42px; padding: 0px; padding: 13.5px 21px; position: absolute; right: 2px; bottom: 0; background-image: url('../images/boton-formulario-diseno-web-movil.png'); background-repeat: no-repeat; background-position: 6px 6px; background-color: #fff; border: none; cursor: pointer; margin-bottom: 1px;}
 form#formulario-calc .form-content {width: 600px; margin: 0 auto; position: relative;}
@@ -3668,10 +3701,10 @@ background-position-y: 40px;
 
 /* app redes sociales */
 .app-redes-sociales-contenido .parrafo {font-family: 'Roboto Slab', sans-serif; font-weight: 300;  text-align: center;}
-.app-redes-sociales-contenido #primer-parrafo {font-size: 20px;}
-.app-redes-sociales-contenido #segundo-parrafo {font-size: 22px; font-weight: bold;}
-.app-redes-sociales-contenido h3 { padding: 20px 0 38px 0; border-top: 1px solid #E8442E; border-bottom: 1px solid #E8442E; text-align: center; font-size: 35.34px; color: #333333; font-family: 'ProximaNova', sans-serif;}
-.app-redes-sociales-contenido h3 span {font-family: 'Baskerville', sans-serif; font-style: italic; color: #E8442E; font-size: 57.78px;}
+.app-redes-sociales-contenido #primer-parrafo {font-size: 16px;}
+.app-redes-sociales-contenido #segundo-parrafo {font-size: 17px; font-weight: bold;}
+.app-redes-sociales-contenido h3 { margin-bottom: 0; padding: 20px 0 15px 0; border-top: 1px solid #E8442E; text-align: center; font-size: 26px; color: #333333; font-family: 'ProximaNova', sans-serif;}
+.app-redes-sociales-contenido h3 span {font-family: 'Baskerville', sans-serif; font-style: italic; color: #E8442E; font-size: 36px;}
 .app-redes-sociales-contenido .accordion-tabs-minimal {margin-top: 115px; height: 630px;} 
 .app-redes-sociales-contenido .accordion-tabs-minimal li { list-style: none; }
 .app-redes-sociales-contenido ul.accordion-tabs-minimal li.tab-header-and-content { 
@@ -3733,9 +3766,11 @@ width: 274px;}
 #iconos-redes-sociales div.iconos {float: left; width: 87px; height: 87px; margin: 0 12px;}
 div#iconos-redes-sociales { width: 100%;
 height: 150px;
-padding: 22px 100px 32px 100px;
+padding: 22px 90px 32px;
 float: left;
-margin-bottom: 23px; }
+margin-bottom: 23px; 
+border-bottom: 1px solid #E8442E; 
+margin-bottom: 58px;}
 #enlace-mas-informacion {width: 35%;  margin: 0 auto; margin-bottom: 50px; clear:both;}
 #enlace-mas-informacion a { font-family: 'ProximaNova', sans-serif; font-weight: 400; font-size: 29px; color: #333333; padding: 15px 7px; border: 2px solid #333;}
 #enlace-mas-informacion a span{font-family: 'Baskerville', sans-serif; font-style: italic; color: #333333; font-size: 39px;}
