@@ -1529,6 +1529,16 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 }
 
+.page-node-38 .main-content .main .content .field-name-body .text-descri-nuestro-trabajo p a{
+  cursor: pointer;
+}
+
+.page-node-38 .view-display-id-block_resumen_portafolio_grande .view-content .views-row{
+   display: block;
+   transition: all 0.5s linear 0s;
+ 
+}
+
 #block-block-4 {
   background-color: #00a69c;
   min-height: 280px;

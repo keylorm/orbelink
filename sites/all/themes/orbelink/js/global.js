@@ -911,20 +911,105 @@ document.getElementById("reporte_grafico").innerHTML = '\
 		}
 		
 	});
-	
-	
-	//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
-	cambiarObjetivo();
 
-	jQuery("input[name='presupuesto']").change(function(){
-		cambiarObjetivo();		
+	/* Código para mostrar u ocultar items en portfolio de Nuestro Trabajo por Tags - Keylor*/
+
+	jQuery(".tags-nuestro-trabajo .portfolio-tag").click(function() {
+	
+		if (jQuery(this).hasClass("portfolio-tag-todo")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row").css({"display":"block"});
+			}); 
+			
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+
+		}else if (jQuery(this).hasClass("portfolio-tag-estrategia")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-73").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-publicidad")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-74").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-analitica")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-75").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-produ-digital")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-76").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-produ-contenidos")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-77").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes")){
+
+			jQuery(".view .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view .view-content .views-row").css({"display":"none"});
+				jQuery(".view .view-content .views-row.categoria-78").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+			
+		}
 	});
 
-	//realizamos el ajuste de calculo cuando el usuario cambia los tabs de branding y conversion
-	//jQuery("#block-block-8 .tab-header-and-content a").click(function(){ cambiarObjetivo(); })
+
+	
+
+	
+	if (jQuery("#bloque-resultados-objetivo").length>0){
+		//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
+		cambiarObjetivo();
+
+		jQuery("input[name='presupuesto']").change(function(){
+			cambiarObjetivo();		
+		});
+
+		//realizamos el ajuste de calculo cuando el usuario cambia los tabs de branding y conversion
+		//jQuery("#block-block-8 .tab-header-and-content a").click(function(){ cambiarObjetivo(); })
+	}
+	
 
 /*evento Scroll para formulario*/
 
+
+
+
+
+
+	
 		
 
 	
