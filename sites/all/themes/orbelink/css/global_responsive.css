@@ -517,12 +517,14 @@ h1#page-title{
 }
 
 .page-blog .main .views-field-title,
+.page-blog-todos .main .views-field-title,
 .vocabulary-departamento .views-field-title,
 .vocabulary-categorias_de_blog .views-field-title,
 #block-views-view-blog-block-nuestro-blog .views-field-title{
  line-height: 22px;
 }
 .page-blog .main .views-field-title a,
+.page-blog-todos  .main .views-field-title a,
 .vocabulary-departamento .views-field-title a,
 .vocabulary-categorias_de_blog .views-field-title a,
 #block-views-view-blog-block-nuestro-blog .views-field-title a,
@@ -614,6 +616,14 @@ h1#page-title{
 	overflow: hidden;
 }
 
+.view-id-view_blog.view-display-id-page {
+    z-index: 0;
+}
+
+#block-views-blog-slider-block {
+    z-index: -1;
+}
+
 .bloque-nuestro-blog-movil .views-row{
   margin: 15px auto;
 }
@@ -651,7 +661,7 @@ h1#page-title{
 .bloque-nuestro-blog-movil .view-content .views-row .views-field-title,
 .bloque-nuestro-blog-movil .view-content .views-row .views-field-nothing,
 .bloque-nuestro-blog-movil .view-content .views-row .field-name-field-tags-blog{
-	padding: 0px 20px 0px 20px;
+	padding: 12px 20px 0px 20px;
 }
 /*#blog-list-content li:nth-child(2n+2){
 	height: 500px;
@@ -1376,6 +1386,11 @@ Noticias: F033A3
   font-size: 15px;
   font-style: normal;
   line-height: 23px;
+}
+
+.node-type-blog .field-name-body p a, .node-type-blog .field-name-body ul li a, .node-type-blog .field-name-body ol li a {
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .node-type-blog .field-name-body h2{
