@@ -106,7 +106,11 @@ global $base_url;
     <a id="main-content"></a>
     <div class="main" role="main">
       <?php print render($title_prefix); ?>
-      <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+      <?php if (isset($node) && $node->type == 'portafolio'): ?>
+        <?php if ($title): ?><h1 class="title" id="page-title">Caso de éxito <span><?php print $title; ?></span></h1><?php endif; ?>
+      <?php else: ?>
+        <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+      <?php endif; ?>
       <?php print render($title_suffix); ?>
 
       <?php if ($tabs): ?>
