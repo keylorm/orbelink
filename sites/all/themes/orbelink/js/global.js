@@ -918,20 +918,60 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	
 		if (jQuery(this).hasClass("portfolio-tag-todo")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"block"});
 			}); 
 			
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 
 		}else if (jQuery(this).hasClass("portfolio-tag-estrategia")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-73").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-73").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-publicidad-digital")){
+
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes-sociales")){
+
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-97").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-seo")){
+
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-98").css({"display":"block"});
+			}); 
+			jQuery(".view .view-content").fadeIn(400,"linear");
+
+
+			
+		}else if (jQuery(this).hasClass("portfolio-tag-deseno-movil")){
+
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-99").css({"display":"block"});
 			}); 
 			jQuery(".view .view-content").fadeIn(400,"linear");
 
@@ -939,47 +979,47 @@ document.getElementById("reporte_grafico").innerHTML = '\
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-publicidad")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-74").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-74").css({"display":"block"});
 			}); 
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-analitica")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-75").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-75").css({"display":"block"});
 			}); 
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-digital")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-76").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
 			}); 
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-contenidos")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-77").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-77").css({"display":"block"});
 			}); 
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes")){
 
-			jQuery(".view .view-content").fadeOut(400,"linear",function(){
-				jQuery(".view .view-content .views-row").css({"display":"none"});
-				jQuery(".view .view-content .views-row.categoria-78").css({"display":"block"});
+			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
+				jQuery(".view.view-portafolio .view-content .views-row.categoria-78").css({"display":"block"});
 			}); 
-			jQuery(".view .view-content").fadeIn(400,"linear");
+			jQuery(".view.view-portafolio .view-content").fadeIn(400,"linear");
 
 			
 		}

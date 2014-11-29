@@ -1546,6 +1546,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-node-38 .main-content .main .content .field-name-body .text-descri-nuestro-trabajo p a{
   cursor: pointer;
+  margin-right: 15px;
 }
 
 .page-node-38 .view-display-id-block_resumen_portafolio_grande .view-content .views-row{
