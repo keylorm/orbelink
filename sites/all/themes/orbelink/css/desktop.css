@@ -7,7 +7,7 @@
 	}
 
 	#block-system-main-menu ul.menu li {
-		padding: 0 42px;
+		padding: 0 44px;
 	}
 
 	.container-nivel2{
@@ -21,8 +21,8 @@
 	}
 
 	.menu-desplegable{
-	  height: 240px;
-	  top: -240px;   
+	  height: 270px;
+	  top: -270px;   
 	}
 
 	#block-system-main-menu ul.menu li.first {
@@ -730,6 +730,16 @@ form#formulario-calc h2{
   margin: 0 auto;
 }
 
+#block-system-main-menu ul.menu li.expanded.active-trail ul.menu {
+	display: block;
+}
+
+#block-system-main-menu ul.menu li.expanded.active-trail{
+  background-image: url(../images/bg-menu-selected.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-color: transparent;
+   padding-bottom: 20px;
 }
 
 
