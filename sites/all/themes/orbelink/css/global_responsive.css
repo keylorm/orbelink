@@ -2219,6 +2219,11 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   overflow: hidden;
   clear: both;
 }
+
+#block-block-17 {
+  background-color: #E8442E;
+}
+
 #block-block-7{
   min-height: 280px;
 }
@@ -2230,7 +2235,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 
 #block-block-7 .content,
-#block-block-16 .content{
+#block-block-16 .content,
+#block-block-17 .content{
   width: 100%;
   margin: 0 auto;
   padding: 25px 10px;
@@ -2238,7 +2244,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 }
 
 #block-block-7 .content h2,
-#block-block-16 .content h2{
+#block-block-16 .content h2,
+#block-block-17 .content h2{
   color: #ffffff;
   font-family: "ProximaNova",sans-serif;
   font-size: 35px;
@@ -2248,8 +2255,13 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   margin-top: 13px;
 }
 
+#block-block-17 .content h2{
+  font-size: 40px;
+}
+
 #block-block-7 .content h2 span,
-#block-block-16 .content h2 span{
+#block-block-16 .content h2 span,
+#block-block-17 .content h2 span{
  color: #ffffff;
  font-family: "Baskerville",sans-serif;
  font-size: 48px;
@@ -2258,7 +2270,12 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  letter-spacing: -1px;
 }
 
-#block-block-7 .content p{
+#block-block-17 .content h2 span{
+  font-size: 56px;
+}
+
+#block-block-7 .content p,
+#block-block-17 .content p{
   color: #ffffff;
   font-family: "Roboto Slab",sans-serif;
   font-size: 20px;
@@ -2267,10 +2284,15 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   margin: 0 auto 42px;
 }
 
+#block-block-17 .content p{
+  font-size: 23px;
+}
+
 #loader {display: none;}
 
 #block-block-7 .content #enlace-ir-a-portafolio,
-#block-block-16 .content #enlace-ir-a-portafolio{
+#block-block-16 .content #enlace-ir-a-portafolio,
+#block-block-17 .content #enlace-ir-a-contacto{
   
   height: 58px;
   margin: 0 auto;
@@ -2282,16 +2304,19 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 220px;
 }
 
-#block-block-16 .content #enlace-ir-a-portafolio{
+#block-block-16 .content #enlace-ir-a-portafolio,
+#block-block-17 .content #enlace-ir-a-contacto{
 width: 280px;
 }
 
 #block-block-7 .content #enlace-ir-a-portafolio:hover,
-#block-block-16 .content #enlace-ir-a-portafolio:hover{
+#block-block-16 .content #enlace-ir-a-portafolio:hover,
+#block-block-17 .content #enlace-ir-a-contacto:hover{
   transform: translate(0px, -4px);
 }
 #block-block-7 .content #enlace-ir-a-portafolio a,
-#block-block-16 .content #enlace-ir-a-portafolio a{
+#block-block-16 .content #enlace-ir-a-portafolio a,
+#block-block-17 .content #enlace-ir-a-contacto a{
   display: block;
   color: #ffffff;
   font-family: "ProximaNova",sans-serif;
@@ -2302,7 +2327,8 @@ width: 280px;
 }
 
 #block-block-7 .content #enlace-ir-a-portafolio span,
-#block-block-16 .content #enlace-ir-a-portafolio span{
+#block-block-16 .content #enlace-ir-a-portafolio span,
+#block-block-17 .content #enlace-ir-a-contacto span{
   color: #ffffff;
   font-family: "Baskerville",sans-serif;
   font-size: 39px;
@@ -3653,15 +3679,17 @@ zoom: 0.9;
 #contenido-mascara {background-image: url('../images/barra-calculo-mascara.png'); background-repeat: no-repeat; width: 100%; height: 468px;}
 #contenedor-calculo-barra-fondo {height: 468px; width: 71%; margin-left: 5px; background-color: #00A69C; }
 #contenedor-calculo-barra {width: 100%; background-color: #E6E6E6;}
-.node-type-especialidad .flexslider {border: none; margin: 0; margin-top: -70px;}
-#block-views-especialidad-block-1 .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 60px; position: relative; z-index: 3; top: 54px; width: 320px; margin: 0 auto;}
-#block-views-especialidad-block-1 .attachment-before img {display: none;}
-#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {width: 320px; height: 60px; top: -153px; margin: 0 auto; text-align: center;}/*top:-120px*/
-.node-type-especialidad .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px;  height: 75px;}
-#block-views-especialidad-block-1 .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 22px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0; line-height: 22px; padding-top: 10px;}
-#block-views-especialidad-block-1 .attachment-after {display: none;}
-#block-views-especialidad-block-1 .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
-#block-views-especialidad-block-1 .attachment-after ul li.last {border: none;}
+
+.node-type-especialidad .flexslider, .node-type-portafolio .flexslider {border: none; margin: 0; margin-top: -70px;}
+#block-views-especialidad-block-1 .attachment-before, .view-display-id-bloque_banner_portafolio .attachment-before {background-image: url('../images/fondo-caption-banner.png'); height: 60px; position: relative; z-index: 3; top: 54px; width: 320px; margin: 0 auto;}
+#block-views-especialidad-block-1 .attachment-before img, .view-display-id-bloque_banner_portafolio .attachment-before img {display: none;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content, .view-display-id-bloque_banner_portafolio .attachment-before .view-especialidad .view-content {width: 320px; height: 60px; top: -153px; margin: 0 auto; text-align: center;}/*top:-120px*/
+.node-type-especialidad .flex-control-nav, .node-type-portafolio .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px;  height: 75px;}
+
+#block-views-especialidad-block-1 .attachment-before h1, .view-display-id-bloque_banner_portafolio .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 22px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0; line-height: 22px; padding-top: 10px;}
+#block-views-especialidad-block-1 .attachment-after, .view-display-id-bloque_banner_portafolio .attachment-after {display: none;}
+#block-views-especialidad-block-1 .attachment-after ul li, .view-display-id-bloque_banner_portafolio .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
+#block-views-especialidad-block-1 .attachment-after ul li.last, .view-display-id-bloque_banner_portafolio .attachment-after ul li.last {border: none;}
 /*#resultado-calc {display: none;}*/
 .last.sharethis {margin-left: 100px;}
 .st_sharethis_large .stLarge {background-image: url('../images/sharethis.png') !important; display: inline-block !important;
@@ -4201,4 +4229,188 @@ display: none;
 
 #block-system-main-menu ul.menu li.expanded.active-trail.menu-457  ul.menu li.menu-469  {
     margin-right: 45px;
+}
+
+
+ /* pagina detalle casos de exito */
+ .node-type-portafolio #page-title {
+  font-family: 'proximanova-regular', sans-serif;
+  font-size: 34px;
+  color: #1A1A1A;
+ }
+
+ .node-type-portafolio #page-title span{
+  font-family: 'Baskerville', sans-serif;
+  color: #E8442E;
+  font-size: 48.07px;
+  font-style: italic;
+ }
+
+ .node-type-portafolio .field-name-body p{
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  color: #4D4D4D;
+  text-align: center;
+ }
+
+.node-type-portafolio .field-name-field-descripcion-reto {
+  margin-bottom: 25px; 
+}
+
+.node-type-portafolio .field-name-field-descripcion-reto,
+.node-type-portafolio .field-name-field-descripcion-reto .contenido {
+  float: left;
+}
+
+ .node-type-portafolio .field-name-field-descripcion-reto .contenido p,
+ .node-type-portafolio .field-name-field-descripcion-resultados .contenido,
+ .node-type-portafolio .field-name-field-descripcion-resultados .contenido p{
+    font-family: 'proximanova-regular', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #4D4D4D;
+    text-align: center;
+    line-height: 23px;
+ }
+
+.node-type-portafolio .field-name-field-descripcion-resultados {
+  float: left;
+}
+
+ .node-type-portafolio .field-name-field-descripcion-reto h2,
+ .node-type-portafolio .field-name-encabezado-soluciones h2,
+ .node-type-portafolio .field-name-field-descripcion-resultados h2 {
+  font-family: 'Baskerville', sans-serif;
+  color: #4D4D4D;
+  font-size: 48.07px;
+  font-style: italic;
+  line-height: 45px;
+  margin: 10px  0 7px 0;
+  text-align: center;
+  background-image: url('../images/fondo-encabezado-reto.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+ }
+
+
+.node-type-portafolio .field-name-field-descripcion-resultados h2{
+  margin: 65px 0 35px 0;
+}
+
+.node-type-portafolio .field-name-field-descripcion-resultados {
+  margin-bottom: 45px;
+}
+
+
+ .node-type-portafolio .field-name-field-reto,
+ .node-type-portafolio .field-name-field-solucion {
+    padding-left: 38px;
+    background-image: url('../images/reto-icono.png');
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+ }
+
+.node-type-portafolio .field-name-field-reto,
+ .node-type-portafolio .field-name-field-reto p,
+ .node-type-portafolio  .field-name-field-solucion,
+ .node-type-portafolio  .field-name-field-solucion p,
+ .node-type-portafolio .field-name-field-resultado .field-name-field-detalle{
+   font-family: 'proximanova-regular', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #808080;
+ }
+
+ .node-type-portafolio .field-name-field-resultado .field-name-field-detalle{
+    padding: 0;
+    line-height: 21px;
+    margin-top: 15px;
+  }
+
+ .node-type-portafolio  .field-name-field-solucion,
+ .node-type-portafolio  .field-name-field-solucion p{
+  line-height: 21px;
+ }
+
+.node-type-portafolio .field-name-field-quote {
+  margin: 35px 0;
+  padding: 10px 20px;
+  background-color: #F2F2F2;
+  border-left: 1px solid #E8442E;
+  border-right: 1px solid #E8442E;
+  background-image: url('../images/quiote-cerrado.png');
+  background-repeat: no-repeat;
+  background-position: 97.7% 84%; 
+}
+
+.node-type-portafolio .field-name-field-quote, .node-type-portafolio .field-name-field-quote span, .node-type-portafolio .field-name-field-quote .contenido {
+  float: left; 
+}
+
+.node-type-portafolio .field-name-field-quote span {
+  padding: 15px 15px;
+      background-repeat: no-repeat;
+    background-position: 0  0;
+}
+
+
+
+ .node-type-portafolio .field-name-field-quote span.quote-abierto{
+    background-image: url('../images/quiote-abierto.png');
+
+ }
+
+ .node-type-portafolio .field-name-field-quote .contenido {
+  width: 93.4%;
+  text-align: center;
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.node-type-portafolio .flexslider {
+  width: 80%;
+  float: left;
+  margin: 55px 0 0 95px;
+}
+
+.node-type-portafolio .field-name-encabezado-soluciones {
+  float: left;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 55px;
+}
+
+.node-type-portafolio .field-name-field-solucion {
+  margin-bottom: 45px;
+}
+
+.node-type-portafolio #flexslider-2 {
+  margin-top: 0px;
+}
+
+.node-type-portafolio .group-resultados.field-group-fieldset {
+  text-align: center;
+  border:none;
+}
+
+.node-type-portafolio .field-name-field-resultado .field-name-field-porcentaje {
+  background-color: #F1F2F2;
+  color: #E8442E;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 400;
+  font-size: 39px;
+  padding: 25px 15px;
+}
+
+.node-type-portafolio .field-name-field-pie {
+   font-family: 'proximanova-regular', sans-serif;
+   font-size: 17px;
+   font-weight: 400;
+   color: #4D4D4D;
+   text-align: center;
+   margin-top: 55px;
+   margin-bottom: 55px;
+   line-height: 20px;
 }
