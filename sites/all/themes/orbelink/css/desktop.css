@@ -763,6 +763,9 @@ form#formulario-calc h2{
 	display: block;
 }
 
+#block-system-main-menu ul.menu{
+	position: relative;
+}
 #block-system-main-menu ul.menu li.expanded.active-trail{
   background-image: url(../images/bg-menu-selected.png);
   background-repeat: no-repeat;
