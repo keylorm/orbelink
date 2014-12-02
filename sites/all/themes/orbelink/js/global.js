@@ -475,6 +475,64 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	jQuery('.view-slider-home .flex-control-nav').css({'top':result});
 
 
+	/*Para efecto de anuncions -aplicacion de publicidad digital*/
+
+jQuery('a#link-facebook-ad-1').click(function() {
+
+
+	jQuery('#facebook-ad-1-mensaje').fadeOut(500,function(){
+		jQuery('#facebook-ad-1-anuncio').fadeIn(500);
+	});
+  	
+});
+
+jQuery('a#link-facebook-ad-2').click(function() {
+
+
+	jQuery('#facebook-ad-2-mensaje').fadeOut(500,function(){
+		jQuery('#facebook-ad-2-anuncio').fadeIn(500);
+	});
+  	
+});
+
+jQuery('a#link-google-ad-1').click(function() {
+
+
+	jQuery('#google-ad-1-mensaje').fadeOut(500,function(){
+		jQuery('#google-ad-1-anuncio').fadeIn(500);
+	});
+  	
+});
+
+jQuery('a#link-google-ad-2').click(function() {
+
+
+	jQuery('#google-ad-2-mensaje').fadeOut(500,function(){
+		jQuery('#google-ad-2-anuncio').fadeIn(500);
+	});
+  	
+});
+
+jQuery('a#link-google-ad-3').click(function() {
+
+
+	jQuery('#google-ad-3-mensaje').fadeOut(500,function(){
+		jQuery('#google-ad-3-anuncio').fadeIn(500);
+	});
+  	
+});
+
+jQuery('a#link-google-ad-4').click(function() {
+
+
+	jQuery('#google-ad-4-mensaje').fadeOut(500,function(){
+		jQuery('#google-ad-4-anuncio').fadeIn(500);
+	});
+  	
+});
+
+
+
 
 	/*Infinite scroll*/
 
