@@ -2197,6 +2197,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   font-style: italic;
   text-transform: lowercase;
   margin-top: 15px;
+  display: none;
 }
 
 .roll-over-porfolio-descri{
@@ -2205,8 +2206,10 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
  font-size: 18px;
  font-weight: 400;
  line-height: 20px;
- margin-bottom: 2px;
- margin-top: 8px;
+ /* cambiar cuando se decida mostrar la fecha */
+ margin-bottom: 30px;
+ margin-top: 25px;
+ /* ****** */
  min-height: 40px;
 }
 
@@ -4454,7 +4457,7 @@ display: none;
  }
 
  .page-trabaje-con-nosotros .redes-sociales {
-    text-align: right;
+    text-align: center;
  }
 
 .page-trabaje-con-nosotros .redes-sociales > span > span > span{
@@ -4534,6 +4537,10 @@ display: none;
   margin-top: 10px;
 }
 
+.view-display-id-block_trabaje_con_nosotros .field-name-body ul {
+  padding-left: 25px;
+}
+
 .view-display-id-block_trabaje_con_nosotros .field-name-body p,
 .view-display-id-block_trabaje_con_nosotros .field-name-body ul li{
     font-family: 'proximanova-regular', sans-serif;
@@ -4542,6 +4549,11 @@ display: none;
     color: #000;
     line-height: 22px;
 }
+
+.view-display-id-block_trabaje_con_nosotros .views-row-first h2 {
+    margin-top: 25px;
+ }
+
 
  .view-display-id-block_trabaje_con_nosotros .views-row {
     margin-bottom: -15px;
@@ -4588,3 +4600,10 @@ display: none;
  #enlace-aplicar span, #enlace-enviar-amigo span{
     font-size: 27px;
  } 
+
+
+ /* Ajustar el ancho de las columnas para responsividad */
+ .panel-2col-stacked .panel-col-last,
+ .panel-2col-stacked .panel-col-first {
+    width: 100%;
+ }

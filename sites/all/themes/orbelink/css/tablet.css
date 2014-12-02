@@ -813,5 +813,14 @@ form#formulario-calc h2{
 .app-redes-sociales-contenido h3 { font-size: 34px; ;}
 .app-redes-sociales-contenido h3 span { font-size: 56px;}
 
+ /* Ajustar el ancho de las columnas para responsividad */
+ .panel-2col-stacked .panel-col-last,
+ .panel-2col-stacked .panel-col-first {
+    width: 50%;
+ }
+
+ .page-trabaje-con-nosotros .redes-sociales {
+    text-align: right;
+ }
 
 }
