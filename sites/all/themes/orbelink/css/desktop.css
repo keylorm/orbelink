@@ -371,7 +371,8 @@
 
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 		 height: 204px;
 	}
@@ -385,14 +386,16 @@
  /* ajustar */
     .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 	  width: 341px;
 	  float: left;
 	}
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row 											.resumen-portafolio,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row .resumen-portafolio{
 	  width: 341px;
 	}
 	.hover-titulo {
@@ -484,7 +487,8 @@
 	background-image: url(../images/liston-blanco-sueno-especialidad.png);
 }
 
-.node-type-especialidad .flexslider .slides img {
+.node-type-especialidad .flexslider .slides img,
+.view-display-id-bloque_banner_portafolio .flexslider .slides img {
 	max-width: 1024px;
 	min-width: 1024px;
 	margin: auto;
@@ -492,18 +496,43 @@
 .page-blog .flexslider{
 	float:left;
 }
-.node-type-especialidad .flexslider {margin-top: -130px;}
-#block-views-especialidad-block-1 .attachment-before {
+.node-type-especialidad .flexslider, 
+.view-display-id-bloque_banner_portafolio .flexslider {
+	margin-top: -130px;
+}
+
+#block-views-especialidad-block-1 .attachment-before,
+.view-display-id-bloque_banner_portafolio .attachment-before {
 	height: 200px;
 	top: 263px;
 	width: 1024px;
 }
+
+.view-display-id-bloque_banner_portafolio .attachment-before {
+	height: 200px;
+	top: 243px;
+	width: 1024px;
+}
+
 #block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
 	width: 1024px;
 	top: -77px;
 }
-#block-views-especialidad-block-1 .attachment-after {display: block;}
+
+.view-display-id-bloque_banner_portafolio .attachment-before .view-especialidad .view-content {
+	width: 1024px;
+	top: -47px;
+}
+#bl
+
+#block-views-especialidad-block-1 .attachment-after,
+.view-display-id-bloque_banner_portafolio .attachment-after 
+{
+	display: block;
+}
+
 .node-type-especialidad .flex-control-nav {top: 395px !important;}
+.view-display-id-bloque_banner_portafolio .flex-control-nav {top: 360px !important;}
 
 
 /*Andrey 04-11-2014*/

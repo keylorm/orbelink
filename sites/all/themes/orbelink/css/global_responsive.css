@@ -2083,13 +2083,16 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content
 .view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
-.view-display-id-block_resumen_portafolio_grande .view-content{
+.view-display-id-block_resumen_portafolio_grande .view-content,
+.view-display-id-bloque_casos_exito_relacionados .view-content{
   width: 100%;
   margin: 0 auto;
 }
+
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 .view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 {
   float: none;
   width: 310px;
@@ -2101,12 +2104,17 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
 .view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row .resumen-portafolio,
-.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio,
+.view-display-id-bloque_casos_exito_relacionados .view-content .views-row .resumen-portafolio{
   position: relative;
   height: auto;
   width: 100%;
 }
 
+
+.view-display-id-bloque_casos_exito_relacionados {
+  min-height: 273px;
+}
 
 /* Funcionalidad principal para los tabs */
 .accordion-tabs-minimal a.tab-link {
@@ -3690,6 +3698,8 @@ zoom: 0.9;
 #block-views-especialidad-block-1 .attachment-after, .view-display-id-bloque_banner_portafolio .attachment-after {display: none;}
 #block-views-especialidad-block-1 .attachment-after ul li, .view-display-id-bloque_banner_portafolio .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
 #block-views-especialidad-block-1 .attachment-after ul li.last, .view-display-id-bloque_banner_portafolio .attachment-after ul li.last {border: none;}
+
+.view-display-id-bloque_banner_portafolio .attachment-before .views-field-title {display: none;}
 /*#resultado-calc {display: none;}*/
 .last.sharethis {margin-left: 100px;}
 .st_sharethis_large .stLarge {background-image: url('../images/sharethis.png') !important; display: inline-block !important;
@@ -4395,6 +4405,11 @@ display: none;
   border:none;
 }
 
+.node-type-portafolio .field-name-field-resultado  {
+  margin: 0 auto;
+  width: 193px;
+}
+
 .node-type-portafolio .field-name-field-resultado .field-name-field-porcentaje {
   background-color: #F1F2F2;
   color: #E8442E;
@@ -4414,3 +4429,162 @@ display: none;
    margin-bottom: 55px;
    line-height: 20px;
 }
+
+ /* Estilo de la pagina: Trabaje con nostros */
+ 
+.page-trabaje-con-nosotros .main-content{
+  margin-top: 80px;
+}
+
+ .page-trabaje-con-nosotros #page-title{
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: #E8442E;
+    margin-top: 35px;
+    margin-bottom: 15px;
+ }
+
+ .page-trabaje-con-nosotros .encabezado p{
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 21px;
+    font-weight: 300;
+    color: #4D4D4D;
+    text-align: center;
+ }
+
+ .page-trabaje-con-nosotros .redes-sociales {
+    text-align: right;
+ }
+
+.page-trabaje-con-nosotros .redes-sociales > span > span > span{
+  background-image: url('../images/iconos-redes-sociales.png') !important;
+  background-repeat: no-repeat;
+  height: 43px !important; 
+  width: 43px !important; 
+}
+
+ .page-trabaje-con-nosotros .redes-sociales .st_facebook_large .stLarge,
+ .page-trabaje-con-nosotros .redes-sociales .st_facebook_large .stLarge:hover {
+     background-position:  0 0;
+ }
+
+  .page-trabaje-con-nosotros .redes-sociales .st_twitter_large .stLarge,
+ .page-trabaje-con-nosotros .redes-sociales .st_twitter_large .stLarge:hover {
+     background-position:  -53px 0;
+ }
+
+  .page-trabaje-con-nosotros .redes-sociales .st_linkedin_large .stLarge,
+ .page-trabaje-con-nosotros .redes-sociales .st_linkedin_large .stLarge:hover {
+     background-position:  -107px 0;
+ }
+
+.trabaje-con-nosotros-nav {
+  padding-right: 45px;
+}
+
+ .trabaje-con-nosotros-nav h2{
+    font-family: 'proximanova-regular', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #00A69C;
+    border-bottom: 1px solid #00A69C;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+ }
+
+ .view-display-id-bloque_trabaje_con_nosotros_menu .views-row{
+    border-bottom: 1px solid #ddd;
+ }
+
+ .view-display-id-bloque_trabaje_con_nosotros_menu .views-row a {
+    font-family: 'proximanova-regular', sans-serif;
+    padding: 25px 0;
+    font-size: 17px;
+    color: #4D4D4D;
+    display: block;
+    padding-left: 0px;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+ }
+
+ .view-display-id-bloque_trabaje_con_nosotros_menu .views-row a:hover {
+    -webkit-transform: translate(15px, 0px);
+    -ms-transform: translate(15px, 0px);
+    -o-transform: translate(15px, 0px);
+    transform: translate(15px, 0px);
+    padding-left: 15px;
+ }
+
+ .view-display-id-block_trabaje_con_nosotros .field-name-title h2 {
+    font-family: 'Baskerville', sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 30px;
+    color: #414042;
+    margin-top: 43px;
+    margin-bottom: 20px;
+ }
+
+.view-display-id-block_trabaje_con_nosotros .field-name-enlace-aplicar-y-compartir {
+  float: left;
+  margin-top: 10px;
+}
+
+.view-display-id-block_trabaje_con_nosotros .field-name-body p,
+.view-display-id-block_trabaje_con_nosotros .field-name-body ul li{
+    font-family: 'proximanova-regular', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    line-height: 22px;
+}
+
+ .view-display-id-block_trabaje_con_nosotros .views-row {
+    margin-bottom: -15px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+ }
+
+ .view-display-id-block_trabaje_con_nosotros .views-row-last {
+    border: none;
+    margin-bottom: 75px;
+ }
+
+ #enlace-aplicar {
+  border: 1px solid #e8442e;
+   color: #E8442E;
+    padding: 7px 5px 9px 5px;
+    margin-right: 15px;
+    transition: all 0.2s ease 0s;
+    
+ }
+
+#enlace-enviar-amigo{
+    color: #999999;
+    border-bottom: 1px solid #999999;
+    transition: all 0.2s ease 0s;
+    margin-top: 8px;
+}
+
+
+#enlace-enviar-amigo:hover,
+#enlace-aplicar:hover{
+    transform: translate(0px, -4px);
+}
+
+ #enlace-aplicar, #enlace-enviar-amigo{
+    font-family: 'proximanova-regular', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -0.7px;
+    float: left;
+ }
+
+ #enlace-aplicar span, #enlace-enviar-amigo span{
+    font-size: 27px;
+ } 

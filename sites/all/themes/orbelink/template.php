@@ -160,6 +160,49 @@ function orbelink_preprocess_html(&$variables) {
   drupal_add_css(libraries_get_path('flexslider') . '/flexslider.css');
   drupal_add_css(libraries_get_path('twentytwenty-master') . '/css/twentytwenty.css');
 
+
+  $query = new EntityFieldQuery();
+  $titulos_puestos = "";
+
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'trabaje_con_nosotros')
+    ->propertyCondition('status', NODE_PUBLISHED);
+
+  $result = $query->execute();
+
+  if (isset($result['node'])) {
+    $news_items_nids = array_keys($result['node']);
+    $puestos = entity_load('node', $news_items_nids);
+
+    $numItems = count($puestos);
+    $i = 0;
+
+    foreach ($puestos as $key => $value) {
+      ++$i;
+      if($i == $numItems) {
+        $titulos_puestos .= " y ".$value->title;
+      } elseif($i == ($numItems-1)) {
+        $titulos_puestos .= $value->title;
+      } else {
+        $titulos_puestos .= $value->title . ", ";
+      }
+    }
+  }
+
+    //
+
+  if(arg(0) == "trabaje-con-nosotros"){
+    $page_keywords = array(
+                         '#type' => 'html_tag',
+                         '#tag' => 'meta',
+                         '#attributes' => array(
+                          'property' => 'og:description',
+                          'content' => 'Orbelink esta ofreciendo los siguientes puestos: ' . $titulos_puestos,
+                          )
+                      );
+       drupal_add_html_head($page_keywords, 'page_keywords'); 
+     }
+
 }
 
 /**
@@ -222,7 +265,15 @@ function orbelink_preprocess_page(&$variables) {
     $term = taxonomy_term_load(arg(2));
     $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-  
+
+}
+
+function orbelink_preprocess_field(&$variables){
+  if($variables['element']['#bundle'] == "trabaje_con_nosotros" && $variables['element']['#title'] == "Nombre"){
+    $titulo_clase = str_replace(" ","-",strtolower(strip_tags($variables['items'][0]['#markup'])));
+    $titulo = "<h2 id=\"".$titulo_clase."\">Necesitamos un ".strip_tags($variables['items'][0]['#markup'])." </h2>";
+    $variables['items'][0]['#markup'] = $titulo;
+  }
 }
 
 function orbelink_form_webform_client_form_alter(&$form, $form_state, $form_id) {

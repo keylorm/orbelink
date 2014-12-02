@@ -230,21 +230,24 @@
 	}
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content,
-	.view-display-id-block_resumen_portafolio_grande .view-content
+	.view-display-id-block_resumen_portafolio_grande .view-content,
+	.view-display-id-bloque_casos_exito_relacionados .view-content
 	{
 	  width: 450px;
 	  margin: 0 auto;
 	}
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 	  width: 423px;
 	  float: left;
 	}
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
-	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row 											.resumen-portafolio,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,										.resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row .resumen-portafolio{
 	  width: 423px;
 	}
 	.hover-titulo {
@@ -373,22 +376,38 @@
 
 /***** AJUSTE A BANNER PRICIPALES ******/
 
-.node-type-especialidad .flexslider .slides img {
+.node-type-especialidad .flexslider .slides img,
+.view-display-id-bloque_banner_portafolio .flexslider .slides img {
 	max-width: 768px;
 	min-width: 768px;
 	margin: auto;
 }
 
-.node-type-especialidad .flexslider {margin-top: -55px;}
-#block-views-especialidad-block-1 .attachment-before {
+.node-type-especialidad .flexslider, .view-display-id-bloque_banner_portafolio .flexslider {margin-top: -55px;}
+.view-display-id-bloque_banner_portafolio .flexslider {
+	margin: 0;
+	width: 100%;
+}
+
+#block-views-especialidad-block-1 .attachment-before{
 	height: 125px;
 	position: relative;
 	top: 240px;
 	z-index: 3;
 	width: 768px;
 }
-#block-views-especialidad-block-1 .attachment-before img {display: block; width: 15%; margin: 0 auto;}
-#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
+
+.view-display-id-bloque_banner_portafolio .attachment-before {
+	height: 125px;
+	position: relative;
+	top: 280px;
+	z-index: 3;
+	width: 768px;
+}
+
+#block-views-especialidad-block-1 .attachment-before img, .view-display-id-bloque_banner_portafolio .attachment-before img {display: block; width: 15%; margin: 0 auto;}
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content,
+.view-display-id-bloque_banner_portafolio .attachment-before .view-especialidad .view-content {
 	width: 600px;
 	height: 167px;
 	position: relative;
@@ -396,7 +415,8 @@
 	margin: 0 auto;
 	text-align: center;
 }
-#block-views-especialidad-block-1 .attachment-before h1 {font-size: 35px; padding: 0px; line-height: 31px;}
+#block-views-especialidad-block-1 .attachment-before h1,
+.view-display-id-bloque_banner_portafolio .attachment-before h1 {font-size: 35px; padding: 0px; line-height: 31px;}
 
  /*Andrey 04-11-2014*/
 

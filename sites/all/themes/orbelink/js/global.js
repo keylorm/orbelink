@@ -22,10 +22,25 @@ jQuery(document).ready(function(){
 	if(sidebar.length>0){ 
 		//sidebar.css({'height':main.height()+"px"});
 	}
-	
-	
-	
 
+	jQuery('.view-bloque-trabaje-con-nosotros .views-field-php a[href*=#]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    if(target != ''){
+		    arget = jQuery(target);
+
+		    jQuery('html, body').stop().animate({
+		        'scrollTop': arget.offset().top - 100
+		    }, 900, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		}else{
+			return true;
+		}
+	});	
+	
+	
 	//configurar la libreria twentytwenty para la aplicacion de la seccion de analitica y usabilidad
 	jQuery(".app-redes-sociales-contenido ul.accordion-tabs-minimal li#facebook").css("background-image","url('/sites/all/themes/orbelink/images/facebook-active-tab.png')");
 
@@ -588,6 +603,31 @@ document.getElementById("reporte_grafico").innerHTML = '\
 
 	/*Hacer Efecto Roll Over en portfolio del home */
 	var cuadros_portfolio=0;
+	jQuery('.view-display-id-bloque_casos_exito_relacionados .views-row').each(function(indice, elemento) {
+		cuadros_portfolio=cuadros_portfolio+1;
+		jQuery(this).attr('id','views-row-portfolio-'+cuadros_portfolio);
+
+
+		var id= jQuery(this).attr('id');
+		jQuery('#'+id+' .resumen-portafolio').hover(
+
+
+		function() {
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "0"}, 600,function() {});
+
+
+		},function() {
+
+			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
+			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "273"}, 600,function() {});
+
+		});
+
+	});
+
+	/*Hacer Efecto Roll Over en portfolio del home */
+	var cuadros_portfolio=0;
 	jQuery('.view-display-id-block_resumen_portafolio_pequeno .views-row').each(function(indice, elemento) {
 		cuadros_portfolio=cuadros_portfolio+1;
 		jQuery(this).attr('id','views-row-portfolio-'+cuadros_portfolio);
@@ -1045,12 +1085,25 @@ document.getElementById("reporte_grafico").innerHTML = '\
 /*evento Scroll para formulario*/
 
 
+//contar el numero de elementos
+var count = jQuery(".field-name-field-solucion").length;
+if (count == 1){
+	jQuery(".field-name-field-solucion").css("width","100%");
+}
 
-
-
-
+var count_reto = jQuery(".field-name-field-reto").length;
+if (count_reto == 1){
+	jQuery(".field-name-field-reto").css("width","100%");
+}
 	
-		
+
+var cantidad_resultados = jQuery(".group-resultados .fieldset-wrapper").children().length;	
+if (cantidad_resultados <= 5){
+	jQuery(".group-resultados .fieldset-wrapper").css({
+		"width":cantidad_resultados*193+"px",
+		"margin":"0 auto"
+	});
+}
 
 	
 });

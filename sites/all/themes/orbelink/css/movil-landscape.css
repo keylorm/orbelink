@@ -58,8 +58,9 @@
 	/**** Andrey Solís :: 30-10-2014 ******/
 	
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
+	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 		 height: 264px;
 		width: 408px;

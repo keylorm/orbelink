@@ -20,14 +20,16 @@
 
 	 .page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 	  width: 423px;
 	  float: left;
 	}
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
-	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row 											.resumen-portafolio,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio{
+	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,											.resumen-portafolio,
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row .resumen-portafolio{
 	  width: 423px;
 	}
 	.hover-titulo {
@@ -42,7 +44,8 @@
 
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,
-	.view-display-id-block_resumen_portafolio_grande .view-content .views-row
+	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
+	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
 		 height: 272px;
 	}
@@ -109,26 +112,48 @@
 		width: 1280px;
 	}
 
-.node-type-especialidad .flexslider .slides img {
+.node-type-especialidad .flexslider .slides img,
+	.view-display-id-bloque_banner_portafolio .flexslider .slides img {
 	max-width: 1428px;
 	min-width: 1428px;
 }
 
-.node-type-especialidad .flexslider {margin-top: -194px;}
+.node-type-especialidad .flexslider, .view-display-id-bloque_banner_portafolio .flexslider {margin-top: -194px; width: 100%; margin-left: 0px; margin-right: 0px; margin-bottom: 25px; float: left;}
+
 #block-views-especialidad-block-1 .attachment-before {
 	height: 265px;
 	top: 355px;
 	width: 100%;
 }
 
-#block-views-especialidad-block-1 .attachment-before img {width: 20%;}
+.view-display-id-bloque_banner_portafolio .attachment-before {
+	height: 265px;
+	top: 327px;
+	width: 100%;
+}
 
-#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content {
+#block-views-especialidad-block-1 .attachment-before img,
+.view-display-id-bloque_banner_portafolio .attachment-before img{
+	width: 20%;
+}
+
+#block-views-especialidad-block-1 .attachment-before .view-especialidad .view-content{
 	width: 1024px;
 	top: -100px;
 }
 
-.node-type-especialidad .flex-control-nav {top: 545px !important;}
+.view-display-id-bloque_banner_portafolio .attachment-before .view-especialidad .view-content{
+	width: 1024px;
+	top: -58px;
+}
+
+.node-type-especialidad .flex-control-nav {
+	top: 545px !important;
+}
+
+.view-display-id-bloque_banner_portafolio .flex-control-nav {
+	top: 510px !important;
+}
 
 .titulo_detalle_blog {
   padding-left: 17px;
