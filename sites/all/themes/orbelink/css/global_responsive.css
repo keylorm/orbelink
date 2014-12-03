@@ -4784,11 +4784,15 @@ display: none;
     padding-bottom: 5px;
  }
 
- .view-display-id-bloque_trabaje_con_nosotros_menu .views-row{
+ .view-display-id-block_trabaje_con_nosotros_menu .views-row{
     border-bottom: 1px solid #ddd;
  }
 
- .view-display-id-bloque_trabaje_con_nosotros_menu .views-row a {
+.view-display-id-block_trabaje_con_nosotros_menu h3 {
+  margin: 0;
+}
+
+ .view-display-id-block_trabaje_con_nosotros_menu .views-row a {
     font-family: 'proximanova-regular', sans-serif;
     padding: 25px 0;
     font-size: 17px;
@@ -4800,7 +4804,7 @@ display: none;
     transition: all 500ms ease;
  }
 
- .view-display-id-bloque_trabaje_con_nosotros_menu .views-row a:hover {
+ .view-display-id-block_trabaje_con_nosotros_menu .views-row a:hover {
     -webkit-transform: translate(15px, 0px);
     -ms-transform: translate(15px, 0px);
     -o-transform: translate(15px, 0px);
