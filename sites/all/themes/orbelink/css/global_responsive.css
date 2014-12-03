@@ -2133,6 +2133,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   width: 100%;
   background-image: url(../images/bg-boton-slider.png);
   background-repeat: repeat;
+  display: none;
 }
 
 
@@ -3698,7 +3699,7 @@ zoom: 0.9;
 .node-type-especialidad .flex-control-nav, .node-type-portafolio .flex-control-nav {z-index: 4; top: 560px !important; padding-left: 15px;  height: 75px;}
 
 #block-views-especialidad-block-1 .attachment-before h1, .view-display-id-bloque_banner_portafolio .attachment-before h1 {margin: 0; font-family: 'ProximaNova', sans-serif; font-size: 22px; color: #fff; font-style: normal; text-transform: uppercase; margin: 10px 0; line-height: 22px; padding-top: 10px;}
-#block-views-especialidad-block-1 .attachment-after, .view-display-id-bloque_banner_portafolio .attachment-after {display: none;}
+#block-views-especialidad-block-1 .attachment-after, .view-display-id-bloque_banner_portafolio .attachment-after {/*display: none;*/}
 #block-views-especialidad-block-1 .attachment-after ul li, .view-display-id-bloque_banner_portafolio .attachment-after ul li { border-right: 1px solid #fff; line-height: 17px; color: #fff; font-family: 'proximanova-regular', sans-serif; font-weight: 400; font-size: 19px; margin: 0 10px 0 0; padding: 0 10px 0 0; cursor: pointer;}
 #block-views-especialidad-block-1 .attachment-after ul li.last, .view-display-id-bloque_banner_portafolio .attachment-after ul li.last {border: none;}
 
