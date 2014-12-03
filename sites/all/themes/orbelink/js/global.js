@@ -1,8 +1,6 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
-	
-	
 	var IE = '';
 	if(jQuery.browser.msie == true){
 		if(jQuery.browser.version == '8.0' || jQuery.browser.version == '7.0'){
@@ -1163,6 +1161,13 @@ if (cantidad_resultados <= 5){
 	});
 }
 
+var cantidad_resultados = jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").children().length;	
+if (cantidad_resultados <= 3){
+	jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").css({
+		"width":cantidad_resultados*423+"px",
+		"margin":"0 auto"
+	});
+}
 	
 });
 
