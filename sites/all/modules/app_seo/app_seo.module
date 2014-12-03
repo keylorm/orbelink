@@ -100,7 +100,9 @@ function app_seo_block_view($block_key){
                                     <input type="submit" id="consulta-calc" value="">
                                 </div>
                             </form></div></div>
-		
+		<div class="app-redes-sociales-contenido">
+                                    <p id="primer-parrafo" class="parrafo">El auge de los dispositivos móviles ha modificado las tendencias de diseño web, una de esas tendencias es el diseño responsivo, el cual se adapta a cualquier dispositivo. En el caso que su sitio no sea responsivo, puede correr el riesgo que sus potenciales clientes naveguen en los sitios de su competencia, ya que no pueden navegar desde sus celulares. </p>
+                                </div>
 							
 <div id="resultado-calc">
 	<div id="encabezado-calc"></div>
