@@ -172,12 +172,13 @@
 	  margin-right: 0px;
 	}
 
-	.page-inicio .view-display-id-block_islas_especialidad .views-row{
+	.page-inicio .view-display-id-block_islas_especialidad .views-row,
+	{
 		 min-height: 450px;
 	}
 
 	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
-		min-height: 370px;
+		min-height: 450px;
 	}
 
 	.page-inicio .view-display-id-block_islas_especialidad, .page-nuestros-servicios .view-id-especialidad.view-display-id-block_2{
@@ -190,7 +191,8 @@
 	
 }
 
-.page-nuestros-servicios .main-content{
+.page-nuestros-servicios .main-content,
+.page-node-48 .main-content{
 	margin-top: 80px;
 }
 
@@ -819,7 +821,7 @@ form#formulario-calc h2{
     width: 50%;
  }
 
- .page-trabaje-con-nosotros .redes-sociales {
+ .page-contactenos-trabaje-con-nosotros .redes-sociales {
     text-align: right;
  }
 

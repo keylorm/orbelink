@@ -35,7 +35,7 @@ function app_seo_block_view($block_key){
                                 </div>
                                 </div>
                                 <div class="app-redes-sociales-contenido">
-                                    <p id="primer-parrafo" class="parrafo">Al mejorar el posicionamiento de su empresa en buscadores le estará abriendo las puertas de su negocio al mundo, ya que el 92% de las personas no pasan a la segunda página de resultados de Google, y tan solo los tres primeros resultados de generan el 58% de los clics.<br /><br />
+                                    <p id="primer-parrafo" class="parrafo">Al mejorar el posicionamiento de su empresa en buscadores le estará abriendo las puertas de su negocio al mundo, ya que el 92% de las personas no pasan a la segunda página de resultados de Google, y tan solo los tres primeros resultados generan el 58% de los clics.<br /><br />
                                         Por lo tanto, si su página no está al menos en la primera página de Google ni en los primeros lugares, entonces es invisible para el mundo.
                                         </p>
                                 </div>
@@ -196,7 +196,7 @@ function buscar($aQue,$web)
             print "{\"estatus\":1,\"posicion\":".$posicion.",\"termino\":\"".$_POST['q']."\"}";
             $break = 1;
             break;
-        } elseif ($posicion == 30){
+        } elseif ($posicion == 20){
             print "{\"estatus\":0}";
             $break = 1;
             break;

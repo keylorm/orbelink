@@ -160,7 +160,6 @@ function orbelink_preprocess_html(&$variables) {
   drupal_add_css(libraries_get_path('flexslider') . '/flexslider.css');
   drupal_add_css(libraries_get_path('twentytwenty-master') . '/css/twentytwenty.css');
 
-
   $query = new EntityFieldQuery();
   $titulos_puestos = "";
 
@@ -191,7 +190,7 @@ function orbelink_preprocess_html(&$variables) {
 
     //
 
-  if(arg(0) == "trabaje-con-nosotros"){
+  if(arg(1) == "trabaje-con-nosotros"){
     $page_keywords = array(
                          '#type' => 'html_tag',
                          '#tag' => 'meta',
@@ -202,6 +201,11 @@ function orbelink_preprocess_html(&$variables) {
                       );
        drupal_add_html_head($page_keywords, 'page_keywords'); 
      }
+
+  if (arg(0) == "nuestro-trabajo") {
+    print("test");
+    drupal_add_js(drupal_get_path('theme','orbelink').'/js/casos-exito-rssfeed.js', array('group' => JS_THEME, 'every_page' => FALSE));
+  }
 
 }
 

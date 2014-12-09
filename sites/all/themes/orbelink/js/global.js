@@ -1,6 +1,70 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
+
+	//detectar la cantidad de elementos views-row tiene el contenedor del bloque: view-display-id-block_resumen_portafolio_grande
+
+	var cantidad_portafolio = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").children().length;
+	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
+		"height":(Math.ceil(cantidad_portafolio/3)*273)+"px",
+	});
+
+	//consumir un rss feed de los elementos casos de exito
+	jQuery(".view-display-id-block_resumen_portafolio_grande #views_infinite_scroll_button a").click(function(){
+		jQuery.ajax({
+		  url: "casos-exito-rss",
+		}).done(function(data) {
+		  total_elements = jQuery(data).find( "item" ).length;
+		  current_elements = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").children().length;
+		  show_elements = total_elements - current_elements;
+		  alto_actual = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css("height");
+		  alto_actual = parseInt(alto_actual.replace("px",""));
+		  
+		  if(show_elements <= 9 ){
+		  	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
+				"height":(Math.ceil((show_elements/3))*273)+alto_actual+"px",
+			});
+		  }else{
+		  	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
+				"height":819+alto_actual+"px",
+			});
+		  }
+
+		});
+	});
+
+	jQuery(document).ajaxStop(function() {
+        	jQuery('.resumen-portafolio').hover(
+
+				function() {
+
+					var div_roll = jQuery(this).find('.roll-over-portfolio');
+
+					//jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
+					jQuery(div_roll).animate({top: "0"}, 600,function() {});
+
+
+				},function() {
+
+					var div_roll = jQuery(this).find('.roll-over-portfolio');
+
+					//jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
+					jQuery(div_roll).animate({top: "273"}, 600,function() {});
+
+			});
+    });  
+
+
+	//agregar una clase cada tres elementos para eliminar el margen der y hacerlo compatible con IE
+	jQuery('#group-islas-especialidad-detalle .field-name-field-caracteristicas:nth-child(3n+3)').addClass('nth-child-3th');
+
+	if(jQuery("#block-system-main-menu ul.menu li.expanded.active-trail").children().length == 0){
+		jQuery(".menu-desplegable").css({
+			"background-image":"none",
+		});	
+	}
+
+
 	var IE = '';
 	if(jQuery.browser.msie == true){
 		if(jQuery.browser.version == '8.0' || jQuery.browser.version == '7.0'){
@@ -105,7 +169,7 @@ jQuery(document).ready(function(){
 
 				    if(obj.estatus == '0'){
 			
-						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 3 páginas de los resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
+						document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-error\"><img src=\"/sites/all/themes/orbelink/images/cara-triste.png\"/><p class='mensaje-principal'><span class='posicion-seo'>¡Lo sentimos!</span><br /><span class='pagina-seo'> Su sitio no ha sido encontrado en las primeras 2 páginas de los resultados de Google</span></p><p class='leyenda-italica'>Nosotros le ayudamos a llegar a una mejor posición.</p></div>"; 		    	
 				    } else {
 
 					   	if(obj.posicion <= 10 ){
@@ -707,29 +771,37 @@ jQuery('a#link-google-ad-4').click(function() {
 
 	});
 
-	var cuadros_portfolio_g=0;
+	/*var cuadros_portfolio_g=0;
 	jQuery('.view-display-id-block_resumen_portafolio_grande .views-row').each(function(indice, elemento) {
 		cuadros_portfolio_g=cuadros_portfolio_g+1;
 		jQuery(this).attr('id','views-row-portfolio-'+cuadros_portfolio_g);
 
 
 		var id= jQuery(this).attr('id');
-		jQuery('#'+id+' .resumen-portafolio').hover(
 
+
+	});*/
+
+		jQuery('.resumen-portafolio').hover(
+
+		
 
 		function() {
-			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
-			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "0"}, 600,function() {});
+
+			var div_roll = jQuery(this).find('.roll-over-portfolio');
+
+			//jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "-272"}, 600,function() {});
+			jQuery(div_roll).animate({top: "0"}, 600,function() {});
 
 
 		},function() {
 
-			jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
-			jQuery('#'+id+ ' .resumen-portafolio .roll-over-portfolio').animate({top: "273"}, 600,function() {});
+			var div_roll = jQuery(this).find('.roll-over-portfolio');
+
+			//jQuery('#'+id+ ' .resumen-portafolio .hover-titulo').animate({top: "0"}, 600,function() {});
+			jQuery(div_roll).animate({top: "273"}, 600,function() {});
 
 		});
-
-	});
 
 
 	/*Hacer Efecto Roll Over en portfolio del detalle de especialidades */
@@ -1167,6 +1239,24 @@ if (cantidad_resultados <= 3){
 		"width":cantidad_resultados*423+"px",
 		"margin":"0 auto"
 	});
+}
+
+var cantidad_parrafos = jQuery(".field-name-body .contenido").children().length;	
+if (cantidad_parrafos == 1){
+	jQuery(".field-name-body .contenido .parrafo").css({
+		"width":"100%"
+	});
+} else {
+	var ancho = "48%";
+	if(window.screen.width < 480){
+		ancho = "100%";
+	}
+
+	jQuery(".field-name-body .contenido .parrafo").css({
+			"width": ancho,
+			"float":"left"
+		});
+
 }
 	
 });
