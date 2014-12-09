@@ -5109,3 +5109,97 @@ line-height: 20px;
 .pie-resultado {
   margin: 40px 0 0;
 }
+
+
+.page-node-157 .main-content .main .content h2{
+  font-size: 37px;
+  font-family: 'Baskerville', sans-serif;
+  font-style: italic;  
+  width: 100%;
+  text-align: center;
+  clear: both;
+}
+
+.page-node-157 .main-content .main .content h2:before{
+  content: url(../images/line-h2-rsc.png);
+  margin-right: 15px;
+}
+.page-node-157 .main-content .main .content h2:after{
+  content: url(../images/line-h2-rsc.png);
+  margin-left: 15px;
+}
+
+.page-node-157 .main-content .main .content p{
+  font-family: 'ProximaNova', sans-serif;
+  text-align: center;
+}
+.page-node-157 .main-content .main .content .cul{
+  width: 70%;
+  margin: 0 auto;
+}
+.page-node-157 .main-content .main .content ul{
+  width:  50%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.page-node-157 .main-content .main .content ul li{
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../images/bullet-rsc.png);
+  background-position:  left center;
+  background-repeat: no-repeat;
+  padding-left:  30px;
+  margin-bottom:  15px;
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 17px;
+}
+
+
+.node-type-personal .main-content .main h2{
+  font-family: 'baskerville';
+  font-style: italic;
+  font-size: 44px;
+  color: #414042;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  line-height:  44px;
+}
+
+.node-type-personal .main-content .main .field-name-body p{
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 17px;
+  line-height: 20px; 
+  color: #4D4D4D;
+}
+
+.node-type-personal .main-content .main .field-name-field-puesto{
+  font-family: 'ProximaNova', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #E8442E;
+}
+
+.node-type-personal .main-content .main .field-name-field-linkedin a{
+  display: block;
+  width: 67px;
+  height: 66px;
+  background-image: url(../images/logo-linkedin-contacto.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.node-type-personal .main-content .main .field-name-field-linkedin a:hover{
+  -webkit-transform: translate(0px, -5px) rotate(10deg);
+  -ms-transform: translate(0px, -5px) rotate(10deg);
+  -o-transform: translate(0px, -5px) rotate(10deg);
+  transform: translate(0px, -5px) rotate(10deg); 
+}
+.node-type-personal .main-content .main .field-name-field-linkedin a:before{
+  content: '';
+  margin-left: -1000px;
+}
