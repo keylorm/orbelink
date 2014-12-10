@@ -287,3 +287,27 @@ function orbelink_form_webform_client_form_alter(&$form, $form_state, $form_id) 
   }
    
 }
+
+function orbelink_breadcrumb(&$variables){
+  if (count($variables['breadcrumb']) > 0) {
+     $lastitem = sizeof($variables['breadcrumb']);
+     $crumbs = '<div class="breadcrumb">';
+     $a=1;
+     foreach($variables['breadcrumb'] as $value) {
+         if ($a!=$lastitem){
+          $crumbs .= $value;
+          $crumbs .= '<span class="crumbs-separator"> '.$variables['crumbs_separator'].' </span>';
+          $a++;
+         }
+         else {
+          $current_page = html_entity_decode($value);
+             $crumbs .= '<span class="crumbs-current-page">'.$current_page.'</span>';
+         }
+     }
+     $crumbs .= '</div>';
+   return $crumbs;
+   }
+   else {
+     return t("Home");
+   }
+}

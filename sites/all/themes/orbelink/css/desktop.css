@@ -746,10 +746,18 @@ form#formulario-calc h2{
 	font-size: 35.69px; line-height: 27px;
 }
 
-.page-node-38 .main-content {
+.page-node-38 .main-content{
     max-width: 1280px;
     padding: 90px 0 0;
     width: 1280px;
+}
+
+.node-type-page .above-content {
+	padding: 90px 0 0;
+}
+
+.node-type-page .flexslider {
+	margin: 0px;
 }
 
 .page-node-38 h1#page-title {
@@ -785,5 +793,9 @@ form#formulario-calc h2{
    padding-bottom: 20px;
 }
 
+
+.node-type-personal .main-content{
+    padding: 90px 0 0;
+}
 
 }

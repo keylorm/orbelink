@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/orbelink/sites/all/libraries/ckeditor/';
