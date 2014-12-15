@@ -155,17 +155,17 @@
 	/**** Andrey Solís :: 30-10-2014 ******/
 	
 	.page-inicio .pane-1 .pane-content h2,
-	.page-nuestros-servicios .pane-1 .pane-content h2{
+	.page-servicios .pane-1 .pane-content h2{
 	 font-size: 33px;
 	 line-height: 31px;
 	}
 	.page-inicio .pane-1 .pane-content p,
-	.page-nuestros-servicios .pane-1 .pane-content p{
+	.page-servicios .pane-1 .pane-content p{
 	 font-size: 20px;
 	 line-height: 25px;
 	}
 	.page-inicio .view-display-id-block_islas_especialidad .views-row,
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
+	.page-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
 	  width: 50%;
 	  padding-left: 2%;
 	  padding-right: 2%;
@@ -177,21 +177,21 @@
 		 min-height: 450px;
 	}
 
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
+	.page-servicios .view-id-especialidad.view-display-id-block_2 .views-row{
 		min-height: 450px;
 	}
 
-	.page-inicio .view-display-id-block_islas_especialidad, .page-nuestros-servicios .view-id-especialidad.view-display-id-block_2{
+	.page-inicio .view-display-id-block_islas_especialidad, .page-servicios .view-id-especialidad.view-display-id-block_2{
 		 margin: 0 auto;
     width: 94%;
 	}
 
 
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-title h2{
+	.page-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-title h2{
 	
 }
 
-.page-nuestros-servicios .main-content,
+.page-servicios .main-content,
 .page-node-48 .main-content{
 	margin-top: 80px;
 }
@@ -759,7 +759,7 @@
 
 .page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home,
 .page-inicio .view-display-id-block_islas_especialidad .views-row .field-name-field-descripcion-home p,
-.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-view-node{
+.page-servicios .view-id-especialidad.view-display-id-block_2  .views-row .views-field-view-node{
  font-size: 18px;
  line-height: 22px;
 }
@@ -824,5 +824,11 @@ form#formulario-calc h2{
  .page-contactenos-trabaje-con-nosotros .redes-sociales {
     text-align: right;
  }
+
+.imagen-portafolio-wrap .field-name-field-imagen {
+	position: absolute;
+	top: 29%;
+	left: 34%;
+}
 
 }

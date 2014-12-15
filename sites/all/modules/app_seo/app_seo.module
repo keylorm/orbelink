@@ -94,14 +94,14 @@ function app_seo_block_view($block_key){
         //Define the block content.
         $block['content'] = '<div class="block-app-seo-wrapper">
 		<div id="block-app-seo-calc-application-inner"><form id="formulario-calc" action="/" method="post">
-        <h2>CALIFIQUE LA RESPONSIVIDAD DE SU SITIO</h2>
+        <h2>CALIFIQUE LA RESPONSIVIDAD DE SU SITIO WEB</h2>
                                 <div class="form-content">
                                     <input type="text" name="miweb" onkeypress="javascript:void();" id="miweb" placeholder="Escriba aquí la dirección de su sitio web"/>
                                     <input type="submit" id="consulta-calc" value="">
                                 </div>
                             </form></div></div>
 		<div class="app-redes-sociales-contenido">
-                                    <p id="primer-parrafo" class="parrafo">El auge de los dispositivos móviles ha modificado las tendencias de diseño web, una de esas tendencias es el diseño responsivo, el cual se adapta a cualquier dispositivo. En el caso que su sitio no sea responsivo, puede correr el riesgo que sus potenciales clientes naveguen en los sitios de su competencia, ya que no pueden navegar desde sus celulares. </p>
+                                    <p id="primer-parrafo" class="parrafo">La responsividad de un sitio web es su capacidad de adaptarse efectivamente a los diferentes dispositivos tecnológicos desde los cuales se puede acceder a internet: teléfono celular, computadora, tablet, etc. <br> Esto es fundamental para que el usuario navegue adecuadamente, permanezca mayor tiempo  y encuentre fácilmente la información que busca en una página web. </p>
                                 </div>
 							
 <div id="resultado-calc">

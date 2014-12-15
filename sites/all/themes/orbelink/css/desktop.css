@@ -24,7 +24,7 @@
 	  height: 270px;
 	  top: -270px;   
 	  overflow: hidden;
-	}
+	}	
 
 	#block-system-main-menu ul.menu li.first {
 	  padding-left: 0;
@@ -162,42 +162,42 @@
 	}
 	
 	.page-inicio .view-display-id-block_islas_especialidad,
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2{
+	.page-servicios .view-id-especialidad.view-display-id-block_2{
 	  width: 960px; 
 	}
 	.page-inicio .pane-1 .pane-content h2,
-	.page-nuestros-servicios .pane-1 .pane-content h2{
+	.page-servicios .pane-1 .pane-content h2{
 	 font-size: 33px;
 	 line-height: 45px;
 	}
 	.page-inicio .pane-1 .pane-content h2 span,
-	.page-nuestros-servicios .pane-1 .pane-content h2 span{
+	.page-servicios .pane-1 .pane-content h2 span{
 	 font-size: 47px;
 	}
 	.page-inicio .pane-1 .pane-content p,
-	.page-nuestros-servicios .pane-1 .pane-content p{
+	.page-servicios .pane-1 .pane-content p{
 	 font-size: 21px;
 	 line-height: 30px;
 	}			
 	
 	.page-inicio .view-display-id-block_islas_especialidad .views-row,
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row{
+	.page-servicios .view-id-especialidad.view-display-id-block_2  .views-row{
 	  width: 296px;
 	  margin-right: 36px;
 	  padding-left: 0px;
       padding-right: 0px;	  	 	  
 	}	
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2  .views-row{
+	.page-servicios .view-id-especialidad.view-display-id-block_2  .views-row{
 		min-height: 450px;
 	}
 
-	.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row .views-field-view-node a{
+	.page-servicios .view-id-especialidad.view-display-id-block_2 .views-row .views-field-view-node a{
   color:#00a69c;
   transition: all 0.2s ease 0s;
   display: block;
 }
 
-.page-nuestros-servicios .view-id-especialidad.view-display-id-block_2 .views-row .views-field-view-node a:hover{
+.page-servicios .view-id-especialidad.view-display-id-block_2 .views-row .views-field-view-node a:hover{
   transform: translate(0px, -2px);
 }
 	
@@ -319,7 +319,7 @@
 .roll-over-porfolio-title  a,
 .roll-over-porfolio-title  a:hover,
 .roll-over-porfolio-title  a:visited{
-  font-size: 13px;
+  font-size: 15px;
   width: 250px; 
 }
 .roll-over-porfolio-fecha{
@@ -382,12 +382,12 @@
 	.view-display-id-block_resumen_portafolio_grande .view-content .views-row,
 	.view-display-id-bloque_casos_exito_relacionados .view-content .views-row
 	{
-		 height: 204px;
+		 height: 220px;
 	}
 
 	.roll-over-portfolio{
 
-	  height: 204px;
+	  height: 220px;
 }
 
 
@@ -445,7 +445,7 @@
 	}
 
 	.roll-over-porfolio-descri {
-		font-size: 20px;
+		font-size: 17px;
 		line-height: 20px;
 	}
 
@@ -752,12 +752,9 @@ form#formulario-calc h2{
     width: 1280px;
 }
 
-.node-type-page .above-content {
-	padding: 90px 0 0;
-}
-
-.node-type-page .flexslider {
+.node-type-page .above-content .flexslider {
 	margin: 0px;
+	padding: 90px 0 0;
 }
 
 .page-node-38 h1#page-title {
@@ -796,6 +793,12 @@ form#formulario-calc h2{
 
 .node-type-personal .main-content{
     padding: 90px 0 0;
+}
+
+.imagen-portafolio-wrap .field-name-field-imagen {
+position: absolute;
+top: 24%;
+left: 30%;
 }
 
 }

@@ -158,7 +158,14 @@ jQuery(document).ready(function(){
 				alert("Debe Insertar una Palabra clave para hacer la búsqueda en Google y obtener el Resultado de su posición.");
 				return false;
 		}else{
-				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>Por favor, espere mientras consultamos ...</h2><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+				document.getElementById("resultado-seo").innerHTML = "<div id=\"resultado-espera\"><h2>¿Sabía qué...?</h2><div class=\"flexslider-seo\"><ul class=\"slides\"><li><p id=\"p1\">41% de los cibernautas que no encuentra lo que busca en la primera página de Google ¡no revisa la segunda!</p></li><li><p id=\"p2\">A diario, en Google se efectúan más de 3.500.000.000 búsquedas.</p></li><li><p id=\"p3\">El porcentaje de usuarios que hace clic en el primer resultado de las búsquedas de Google es del 62%.</p></li><li><p id=\"p4\">Para ubicar a un sitio en una buena posición, Google también toma en cuenta que este no haya copiado contenidos de otras páginas y que no tenga errores ortográficos.</p></li><li><p id=\"p5\">Google ha realizado, en los últimos tres años, más de 150 actualizaciones al algoritmo de su motor de búsquedas.</p></li></ul><img class='loader' src=\"/sites/all/themes/orbelink/images/loading.gif\"/></div>"; 
+
+				  jQuery('.flexslider-seo').flexslider({
+				    animation: "fade",
+				    animationSpeed: 600, 
+				    controlNav: false,
+				    directionNav: false,
+				  });
 
 				jQuery.post( "/consulta-seo", { miweb: var_miweb, bot: var_bot, idioma: var_idioma, q: var_q })
 				  .done(function( data ) {
@@ -272,18 +279,23 @@ jQuery(document).ready(function(){
 				var c = obj.TotalPorcentajeGrupal;
 				
 				var bg = '';
+				var msn = '';
 
 				if(c <= 100){
 					bg = "/sites/all/themes/orbelink/images/cara-feliz-diseno-web.png";
+					msn = "El sitio web ofrece óptimas condiciones para navegar  desde cualquier dispositivo móvil.";
 				}
 				if(c <= 75){
 					bg = "/sites/all/themes/orbelink/images/cara-dudosa-diseno-web.png";
+					msn = "El sitio web no reúne las condiciones óptimas para navegar  desde dispositivos móviles, tiene una lista importante de aspectos por mejorar.";
 				}				
 				if(c <= 50){
 					bg = "/sites/all/themes/orbelink/images/cara-panico-diseno-web.png";
+					msn = "El sitio web no facilita la  navegación desde dispositivos móviles.";
 				}				
 				if(c <= 25){
 					bg = "/sites/all/themes/orbelink/images/cara-triste-diseno-web.png";
+					msn = "El sitio web no es apto para navegar  desde dispositivos móviles.";
 				}											
 				//alert(c);
 				//inyectar codigo html para crear la barra vertical
@@ -293,6 +305,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
   <tr>\
     <td colspan="3">\
 		<img src="'+bg+'" />\
+		<p class="mensaje-respuesta">'+msn+'</p>\
 	</td>\
   </tr>\
   <tr>\
@@ -498,7 +511,7 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	      event.preventDefault();
 	    }
 
-	    	cambiarObjetivo();
+	    	//cambiarObjetivo();
 		
 		if(jQuery(this).attr('id') == 'branding'){
 			jQuery("#facebook").click();
@@ -1087,6 +1100,13 @@ jQuery('a#link-google-ad-4').click(function() {
 		if (jQuery(this).hasClass("portfolio-tag-todo")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				var cantidad_resultados = jQuery(".view.view-portafolio .view-content").children(".views-row").length;	
+				var height = (Math.ceil((cantidad_resultados/3))*273);
+
+					jQuery(".view.view-portafolio .view-content").css({
+						"height":height+"px"
+					});
+
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"block"});
 			}); 
@@ -1098,6 +1118,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-estrategia")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(73);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-73").css({"display":"block"});
 			}); 
@@ -1108,6 +1129,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-publicidad-digital")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(76);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
 			}); 
@@ -1118,6 +1140,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes-sociales")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(97);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-97").css({"display":"block"});
 			}); 
@@ -1128,6 +1151,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-seo")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(98);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-98").css({"display":"block"});
 			}); 
@@ -1135,9 +1159,9 @@ jQuery('a#link-google-ad-4').click(function() {
 
 
 			
-		}else if (jQuery(this).hasClass("portfolio-tag-deseno-movil")){
-
+		}else if (jQuery(this).hasClass("portfolio-deseno-movil")){
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(99);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-99").css({"display":"block"});
 			}); 
@@ -1148,6 +1172,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-publicidad")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(74);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-74").css({"display":"block"});
 			}); 
@@ -1157,6 +1182,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-analitica")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(75);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-75").css({"display":"block"});
 			}); 
@@ -1166,6 +1192,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-digital")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(76);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
 			}); 
@@ -1175,6 +1202,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-contenidos")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(77);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-77").css({"display":"block"});
 			}); 
@@ -1184,6 +1212,7 @@ jQuery('a#link-google-ad-4').click(function() {
 		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes")){
 
 			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+				calcularAltoCasosExito(78);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-78").css({"display":"block"});
 			}); 
@@ -1199,10 +1228,10 @@ jQuery('a#link-google-ad-4').click(function() {
 	
 	if (jQuery("#bloque-resultados-objetivo").length>0){
 		//poner como default el primer presupuesto y realizar el calculo de clics e impresiones
-		cambiarObjetivo();
+		//cambiarObjetivo();
 
 		jQuery("input[name='presupuesto']").change(function(){
-			cambiarObjetivo();		
+			//cambiarObjetivo();		
 		});
 
 		//realizamos el ajuste de calculo cuando el usuario cambia los tabs de branding y conversion
@@ -1354,3 +1383,16 @@ function popupflash970()
 { 
 	jQuery("#flash970").click();
 }
+
+function calcularAltoCasosExito(cod_categoria){
+	var cantidad_resultados = jQuery(".view.view-portafolio .view-content").children(".categoria-"+cod_categoria).length;	
+	var height = (Math.ceil((cantidad_resultados/3))*273);
+
+		jQuery(".view.view-portafolio .view-content").css({
+			"height":height+"px"
+		});
+}
+
+
+
+
