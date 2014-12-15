@@ -801,4 +801,9 @@ top: 24%;
 left: 30%;
 }
 
+.view-especialidad .flexslider .slides li {
+	max-height: 520px;
+	overflow: hidden;
+}
+
 }
