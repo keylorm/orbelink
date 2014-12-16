@@ -1,23 +1,15 @@
 jQuery.noConflict(); 
 jQuery(document).ready(function(){
 
+	ajustarAltoContenedorCasosExitoInicial();
+	// Listen for orientation changes
+	window.addEventListener("orientationchange", function() {
+	  // Announce the new orientation number
+	  ajustarAltoContenedorCasosExitoInicial();
+	  ajustarAnchoCasosExitoRelacionado();
+	}, false);
 
-	//detectar la cantidad de elementos views-row tiene el contenedor del bloque: view-display-id-block_resumen_portafolio_grande
 
-	var cantidad_portafolio = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").children().length;
-	
-	//la variable elementos varia dependiendo de si la resolucion del dispositivo supera los 427px de ancho, esto significa que se encuetra en un dispositivo movil, por lo tanto el alto se calcula diferente
-			var elementos = 3;
-			var alto_elemento = 273;
-
-			if(window.screen.width <= 480 ) {
-				elementos = 1;
-				var alto_elemento = 200;
-			}
-
-	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
-		"height":(Math.ceil(cantidad_portafolio/elementos)*alto_elemento)+"px",
-	});
 
 	//consumir un rss feed de los elementos casos de exito
 	jQuery(".view-display-id-block_resumen_portafolio_grande #views_infinite_scroll_button a").click(function(){
@@ -52,6 +44,7 @@ jQuery(document).ready(function(){
 		});
 	});
 
+	//detiene la accion de ajax para obtener el resto del contenido, despues prosigue agregando el efecto de scroll.
 	jQuery(document).ajaxStop(function() {
         	jQuery('.resumen-portafolio').hover(
 
@@ -1456,5 +1449,48 @@ function ajustarAnchoCasosExitoRelacionado(){
 				"margin":"0 auto"
 		});
 	}
+}
+
+function ajustarAltoContenedorCasosExitoInicial(){
+		//detectar la cantidad de elementos views-row tiene el contenedor del bloque: view-display-id-block_resumen_portafolio_grande
+
+	var cantidad_portafolio = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").children().length;
+	
+	//la variable elementos varia dependiendo de si la resolucion del dispositivo supera los 427px de ancho, esto significa que se encuetra en un dispositivo movil, por lo tanto el alto se calcula diferente
+			var elementos = 1;
+			var alto_elemento = 273;
+
+			if(window.screen.width <= 480 ) {
+				alto_elemento = 200;
+			} else if(window.screen.width <= 1024 ) {
+				alto_elemento = 273;
+			} else {
+				elementos = 3;
+			}
+
+	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
+		"height":(Math.ceil(cantidad_portafolio/elementos)*alto_elemento)+"px",
+	});
+}
+
+function updateOrientation(e) {
+/*switch (e.orientation)
+{   
+    case 0:
+        // Do your thing
+        break;
+
+    case -90:
+        // Do your thing
+        break;
+
+    case 90:
+        // Do your thing
+        break;
+
+    default:
+        break;
+    }*/
+    alert(e.orientation);
 }
 

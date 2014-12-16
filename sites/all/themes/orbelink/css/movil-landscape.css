@@ -232,4 +232,9 @@ margin: 0 0 9px 0;
 	line-height: 44px;
 }
 
+ 	.view-display-id-block_resumen_portafolio_grande .view-content .views-row {
+ 		height: 273px;
+ 		width: 423px;
+ 	}
+
 }
