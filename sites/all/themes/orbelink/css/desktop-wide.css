@@ -122,7 +122,7 @@
 
 #block-views-especialidad-block-1 .attachment-before {
 	height: 265px;
-	top: 355px;
+	top: 327px;
 	width: 100%;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .node-type-especialidad .flex-control-nav {
-	top: 545px !important;
+	top: 510px !important;
 }
 
 .view-display-id-bloque_banner_portafolio .flex-control-nav {
@@ -167,6 +167,121 @@
 	position: absolute;
 	top: 29%;
 	left: 34%;
+}
+
+.node-type-personal #block-views-c5d5133c5fb8e77f14adb2f41cab4493,
+.page-node-48 #block-views-c5d5133c5fb8e77f14adb2f41cab4493{
+	width: 1280px;
+}
+
+.page-node-48 .jcarousel-skin-default .jcarousel-prev-horizontal,
+.node-type-personal .jcarousel-skin-default .jcarousel-prev-horizontal{
+	top: -85px;
+}
+
+.page-node-48 .jcarousel-skin-default .jcarousel-next-horizontal,
+.node-type-personal .jcarousel-skin-default .jcarousel-next-horizontal{
+	top: -85px;
+}
+
+.page-node-48 .bienvenido,
+.page-node-48 #block-views-c5d5133c5fb8e77f14adb2f41cab4493 h2,
+.node-type-personal #block-views-c5d5133c5fb8e77f14adb2f41cab4493 h2,
+.page-node-48 #block-views-05b690739cf47115cc89f867c9ccdd24 h2,
+.node-type-personal #block-views-05b690739cf47115cc89f867c9ccdd24 h2{
+	font-size: 48px;
+}
+
+.rolloverpersonal .field-name-body p{
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.page-node-48 #block-block-5{
+	width: 1280px;
+	height: 1230px;
+	margin:auto;
+}
+
+.page-node-48 #bloque-1,
+.page-node-48 #bloque-1 .rollover_about{
+	width: 582px;
+	height: 455px;	
+}
+
+.page-node-48 #bloque-2,
+.page-node-48 #bloque-2 .rollover_about{
+	width: 698px;
+	height: 455px;	
+}
+
+.page-node-48 #bloque-3,
+.page-node-48 #bloque-3 .rollover_about{
+	width: 875px;
+	height: 455px;	
+}
+
+.page-node-48 #bloque-4,
+.page-node-48 #bloque-4 .rollover_about{
+	width: 405px;
+	height: 455px;	
+}
+
+.page-node-48 #bloque-4 .rollover_about img{ display:  block;}
+
+.page-node-48 .field-name-body h2,
+#bloque-3 .rollover_about p{
+font-size: 33px;
+line-height: 49px;
+}
+
+.page-node-48 .field-name-body  h2 span,
+#bloque-3 .rollover_about span{
+	font-size: 46px;
+}
+
+.page-node-48 #bloque-1 .rollover_about p {
+line-height: 24px;
+margin: 0 0 9px 0;
+}
+
+.page-node-48 .bloque .rollover_about p{
+	font-size: 21px;
+}
+
+.page-node-48 #bloque-4 .rollover_about p{
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 18px;
+}
+
+
+.page-node-48 .bloque h2{
+ font-size: 25px;
+margin-bottom: 30px;
+margin-top: 25px;
+} 
+
+.page-node-48 .caption{
+	top: 20%;
+}
+
+.page-node-48 #bloque-1 .caption {
+	top: 26%;
+}
+
+.page-node-48 .caption p{
+	font-size: 51px;
+	line-height: 54px;
+}
+
+
+.page-node-48 #bloque-3 .rollover_about{
+	padding-top: 100px;	
+}
+
+.page-node-48 .bloque .rollover_about span{
+	font-size: 49px;	
 }
 
 }

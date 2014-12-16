@@ -1255,20 +1255,21 @@ if (count_reto == 1){
 	
 
 var cantidad_resultados = jQuery(".group-resultados .fieldset-wrapper").children().length;	
-if (cantidad_resultados <= 5){
-	jQuery(".group-resultados .fieldset-wrapper").css({
-		"width":cantidad_resultados*193+"px",
-		"margin":"0 auto"
-	});
-}
+	if (cantidad_resultados <= 5){
+		if(window.screen.width < 768){
+			jQuery(".group-resultados .fieldset-wrapper").css({
+				"width":"100%",
+				"margin":"0 auto"
+			});
+		}else{
+			jQuery(".group-resultados .fieldset-wrapper").css({
+					"width":cantidad_resultados*193+"px",
+					"margin":"0 auto"
+			});
+		}
+	}
 
-var cantidad_resultados = jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").children().length;	
-if (cantidad_resultados <= 3){
-	jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").css({
-		"width":cantidad_resultados*423+"px",
-		"margin":"0 auto"
-	});
-}
+ajustarAnchoCasosExitoRelacionado();
 
 var cantidad_parrafos = jQuery(".field-name-body .contenido").children().length;	
 if (cantidad_parrafos == 1){
@@ -1394,5 +1395,29 @@ function calcularAltoCasosExito(cod_categoria){
 }
 
 
-
+function ajustarAnchoCasosExitoRelacionado(){
+	var cantidad_resultados = jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").children().length;	
+	var ancho = 0;
+	var ancho_ventana = window.screen.width;
+	if (cantidad_resultados <= 3){
+		if(ancho_ventana < 480){
+			ancho = 310;
+			cantidad_resultados = 1;
+		}else if (ancho_ventana < 768){
+			ancho = 423;
+			cantidad_resultados = 1;
+		}else if ((ancho_ventana >= 768) && (ancho_ventana <= 1024)){
+			ancho = 423;
+			cantidad_resultados = 1;
+		} else if ((ancho_ventana > 1024) && (ancho_ventana < 1280)){
+			ancho = 341;
+		}else{
+			ancho = 423;
+		}
+		jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").css({
+				"width":cantidad_resultados*ancho+"px",
+				"margin":"0 auto"
+		});
+	}
+}
 

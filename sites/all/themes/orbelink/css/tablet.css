@@ -321,6 +321,7 @@
 	 width: 47%;
 	 padding: 0;
 	 font-size: 20px;
+	 line-height: 32px;
 }
 
 .node-type-especialidad .node-especialidad .field-name-body h2{
@@ -830,5 +831,181 @@ form#formulario-calc h2{
 	top: 29%;
 	left: 34%;
 }
+
+/* Ajustar el ancho definido por medio del layout */
+.gu-1-2 {
+  width: 50%;
+}
+
+.node-type-portafolio .field-name-field-resultado {
+	width: 193px;
+}
+
+.node-type-portafolio .main .flexslider {
+  width: 80%;
+  float: left;
+  margin: 55px 0 0 95px;
+}
+
+.node-type-portafolio .field-name-body p{
+  font-size: 23px;
+  line-height: 35px;
+ }
+
+.node-type-portafolio .field-name-field-quote {
+  margin: 35px 0;
+  background-position: 97.7% 84%; 
+}
+
+#block-views-especialidad-block-1 .attachment-before, .view-display-id-bloque_banner_portafolio .attachment-before {
+	display: block;
+}
+
+.field-name-llamado-a-la-accion-cotice .field-item {
+  width: 31%;
+}
+
+
+.field-name-field-youtube-embed {
+  width: 67%;
+  margin: 0 auto 50px;
+}
+
+.field-name-field-youtube-embed iframe{
+  width: 100%;
+  height: 310px;
+}
+.page-node-157 .main-content .main .content ul{
+  width:  50%;
+}
+
+.page-node-157 .main-content .main .content h2:before{
+  content: url(../images/line-h2-rsc.png);
+}
+.page-node-157 .main-content .main .content h2:after{
+  content: url(../images/line-h2-rsc.png);
+}
+
+.page-node-157 .main-content .main .content h2{
+  font-size: 37px;
+  line-height: 42px;
+}
+
+#block-views-personal-block-1  h2{font-size: 38px;}
+
+.page-node-48 #block-views-personal-block-1,
+.node-type-personal #block-views-personal-block-1 {
+	display: block;
+}
+
+#block-views-05b690739cf47115cc89f867c9ccdd24 {
+	display: none;
+}
+
+.page-node-48 .bloque{
+	float:left;
+}
+
+.page-node-48 #bloque-1,
+.page-node-48 #bloque-1 .rollover_about{
+	width: 349px;
+	height: 273px;	
+}
+
+.page-node-48 #bloque-2,
+.page-node-48 #bloque-2 .rollover_about{
+	width: 418px;
+	height: 273px;
+}
+
+.page-node-48 #bloque-3,
+.page-node-48 #bloque-3 .rollover_about{
+	width: 524px;
+}
+
+.page-node-48 #bloque-4,
+.page-node-48 #bloque-4 .rollover_about{
+	width: 243px;
+}
+
+.page-node-48 #block-block-5 {
+	width: 768px;
+	height: 926px;
+}
+
+.page-node-48 #block-block-5 .bloque-izq, .page-node-48 #block-block-5 .bloque-der{
+  width: 48%;
+}
+
+
+.page-node-48 #block-block-5 .franja .bloque {
+  padding: 0 0 0 50px;
+}
+
+.page-node-48 .field-name-body h2,
+#bloque-3 .rollover_about p{
+	font-size: 34px;
+	line-height: 40px;
+}
+
+.page-node-48 #bloque-3 .rollover_about{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.page-node-48 #bloque-4 .rollover_about img{ display:  none;}
+
+.page-node-48 .field-name-body  h2 span,
+#bloque-3 .rollover_about span{
+	font-size: 47px;
+}
+
+
+.page-node-48 .field-name-body h2,
+#bloque-3 .rollover_about p{
+	font-size: 26px;
+	line-height: 35px;
+}
+
+.page-node-48 .field-name-body  h2 span,
+#bloque-3 .rollover_about span{
+	font-size: 31px;
+}
+
+.page-node-48 #bloque-1 .rollover_about p {
+line-height: 16px;
+margin: 0 0 9px 0;
+}
+
+.page-node-48 .bloque .rollover_about p{
+	font-size: 15px;
+}
+
+.page-node-48 #bloque-4 .rollover_about p{
+	font-size: 12px;
+line-height: 13px;
+margin-bottom: 13px;
+}
+
+.page-node-48 .bloque h2{
+  font-size: 17px;
+  margin-bottom: 8px;
+  margin-top: 14px;
+} 
+
+.page-node-48 .caption{
+	top: 20%;
+}
+
+.page-node-48 #bloque-1 .caption {
+	top: 21%;
+}
+
+.page-node-48 .caption p{
+	font-size: 35px;
+	line-height: 41px;
+}
+
 
 }
