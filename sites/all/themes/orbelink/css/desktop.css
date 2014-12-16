@@ -507,6 +507,8 @@
 .node-type-especialidad .flexslider, 
 .view-display-id-bloque_banner_portafolio .flexslider {
 	margin-top: -130px;
+	height: 373px;
+	overflow: hidden;
 }
 
 #block-views-especialidad-block-1 .attachment-before,

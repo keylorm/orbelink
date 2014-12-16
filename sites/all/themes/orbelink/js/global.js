@@ -5,8 +5,18 @@ jQuery(document).ready(function(){
 	//detectar la cantidad de elementos views-row tiene el contenedor del bloque: view-display-id-block_resumen_portafolio_grande
 
 	var cantidad_portafolio = jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").children().length;
+	
+	//la variable elementos varia dependiendo de si la resolucion del dispositivo supera los 427px de ancho, esto significa que se encuetra en un dispositivo movil, por lo tanto el alto se calcula diferente
+			var elementos = 3;
+			var alto_elemento = 273;
+
+			if(window.screen.width <= 480 ) {
+				elementos = 1;
+				var alto_elemento = 200;
+			}
+
 	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
-		"height":(Math.ceil(cantidad_portafolio/3)*273)+"px",
+		"height":(Math.ceil(cantidad_portafolio/elementos)*alto_elemento)+"px",
 	});
 
 	//consumir un rss feed de los elementos casos de exito
@@ -21,8 +31,17 @@ jQuery(document).ready(function(){
 		  alto_actual = parseInt(alto_actual.replace("px",""));
 		  
 		  if(show_elements <= 9 ){
+		  	//la variable elementos varia dependiendo de si la resolucion del dispositivo supera los 427px de ancho, esto significa que se encuetra en un dispositivo movil, por lo tanto el alto se calcula diferente
+			var elementos = 3;
+			var alto_elemento = 273;
+
+			if(window.screen.width <= 480 ) {
+				elementos = 1;
+				alto_elemento = 200;
+			}
+
 		  	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
-				"height":(Math.ceil((show_elements/3))*273)+alto_actual+"px",
+				"height":(Math.ceil((show_elements/elementos))*alto_elemento)+alto_actual+"px",
 			});
 		  }else{
 		  	jQuery(".view-display-id-block_resumen_portafolio_grande .view-content").css({
@@ -1096,10 +1115,19 @@ jQuery('a#link-google-ad-4').click(function() {
 	/* Código para mostrar u ocultar items en portfolio de Nuestro Trabajo por Tags - Keylor*/
 
 	jQuery(".tags-nuestro-trabajo .portfolio-tag").click(function() {
-	
+
+		if(window.screen.width <= 480){
+			arget = jQuery("#block-views-0d18fbb04b11503b59464ec311b3de5e");
+		    jQuery('html, body').stop().animate({
+		        'scrollTop': arget.offset().top + 50
+		    }, 900, 'swing', function () {
+		        window.location.hash = "#block-views-0d18fbb04b11503b59464ec311b3de5e";
+		    });
+		}
+
 		if (jQuery(this).hasClass("portfolio-tag-todo")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				var cantidad_resultados = jQuery(".view.view-portafolio .view-content").children(".views-row").length;	
 				var height = (Math.ceil((cantidad_resultados/3))*273);
 
@@ -1117,7 +1145,7 @@ jQuery('a#link-google-ad-4').click(function() {
 
 		}else if (jQuery(this).hasClass("portfolio-tag-estrategia")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(73);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-73").css({"display":"block"});
@@ -1128,7 +1156,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-publicidad-digital")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(76);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
@@ -1139,7 +1167,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes-sociales")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(97);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-97").css({"display":"block"});
@@ -1150,7 +1178,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-seo")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(98);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-98").css({"display":"block"});
@@ -1171,7 +1199,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-publicidad")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(74);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-74").css({"display":"block"});
@@ -1181,7 +1209,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-analitica")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(75);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-75").css({"display":"block"});
@@ -1191,7 +1219,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-digital")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(76);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-76").css({"display":"block"});
@@ -1201,7 +1229,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-produ-contenidos")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(77);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-77").css({"display":"block"});
@@ -1211,7 +1239,7 @@ jQuery('a#link-google-ad-4').click(function() {
 			
 		}else if (jQuery(this).hasClass("portfolio-tag-gestion-redes")){
 
-			jQuery(".view.view-portafolio .view-content").fadeOut(400,"linear",function(){
+			jQuery(".view.view-portafolio .view-content").fadeOut(600,"linear",function(){
 				calcularAltoCasosExito(78);
 				jQuery(".view.view-portafolio .view-content .views-row").css({"display":"none"});
 				jQuery(".view.view-portafolio .view-content .views-row.categoria-78").css({"display":"block"});
@@ -1387,7 +1415,16 @@ function popupflash970()
 
 function calcularAltoCasosExito(cod_categoria){
 	var cantidad_resultados = jQuery(".view.view-portafolio .view-content").children(".categoria-"+cod_categoria).length;	
-	var height = (Math.ceil((cantidad_resultados/3))*273);
+	//la variable elementos varia dependiendo de si la resolucion del dispositivo supera los 427px de ancho, esto significa que se encuetra en un dispositivo movil, por lo tanto el alto se calcula diferente
+	var elementos = 3;
+	var alto_elemento = 273;
+
+	if(window.screen.width <= 480 ) {
+		elementos = 1;
+		alto_elemento = 200;
+	}
+
+	var height = (Math.ceil((cantidad_resultados/elementos))*alto_elemento);
 
 		jQuery(".view.view-portafolio .view-content").css({
 			"height":height+"px"

@@ -246,6 +246,11 @@
 	  width: 423px;
 	  float: left;
 	}
+
+ 	.view-display-id-block_resumen_portafolio_grande .view-content .views-row {
+ 		height: 273px;
+ 	}
+
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno .view-content .views-row .resumen-portafolio,
 	.view-display-id-block_resumen_portafolio_pequeno_sin_encabezado .view-content .views-row,										.resumen-portafolio,
 	.view-display-id-block_resumen_portafolio_grande .view-content .views-row .resumen-portafolio,
@@ -993,6 +998,12 @@ margin-bottom: 13px;
   margin-bottom: 8px;
   margin-top: 14px;
 } 
+
+.node-type-especialidad .flexslider, 
+.view-display-id-bloque_banner_portafolio .flexslider {
+	height: 280px;
+	overflow: hidden;
+}
 
 .page-node-48 .caption{
 	top: 20%;

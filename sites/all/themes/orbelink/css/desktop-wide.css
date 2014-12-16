@@ -255,6 +255,11 @@ margin: 0 0 9px 0;
 	margin-bottom: 18px;
 }
 
+.node-type-especialidad .flexslider, 
+.view-display-id-bloque_banner_portafolio .flexslider {
+	height: 520px;
+}
+
 
 .page-node-48 .bloque h2{
  font-size: 25px;
