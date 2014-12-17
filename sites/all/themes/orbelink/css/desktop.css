@@ -289,7 +289,8 @@
 	.page-inicio .view-display-id-block_resumen_portafolio_pequeno #encabezado-nuestro-portafolio-pequeno p{
 	  line-height: 37px;
 	}
-	#block-block-7{
+	#block-block-7,
+	#block-block-20{
   min-height: 280px;
 }
 
@@ -320,7 +321,7 @@
 .roll-over-porfolio-title  a:hover,
 .roll-over-porfolio-title  a:visited{
   font-size: 15px;
-  width: 250px; 
+  width: 350px; 
 }
 .roll-over-porfolio-fecha{
   font-size: 30px;

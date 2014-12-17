@@ -201,19 +201,21 @@
 	#cintillo-10-years{
 	 padding-top: 75px;
 	}
-	#block-block-7{
+	#block-block-7, #block-block-20{
   min-height: 100px;
 }
 
 
 #block-block-7 .content h2,
-#block-block-16 .content h2{  
+#block-block-16 .content h2,
+#block-block-20 .content h2{  
   font-size: 38px;  
 }
 
 
 #block-block-7 .content h2 span,
-#block-block-16 .content h2 span{ 
+#block-block-16 .content h2 span,
+#block-block-20 .content h2 span{ 
  font-size: 56px;
 }
 

@@ -2136,7 +2136,7 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 .accordion-tabs-minimal a.tab-link {
   display: block;
 }
-.accordion-tabs-minimal .tab-content, .resultado {
+.accordion-tabs-minimal .tab-content{
   display: none;
 }
 
@@ -2240,7 +2240,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 
 #block-block-7,
-#block-block-16{
+#block-block-16,
+#block-block-20{
   background-color: #00A69C;
   
   width: 100%;
@@ -2252,7 +2253,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
   background-color: #E8442E;
 }
 
-#block-block-7{
+#block-block-7,
+#block-block-20{
   min-height: 280px;
 }
 
@@ -2265,7 +2267,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-7 .content,
 #block-block-16 .content,
 #block-block-17 .content,
-#block-block-19 .content{
+#block-block-19 .content,
+#block-block-20 .content{
   width: 100%;
   margin: 0 auto;
   padding: 25px 10px;
@@ -2275,7 +2278,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-7 .content h2,
 #block-block-16 .content h2,
 #block-block-17 .content h2,
-#block-block-19 .content h2{
+#block-block-19 .content h2,
+#block-block-20 .content h2{
   color: #ffffff;
   font-family: "ProximaNova",sans-serif;
   font-size: 35px;
@@ -2293,7 +2297,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-7 .content h2 span,
 #block-block-16 .content h2 span,
 #block-block-17 .content h2 span,
-#block-block-19 .content h2 span{
+#block-block-19 .content h2 span,
+#block-block-20 .content h2 span{
  color: #ffffff;
  font-family: "Baskerville",sans-serif;
  font-size: 48px;
@@ -2309,7 +2314,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #block-block-7 .content p,
 #block-block-17 .content p,
-#block-block-19 .content p{
+#block-block-19 .content p,
+#block-block-20 .content p{
   color: #ffffff;
   font-family: "Roboto Slab",sans-serif;
   font-size: 20px;
@@ -2328,7 +2334,8 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 #block-block-7 .content #enlace-ir-a-portafolio,
 #block-block-16 .content #enlace-ir-a-portafolio,
 #block-block-17 .content #enlace-ir-a-contacto,
-#block-block-19 .content #enlace-ir-a-contacto{
+#block-block-19 .content #enlace-ir-a-contacto,
+#block-block-20 .content #enlace-ir-a-contacto{
   
   height: 58px;
   margin: 0 auto;
@@ -2342,20 +2349,23 @@ h2#titulo-comentarios, .comment {float: left; width: 100%;}
 
 #block-block-16 .content #enlace-ir-a-portafolio,
 #block-block-17 .content #enlace-ir-a-contacto,
-#block-block-19 .content #enlace-ir-a-contacto{
+#block-block-19 .content #enlace-ir-a-contacto,
+#block-block-20 .content #enlace-ir-a-contacto{
 width: 280px;
 }
 
 #block-block-7 .content #enlace-ir-a-portafolio:hover,
 #block-block-16 .content #enlace-ir-a-portafolio:hover,
 #block-block-17 .content #enlace-ir-a-contacto:hover,
-#block-block-19 .content #enlace-ir-a-contacto:hover{
+#block-block-19 .content #enlace-ir-a-contacto:hover,
+#block-block-20 .content #enlace-ir-a-contacto:hover{
   transform: translate(0px, -4px);
 }
 #block-block-7 .content #enlace-ir-a-portafolio a,
 #block-block-16 .content #enlace-ir-a-portafolio a,
 #block-block-17 .content #enlace-ir-a-contacto a,
-#block-block-19 .content #enlace-ir-a-contacto a{
+#block-block-19 .content #enlace-ir-a-contacto a,
+#block-block-20 .content #enlace-ir-a-contacto a{
   display: block;
   color: #ffffff;
   font-family: "ProximaNova",sans-serif;
@@ -2368,7 +2378,8 @@ width: 280px;
 #block-block-7 .content #enlace-ir-a-portafolio span,
 #block-block-16 .content #enlace-ir-a-portafolio span,
 #block-block-17 .content #enlace-ir-a-contacto span,
-#block-block-19 .content #enlace-ir-a-contacto span{
+#block-block-19 .content #enlace-ir-a-contacto span,
+#block-block-20 .content #enlace-ir-a-contacto span{
   color: #ffffff;
   font-family: "Baskerville",sans-serif;
   font-size: 39px;
@@ -2683,7 +2694,7 @@ left: 27%;
 }
 
 #block-views-c6455c73bf843430ca10bae1eb2af77e{
-
+  clear: both;
 }
 
 #encabezado-calc ul li {list-style: none; display: inline;}
@@ -3883,12 +3894,35 @@ margin-bottom: -20px !important;}
 
 /* App publicidad */
 ul.accordion-tabs-minimal li.tab-header-and-content { float: left; /*min-width: 350px;*/ } 
-ul.accordion-tabs-minimal {width: 980px; padding-left: 0px; margin: 0 auto; height: 1200px; margin-top: 70px;}
+ul.accordion-tabs-minimal {width: 980px; padding-left: 0px; margin: 0 auto; margin-top: 70px;}
 ul.accordion-tabs-minimal .tab-content { position: absolute; width: 980px; text-align: center; margin-top: 50px;}
+
+/* Ajustar la posicion del los contenedores de los tabs */
+ul.accordion-tabs-minimal #google-adwords-content {left: -250px;}
+ul.accordion-tabs-minimal #facebook-ads-content {left: -488px;}
+ul.accordion-tabs-minimal #mobile-content {left: -741px;}
+
+ul.accordion-tabs-minimal .tab-content { position: absolute; width: 980px; text-align: center; margin-top: 50px;}
+#block-block-8 ul.accordion-tabs-minimal {height: 2000px;}
+
+.mensaje-ad.conversion::after {
+  background-color: red;
+border-color: rgb(255, 255, 255) rgb(255, 255, 255) rgb(255, 255, 255) rgb(0, 166, 156);
+border-style: solid;
+border-width: 19px;
+border-left-width: 20px;
+content: ' ';
+height: 38px;
+left: 180px;
+position: absolute;
+width: 32px;
+top: 55px;
+}
+
 #conversion-opciones {border: none; background-color: #E6E7E8; padding: 21px 43px; font-family: 'ProximaNova' !important; font-size: 19px !important; text-transform: uppercase;}
 div#busqueda-resultado { margin-top: 45px; }
 ul.accordion-tabs-minimal a {height: 62px;
-    padding: 2px 9px 10px;
+    padding: 7% 2%;
     text-align: center;
     width: 230px;
     border: 1px solid #bbb;}
@@ -3903,6 +3937,7 @@ ul.accordion-tabs-minimal a h2, ul.accordion-tabs-minimal a h3, ul.accordion-tab
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
+    width: 100%;
 	}
 .page-node-78 ul.accordion-tabs-minimal a p {
 	font-family: 'Baskerville', sans-serif;
@@ -3921,7 +3956,7 @@ ul.accordion-tabs-minimal a.is-active:after {
     border-right: 19px solid #fff;
     border-style: solid;
     border-width: 20px 19px 0;
-    bottom: -29px;
+    top: 62px;
     content: " ";
     height: 30px;
     left: 25px;
@@ -4632,27 +4667,27 @@ display: none;
   width: 965px;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top left;
   position: relative;
 }
 
 .facebook-contenedor{
-   background-image: url("../images/aplicaciones/publicidad/branding-facebook.jpg");
-    height: 828px;
+   background-image: url("../images/facebook-ads.jpg");
+    height: 828px;    
 }
 
 .contenedor-publicidad-digital .facebook-ad-1 {
     position: absolute;
-    right: 47px;
-    top: 548px;
-    width: 256px;
-    height: 243px;
-    overflow: hidden;
+right: 32px;
+top: 270px;
+width: 246px;
+height: 132px;
+overflow: hidden;
 }
 
 #facebook-ad-1-mensaje{
     height: 243px;
-   
+    padding: 5px 10px;
     width: 250px;
     z-index: -1;
     
@@ -4678,7 +4713,7 @@ display: none;
    font-size: 10px;
    font-weight: 400;
    color: #ffffff;
-   line-height: 12px;
+   line-height: 15px;
 }
 
 .mensaje-ad p a{
@@ -4687,6 +4722,7 @@ display: none;
   font-size: 18px;
   font-style: italic;
   line-height: 20px;
+  border: none;
   cursor: pointer;
 }
 
@@ -4701,34 +4737,47 @@ display: none;
     display: none;
 }
 
+#facebook-ad-1-mensaje.mensaje-ad p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 13px;
+}
+
 #facebook-ad-1-mensaje.mensaje-ad h3{
-   margin-top: 34px;
+   margin-top: 10px;
+line-height: 17px;
+font-size: 13px;
+margin-bottom: 5px;
 }
 
 .contenedor-publicidad-digital .facebook-ad-2 {
-     height: 526px;
-    left: 211px;
-    overflow: hidden;
-    position: absolute;
-    top: 133px;
-    width: 443px;
+    height: 362px;
+left: 193px;
+overflow: hidden;
+position: absolute;
+top: 187px;
+width: 462px;
 }
 
 
 #facebook-ad-2-mensaje{
-    height: 219px;
-    margin-left: 10px;
-    margin-top: 82px;
-    width: 420px;
-    z-index: -1;
+    height: 320px;
+margin-left: 12px;
+margin-top: 10px;
+width: 450px;
+z-index: -1;
     
 }
 
 #facebook-ad-2-anuncio{
-    width: 443px;
+    width: 468px;
     height: 526px;
     z-index: 1;
     display: none;
+}
+
+#facebook-ad-2-anuncio img{
+  width: 100%;
 }
 
 #facebook-ad-2-mensaje.mensaje-ad h3{
@@ -4739,7 +4788,8 @@ display: none;
 
 
 #facebook-ad-2-mensaje.mensaje-ad p{
-   font-size: 13px;
+   font-size: 16px;
+line-height: 23px;
   
 }
 
@@ -4749,27 +4799,27 @@ display: none;
   
 }
 
-.google-contenedor{
-   background-image: url("../images/aplicaciones/publicidad/branding-google.jpg");
-    height: 828px;
+.contenedor-red-display {
+  height: 1660px;
+  background-image: url('../images/red-display-fondo.jpg');
 }
 
 .contenedor-publicidad-digital .google-ad-1 {
-    height: 251px;
-    left: 29px;
+    height: 214px;
+    right: 13px;
     overflow: hidden;
     position: absolute;
-    top: 232px;
-    width: 301px;
+    top: 1023px;
+    width: 219px;
 }
 
 .contenedor-publicidad-digital .google-ad-2 {
-    height: 251px;
-    left: 554px;
-    overflow: hidden;
-    position: absolute;
-    top: 400px;
-    width: 251px;
+height: 251px;
+left: 281px;
+overflow: hidden;
+position: absolute;
+top: 662px;
+width: 251px;
 }
 
 .contenedor-publicidad-digital .google-ad-3 {
@@ -4782,26 +4832,27 @@ display: none;
 }
 
 .contenedor-publicidad-digital .google-ad-4 {
-    height: 601px;
-    overflow: hidden;
-    position: absolute;
-    right: 26px;
-    top: 110px;
-    width: 121px;
+height: 465px;
+overflow: hidden;
+position: absolute;
+right: 273px;
+top: 1137px;
+width: 123px;
 }
 
 #google-ad-1-mensaje{
-    height: 251px;
-    width: 301px;
+    height: 100%;
+    width: 100%;
     z-index: -1;
     
 }
 
 #google-ad-1-anuncio{
-    height: 251px;
-    width: 301px;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     display: none;
+    margin-top: -16px;
 }
 
 #google-ad-2-mensaje{
@@ -4816,6 +4867,7 @@ display: none;
     width: 251px;
     z-index: 1;
     display: none;
+    margin-top: -16px;
 }
 
 #google-ad-3-mensaje{
@@ -4833,16 +4885,16 @@ display: none;
 }
 
 #google-ad-4-mensaje{
-    height: 601px;
+    height: 100%;
     padding: 10px;
-    width: 121px;
+    width: 100%;
     z-index: -1;
     
 }
 
 #google-ad-4-anuncio{
-    height: 601px;
-    width: 121px;
+    height: 100%;
+    width: 100%;
     z-index: 1;
     display: none;
 }
@@ -4853,7 +4905,7 @@ display: none;
 }
 
 #google-ad-1-mensaje.mensaje-ad h3{
-    margin-top: 47px;
+    margin-top: 5%;
     width: 100%;
 }
 
@@ -4885,6 +4937,7 @@ display: none;
 #google-ad-2-mensaje.mensaje-ad p,
 #google-ad-4-mensaje.mensaje-ad p{
    font-size: 13px;
+   color: #fff;
   
 }
 
@@ -5152,12 +5205,19 @@ display: none;
   height: 180px;
 }
 
-.encabezado-conversion, .encabezado-facebook, .encabezado-google, .pie-resultado {
+.tab-content h4 {
+  font-family: 'proximanova-regular', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #00A69C;
+}
+
+.encabezado-conversion, .encabezado-facebook, .encabezado-google, .encabezado-mobile, .pie-resultado {
   color: #4d4d4d !important;
   font-family: "Open Sans",sans-serif;
   font-size: 19px;
   font-weight: 400;
-  margin: 0px 0 40px;
+  margin: 0px 0 48px;
 }
 
 .enlace-conozca-nuestros-servicios {
@@ -5182,7 +5242,7 @@ display: none;
 .mensaje-ad.conversion {
   width: 180px;
 position: relative;
-bottom: 525px;
+bottom: 367px;
 padding: 5px;
 left: -79px;
 }
@@ -5192,6 +5252,7 @@ left: -79px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 17px;
+  padding: 0 5px;
 line-height: 20px;
 }
 

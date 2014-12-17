@@ -511,6 +511,26 @@ document.getElementById("reporte_grafico").innerHTML = '\
 	  });
 
 	  jQuery('.accordion-tabs-minimal').on('click', 'li > a', function(event) {
+	  	var height_acordion = 0;
+	  	switch(jQuery(this).attr("id")){
+	  		case 'red-display':
+	  			height_acordion = 2000;
+	  		break;
+	  		case 'google-adwords':
+	  			height_acordion = 900;
+	  		break;
+	  		case 'facebook-ads':
+	  			height_acordion = 900;
+	  		break;
+	  		case 'mobile':
+	  			height_acordion = 930;
+	  		break;
+	  	}
+
+	  	jQuery('#block-block-8 ul').css({
+	  		"height":height_acordion
+	  	});
+
 	    if (!jQuery(this).hasClass('is-active')) {
 	      event.preventDefault();
 	      var accordionTabs = jQuery(this).closest('.accordion-tabs-minimal')
@@ -1290,7 +1310,8 @@ var cantidad_resultados = jQuery(".group-resultados .fieldset-wrapper").children
 		}
 	}
 
-ajustarAnchoCasosExitoRelacionado();
+ajustarAnchoCasosExitoRelacionado(".view-display-id-bloque_casos_exito_relacionados");
+ajustarAnchoCasosExitoRelacionado(".view-display-id-block_resumen_portafolio_pequeno_sin_encabezado");
 
 var cantidad_parrafos = jQuery(".field-name-body .contenido").children().length;	
 if (cantidad_parrafos == 1){
@@ -1425,8 +1446,8 @@ function calcularAltoCasosExito(cod_categoria){
 }
 
 
-function ajustarAnchoCasosExitoRelacionado(){
-	var cantidad_resultados = jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").children().length;	
+function ajustarAnchoCasosExitoRelacionado(contenedor){
+	var cantidad_resultados = jQuery(contenedor + " .view-content").children().length;	
 	var ancho = 0;
 	var ancho_ventana = window.screen.width;
 	if (cantidad_resultados <= 3){
@@ -1444,7 +1465,7 @@ function ajustarAnchoCasosExitoRelacionado(){
 		}else{
 			ancho = 423;
 		}
-		jQuery(".view-display-id-bloque_casos_exito_relacionados .view-content").css({
+		jQuery(contenedor + " .view-content").css({
 				"width":cantidad_resultados*ancho+"px",
 				"margin":"0 auto"
 		});
@@ -1472,25 +1493,3 @@ function ajustarAltoContenedorCasosExitoInicial(){
 		"height":(Math.ceil(cantidad_portafolio/elementos)*alto_elemento)+"px",
 	});
 }
-
-function updateOrientation(e) {
-/*switch (e.orientation)
-{   
-    case 0:
-        // Do your thing
-        break;
-
-    case -90:
-        // Do your thing
-        break;
-
-    case 90:
-        // Do your thing
-        break;
-
-    default:
-        break;
-    }*/
-    alert(e.orientation);
-}
-
